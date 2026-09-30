@@ -1,0 +1,166 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>源码检查与行号依据</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>源码检查与行号依据</h1><p class="note">原场景逻辑源码哈希、原副本一致性和报告引用的代码行号。</p><p><a href="../evidence/source-verification.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>[
+  {
+    &quot;order&quot;: 1,
+    &quot;sha256&quot;: &quot;7aad501ad71818cde6c70ba82af5e2ef5fd7420a745c7ef0b5c9ab6252d59d41&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 85,
+        &quot;topic&quot;: &quot;静态几何合并&quot;
+      },
+      {
+        &quot;line&quot;: 213,
+        &quot;topic&quot;: &quot;故障提示&quot;
+      },
+      {
+        &quot;line&quot;: 215,
+        &quot;topic&quot;: &quot;距离驱动姿态与景物&quot;
+      },
+      {
+        &quot;line&quot;: 236,
+        &quot;topic&quot;: &quot;逐帧光照混合&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/01.js&quot;
+  },
+  {
+    &quot;order&quot;: 2,
+    &quot;sha256&quot;: &quot;6449c9cd015d53f9e083bc668b8ac8619cf3766a089c2de9f3128f1e405b60d8&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 115,
+        &quot;topic&quot;: &quot;环境合并与释放&quot;
+      },
+      {
+        &quot;line&quot;: 124,
+        &quot;topic&quot;: &quot;弧长、曲率、转向和骑姿&quot;
+      },
+      {
+        &quot;line&quot;: 161,
+        &quot;topic&quot;: &quot;contextLost与恢复策略&quot;
+      },
+      {
+        &quot;line&quot;: 164,
+        &quot;topic&quot;: &quot;前轮行程累积&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/02.js&quot;
+  },
+  {
+    &quot;order&quot;: 3,
+    &quot;sha256&quot;: &quot;b8c2ea9b8137e271eb2fd49100bc29afe12af000e4bc56602b650ec30d2b0bd4&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 19,
+        &quot;topic&quot;: &quot;CPU水面几何&quot;
+      },
+      {
+        &quot;line&quot;: 25,
+        &quot;topic&quot;: &quot;统一rider层级与车轮&quot;
+      },
+      {
+        &quot;line&quot;: 53,
+        &quot;topic&quot;: &quot;距离、动画及水面法线更新缺项&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/03.html&quot;
+  },
+  {
+    &quot;order&quot;: 4,
+    &quot;sha256&quot;: &quot;0756bbdda8fe3b7784f4287073dfa7363ce86fcde0bcc6369607013d7e1f8da3&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 56,
+        &quot;topic&quot;: &quot;共享骑乘模型层级&quot;
+      },
+      {
+        &quot;line&quot;: 82,
+        &quot;topic&quot;: &quot;距离驱动与循环路段&quot;
+      },
+      {
+        &quot;line&quot;: 87,
+        &quot;topic&quot;: &quot;海水法线每3帧更新&quot;
+      },
+      {
+        &quot;line&quot;: 94,
+        &quot;topic&quot;: &quot;挂在window的故障监听&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/04.js&quot;
+  },
+  {
+    &quot;order&quot;: 5,
+    &quot;sha256&quot;: &quot;5a0494d8274d97aa5e0151da5f9770c03ff8cd0a8157adcd9d51aecde23dadcd&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 82,
+        &quot;topic&quot;: &quot;道路/环境几何合并&quot;
+      },
+      {
+        &quot;line&quot;: 367,
+        &quot;topic&quot;: &quot;猫姿态与围巾&quot;
+      },
+      {
+        &quot;line&quot;: 421,
+        &quot;topic&quot;: &quot;交互与音效&quot;
+      },
+      {
+        &quot;line&quot;: 465,
+        &quot;topic&quot;: &quot;图形恢复反馈&quot;
+      },
+      {
+        &quot;line&quot;: 478,
+        &quot;topic&quot;: &quot;实际位移、转向与车轮&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/05.js&quot;
+  },
+  {
+    &quot;order&quot;: 6,
+    &quot;sha256&quot;: &quot;12edb3d6bd2b5b0f62ec0ddf6106b1761ea351c806fd90799d5379aebad63e5b&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 209,
+        &quot;topic&quot;: &quot;静态合并与几何释放&quot;
+      },
+      {
+        &quot;line&quot;: 504,
+        &quot;topic&quot;: &quot;人工图形恢复&quot;
+      },
+      {
+        &quot;line&quot;: 518,
+        &quot;topic&quot;: &quot;世界/局部坐标转换与握把连接&quot;
+      },
+      {
+        &quot;line&quot;: 594,
+        &quot;topic&quot;: &quot;转向、前轮行程与渲染循环&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/06.js&quot;
+  },
+  {
+    &quot;order&quot;: 7,
+    &quot;sha256&quot;: &quot;179e9a947d4bd90de15d29c1170f2f540fbf4de1f43b0335886ee0f442cd4e2e&quot;,
+    &quot;copy_matches_original&quot;: true,
+    &quot;review_links&quot;: [
+      {
+        &quot;line&quot;: 114,
+        &quot;topic&quot;: &quot;弧长查表&quot;
+      },
+      {
+        &quot;line&quot;: 136,
+        &quot;topic&quot;: &quot;上下文丢失及恢复&quot;
+      },
+      {
+        &quot;line&quot;: 138,
+        &quot;topic&quot;: &quot;切线朝向、车轮及动画&quot;
+      }
+    ],
+    &quot;source_file&quot;: &quot;code-sources/07.js&quot;
+  }
+]</pre></details></main></body></html>

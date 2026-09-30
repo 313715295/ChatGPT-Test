@@ -1,0 +1,828 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>图形上下文恢复检查</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>图形上下文恢复检查</h1><p class="note">真实触发WebGL丢失和恢复后的画面提示、模拟状态及自动/人工恢复行为。</p><p><a href="../evidence/context-recovery.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>[
+  {
+    &quot;order&quot;: 1,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;186&quot;,
+      &quot;frames&quot;: 40,
+      &quot;paused&quot;: false,
+      &quot;distance&quot;: 13.33333333333334,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;speedFactor&quot;: 1,
+      &quot;wheelRadius&quot;: 0.4,
+      &quot;wheelAngle&quot;: -33.33333333333334,
+      &quot;frontWheelAngle&quot;: -33.33333333333334,
+      &quot;camera&quot;: &quot;coast&quot;,
+      &quot;cameraPosition&quot;: [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      &quot;dusk&quot;: false,
+      &quot;duskMix&quot;: 0,
+      &quot;sections&quot;: [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      &quot;drawCalls&quot;: 299,
+      &quot;triangles&quot;: 398706,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ],
+      &quot;networkFree&quot;: true
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;186&quot;,
+      &quot;frames&quot;: 65,
+      &quot;paused&quot;: true,
+      &quot;distance&quot;: 13.33333333333334,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;speedFactor&quot;: 1,
+      &quot;wheelRadius&quot;: 0.4,
+      &quot;wheelAngle&quot;: -33.33333333333334,
+      &quot;frontWheelAngle&quot;: -33.33333333333334,
+      &quot;camera&quot;: &quot;coast&quot;,
+      &quot;cameraPosition&quot;: [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      &quot;dusk&quot;: false,
+      &quot;duskMix&quot;: 0,
+      &quot;sections&quot;: [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      &quot;drawCalls&quot;: 299,
+      &quot;triangles&quot;: 398706,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ],
+      &quot;networkFree&quot;: true
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;0&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;186&quot;,
+      &quot;frames&quot;: 95,
+      &quot;paused&quot;: true,
+      &quot;distance&quot;: 13.33333333333334,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;speedFactor&quot;: 1,
+      &quot;wheelRadius&quot;: 0.4,
+      &quot;wheelAngle&quot;: -33.33333333333334,
+      &quot;frontWheelAngle&quot;: -33.33333333333334,
+      &quot;camera&quot;: &quot;coast&quot;,
+      &quot;cameraPosition&quot;: [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      &quot;dusk&quot;: false,
+      &quot;duskMix&quot;: 0,
+      &quot;sections&quot;: [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      &quot;drawCalls&quot;: 299,
+      &quot;triangles&quot;: 398706,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ],
+      &quot;networkFree&quot;: true
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;0&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 2,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;160&quot;,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;distance&quot;: 13.3334,
+      &quot;frontDistance&quot;: 13.34108216666244,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;camera&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;wheelRadius&quot;: 0.455,
+      &quot;rearWheel&quot;: -29.30417582417582,
+      &quot;frontWheel&quot;: -29.321059706950418,
+      &quot;steering&quot;: -0.03642390603145886,
+      &quot;position&quot;: [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      &quot;heading&quot;: 0.30658641008885357,
+      &quot;renderCalls&quot;: 168,
+      &quot;triangles&quot;: 117820,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ]
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;160&quot;,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;distance&quot;: 13.3334,
+      &quot;frontDistance&quot;: 13.34108216666244,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;camera&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;wheelRadius&quot;: 0.455,
+      &quot;rearWheel&quot;: -29.30417582417582,
+      &quot;frontWheel&quot;: -29.321059706950418,
+      &quot;steering&quot;: -0.03642390603145886,
+      &quot;position&quot;: [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      &quot;heading&quot;: 0.30658641008885357,
+      &quot;renderCalls&quot;: 168,
+      &quot;triangles&quot;: 117820,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ]
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;0&quot;
+      },
+      {
+        &quot;id&quot;: &quot;loading&quot;,
+        &quot;text&quot;: &quot;海风正在赶来…准备好和猫咪一起出发&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;ready&quot;: true,
+      &quot;three&quot;: &quot;160&quot;,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;distance&quot;: 13.3334,
+      &quot;frontDistance&quot;: 13.34108216666244,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;camera&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;wheelRadius&quot;: 0.455,
+      &quot;rearWheel&quot;: -29.30417582417582,
+      &quot;frontWheel&quot;: -29.321059706950418,
+      &quot;steering&quot;: -0.03642390603145886,
+      &quot;position&quot;: [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      &quot;heading&quot;: 0.30658641008885357,
+      &quot;renderCalls&quot;: 0,
+      &quot;triangles&quot;: 0,
+      &quot;canvas&quot;: [
+        1280,
+        720
+      ]
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;0&quot;
+      },
+      {
+        &quot;id&quot;: &quot;loading&quot;,
+        &quot;text&quot;: &quot;海风正在赶来…准备好和猫咪一起出发&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 3,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;distance&quot;: 7.600000000000007,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -16.34408602150539,
+      &quot;drawCalls&quot;: 251,
+      &quot;triangles&quot;: 76020
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;distance&quot;: 12.349999999999996,
+      &quot;time&quot;: 3.2499999999999964,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -26.559139784946225,
+      &quot;drawCalls&quot;: 251,
+      &quot;triangles&quot;: 76020
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;distance&quot;: 18.05,
+      &quot;time&quot;: 4.749999999999991,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -38.81720430107527,
+      &quot;drawCalls&quot;: 247,
+      &quot;triangles&quot;: 74372
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 4,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;distance&quot;: 10.79999999999999,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;running&quot;: true,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -24.82758620689653,
+      &quot;frames&quot;: 40,
+      &quot;drawCalls&quot;: 348
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;distance&quot;: 17.54999999999998,
+      &quot;time&quot;: 3.2499999999999964,
+      &quot;running&quot;: true,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -40.34482758620685,
+      &quot;frames&quot;: 65,
+      &quot;drawCalls&quot;: 348
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;status&quot;,
+        &quot;text&quot;: &quot;正在兜风&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;distance&quot;: 25.649999999999967,
+      &quot;time&quot;: 4.749999999999991,
+      &quot;running&quot;: true,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;wheelAngle&quot;: -58.96551724137923,
+      &quot;frames&quot;: 95,
+      &quot;drawCalls&quot;: 377
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;status&quot;,
+        &quot;text&quot;: &quot;正在兜风&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 5,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 24,
+      &quot;path&quot;: 13.33285010860518,
+      &quot;distance&quot;: 13.333321274577528,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;frames&quot;: 40,
+      &quot;view&quot;: &quot;follow&quot;,
+      &quot;ready&quot;: true,
+      &quot;sound&quot;: false,
+      &quot;wheelRadius&quot;: 0.44,
+      &quot;rearAngle&quot;: 30.30300289676711,
+      &quot;frontAngle&quot;: 30.30300289676711,
+      &quot;position&quot;: [
+        -0.8000424705447275,
+        0.18,
+        13.33285010860518
+      ],
+      &quot;heading&quot;: -0.00034969870586902335,
+      &quot;camera&quot;: [
+        4.269480407809162,
+        3.882817715289119,
+        19.48212836230377
+      ],
+      &quot;drawCalls&quot;: 192,
+      &quot;triangles&quot;: 184174,
+      &quot;yaw&quot;: 0.79,
+      &quot;radius&quot;: 8.3,
+      &quot;scarfTip&quot;: [
+        -0.293897420167923,
+        1.928695559501648,
+        -1.3700000047683716
+      ],
+      &quot;eyeScale&quot;: 1,
+      &quot;webgl&quot;: &quot;WebGL 2.0 (OpenGL ES 3.0 Chromium)&quot;
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 24,
+      &quot;path&quot;: 21.666015974991893,
+      &quot;distance&quot;: 21.666663285011925,
+      &quot;time&quot;: 3.2499999999999964,
+      &quot;frames&quot;: 65,
+      &quot;view&quot;: &quot;follow&quot;,
+      &quot;ready&quot;: true,
+      &quot;sound&quot;: false,
+      &quot;wheelRadius&quot;: 0.44,
+      &quot;rearAngle&quot;: 49.242416556845285,
+      &quot;frontAngle&quot;: 49.242416556845285,
+      &quot;position&quot;: [
+        -0.8484431721304735,
+        0.18,
+        21.666015974991893
+      ],
+      &quot;heading&quot;: -0.01028181965404743,
+      &quot;camera&quot;: [
+        4.221079706223415,
+        3.882817715289119,
+        27.815294228690483
+      ],
+      &quot;drawCalls&quot;: 192,
+      &quot;triangles&quot;: 184174,
+      &quot;yaw&quot;: 0.79,
+      &quot;radius&quot;: 8.3,
+      &quot;scarfTip&quot;: [
+        -0.2818581461906433,
+        1.9275002479553223,
+        -1.3700000047683716
+      ],
+      &quot;eyeScale&quot;: 1,
+      &quot;webgl&quot;: null
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;正在恢复 3D 画面…&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 24,
+      &quot;path&quot;: 31.665377160458142,
+      &quot;distance&quot;: 31.666662121371672,
+      &quot;time&quot;: 4.749999999999991,
+      &quot;frames&quot;: 95,
+      &quot;view&quot;: &quot;follow&quot;,
+      &quot;ready&quot;: true,
+      &quot;sound&quot;: false,
+      &quot;wheelRadius&quot;: 0.44,
+      &quot;rearAngle&quot;: 71.96968663948107,
+      &quot;frontAngle&quot;: 71.96968663948107,
+      &quot;position&quot;: [
+        -0.96117354886848,
+        0.18,
+        31.665377160458142
+      ],
+      &quot;heading&quot;: -0.009492463459172377,
+      &quot;camera&quot;: [
+        4.108349329485409,
+        3.882817715289119,
+        37.81465541415673
+      ],
+      &quot;drawCalls&quot;: 190,
+      &quot;triangles&quot;: 181234,
+      &quot;yaw&quot;: 0.79,
+      &quot;radius&quot;: 8.3,
+      &quot;scarfTip&quot;: [
+        -0.327304869890213,
+        1.9271714687347412,
+        -1.3700000047683716
+      ],
+      &quot;eyeScale&quot;: 1,
+      &quot;webgl&quot;: &quot;WebGL 2.0 (OpenGL ES 3.0 Chromium)&quot;
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;画面已恢复&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 6,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;ready&quot;: true,
+      &quot;paused&quot;: false,
+      &quot;kmh&quot;: 18,
+      &quot;distance&quot;: 9,
+      &quot;time&quot;: 1.800000000000001,
+      &quot;rearWheelAngle&quot;: -24.999999999999982,
+      &quot;frontWheelAngle&quot;: -25.00000024742746,
+      &quot;wheelRadius&quot;: 0.36,
+      &quot;steering&quot;: 0.00023672828033875404,
+      &quot;gripError&quot;: 4.965068306494546e-16,
+      &quot;view&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;lightBlend&quot;: 0,
+      &quot;frames&quot;: 36,
+      &quot;renderCalls&quot;: 293,
+      &quot;triangles&quot;: 132986,
+      &quot;webgl2&quot;: true,
+      &quot;catPosition&quot;: [
+        0,
+        0,
+        1.5845458159860215
+      ],
+      &quot;camera&quot;: [
+        5.999999999999997,
+        3.6499999999999995,
+        9.274243085612257
+      ],
+      &quot;tailTip&quot;: [
+        -1.54,
+        1.3324877628724872,
+        0.3429620317972745
+      ]
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;ready&quot;: true,
+      &quot;paused&quot;: true,
+      &quot;kmh&quot;: 18,
+      &quot;distance&quot;: 10,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;rearWheelAngle&quot;: -27.777777777777754,
+      &quot;frontWheelAngle&quot;: -27.777778113724736,
+      &quot;wheelRadius&quot;: 0.36,
+      &quot;steering&quot;: 0.0002616891200578184,
+      &quot;gripError&quot;: 2.220446049250313e-16,
+      &quot;view&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;lightBlend&quot;: 0,
+      &quot;frames&quot;: 60,
+      &quot;renderCalls&quot;: 293,
+      &quot;triangles&quot;: 132986,
+      &quot;webgl2&quot;: true,
+      &quot;catPosition&quot;: [
+        0,
+        0,
+        1.5934604021540761
+      ],
+      &quot;camera&quot;: [
+        5.999999999999998,
+        3.6500000000000012,
+        9.293274188758252
+      ],
+      &quot;tailTip&quot;: [
+        -1.54,
+        1.3324877628724872,
+        0.40168772178219436
+      ]
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;0&quot;
+      },
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;ready&quot;: true,
+      &quot;paused&quot;: true,
+      &quot;kmh&quot;: 18,
+      &quot;distance&quot;: 10,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;rearWheelAngle&quot;: -27.777777777777754,
+      &quot;frontWheelAngle&quot;: -27.777778113724736,
+      &quot;wheelRadius&quot;: 0.36,
+      &quot;steering&quot;: 0.0002616891200578184,
+      &quot;gripError&quot;: 2.220446049250313e-16,
+      &quot;view&quot;: 0,
+      &quot;sunset&quot;: false,
+      &quot;lightBlend&quot;: 0,
+      &quot;frames&quot;: 90,
+      &quot;renderCalls&quot;: 293,
+      &quot;triangles&quot;: 132986,
+      &quot;webgl2&quot;: true,
+      &quot;catPosition&quot;: [
+        0,
+        0,
+        1.5934604021540761
+      ],
+      &quot;camera&quot;: [
+        6,
+        3.6500000000000004,
+        9.293459940577218
+      ],
+      &quot;tailTip&quot;: [
+        -1.54,
+        1.3324877628724872,
+        0.40168772178219436
+      ]
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;toast&quot;,
+        &quot;text&quot;: &quot;&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;0&quot;
+      },
+      {
+        &quot;id&quot;: &quot;error&quot;,
+        &quot;text&quot;: &quot;海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  },
+  {
+    &quot;order&quot;: 7,
+    &quot;errors&quot;: [],
+    &quot;messages&quot;: [
+      &quot;THREE.WebGLRenderer: Context Lost.&quot;,
+      &quot;THREE.WebGLRenderer: Context Restored.&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;distance&quot;: 13.600000000000009,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 4.8,
+      &quot;mode&quot;: 0,
+      &quot;angle&quot;: 0.24416140384000443,
+      &quot;wheelRotation&quot;: 39.76608187134505,
+      &quot;wheelRadius&quot;: 0.342,
+      &quot;position&quot;: [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      &quot;frame&quot;: 40,
+      &quot;drawCalls&quot;: 211,
+      &quot;triangles&quot;: 108772
+    },
+    &quot;extensionAvailable&quot;: true,
+    &quot;lost&quot;: {
+      &quot;distance&quot;: 13.600000000000009,
+      &quot;time&quot;: 2.000000000000001,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 4.8,
+      &quot;mode&quot;: 0,
+      &quot;angle&quot;: 0.24416140384000443,
+      &quot;wheelRotation&quot;: 39.76608187134505,
+      &quot;wheelRadius&quot;: 0.342,
+      &quot;position&quot;: [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      &quot;frame&quot;: 40,
+      &quot;drawCalls&quot;: 211,
+      &quot;triangles&quot;: 108772
+    },
+    &quot;lostOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;status&quot;,
+        &quot;text&quot;: &quot;正在沿海骑行&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;loading&quot;,
+        &quot;text&quot;: &quot;画面恢复中…&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;restored&quot;: {
+      &quot;distance&quot;: 20.79999999999998,
+      &quot;time&quot;: 3.4999999999999956,
+      &quot;paused&quot;: false,
+      &quot;speed&quot;: 4.8,
+      &quot;mode&quot;: 0,
+      &quot;angle&quot;: 0.3768794225829395,
+      &quot;wheelRotation&quot;: 60.818713450292336,
+      &quot;wheelRadius&quot;: 0.342,
+      &quot;position&quot;: [
+        30.10527000437285,
+        0.122,
+        20.621030563652848
+      ],
+      &quot;frame&quot;: 70,
+      &quot;drawCalls&quot;: 199,
+      &quot;triangles&quot;: 105236
+    },
+    &quot;restoredOverlays&quot;: [
+      {
+        &quot;id&quot;: &quot;status&quot;,
+        &quot;text&quot;: &quot;正在沿海骑行&quot;,
+        &quot;visible&quot;: true,
+        &quot;opacity&quot;: &quot;1&quot;
+      },
+      {
+        &quot;id&quot;: &quot;loading&quot;,
+        &quot;text&quot;: &quot;画面恢复中…&quot;,
+        &quot;visible&quot;: false,
+        &quot;opacity&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;events&quot;: [
+      {
+        &quot;type&quot;: &quot;webglcontextlost&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: true
+      },
+      {
+        &quot;type&quot;: &quot;webglcontextrestored&quot;,
+        &quot;bubbles&quot;: false,
+        &quot;defaultPrevented&quot;: false
+      }
+    ]
+  }
+]</pre></details></main></body></html>

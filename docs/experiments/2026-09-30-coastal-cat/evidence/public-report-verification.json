@@ -11,14 +11,13 @@
     "13:32",
     "9:21"
   ],
-  "video": {
-    "width": 1080,
-    "height": 1920,
-    "duration": 95,
-    "source": "/media/coastal-cat-review-1080p.mp4"
-  },
+  "public_video_count": 0,
+  "original_preview_buttons": 7,
+  "original_scene_loaded": true,
   "mobile_width": 390,
   "code_anchor": 1,
   "returned_to_report": true,
+  "pricing_source_anchors": 5,
+  "readable_reference": true,
   "status": "PASS"
 }

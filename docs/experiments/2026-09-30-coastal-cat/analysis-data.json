@@ -5137,6 +5137,6 @@
     "service_tier": "not recorded; Standard is only the normalized price basis",
     "assessment": "Codex观察式成品及源码审查，非盲评，每个配置1次样本",
     "artifact_integrity": "七份scenes HTML与原交付字节相同；源码副本也保留原字节",
-    "measurement_scope": "只计原任务耗时；本次追加评估、视频和发布的时间与成本未加回原任务"
+    "measurement_scope": "只计原任务耗时；本次追加评估与发布的时间和成本未加回原任务"
   }
 }

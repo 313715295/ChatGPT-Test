@@ -9,8 +9,7 @@ JSON保留观测值与检查结果，移除了私人机器路径。截图为实�
 - `context-recovery.json`：实际WebGL丢失/恢复前后状态与提示。
 - `source-verification.json`：原场景逻辑源码哈希和报告行号。
 - `code-quality-review.json` / `quality-ranking.json`：逐项评估与本轮排序，均为Codex观察式判断。
-- `social-capture.json` / `douyin-video-manifest.json`：正式成片捕获状态、视频参数、章节和哈希。
 - `NN-default.png` / `NN-view*.png` / `NN-mobile*.png`：原场景；`NN-studio-*.png`：统一主体；`NN-context-restored.png`：恢复后的实际画面。
-- `douyin-*.jpg`：正式视频关键帧；`contact-*.jpg`：七组静态对照。
+- `contact-*.jpg`：七组静态对照。
 
 本机短窗口频率不等于低端手机帧率。原会话聚合Token和耗时另见数据表，原聊天日志未公开。

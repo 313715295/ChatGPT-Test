@@ -5,9 +5,22 @@
 ## 2026-09-30：猫在海边骑电动车
 
 - [在线完整测评](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/)：可排序用量表、Fast情景滑块、质量分析、源码行号、飞鸟与环境、运行证据。
-- [1080P正式成片](https://313715295.github.io/ChatGPT-Test/media/coastal-cat-review-1080p.mp4)：**95秒、1080×1920、30fps、无音轨，仅一条正式视频**。
 - [仓库内实验说明](docs/experiments/2026-09-30-coastal-cat/README.md) · [聚合数据JSON](docs/experiments/2026-09-30-coastal-cat/analysis-data.json) · [指标CSV](docs/experiments/2026-09-30-coastal-cat/data/metrics.csv)
-- [源码与重建说明](docs/experiments/2026-09-30-coastal-cat/sources/README.md) · [七个原作品](docs/experiments/2026-09-30-coastal-cat/scenes/README.md)
+- [原源码与重建说明](docs/experiments/2026-09-30-coastal-cat/sources/README.md) · [七个原作品](docs/experiments/2026-09-30-coastal-cat/scenes/README.md)
+
+## 七个原始交付作品
+
+“在线运行”打开真正的3D场景；“原文件”打开GitHub文件页，可下载HTML后离线打开。GitHub文件页只显示源码，不执行网页。
+
+| 编号 | 在线运行 | 原文件 | 场景逻辑源码 |
+| --- | --- | --- | --- |
+| 01 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/01.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/01.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/01.html) |
+| 02 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/02.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/02.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/02.html) |
+| 03 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/03.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/03.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/03.html) |
+| 04 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/04.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/04.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/04.html) |
+| 05 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/05.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/05.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/05.html) |
+| 06 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/06.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/06.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/06.html) |
+| 07 | [运行作品](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/scenes/07.html) | [原HTML](https://github.com/313715295/ChatGPT-Test/blob/main/docs/experiments/2026-09-30-coastal-cat/scenes/07.html) | [源码行号](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/code-review/07.html) |
 
 原任务：
 
@@ -27,12 +40,11 @@
 
 这些费用是按2026-09-30官方Standard文本Token价格折算，**不是实际账户扣费**。原日志未保存service_tier；Fast没有对应重复实测。每种配置只有一次样本，七组几乎同时启动，不能据此推断普遍模型排名或稳定提速倍率。
 
-## 目录
+## 原作品与总结目录
 
 ```text
 docs/
   index.html                         测评入口
-  media/                             唯一正式成片与封面
   experiments/2026-09-30-coastal-cat/
     index.html                       完整交互报告
     README.md                        方法、结论与口径
@@ -42,22 +54,14 @@ docs/
     code-sources/                    原场景逻辑源码
     code-review/                     带行号的源码阅读页
     sources/                         原构建文件、依赖清单和许可证
-    evidence/                        截图、运行状态及验证结果
-scripts/
-  serve.py                           本地查看
-  validate.py                        哈希、链接与费用校验
-  qa/                                可重新运行的浏览器基础检查
+    evidence/                        总结引用的截图与检查数据
+    references/                      站内可读引用与定价说明
 ```
 
-## 本地查看和复核
-
-```sh
-python scripts/serve.py
-python scripts/validate.py
-```
-
-打开 `http://127.0.0.1:8000/`。七份 `scenes/*.html` 已内嵌Three.js，下载后也可离线打开。源码重建和浏览器复测详见各目录说明。
+下载仓库后可直接离线打开七份`scenes/*.html`；在线查看请使用上方“运行作品”。
 
 公开材料保留会话ID、模型、推理等级、聚合用量与作品证据。未上传私人会话全文、数据库、机器目录或凭据。聚合值曾与原始本地记录交叉核对，但这些未公开原记录不能由本仓库独立审计。第三方代码授权见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 后续测评以新的 `docs/experiments/YYYY-MM-DD-topic/` 目录追加，更新入口与实验索引，保留每轮独立方法和价格快照。
+
+总结的定价引用同时提供 [站内阅读页](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/references/pricing-notes.html) 和 [GitHub文字说明](docs/experiments/2026-09-30-coastal-cat/references/pricing-notes.md)，原官方链接保留在说明中。

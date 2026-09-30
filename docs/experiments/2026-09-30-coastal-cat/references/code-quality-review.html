@@ -1,0 +1,287 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>代码与视觉逐项分析</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>代码与视觉逐项分析</h1><p class="note">逐组建模、原场景视觉、运动、代码、环境与恢复分析；判断由Codex作出。</p><p><a href="../evidence/code-quality-review.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
+  &quot;assessment_basis&quot;: &quot;查看实际源代码、同角度的主体模型、原场景真实动画、运行状态和故障恢复。镜头取景单独描述，不用于降低建模或代码评价。&quot;,
+  &quot;scoring&quot;: &quot;撤下此前混合取景与模型质量的单一百分制评分。采用分维度结论；细小主观差异不能支持稳定模型排名。&quot;,
+  &quot;ambient&quot;: [
+    {
+      &quot;order&quot;: 1,
+      &quot;bird_count&quot;: 6,
+      &quot;birds&quot;: &quot;有身体与片状双翼，分别拍动；围绕各自位置缓慢盘旋、升降。&quot;,
+      &quot;sky&quot;: &quot;天空渐变与太阳；11组云缓慢横向漂移；可切换日落。&quot;,
+      &quot;water&quot;: &quot;GPU波浪、闪光与近岸泡沫变化。&quot;,
+      &quot;boats&quot;: &quot;3条帆船随浪上下起伏和轻微摇摆。&quot;
+    },
+    {
+      &quot;order&quot;: 2,
+      &quot;bird_count&quot;: 6,
+      &quot;birds&quot;: &quot;有身体与椭圆双翼，分别拍动；环岛上方盘旋，方向随路径变化。&quot;,
+      &quot;sky&quot;: &quot;15组远处云；云本身静态；晴日/日落改变环境色与灯光。&quot;,
+      &quot;water&quot;: &quot;GPU海色、闪光与近岸浪纹，额外泡沫带缩放与透明度变化。&quot;,
+      &quot;boats&quot;: &quot;3条帆船有上下起伏和摇摆。&quot;
+    },
+    {
+      &quot;order&quot;: 3,
+      &quot;bird_count&quot;: 6,
+      &quot;birds&quot;: &quot;以细杆构成展开翅膀；位置、高度与左右翅膀持续变化，造型更符号化。&quot;,
+      &quot;sky&quot;: &quot;太阳、远岛与10组云；云本身静态，无日落切换。&quot;,
+      &quot;water&quot;: &quot;CPU顶点波动与多条泡沫带位移；顶点变化未更新水面法线。&quot;,
+      &quot;boats&quot;: &quot;1条帆船有上下起伏和摇摆。&quot;
+    },
+    {
+      &quot;order&quot;: 4,
+      &quot;bird_count&quot;: 7,
+      &quot;birds&quot;: &quot;细杆双翼拍动，位置随车辆前进并缓慢漂移；更偏背景符号。&quot;,
+      &quot;sky&quot;: &quot;太阳、远山与11组云；云本身静态，无日落切换。&quot;,
+      &quot;water&quot;: &quot;CPU几何波动并每3帧更新法线，泡沫带与闪光装饰。&quot;,
+      &quot;boats&quot;: &quot;4条远处帆船为静态背景，随背景参照系平移。&quot;
+    },
+    {
+      &quot;order&quot;: 5,
+      &quot;bird_count&quot;: 6,
+      &quot;birds&quot;: &quot;有身体、喙与双翼轮廓；拍翼、升降和朝向变化，沿车辆附近飞行。&quot;,
+      &quot;sky&quot;: &quot;渐变天空、太阳与远岛，无独立云层运动或日落切换。&quot;,
+      &quot;water&quot;: &quot;GPU近岸泡沫、波纹、闪光与深浅海色，沿行驶方向保持连续。&quot;,
+      &quot;boats&quot;: &quot;3条帆船合并到远景网格；无独立摇摆动画，远景分段循环。&quot;
+    },
+    {
+      &quot;order&quot;: 6,
+      &quot;bird_count&quot;: 7,
+      &quot;birds&quot;: &quot;有身体与片状双翼，独立拍动；按不同相位盘旋和升降。&quot;,
+      &quot;sky&quot;: &quot;天空渐变、太阳；8组云缓慢横移；渐变日落与灯光变化。&quot;,
+      &quot;water&quot;: &quot;GPU海水波纹与闪光，近岸泡沫顶点起伏和位置变化。&quot;,
+      &quot;boats&quot;: &quot;3条帆船上下起伏和摇摆。&quot;
+    },
+    {
+      &quot;order&quot;: 7,
+      &quot;bird_count&quot;: 9,
+      &quot;birds&quot;: &quot;双三角翼为主，没有独立身体模型；拍翼和升降，群体位置沿道路跟随车辆。&quot;,
+      &quot;sky&quot;: &quot;太阳、远岛与24组云；云本身静态，无日落切换。&quot;,
+      &quot;water&quot;: &quot;GPU几何波动、海色与闪光，泡沫带起伏和透明度变化。&quot;,
+      &quot;boats&quot;: &quot;没有帆船模型；帆船不在原需求中，不作为核心缺失扣分。&quot;
+    }
+  ],
+  &quot;common&quot;: [
+    &quot;七组都完成核心需求；直线行驶和弯道行驶均符合原任务，不因功能数量不同扣核心达标分。&quot;,
+    &quot;七组都使用时间增量驱动模拟，车轮角度与路程增量一致；没有把电动车误当成需要踩踏的自行车。&quot;,
+    &quot;代码均以一个主要脚本组织场景，是可以交付的网页原型；未验证为可长期维护的正式应用。第5、6组函数划分更清楚，但仍非模块化产品架构。&quot;,
+    &quot;所有暂停实现都冻结模拟后继续渲染，便于拖动观察；静止画面可以进一步改成按需渲染，以减少持续GPU工作。&quot;,
+    &quot;多组每帧构建小型Vector3/Color临时对象。可复用缓存，但本次高性能电脑没有测出由此造成的明显卡顿，不把优化机会写成已发生的性能故障。&quot;,
+    &quot;时间增量被限制在约0.05秒，第6组为0.06秒；低于对应帧率时模拟会放慢，不能称为严格保持墙钟速度的物理仿真。&quot;,
+    &quot;统一主体检查只保留猫与电动车，统一朝向、角度、取景占比和灯光，保留原几何与材质。原海面、环境光及整体风格仍以原场景评价。&quot;,
+    &quot;检查到的主体几何坐标均为有限数。网格/三角形数量用于说明实现规模，不作为质量分或通用性能排名。&quot;
+  ],
+  &quot;items&quot;: [
+    {
+      &quot;order&quot;: 1,
+      &quot;profile&quot;: &quot;主体细节较强 · 场景较完整&quot;,
+      &quot;model&quot;: &quot;猫脸、胡须、头盔带、围巾、分节尾巴、车镜、轮胎花纹和后载物齐全，侧面与背面也有交付细节；造型圆润且主题识别清楚。&quot;,
+      &quot;lighting&quot;: &quot;有浅深海色、波纹闪光、天空渐变和日落混合；材质区分橡胶、金属与车漆，原场景光照与软色调协调。&quot;,
+      &quot;motion&quot;: &quot;道路纹理、循环景物和两轮共用同一距离；猫与车使用相同上下起伏。直线行驶不需要额外转向。尾巴、围巾、眨眼和海鸟有独立小动画。&quot;,
+      &quot;implementation&quot;: &quot;球体与方体复用；静态云、路段、车体按材质合并，车轮保留独立层级；水面主要在GPU着色器中变化。动画、镜头和光照分别封装。&quot;,
+      &quot;limitations&quot;: &quot;静态合并会把部分几何展开为非索引形式，主体与海面规模较大；这属于资源取舍，未观察到本机运行阻断。每帧灯光混合创建Color对象，可缓存优化。&quot;,
+      &quot;recovery&quot;: &quot;图形中断后暂停并显示‘重新出发’，恢复上下文后仍保留遮罩；提供重新加载入口，属于人工恢复流程。&quot;,
+      &quot;camera&quot;: &quot;部分原镜头前景树干较抢眼，HUD浅底白字对比偏低。属于镜头/页面呈现建议，不据此否定主体模型或距离逻辑。&quot;,
+      &quot;recommendation&quot;: &quot;希望猫与车细节较丰富，又希望本轮约16分钟完成，可以优先看这组。&quot;,
+      &quot;original_evidence&quot;: &quot;原会话打开过桌面、近景与窄屏图，并做过浏览器检查和优化。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 85,
+          &quot;topic&quot;: &quot;静态几何合并&quot;
+        },
+        {
+          &quot;line&quot;: 213,
+          &quot;topic&quot;: &quot;故障提示&quot;
+        },
+        {
+          &quot;line&quot;: 215,
+          &quot;topic&quot;: &quot;距离驱动姿态与景物&quot;
+        },
+        {
+          &quot;line&quot;: 236,
+          &quot;topic&quot;: &quot;逐帧光照混合&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 2,
+      &quot;profile&quot;: &quot;弯道运动实现较丰富&quot;,
+      &quot;model&quot;: &quot;角色有脸部、条纹、头盔、耳朵和背后行李箱，车体轮廓与轮辐完整；统一角度下猫与车可辨识，没有依据把它笼统称为几何质量差。&quot;,
+      &quot;lighting&quot;: &quot;环岛环境有房屋、灯塔、沙滩设施；海色层次、波纹闪光与晴日/日落切换完整，整体是清爽的卡通视觉。&quot;,
+      &quot;motion&quot;: &quot;闭合曲线按弧长取点；根据曲率设置前轮转向与倾斜，前轮单独累积转弯行程，手爪随车把更新。尾巴由多段更新，围巾和眨眼持续变化。&quot;,
+      &quot;implementation&quot;: &quot;静态环境按材质合并并释放原几何；主逻辑包含姿态、镜头和界面函数。当前环境合并只保留位置与法线，适用于现有无贴图静态材质，扩展贴图需保留UV。&quot;,
+      &quot;limitations&quot;: &quot;手臂通过调整圆柱长度连接肩、肘与手爪，属于伸缩式连接，不是固定骨长的逆运动学。前轮行程修正和倾斜也属于动画近似，不能宣称完整车辆物理。主要脚本多处压在一行，可读性一般。&quot;,
+      &quot;recovery&quot;: &quot;上下文丢失后停止更新并提示重新加载；上下文自动恢复后遮罩与contextLost标志仍保留，需要用户重新加载。&quot;,
+      &quot;camera&quot;: &quot;环岛全景的主体较小，这是展示整个岛的视角选择；近景可检查猫与车。单独列为取景可读性，不扣主体质量。&quot;,
+      &quot;recommendation&quot;: &quot;优先比较弯道、前轮与骑姿配合时，这组实现丰富；其本轮费用最高。&quot;,
+      &quot;original_evidence&quot;: &quot;原会话提供桌面预览与verification记录。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 115,
+          &quot;topic&quot;: &quot;环境合并与释放&quot;
+        },
+        {
+          &quot;line&quot;: 124,
+          &quot;topic&quot;: &quot;弧长、曲率、转向和骑姿&quot;
+        },
+        {
+          &quot;line&quot;: 161,
+          &quot;topic&quot;: &quot;contextLost与恢复策略&quot;
+        },
+        {
+          &quot;line&quot;: 164,
+          &quot;topic&quot;: &quot;前轮行程累积&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 3,
+      &quot;profile&quot;: &quot;核心完整 · 交付最快&quot;,
+      &quot;model&quot;: &quot;猫脸、头盔、胡须、尾巴、弯曲四肢、电动车轮辐、车镜和后载物都可清楚看到。统一侧面与背面检查支持‘主体建模完整’，不能因原树叶遮挡降低这一结论。&quot;,
+      &quot;lighting&quot;: &quot;配色统一，天空、灯塔、帆船与浅色海面建立海边主题；水面高光与浅深层次较简单，这是原场景的材质/光照表现差异。&quot;,
+      &quot;motion&quot;: &quot;距离驱动两轮和循环道路，猫与车共用rider层级保持连接；尾巴、头部、围巾、海鸟和船持续变化。属于符合需求的直线骑行实现。&quot;,
+      &quot;implementation&quot;: &quot;保留在HTML内的紧凑脚本；没有静态网格合并，大量基础球体/圆柱单独创建。水面每帧在CPU移动约5757个顶点。&quot;,
+      &quot;limitations&quot;: &quot;海水顶点高度改变后没有重新计算法线，照明仍按初始平面法线响应，波浪形状与光照变化关联不充分。动画主体集中在长函数中，不利于后续修改定位。&quot;,
+      &quot;recovery&quot;: &quot;没有自定义上下文丢失提示；本次由Three.js恢复渲染后继续运动，但失去画面期间仍推进模拟时间。&quot;,
+      &quot;camera&quot;: &quot;原窄屏默认与某些预设会受棕榈树遮挡。它是取景问题；本版将其移出主体与代码评价。&quot;,
+      &quot;recommendation&quot;: &quot;在约5分钟交付的预算下，主体与核心逻辑已经达标。若继续完善，先改善水面光照与代码组织，再单独调整镜头。&quot;,
+      &quot;original_evidence&quot;: &quot;原最终回复明确没有完成浏览器画面验收；本次补做后确认可运行，不把补测时间加回原耗时。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 19,
+          &quot;topic&quot;: &quot;CPU水面几何&quot;
+        },
+        {
+          &quot;line&quot;: 25,
+          &quot;topic&quot;: &quot;统一rider层级与车轮&quot;
+        },
+        {
+          &quot;line&quot;: 53,
+          &quot;topic&quot;: &quot;距离、动画及水面法线更新缺项&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 4,
+      &quot;profile&quot;: &quot;简洁造型 · 核心逻辑完整&quot;,
+      &quot;model&quot;: &quot;未带头盔的猫仍清楚满足主题；脸部、粉色耳内、胡须、眼睛、手爪与车镜齐全。整体圆润、车体较简洁，主体识别没有问题。头盔不在原需求中，不因缺少头盔扣分。&quot;,
+      &quot;lighting&quot;: &quot;车漆与金属材质区分明确，有阳光投影与海上帆船；海面的材质层次较基础，泡沫与闪光更接近装饰性图形。&quot;,
+      &quot;motion&quot;: &quot;rider真实向前移动，路段循环到车辆周围；两轮由距离旋转，猫车共用body摆动，连接稳定。海鸟、眨眼、围巾和尾巴动画齐全。&quot;,
+      &quot;implementation&quot;: &quot;复用基础球体和方体；海面CPU形变与法线每3帧更新，减少每帧工作。许多场景物体独立绘制，代码的创建与更新逻辑高度集中。&quot;,
+      &quot;limitations&quot;: &quot;webglcontextlost监听器挂在window并使用默认冒泡阶段，实际事件不冒泡，预期的‘画面已暂停’提示没有触发；本次上下文恢复后能继续渲染。此项是已验证的故障反馈缺陷，非镜头问题。&quot;,
+      &quot;recovery&quot;: &quot;本次可由Three.js自动恢复画面，但自定义故障提示失效，且失去画面期间模拟继续推进。&quot;,
+      &quot;camera&quot;: &quot;某些跟随预设的大路牌经过主体前方，手机控件较小；单独记录取景/交互建议，不影响猫车几何结论。&quot;,
+      &quot;recommendation&quot;: &quot;本轮约7分钟完成，主体与基础逻辑完整；若作为常用展示，先修图形故障反馈与整理更新逻辑。&quot;,
+      &quot;original_evidence&quot;: &quot;原会话有桌面、窄屏与浏览器checks记录。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 56,
+          &quot;topic&quot;: &quot;共享骑乘模型层级&quot;
+        },
+        {
+          &quot;line&quot;: 82,
+          &quot;topic&quot;: &quot;距离驱动与循环路段&quot;
+        },
+        {
+          &quot;line&quot;: 87,
+          &quot;topic&quot;: &quot;海水法线每3帧更新&quot;
+        },
+        {
+          &quot;line&quot;: 94,
+          &quot;topic&quot;: &quot;挂在window的故障监听&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 5,
+      &quot;profile&quot;: &quot;原场景视觉较协调 · 结构清楚&quot;,
+      &quot;model&quot;: &quot;猫较小巧，服装、头盔、面部和条纹清楚；车体、挡泥板、车镜、轮辐与投影完整。主体形象协调，但不能仅凭镜头更讨喜称其建模绝对优于1、2、6。&quot;,
+      &quot;lighting&quot;: &quot;本轮原场景的海面层次、沿岸泡沫、波纹与闪光结合较协调，天空渐变、阳光和接触阴影共同形成较完整的视觉风格。&quot;,
+      &quot;motion&quot;: &quot;累积车辆真实位置变化的距离驱动车轮，沿轻微弯曲路径移动并设置转向；前后轮共用路程，猫手臂未额外追踪轻微车把转角，是简化处理。&quot;,
+      &quot;implementation&quot;: &quot;姿态、镜头、音效和渲染分别封装，状态集中；道路原型按材质合并再复用，海面在GPU做波纹变化；有移动端像素比/阴影设置与音效生命周期处理。&quot;,
+      &quot;limitations&quot;: &quot;前轮转向时手部仍为静态连接，当前转向幅度很小，未在统一模型检查中看到明显脱握，不能声称有完整骑姿求解。主要脚本仍包含场景创建和所有业务逻辑。&quot;,
+      &quot;recovery&quot;: &quot;有上下文丢失与恢复反馈，本次无需重新加载即可继续；丢失画面期间仍推进模拟，若需严格连续体验可冻结该期间模拟。&quot;,
+      &quot;camera&quot;: &quot;原场景构图较协调；特定位置仍可能有前景遮挡。这是页面镜头表现，不作为建模绝对排名依据。&quot;,
+      &quot;recommendation&quot;: &quot;原海景视觉与页面完成度优先，可以先看这组；机械动作细节再与2、6对照。&quot;,
+      &quot;original_evidence&quot;: &quot;原会话有桌面预览、verification记录，并打开检查过成品。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 82,
+          &quot;topic&quot;: &quot;道路/环境几何合并&quot;
+        },
+        {
+          &quot;line&quot;: 367,
+          &quot;topic&quot;: &quot;猫姿态与围巾&quot;
+        },
+        {
+          &quot;line&quot;: 421,
+          &quot;topic&quot;: &quot;交互与音效&quot;
+        },
+        {
+          &quot;line&quot;: 465,
+          &quot;topic&quot;: &quot;图形恢复反馈&quot;
+        },
+        {
+          &quot;line&quot;: 478,
+          &quot;topic&quot;: &quot;实际位移、转向与车轮&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 6,
+      &quot;profile&quot;: &quot;模型细节丰富 · 骑姿跟随较细致&quot;,
+      &quot;model&quot;: &quot;脸部、头盔带、服装、分节条纹尾巴、后载篮、轮胎、车镜、灯具和仪表细节较丰富。正侧后方均有完整细节，主体塑造是这组的强项。&quot;,
+      &quot;lighting&quot;: &quot;有天空、海面着色器与渐变日落，材质与主题一致；海面视觉较轻柔，是否优于5取决于对平静海面或强波纹的偏好。&quot;,
+      &quot;motion&quot;: &quot;前后轮分别累积行程，带轻微转向、侧移和倾斜；手爪根据车把目标的世界坐标转回rider局部坐标更新。动态尾巴、围巾、眨眼与喇叭反馈丰富。&quot;,
+      &quot;implementation&quot;: &quot;静态路段按材质合并并释放原几何；把骑姿、世界、光照和状态记录分成函数，复用部分临时向量；有完整轨道交互与键盘入口。&quot;,
+      &quot;limitations&quot;: &quot;手爪位置跟随正确，但圆柱手臂随肩肘到手爪距离伸缩，并非固定骨长IK。gripError是代码的自测量，不是独立人体工学/穿插验收。主体网格较多，需要真实低性能设备验证才能定性能上限。&quot;,
+      &quot;recovery&quot;: &quot;图形中断后暂停并显示重新打开入口；本次上下文恢复后遮罩仍保留，采用人工重新加载的恢复流程。&quot;,
+      &quot;camera&quot;: &quot;全景主体较小、前景偶发遮挡，属于预设镜头呈现。统一模型检查后不会把这些现象转写为建模质量差。&quot;,
+      &quot;recommendation&quot;: &quot;动作细节、猫车连接和互动功能优先，建议与2一起比较；模型细节也与1相当值得看。&quot;,
+      &quot;original_evidence&quot;: &quot;原会话有browser-verification与桌面预览，并做过多轮检查。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 209,
+          &quot;topic&quot;: &quot;静态合并与几何释放&quot;
+        },
+        {
+          &quot;line&quot;: 504,
+          &quot;topic&quot;: &quot;人工图形恢复&quot;
+        },
+        {
+          &quot;line&quot;: 518,
+          &quot;topic&quot;: &quot;世界/局部坐标转换与握把连接&quot;
+        },
+        {
+          &quot;line&quot;: 594,
+          &quot;topic&quot;: &quot;转向、前轮行程与渲染循环&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 7,
+      &quot;profile&quot;: &quot;弧长行驶清楚 · 成本最低&quot;,
+      &quot;model&quot;: &quot;橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。&quot;,
+      &quot;lighting&quot;: &quot;海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。&quot;,
+      &quot;motion&quot;: &quot;2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。&quot;,
+      &quot;implementation&quot;: &quot;共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。&quot;,
+      &quot;limitations&quot;: &quot;弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。&quot;,
+      &quot;recovery&quot;: &quot;丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。&quot;,
+      &quot;camera&quot;: &quot;部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。&quot;,
+      &quot;recommendation&quot;: &quot;本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。&quot;,
+      &quot;original_evidence&quot;: &quot;原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 114,
+          &quot;topic&quot;: &quot;弧长查表&quot;
+        },
+        {
+          &quot;line&quot;: 136,
+          &quot;topic&quot;: &quot;上下文丢失及恢复&quot;
+        },
+        {
+          &quot;line&quot;: 138,
+          &quot;topic&quot;: &quot;切线朝向、车轮及动画&quot;
+        }
+      ]
+    }
+  ]
+}</pre></details></main></body></html>

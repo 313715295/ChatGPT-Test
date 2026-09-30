@@ -2,7 +2,7 @@
 
 日期：2026-09-30；时间采用 Asia/Shanghai。评估工具：Codex、Chrome/Playwright、Python/Pillow、FFmpeg。
 
-[完整交互报告](index.html) · [唯一1080P视频](../../media/coastal-cat-review-1080p.mp4) · [CSV](data/metrics.csv) · [JSON](analysis-data.json)
+[在线测评总结](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/) · [CSV](data/metrics.csv) · [JSON](analysis-data.json)
 
 ## 任务和样本
 
@@ -32,7 +32,7 @@
 
 ## 时间与费用口径
 
-原任务开始到完成的墙钟用时包含安装、排队、检查、失败重试和工具等待。本次追加评估和视频制作不计入原任务。七组耗时相加约108分26秒；因并行启动，从最早开始到最后结束实际约26分33秒，两者不能混用。
+原任务开始到完成的墙钟用时包含安装、排队、检查、失败重试和工具等待。本次追加评估不计入原任务。七组耗时相加约108分26秒；因并行启动，从最早开始到最后结束实际约26分33秒，两者不能混用。
 
 模型用量按唯一模型响应去重，分别累计输入、缓存输入和输出，再与累计记录及本地会话数据库核对。模型响应次数不是工具次数。`input_tokens`已包含缓存输入；`reasoning_output_tokens`已包含在输出中，不能额外计费。所有样本缓存写入记录为0。单次输入未超过272K，按标准长度价计算。
 
@@ -41,7 +41,7 @@
 - Astra Standard：每百万Token未缓存输入$10、缓存$1、输出$50。
 - Sol Standard：每百万Token未缓存输入$2、缓存$0.10、输出$10。
 - 七组合计Standard文本Token折算 **$11.695496**；不等于账户账单或实际额度扣减。
-- 定价是2026-09-30查阅的官方快照，见 [pricing.json](data/pricing.json) 及其中五个官方链接。
+- 定价是2026-09-30查阅的官方快照，见 [pricing.json](data/pricing.json) ；[站内费用依据](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/references/pricing-notes.html)与[GitHub文字说明](references/pricing-notes.md)列出来源和参数。
 
 ## Fast：估算，不是重复实测
 
@@ -83,11 +83,7 @@
 
 原07有一次约4分36秒失败的浏览器检查，后续重试通过；这影响原交付时间，不直接证明成品错误。原03最终交付时未完成画面验收，本次补测已确认可用，补测时间没有加回原耗时。
 
-## 视频呈现与文件完整性
-
-唯一正式视频95秒、1080×1920、30fps、H.264、无音轨。先逐组展示原场景、飞鸟和统一主体，字幕同时给出优点、源码事实与简化；再给质量榜、动态九宫格、时间/费用与Fast情景。九宫格按原编号排列，不按排名重排。镜头在诊断副本调整；原网页不受影响。
-
-视频在默认速度下用33.333ms的模拟步长逐帧生成，保留各原动画；01/02/06包含日落。剪辑经过FFmpeg完整解码检查。参数、SHA-256与章节见 [douyin-video-manifest.json](evidence/douyin-video-manifest.json)。镜头录制状态见 [social-capture.json](evidence/social-capture.json)。
+## 原交付文件完整性
 
 [artifact-manifest.json](data/artifact-manifest.json) 给出七份原成品和源码的SHA-256，公开HTML与原交付字节相同。源码可重建，但不同构建器/依赖解析可能改变压缩字节，不要求重建产物和原HTML哈希相同。
 
