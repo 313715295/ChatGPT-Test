@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import fs from 'node:fs';
+import path from 'node:path';
+const dir = path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/, '$1'));
+const result = await build({ entryPoints:[path.join(dir,'scene.js')], bundle:true, minify:true, format:'iife', target:['es2020'], write:false, legalComments:'inline' });
+const js = result.outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
+const license = fs.readFileSync(path.join(dir,'node_modules','three','LICENSE'),'utf8');
+const page = fs.readFileSync(path.join(dir,'page.html'),'utf8').replace('<!--SCENE_SCRIPT-->', () => `<!-- Three.js license\n${license}\n-->\n<script>${js}</script>`);
+const out = path.join(dir,'..','outputs','cat-coastal-ride.html');
+fs.writeFileSync(out,page);
+console.log(JSON.stringify({file:out,bytes:Buffer.byteLength(page),offline:true}));

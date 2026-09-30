@@ -1,0 +1,9 @@
+**/node_modules/
+**/__pycache__/
+qa-results/
+.local-qa/
+**/sources/*/outputs/
+**/sources/*/work/outputs/
+**/sources/*/work/bundle.js
+.DS_Store
+Thumbs.db

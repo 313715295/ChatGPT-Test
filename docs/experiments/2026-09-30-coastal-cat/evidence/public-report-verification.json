@@ -1,0 +1,24 @@
+{
+  "page_errors": [],
+  "failed_requests": [],
+  "home_title": "ChatGPT Test｜作品、时间、费用与质量",
+  "report_title": "七个会话试验对比｜耗时、费用与动态质量",
+  "subject_rows": 7,
+  "fastest": "3",
+  "cheapest": "7",
+  "fast_scenario_2": [
+    "13:35",
+    "13:32",
+    "9:21"
+  ],
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "duration": 95,
+    "source": "/media/coastal-cat-review-1080p.mp4"
+  },
+  "mobile_width": 390,
+  "code_anchor": 1,
+  "returned_to_report": true,
+  "status": "PASS"
+}

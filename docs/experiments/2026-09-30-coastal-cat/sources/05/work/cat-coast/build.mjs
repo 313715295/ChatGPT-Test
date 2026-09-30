@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+const bundle = await build({ entryPoints: [resolve('main.js')], bundle: true, minify: true, format: 'iife', target: ['es2020'], write: false, legalComments: 'inline' });
+const script = bundle.outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
+const threeLicense = readFileSync('node_modules/three/LICENSE', 'utf8');
+const template = readFileSync('index.template.html', 'utf8').replace('<head>', '<head>\n<!-- Three.js license\n' + threeLicense + '\n-->');
+const out = resolve('../../outputs');
+mkdirSync(out, { recursive: true });
+writeFileSync(resolve(out, 'cat-coast-ride.html'), template.replace('/* SCENE_BUNDLE */', () => script));
+console.log('Offline HTML ready:', resolve(out, 'cat-coast-ride.html'));

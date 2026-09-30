@@ -1,0 +1,1793 @@
+[
+  {
+    "order": 1,
+    "mobile_default": {
+      "ready": true,
+      "three": "186",
+      "frames": 40,
+      "paused": false,
+      "distance": 13.33333333333334,
+      "time": 2.000000000000001,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333334,
+      "frontWheelAngle": -33.33333333333334,
+      "camera": "coast",
+      "cameraPosition": [
+        8.523964102812675,
+        4.531443006175288,
+        16.279957122180296
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      "drawCalls": 267,
+      "triangles": 360150,
+      "canvas": [
+        390,
+        844
+      ],
+      "networkFree": true
+    },
+    "mobile_view1": {
+      "ready": true,
+      "three": "186",
+      "frames": 65,
+      "paused": false,
+      "distance": 21.666666666666657,
+      "time": 3.2499999999999964,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -54.16666666666664,
+      "frontWheelAngle": -54.16666666666664,
+      "camera": "close",
+      "cameraPosition": [
+        6.460332483125073,
+        3.4210819391949734,
+        8.982566114452947
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        98.33333333333334,
+        -61.66666666666666,
+        -21.66666666666663,
+        18.33333333333337,
+        58.33333333333337
+      ],
+      "drawCalls": 239,
+      "triangles": 360176,
+      "canvas": [
+        390,
+        844
+      ],
+      "networkFree": true
+    },
+    "mobile_view2": {
+      "ready": true,
+      "three": "186",
+      "frames": 90,
+      "paused": false,
+      "distance": 29.99999999999996,
+      "time": 4.499999999999992,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -74.9999999999999,
+      "frontWheelAngle": -74.9999999999999,
+      "camera": "wide",
+      "cameraPosition": [
+        10.336420696006924,
+        23.828993519104397,
+        18.507197991151592
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        90.00000000000006,
+        -69.99999999999994,
+        -29.999999999999943,
+        10.000000000000057,
+        50.00000000000006
+      ],
+      "drawCalls": 233,
+      "triangles": 348294,
+      "canvas": [
+        390,
+        844
+      ],
+      "networkFree": true
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "light",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 38,
+          "height": 38
+        },
+        {
+          "id": "fullscreen",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 38,
+          "height": 38
+        },
+        {
+          "id": "play",
+          "text": "暂停",
+          "visible": true,
+          "inBounds": true,
+          "width": 84,
+          "height": 44
+        },
+        {
+          "id": "",
+          "text": "沿海跟拍",
+          "visible": true,
+          "inBounds": true,
+          "width": 72,
+          "height": 40
+        },
+        {
+          "id": "",
+          "text": "猫咪特写",
+          "visible": true,
+          "inBounds": true,
+          "width": 72,
+          "height": 40
+        },
+        {
+          "id": "",
+          "text": "高空漫游",
+          "visible": true,
+          "inBounds": true,
+          "width": 72,
+          "height": 40
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 145,
+          "height": 4
+        },
+        {
+          "id": "",
+          "text": "重新出发",
+          "visible": false,
+          "inBounds": true,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "ready": true,
+      "three": "186",
+      "frames": 100,
+      "paused": true,
+      "distance": 29.99999999999996,
+      "time": 4.499999999999992,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -74.9999999999999,
+      "frontWheelAngle": -74.9999999999999,
+      "camera": "wide",
+      "cameraPosition": [
+        7.656130412426253,
+        17.861823016737464,
+        13.242429314415846
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        90.00000000000006,
+        -69.99999999999994,
+        -29.999999999999943,
+        10.000000000000057,
+        50.00000000000006
+      ],
+      "drawCalls": 242,
+      "triangles": 363524,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "keyboard_resume": {
+      "ready": true,
+      "three": "186",
+      "frames": 110,
+      "paused": false,
+      "distance": 33.33333333333329,
+      "time": 4.99999999999999,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -83.33333333333323,
+      "frontWheelAngle": -83.33333333333323,
+      "camera": "wide",
+      "cameraPosition": [
+        7.656116051049003,
+        17.86192183531282,
+        13.242427137498117
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        86.66666666666671,
+        -73.33333333333329,
+        -33.33333333333326,
+        6.6666666666667425,
+        46.66666666666674
+      ],
+      "drawCalls": 243,
+      "triangles": 375900,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "drag_state": {
+      "ready": true,
+      "three": "186",
+      "frames": 130,
+      "paused": false,
+      "distance": 40.00000000000001,
+      "time": 5.999999999999987,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -100.00000000000001,
+      "frontWheelAngle": -100.00000000000001,
+      "camera": "wide",
+      "cameraPosition": [
+        11.789788274487545,
+        21.38230738851823,
+        1.8564347267221961
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        80,
+        -80,
+        -40,
+        0,
+        40
+      ],
+      "drawCalls": 237,
+      "triangles": 377972,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "zoom_state": {
+      "ready": true,
+      "three": "186",
+      "frames": 150,
+      "paused": false,
+      "distance": 46.66666666666672,
+      "time": 6.999999999999983,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -116.6666666666668,
+      "frontWheelAngle": -116.6666666666668,
+      "camera": "wide",
+      "cameraPosition": [
+        16.69540089473817,
+        29.954270387966083,
+        3.3645048674108913
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        73.33333333333329,
+        -86.66666666666671,
+        -46.666666666666714,
+        -6.6666666666667425,
+        33.33333333333326
+      ],
+      "drawCalls": 235,
+      "triangles": 366058,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "reduced_state": {
+      "ready": true,
+      "three": "186",
+      "frames": 20,
+      "paused": true,
+      "distance": 0,
+      "time": 0,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": 0,
+      "frontWheelAngle": 0,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -80,
+        -40,
+        0,
+        40,
+        80
+      ],
+      "drawCalls": 299,
+      "triangles": 411572,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    }
+  },
+  {
+    "order": 2,
+    "mobile_default": {
+      "ready": true,
+      "three": "160",
+      "time": 2.000000000000001,
+      "distance": 13.3334,
+      "frontDistance": 13.34108216666244,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417582,
+      "frontWheel": -29.321059706950418,
+      "steering": -0.03642390603145886,
+      "position": [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 161,
+      "triangles": 119234,
+      "canvas": [
+        390,
+        844
+      ]
+    },
+    "mobile_view1": {
+      "ready": true,
+      "three": "160",
+      "time": 3.2499999999999964,
+      "distance": 21.66677500000003,
+      "frontDistance": 21.680737363544434,
+      "paused": false,
+      "speed": 1,
+      "camera": 1,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -47.61928571428578,
+      "frontWheel": -47.64997222757018,
+      "steering": -0.042076903451230455,
+      "position": [
+        28.207782047027614,
+        0.35500000000000004,
+        28.32829097468191
+      ],
+      "heading": 0.45037708090244427,
+      "renderCalls": 169,
+      "triangles": 123680,
+      "canvas": [
+        390,
+        844
+      ]
+    },
+    "mobile_view2": {
+      "ready": true,
+      "three": "160",
+      "time": 4.499999999999992,
+      "distance": 30.000150000000072,
+      "frontDistance": 30.02277646956706,
+      "paused": false,
+      "speed": 1,
+      "camera": 2,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -65.93439560439576,
+      "frontWheel": -65.98412410893859,
+      "steering": -0.05031258874182787,
+      "position": [
+        35.37998912118905,
+        0.35500000000000004,
+        24.104534581625174
+      ],
+      "heading": 0.6192042664725451,
+      "renderCalls": 174,
+      "triangles": 124898,
+      "canvas": [
+        390,
+        844
+      ]
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "pause",
+          "text": "Ⅱ暂停",
+          "visible": true,
+          "inBounds": true,
+          "width": 83,
+          "height": 40
+        },
+        {
+          "id": "camera",
+          "text": "海岸全景",
+          "visible": true,
+          "inBounds": true,
+          "width": 68,
+          "height": 40
+        },
+        {
+          "id": "light",
+          "text": "切换日落",
+          "visible": true,
+          "inBounds": true,
+          "width": 68,
+          "height": 40
+        },
+        {
+          "id": "reset",
+          "text": "重置",
+          "visible": true,
+          "inBounds": true,
+          "width": 44,
+          "height": 40
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 150,
+          "height": 16
+        },
+        {
+          "id": "",
+          "text": "重新加载",
+          "visible": false,
+          "inBounds": true,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "ready": true,
+      "three": "160",
+      "time": 4.499999999999992,
+      "distance": 30.000150000000072,
+      "frontDistance": 30.02277646956706,
+      "paused": true,
+      "speed": 1,
+      "camera": 2,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -65.93439560439576,
+      "frontWheel": -65.98412410893859,
+      "steering": -0.05031258874182787,
+      "position": [
+        35.37998912118905,
+        0.35500000000000004,
+        24.104534581625174
+      ],
+      "heading": 0.6192042664725451,
+      "renderCalls": 197,
+      "triangles": 129868,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "keyboard_resume": {
+      "ready": true,
+      "three": "160",
+      "time": 4.99999999999999,
+      "distance": 33.33350000000007,
+      "frontDistance": 33.3606734976869,
+      "paused": false,
+      "speed": 1,
+      "camera": 2,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -73.26043956043972,
+      "frontWheel": -73.32016153337781,
+      "steering": -0.05516437658823254,
+      "position": [
+        38.0179913946617,
+        0.35500000000000004,
+        22.068209093558888
+      ],
+      "heading": 0.6966252880966806,
+      "renderCalls": 197,
+      "triangles": 129868,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "drag_state": {
+      "ready": true,
+      "three": "160",
+      "time": 5.999999999999987,
+      "distance": 40.000200000000035,
+      "frontDistance": 40.039298223572146,
+      "paused": false,
+      "speed": 1,
+      "camera": 2,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -87.91252747252754,
+      "frontWheel": -87.9984576342245,
+      "steering": -0.06586392488080972,
+      "position": [
+        42.739441721097,
+        0.35500000000000004,
+        17.373875716267566
+      ],
+      "heading": 0.8737911684610049,
+      "renderCalls": 199,
+      "triangles": 129910,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "zoom_state": {
+      "ready": true,
+      "three": "160",
+      "time": 6.999999999999983,
+      "distance": 46.6669,
+      "frontDistance": 46.72322422776894,
+      "paused": false,
+      "speed": 1,
+      "camera": 2,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -102.56461538461538,
+      "frontWheel": -102.68840489619546,
+      "steering": -0.07913054033065137,
+      "position": [
+        46.461711138194964,
+        0.35500000000000004,
+        11.858288059031086
+      ],
+      "heading": 1.086864906516867,
+      "renderCalls": 202,
+      "triangles": 130794,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "reduced_state": {
+      "ready": true,
+      "three": "160",
+      "time": 0,
+      "distance": 0,
+      "frontDistance": 0,
+      "paused": true,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": 0,
+      "frontWheel": 0,
+      "steering": -0.03220986612635594,
+      "position": [
+        7.430831285069738,
+        0.35500000000000004,
+        34.088958057527456
+      ],
+      "heading": 0.10546154645809883,
+      "renderCalls": 169,
+      "triangles": 123064,
+      "canvas": [
+        1280,
+        720
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "mobile_default": {
+      "distance": 7.600000000000007,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -16.34408602150539,
+      "drawCalls": 179,
+      "triangles": 64480
+    },
+    "mobile_view1": {
+      "distance": 12.349999999999996,
+      "time": 3.2499999999999964,
+      "paused": false,
+      "speed": 1,
+      "view": 1,
+      "wheelAngle": -26.559139784946225,
+      "drawCalls": 124,
+      "triangles": 48164
+    },
+    "mobile_view2": {
+      "distance": 17.099999999999994,
+      "time": 4.499999999999992,
+      "paused": false,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -36.77419354838708,
+      "drawCalls": 146,
+      "triangles": 50525
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "play",
+          "text": "Ⅱ 暂停",
+          "visible": true,
+          "inBounds": true,
+          "width": 64,
+          "height": 39
+        },
+        {
+          "id": "view",
+          "text": "◎ 后方追逐",
+          "visible": true,
+          "inBounds": true,
+          "width": 83,
+          "height": 39
+        },
+        {
+          "id": "reset",
+          "text": "↺ 重置",
+          "visible": true,
+          "inBounds": true,
+          "width": 61,
+          "height": 39
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 62,
+          "height": 16
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "distance": 17.099999999999994,
+      "time": 4.499999999999992,
+      "paused": true,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -36.77419354838708,
+      "drawCalls": 238,
+      "triangles": 64185
+    },
+    "keyboard_resume": {
+      "distance": 19.000000000000007,
+      "time": 4.99999999999999,
+      "paused": false,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -40.860215053763454,
+      "drawCalls": 238,
+      "triangles": 64185
+    },
+    "drag_state": {
+      "distance": 22.800000000000033,
+      "time": 5.999999999999987,
+      "paused": false,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -49.0322580645162,
+      "drawCalls": 158,
+      "triangles": 54172
+    },
+    "zoom_state": {
+      "distance": 26.60000000000006,
+      "time": 6.999999999999983,
+      "paused": false,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -57.20430107526894,
+      "drawCalls": 190,
+      "triangles": 58680
+    },
+    "reduced_state": {
+      "distance": 0,
+      "time": 0,
+      "paused": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": 0,
+      "drawCalls": 245,
+      "triangles": 73812
+    }
+  },
+  {
+    "order": 4,
+    "mobile_default": {
+      "distance": 10.79999999999999,
+      "time": 2.000000000000001,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -24.82758620689653,
+      "frames": 40,
+      "drawCalls": 186
+    },
+    "mobile_view1": {
+      "distance": 17.54999999999998,
+      "time": 3.2499999999999964,
+      "running": true,
+      "speed": 1,
+      "view": 1,
+      "wheelAngle": -40.34482758620685,
+      "frames": 65,
+      "drawCalls": 224
+    },
+    "mobile_view2": {
+      "distance": 24.29999999999997,
+      "time": 4.499999999999992,
+      "running": true,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -55.86206896551717,
+      "frames": 90,
+      "drawCalls": 176
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "pause",
+          "text": "Ⅱ 暂停",
+          "visible": true,
+          "inBounds": true,
+          "width": 87,
+          "height": 40
+        },
+        {
+          "id": "view",
+          "text": "◈ 海岸全景",
+          "visible": true,
+          "inBounds": true,
+          "width": 76,
+          "height": 40
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 55,
+          "height": 16
+        },
+        {
+          "id": "reset",
+          "text": "↺",
+          "visible": true,
+          "inBounds": true,
+          "width": 25,
+          "height": 38
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "distance": 24.29999999999997,
+      "time": 4.499999999999992,
+      "running": false,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -55.86206896551717,
+      "frames": 100,
+      "drawCalls": 337
+    },
+    "keyboard_resume": {
+      "distance": 26.999999999999964,
+      "time": 4.99999999999999,
+      "running": true,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -62.068965517241296,
+      "frames": 110,
+      "drawCalls": 297
+    },
+    "drag_state": {
+      "distance": 32.39999999999996,
+      "time": 5.999999999999987,
+      "running": true,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -74.48275862068957,
+      "frames": 130,
+      "drawCalls": 311
+    },
+    "zoom_state": {
+      "distance": 37.800000000000026,
+      "time": 6.999999999999983,
+      "running": true,
+      "speed": 1,
+      "view": 2,
+      "wheelAngle": -86.89655172413799,
+      "frames": 150,
+      "drawCalls": 361
+    },
+    "reduced_state": {
+      "distance": 0,
+      "time": 0,
+      "running": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": 0,
+      "frames": 20,
+      "drawCalls": 393
+    }
+  },
+  {
+    "order": 5,
+    "mobile_default": {
+      "paused": false,
+      "speed": 24,
+      "path": 13.33285010860518,
+      "distance": 13.333321274577528,
+      "time": 2.000000000000001,
+      "frames": 40,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 30.30300289676711,
+      "frontAngle": 30.30300289676711,
+      "position": [
+        -0.8000424705447275,
+        0.18,
+        13.33285010860518
+      ],
+      "heading": -0.00034969870586902335,
+      "camera": [
+        4.832556660330951,
+        4.032817715289118,
+        18.913845744369684
+      ],
+      "drawCalls": 172,
+      "triangles": 136186,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.293897420167923,
+        1.928695559501648,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "mobile_view1": {
+      "paused": false,
+      "speed": 24,
+      "path": 21.666015974991893,
+      "distance": 21.666663285011925,
+      "time": 3.2499999999999964,
+      "frames": 65,
+      "view": "side",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 49.242416556845285,
+      "frontAngle": 49.242416556845285,
+      "position": [
+        -0.8484431721304735,
+        0.18,
+        21.666015974991893
+      ],
+      "heading": -0.01028181965404743,
+      "camera": [
+        6.93157735474842,
+        4.1593770933055865,
+        21.90891816374195
+      ],
+      "drawCalls": 164,
+      "triangles": 116178,
+      "yaw": 1.539585186722389,
+      "radius": 8.200055308437015,
+      "scarfTip": [
+        -0.2818581461906433,
+        1.9275002479553223,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "mobile_view2": {
+      "paused": false,
+      "speed": 24,
+      "path": 29.99879876874132,
+      "distance": 29.99999758716831,
+      "time": 4.499999999999992,
+      "frames": 90,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 68.1818126981098,
+      "frontAngle": 68.1818126981098,
+      "position": [
+        -0.9442391172988887,
+        0.18,
+        29.99879876874132
+      ],
+      "heading": -0.010761450901219265,
+      "camera": [
+        13.167275833981995,
+        12.989462396732453,
+        42.13837088903547
+      ],
+      "drawCalls": 164,
+      "triangles": 116178,
+      "yaw": 0.8603758679449601,
+      "radius": 19.49375017720756,
+      "scarfTip": [
+        -0.27303647994995117,
+        1.9262460470199585,
+        -1.3700000047683716
+      ],
+      "eyeScale": 0.8181818181818895,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "play",
+          "text": "暂停骑行",
+          "visible": true,
+          "inBounds": true,
+          "width": 91,
+          "height": 36
+        },
+        {
+          "id": "",
+          "text": "跟随",
+          "visible": true,
+          "inBounds": true,
+          "width": 46,
+          "height": 36
+        },
+        {
+          "id": "",
+          "text": "侧面",
+          "visible": true,
+          "inBounds": true,
+          "width": 46,
+          "height": 36
+        },
+        {
+          "id": "",
+          "text": "全景",
+          "visible": true,
+          "inBounds": true,
+          "width": 46,
+          "height": 36
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 117,
+          "height": 16
+        },
+        {
+          "id": "sound",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 32,
+          "height": 30
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "paused": true,
+      "speed": 24,
+      "path": 29.99879876874132,
+      "distance": 29.99999758716831,
+      "time": 4.499999999999992,
+      "frames": 100,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 68.1818126981098,
+      "frontAngle": 68.1818126981098,
+      "position": [
+        -0.9442391172988887,
+        0.18,
+        29.99879876874132
+      ],
+      "heading": -0.010761450901219265,
+      "camera": [
+        11.426011275813005,
+        11.622133033406337,
+        41.1099505670047
+      ],
+      "drawCalls": 188,
+      "triangles": 166066,
+      "yaw": 0.860018713363073,
+      "radius": 19.499688839645344,
+      "scarfTip": [
+        -0.27303647994995117,
+        1.9262460470199585,
+        -1.3700000047683716
+      ],
+      "eyeScale": 0.8181818181818895,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "keyboard_resume": {
+      "paused": false,
+      "speed": 24,
+      "path": 33.33197821763726,
+      "distance": 33.333326401956064,
+      "time": 4.99999999999999,
+      "frames": 110,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 75.7575600044456,
+      "frontAngle": 75.7575600044456,
+      "position": [
+        -0.9756696193774596,
+        0.18,
+        33.33197821763726
+      ],
+      "heading": -0.007845039201763769,
+      "camera": [
+        11.394527736193908,
+        11.622387624591896,
+        44.443474413731145
+      ],
+      "drawCalls": 187,
+      "triangles": 166054,
+      "yaw": 0.8600009316834867,
+      "radius": 19.49998450823815,
+      "scarfTip": [
+        -0.3751268684864044,
+        1.8552862405776978,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "drag_state": {
+      "paused": false,
+      "speed": 24,
+      "path": 39.99857426644174,
+      "distance": 39.9999878830259,
+      "time": 5.999999999999987,
+      "frames": 130,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 90.90906337051341,
+      "frontAngle": 90.90906337051341,
+      "position": [
+        -0.9996179564284785,
+        0.18,
+        39.99857426644174
+      ],
+      "heading": 0.0010479422202554617,
+      "camera": [
+        -2.6864657962780933,
+        15.273721323544887,
+        53.63229799782248
+      ],
+      "drawCalls": 178,
+      "triangles": 153066,
+      "yaw": -0.09762039560098769,
+      "radius": 19.499999961599762,
+      "scarfTip": [
+        -0.3118007183074951,
+        1.9283826351165771,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "zoom_state": {
+      "paused": false,
+      "speed": 24,
+      "path": 46.66512878780917,
+      "distance": 46.666661561208436,
+      "time": 6.999999999999983,
+      "frames": 150,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 106.0605944572919,
+      "frontAngle": 106.0605944572919,
+      "position": [
+        -0.9631409754286036,
+        0.18,
+        46.66512878780917
+      ],
+      "heading": 0.009305123843216169,
+      "camera": [
+        -3.254281379020429,
+        21.072348348690358,
+        65.99542026655068
+      ],
+      "drawCalls": 180,
+      "triangles": 153086,
+      "yaw": -0.09999410155041621,
+      "radius": 27.651561287807542,
+      "scarfTip": [
+        -0.26754453778266907,
+        1.9235663414001465,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "desktop_view1": {
+      "paused": false,
+      "speed": 24,
+      "path": 21.666015974991893,
+      "distance": 21.666663285011925,
+      "time": 3.2499999999999964,
+      "frames": 65,
+      "view": "side",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 49.242416556845285,
+      "frontAngle": 49.242416556845285,
+      "position": [
+        -0.8484431721304735,
+        0.18,
+        21.666015974991893
+      ],
+      "heading": -0.01028181965404743,
+      "camera": [
+        6.906612496342594,
+        4.009377093305586,
+        22.708528541266393
+      ],
+      "drawCalls": 165,
+      "triangles": 116226,
+      "yaw": 1.539585186722389,
+      "radius": 8.200055308437015,
+      "scarfTip": [
+        -0.2818581461906433,
+        1.9275002479553223,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "desktop_view2": {
+      "paused": false,
+      "speed": 24,
+      "path": 29.99879876874132,
+      "distance": 29.99999758716831,
+      "time": 4.499999999999992,
+      "frames": 90,
+      "view": "wide",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 68.1818126981098,
+      "frontAngle": 68.1818126981098,
+      "position": [
+        -0.9442391172988887,
+        0.18,
+        29.99879876874132
+      ],
+      "heading": -0.010761450901219265,
+      "camera": [
+        11.427074402812687,
+        11.617019997082545,
+        41.103033156465884
+      ],
+      "drawCalls": 188,
+      "triangles": 166066,
+      "yaw": 0.8603758679449601,
+      "radius": 19.49375017720756,
+      "scarfTip": [
+        -0.27303647994995117,
+        1.9262460470199585,
+        -1.3700000047683716
+      ],
+      "eyeScale": 0.8181818181818895,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "reduced_state": {
+      "paused": true,
+      "speed": 24,
+      "path": 0,
+      "distance": 0,
+      "time": 0,
+      "frames": 20,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 0,
+      "frontAngle": 0,
+      "position": [
+        -0.9,
+        0.18,
+        0
+      ],
+      "heading": 0.011999424049761282,
+      "camera": [
+        4.16952287835389,
+        3.882817715289119,
+        6.149278253698589
+      ],
+      "drawCalls": 195,
+      "triangles": 202910,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.35838425159454346,
+        1.847212314605713,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  {
+    "order": 6,
+    "mobile_default": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 9,
+      "time": 1.800000000000001,
+      "rearWheelAngle": -24.999999999999982,
+      "frontWheelAngle": -25.00000024742746,
+      "wheelRadius": 0.36,
+      "steering": 0.00023672828033875404,
+      "gripError": 4.965068306494546e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 36,
+      "renderCalls": 261,
+      "triangles": 102832,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5845458159860215
+      ],
+      "camera": [
+        7.62,
+        5.1354999999999995,
+        11.353243085612263
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.3429620317972745
+      ]
+    },
+    "mobile_view1": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 15,
+      "time": 2.9999999999999973,
+      "rearWheelAngle": -41.666666666666615,
+      "frontWheelAngle": -41.66666774219078,
+      "wheelRadius": 0.36,
+      "steering": 0.00037943972391158066,
+      "gripError": 3.1401849173675503e-16,
+      "view": 1,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 60,
+      "renderCalls": 262,
+      "triangles": 104034,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.6355141936148085
+      ],
+      "camera": [
+        0.26423908219328524,
+        4.387456516833214,
+        13.275392447992555
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.3600601424910994
+      ]
+    },
+    "mobile_view2": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 22.5,
+      "time": 4.499999999999992,
+      "rearWheelAngle": -62.4999999999999,
+      "frontWheelAngle": -62.50000328675068,
+      "wheelRadius": 0.36,
+      "steering": 0.0005263956346495931,
+      "gripError": 2.482534153247273e-16,
+      "view": 2,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 90,
+      "renderCalls": 263,
+      "triangles": 122432,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.687998458310596
+      ],
+      "camera": [
+        11.354181166743045,
+        13.771283509214637,
+        23.83474098238605
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.19878260393992372
+      ]
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "play",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 40,
+          "height": 40
+        },
+        {
+          "id": "speedControl",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 96,
+          "height": 4
+        },
+        {
+          "id": "view",
+          "text": "海岸全景",
+          "visible": true,
+          "inBounds": true,
+          "width": 34,
+          "height": 40
+        },
+        {
+          "id": "sunset",
+          "text": "晴日",
+          "visible": true,
+          "inBounds": true,
+          "width": 34,
+          "height": 40
+        },
+        {
+          "id": "horn",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 34,
+          "height": 40
+        },
+        {
+          "id": "",
+          "text": "重新打开海岸",
+          "visible": false,
+          "inBounds": true,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "ready": true,
+      "paused": true,
+      "kmh": 18,
+      "distance": 22.5,
+      "time": 4.499999999999992,
+      "rearWheelAngle": -62.4999999999999,
+      "frontWheelAngle": -62.50000328675068,
+      "wheelRadius": 0.36,
+      "steering": 0.0005263956346495931,
+      "gripError": 2.482534153247273e-16,
+      "view": -1,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 96,
+      "renderCalls": 278,
+      "triangles": 147070,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.687998458310596
+      ],
+      "camera": [
+        11.354181166743045,
+        13.771283509214637,
+        23.83474098238605
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.19878260393992372
+      ]
+    },
+    "keyboard_resume": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 24.5,
+      "time": 4.899999999999991,
+      "rearWheelAngle": -68.05555555555544,
+      "frontWheelAngle": -68.05555966612157,
+      "wheelRadius": 0.36,
+      "steering": 0.0005580941750275652,
+      "gripError": 4.965068306494546e-16,
+      "view": -1,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 108,
+      "renderCalls": 275,
+      "triangles": 137930,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.699319368918073
+      ],
+      "camera": [
+        11.354181166743045,
+        13.771283509214637,
+        23.83474098238605
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.32935667026725834
+      ]
+    },
+    "drag_state": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 29,
+      "time": 5.799999999999987,
+      "rearWheelAngle": -80.55555555555542,
+      "frontWheelAngle": -80.55556184560092,
+      "wheelRadius": 0.36,
+      "steering": 0.0006160916111448826,
+      "gripError": 3.1401849173675503e-16,
+      "view": -1,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 126,
+      "renderCalls": 264,
+      "triangles": 143686,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.720032746105224
+      ],
+      "camera": [
+        -10.874823499216033,
+        23.062357875725965,
+        15.059235723030511
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.4421144992638876
+      ]
+    },
+    "zoom_state": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 35,
+      "time": 6.999999999999983,
+      "rearWheelAngle": -97.22222222222204,
+      "frontWheelAngle": -97.22223196124678,
+      "wheelRadius": 0.36,
+      "steering": 0.0006622221217490094,
+      "gripError": 2.482534153247273e-16,
+      "view": -1,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 150,
+      "renderCalls": 263,
+      "triangles": 142546,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.7365079351972303
+      ],
+      "camera": [
+        -12.128014831248208,
+        24.517633353054272,
+        11.454626090333651
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.12656242638047696
+      ]
+    },
+    "reduced_state": {
+      "ready": true,
+      "paused": true,
+      "kmh": 18,
+      "distance": 0,
+      "time": 0,
+      "rearWheelAngle": 0,
+      "frontWheelAngle": 0,
+      "wheelRadius": 0.36,
+      "steering": 0,
+      "gripError": 2.482534153247273e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 18,
+      "renderCalls": 295,
+      "triangles": 138530,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5
+      ],
+      "camera": [
+        6.000000000000001,
+        3.6500000000000012,
+        9.2
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.3139904013701774
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "mobile_default": {
+      "distance": 13.600000000000009,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.24416140384000443,
+      "wheelRotation": 39.76608187134505,
+      "wheelRadius": 0.342,
+      "position": [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      "frame": 40,
+      "drawCalls": 133,
+      "triangles": 96796
+    },
+    "mobile_view1": {
+      "distance": 19.599999999999987,
+      "time": 3.2499999999999964,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 1,
+      "angle": 0.35448887931779366,
+      "wheelRotation": 57.309941520467795,
+      "wheelRadius": 0.342,
+      "position": [
+        30.372464760562874,
+        0.122,
+        19.451175493147844
+      ],
+      "frame": 65,
+      "drawCalls": 340,
+      "triangles": 127722
+    },
+    "mobile_view2": {
+      "distance": 25.599999999999948,
+      "time": 4.499999999999992,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 2,
+      "angle": 0.4678244772073805,
+      "wheelRotation": 74.85380116959048,
+      "wheelRadius": 0.342,
+      "position": [
+        28.862677604867034,
+        0.122,
+        25.256649135475044
+      ],
+      "frame": 90,
+      "drawCalls": 187,
+      "triangles": 82692
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "id": "pause",
+          "text": "Ⅱ 暂停骑行",
+          "visible": true,
+          "inBounds": true,
+          "width": 101,
+          "height": 38
+        },
+        {
+          "id": "view",
+          "text": "海岸全景",
+          "visible": true,
+          "inBounds": true,
+          "width": 62,
+          "height": 38
+        },
+        {
+          "id": "speed",
+          "text": "",
+          "visible": true,
+          "inBounds": true,
+          "width": 50,
+          "height": 16
+        },
+        {
+          "id": "reset",
+          "text": "↺",
+          "visible": true,
+          "inBounds": true,
+          "width": 23,
+          "height": 34
+        }
+      ]
+    },
+    "keyboard_pause": {
+      "distance": 25.599999999999948,
+      "time": 4.499999999999992,
+      "paused": true,
+      "speed": 4.8,
+      "mode": 2,
+      "angle": 0.4678244772073805,
+      "wheelRotation": 74.85380116959048,
+      "wheelRadius": 0.342,
+      "position": [
+        28.862677604867034,
+        0.122,
+        25.256649135475044
+      ],
+      "frame": 100,
+      "drawCalls": 660,
+      "triangles": 163712
+    },
+    "keyboard_resume": {
+      "distance": 27.999999999999932,
+      "time": 4.99999999999999,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 2,
+      "angle": 0.5142658325757938,
+      "wheelRotation": 81.87134502923956,
+      "wheelRadius": 0.342,
+      "position": [
+        28.13340423675256,
+        0.122,
+        27.54306004230962
+      ],
+      "frame": 110,
+      "drawCalls": 664,
+      "triangles": 160464
+    },
+    "drag_state": {
+      "distance": 32.79999999999991,
+      "time": 5.999999999999987,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 2,
+      "angle": 0.6095340297842843,
+      "wheelRotation": 95.90643274853775,
+      "wheelRadius": 0.342,
+      "position": [
+        26.446244208054537,
+        0.122,
+        32.03573876201876
+      ],
+      "frame": 130,
+      "drawCalls": 790,
+      "triangles": 176063
+    },
+    "zoom_state": {
+      "distance": 37.59999999999995,
+      "time": 6.999999999999983,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 2,
+      "angle": 0.7086848599766685,
+      "wheelRotation": 109.94152046783611,
+      "wheelRadius": 0.342,
+      "position": [
+        24.433381682252197,
+        0.122,
+        36.391972474255105
+      ],
+      "frame": 150,
+      "drawCalls": 1339,
+      "triangles": 252050
+    },
+    "reduced_state": {
+      "distance": 4,
+      "time": 0,
+      "paused": true,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.07137346603512579,
+      "wheelRotation": 11.695906432748536,
+      "wheelRadius": 0.342,
+      "position": [
+        32.364843403058906,
+        0.122,
+        3.9987929441651193
+      ],
+      "frame": 20,
+      "drawCalls": 210,
+      "triangles": 111054
+    }
+  }
+]

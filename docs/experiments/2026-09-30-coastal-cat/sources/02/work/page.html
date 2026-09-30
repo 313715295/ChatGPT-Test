@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#c6e9e9"><title>沿海慢慢骑 · Coastal Cat</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font-family:system-ui,-apple-system,"Segoe UI","Microsoft Yahei",sans-serif;color:#234c50;background:#b9e2e6}canvas{display:block;width:100%;height:100%;touch-action:none}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}button:focus-visible,input:focus-visible{outline:3px solid #df8245;outline-offset:4px}.top{position:absolute;top:36px;left:42px;pointer-events:none}.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;margin-bottom:12px}h1{font-size:clamp(27px,3.4vw,46px);font-weight:650;letter-spacing:4px;margin:0 0 12px;line-height:1.3}.caption{font-size:13px;letter-spacing:2px;color:#486e70}.weather{position:absolute;top:38px;right:40px;font-size:12px;letter-spacing:2px;display:flex;align-items:center;gap:10px}.sun-icon{width:17px;height:17px;border-radius:50%;background:#edb65c;box-shadow:0 0 0 4px #fff6}.readout{position:absolute;left:42px;bottom:112px;pointer-events:none}.speed-n{font-size:46px;line-height:1;font-weight:350;letter-spacing:-2px;font-variant-numeric:tabular-nums}.unit{font-size:12px;letter-spacing:1px;margin-left:9px}.trip{font-size:11px;letter-spacing:1.6px;margin-top:10px}.controls{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:10px;border:1px solid #ffffff9c;border-radius:22px;background:#f8fbf3dd;box-shadow:0 8px 36px #29575a1a;backdrop-filter:blur(16px);max-width:calc(100% - 24px)}.controls button{height:44px;border:0;border-radius:13px;padding:0 15px;white-space:nowrap;font-size:13px;color:#305556;background:transparent}.controls button:hover{background:#deeae1}.controls button.primary{min-width:83px;background:#285e5c;color:#fff}.controls button.primary:hover{background:#1a4d4b}.icon{font-size:14px;margin-right:7px}.divider{width:1px;height:27px;background:#bdcebf;margin:0 4px}.slider{display:flex;align-items:center;gap:10px;padding:0 10px;font-size:12px;white-space:nowrap}input[type=range]{width:94px;accent-color:#34756c;cursor:pointer}.hint{position:absolute;right:40px;bottom:116px;font-size:11px;letter-spacing:1px;color:#476c6d;text-align:right;line-height:1.9;pointer-events:none}.key{padding:1px 5px;border:1px solid #72938c66;border-radius:4px;font-size:10px}.loading,.error{position:absolute;inset:0;display:grid;place-content:center;background:#d9ede8;text-align:center;padding:32px;z-index:10}.loading span{display:block;margin-top:12px;font-size:13px}.error[hidden],.loading[hidden]{display:none}.error p{max-width:420px;line-height:1.8}.error button{border:0;border-radius:20px;background:#285e5c;color:#fff;padding:12px}.toast{position:absolute;left:50%;top:28px;transform:translateX(-50%);background:#f7fbefd9;border-radius:40px;padding:10px 20px;font-size:12px;opacity:0;transition:opacity .2s;pointer-events:none}.toast.show{opacity:1}
+@media(max-width:680px){.top{top:24px;left:22px}.eyebrow{font-size:9px;letter-spacing:2px;margin-bottom:9px}h1{letter-spacing:2px;font-size:29px}.caption{font-size:11px;letter-spacing:1px}.weather{right:22px;top:29px;font-size:10px}.weather .weather-text{display:none}.readout{left:23px;bottom:156px}.speed-n{font-size:36px}.hint{right:22px;bottom:160px;font-size:10px}.controls{bottom:18px;flex-wrap:wrap;justify-content:center;width:350px;gap:4px;padding:8px;border-radius:20px}.controls button{padding:0 10px;height:40px;font-size:12px}.controls .divider{display:none}.slider{justify-content:center;width:100%;height:32px}input[type=range]{width:150px}.toast{top:119px;white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="scene" aria-label="橘猫骑着薄荷绿电动车沿海岸公路行驶的交互式三维场景">请使用支持 WebGL 的浏览器观看。</canvas>
+<header class="top"><div class="eyebrow">COASTAL CAT CLUB &nbsp; / &nbsp; 001</div><h1>沿海慢慢骑</h1><div class="caption">带上好心情，去追一阵海风。</div></header>
+<div class="weather"><span class="sun-icon"></span><span class="weather-text" id="weatherText">晴 · 海风刚好</span></div>
+<div class="readout"><span class="speed-n" id="speedRead">24</span><span class="unit">km/h</span><div class="trip">海岸漫游 &nbsp; <span id="tripRead">0.00</span> km</div></div>
+<div class="hint">拖动环顾 · 滚轮缩放<br><span class="key">空格</span> 暂停 &nbsp; <span class="key">C</span> 切换镜头</div>
+<nav class="controls" aria-label="动画控制">
+<button id="pause" class="primary" aria-label="暂停动画"><span class="icon">Ⅱ</span>暂停</button>
+<button id="camera" aria-label="切换镜头">伴骑视角</button>
+<button id="light" aria-pressed="false">切换日落</button>
+<button id="reset" aria-label="重置旅程和视角">重置</button>
+<div class="divider"></div><label class="slider" for="speed">骑行速度 <input id="speed" type="range" min="0.4" max="1.7" step="0.1" value="1"><output id="speedOut">1.0×</output></label>
+</nav>
+<div id="toast" class="toast" role="status"></div>
+<div id="loading" class="loading"><div>海风正在赶来…<span>准备好和猫咪一起出发</span></div></div>
+<div id="error" class="error" hidden><h2>暂时无法开启 3D 场景</h2><p id="errorText">请使用最新版 Chrome 或 Edge，并开启浏览器的图形加速。</p><button onclick="location.reload()">重新加载</button></div>
+<script>/* THREE_LICENSE */
+/* THREE_LIBRARY */
+</script>
+<script>
+/* SCENE_SCRIPT */
+</script>
+</body></html>

@@ -1,0 +1,166 @@
+[
+  {
+    "order": 1,
+    "sha256": "7aad501ad71818cde6c70ba82af5e2ef5fd7420a745c7ef0b5c9ab6252d59d41",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 85,
+        "topic": "静态几何合并"
+      },
+      {
+        "line": 213,
+        "topic": "故障提示"
+      },
+      {
+        "line": 215,
+        "topic": "距离驱动姿态与景物"
+      },
+      {
+        "line": 236,
+        "topic": "逐帧光照混合"
+      }
+    ],
+    "source_file": "code-sources/01.js"
+  },
+  {
+    "order": 2,
+    "sha256": "6449c9cd015d53f9e083bc668b8ac8619cf3766a089c2de9f3128f1e405b60d8",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 115,
+        "topic": "环境合并与释放"
+      },
+      {
+        "line": 124,
+        "topic": "弧长、曲率、转向和骑姿"
+      },
+      {
+        "line": 161,
+        "topic": "contextLost与恢复策略"
+      },
+      {
+        "line": 164,
+        "topic": "前轮行程累积"
+      }
+    ],
+    "source_file": "code-sources/02.js"
+  },
+  {
+    "order": 3,
+    "sha256": "b8c2ea9b8137e271eb2fd49100bc29afe12af000e4bc56602b650ec30d2b0bd4",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 19,
+        "topic": "CPU水面几何"
+      },
+      {
+        "line": 25,
+        "topic": "统一rider层级与车轮"
+      },
+      {
+        "line": 53,
+        "topic": "距离、动画及水面法线更新缺项"
+      }
+    ],
+    "source_file": "code-sources/03.html"
+  },
+  {
+    "order": 4,
+    "sha256": "0756bbdda8fe3b7784f4287073dfa7363ce86fcde0bcc6369607013d7e1f8da3",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 56,
+        "topic": "共享骑乘模型层级"
+      },
+      {
+        "line": 82,
+        "topic": "距离驱动与循环路段"
+      },
+      {
+        "line": 87,
+        "topic": "海水法线每3帧更新"
+      },
+      {
+        "line": 94,
+        "topic": "挂在window的故障监听"
+      }
+    ],
+    "source_file": "code-sources/04.js"
+  },
+  {
+    "order": 5,
+    "sha256": "5a0494d8274d97aa5e0151da5f9770c03ff8cd0a8157adcd9d51aecde23dadcd",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 82,
+        "topic": "道路/环境几何合并"
+      },
+      {
+        "line": 367,
+        "topic": "猫姿态与围巾"
+      },
+      {
+        "line": 421,
+        "topic": "交互与音效"
+      },
+      {
+        "line": 465,
+        "topic": "图形恢复反馈"
+      },
+      {
+        "line": 478,
+        "topic": "实际位移、转向与车轮"
+      }
+    ],
+    "source_file": "code-sources/05.js"
+  },
+  {
+    "order": 6,
+    "sha256": "12edb3d6bd2b5b0f62ec0ddf6106b1761ea351c806fd90799d5379aebad63e5b",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 209,
+        "topic": "静态合并与几何释放"
+      },
+      {
+        "line": 504,
+        "topic": "人工图形恢复"
+      },
+      {
+        "line": 518,
+        "topic": "世界/局部坐标转换与握把连接"
+      },
+      {
+        "line": 594,
+        "topic": "转向、前轮行程与渲染循环"
+      }
+    ],
+    "source_file": "code-sources/06.js"
+  },
+  {
+    "order": 7,
+    "sha256": "179e9a947d4bd90de15d29c1170f2f540fbf4de1f43b0335886ee0f442cd4e2e",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 114,
+        "topic": "弧长查表"
+      },
+      {
+        "line": 136,
+        "topic": "上下文丢失及恢复"
+      },
+      {
+        "line": 138,
+        "topic": "切线朝向、车轮及动画"
+      }
+    ],
+    "source_file": "code-sources/07.js"
+  }
+]

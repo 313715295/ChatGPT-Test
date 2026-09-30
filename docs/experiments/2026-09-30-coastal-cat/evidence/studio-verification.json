@@ -1,0 +1,336 @@
+[
+  {
+    "order": 1,
+    "errors": [],
+    "before": {
+      "ready": true,
+      "three": "186",
+      "frames": 40,
+      "paused": false,
+      "distance": 13.33333333333334,
+      "time": 2.000000000000001,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333334,
+      "frontWheelAngle": -33.33333333333334,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      "drawCalls": 299,
+      "triangles": 398706,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.2648223932643297,
+        3.2421966928547583,
+        1.579200029373169
+      ],
+      "pairCount": 95
+    },
+    "geometry": {
+      "meshes": 88,
+      "uniqueGeometries": 59,
+      "vertices": 155115,
+      "triangles": 57381,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial",
+        "MeshBasicMaterial"
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "errors": [],
+    "before": {
+      "ready": true,
+      "three": "160",
+      "time": 2.000000000000001,
+      "distance": 13.3334,
+      "frontDistance": 13.34108216666244,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417582,
+      "frontWheel": -29.321059706950418,
+      "steering": -0.03642390603145886,
+      "position": [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 168,
+      "triangles": 117820,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        4.319855376056116,
+        4.045961177937713,
+        1.786880755200608
+      ],
+      "pairCount": 151
+    },
+    "geometry": {
+      "meshes": 144,
+      "uniqueGeometries": 144,
+      "vertices": 36137,
+      "triangles": 33768,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial",
+        "MeshBasicMaterial"
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "errors": [],
+    "before": {
+      "distance": 7.600000000000007,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -16.34408602150539,
+      "drawCalls": 251,
+      "triangles": 76020
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.8291722131329573,
+        3.4989645788478883,
+        1.2449999999999999
+      ],
+      "pairCount": 100
+    },
+    "geometry": {
+      "meshes": 93,
+      "uniqueGeometries": 93,
+      "vertices": 20814,
+      "triangles": 31772,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "errors": [],
+    "before": {
+      "distance": 10.79999999999999,
+      "time": 2.000000000000001,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -24.82758620689653,
+      "frames": 40,
+      "drawCalls": 348
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.163316176390776,
+        3.1157853326627345,
+        1.5412642281635758
+      ],
+      "pairCount": 97
+    },
+    "geometry": {
+      "meshes": 90,
+      "uniqueGeometries": 48,
+      "vertices": 4875,
+      "triangles": 5470,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "errors": [],
+    "before": {
+      "paused": false,
+      "speed": 24,
+      "path": 13.33285010860518,
+      "distance": 13.333321274577528,
+      "time": 2.000000000000001,
+      "frames": 40,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 30.30300289676711,
+      "frontAngle": 30.30300289676711,
+      "position": [
+        -0.8000424705447275,
+        0.18,
+        13.33285010860518
+      ],
+      "heading": -0.00034969870586902335,
+      "camera": [
+        4.269480407809162,
+        3.882817715289119,
+        19.48212836230377
+      ],
+      "drawCalls": 192,
+      "triangles": 184174,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.293897420167923,
+        1.928695559501648,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.2500000000000004,
+        3.0320789756773956,
+        1.8999999761581428
+      ],
+      "pairCount": 153
+    },
+    "geometry": {
+      "meshes": 142,
+      "uniqueGeometries": 70,
+      "vertices": 14450,
+      "triangles": 12284,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial",
+        "MeshBasicMaterial"
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "errors": [],
+    "before": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 9,
+      "time": 1.800000000000001,
+      "rearWheelAngle": -24.999999999999982,
+      "frontWheelAngle": -25.00000024742746,
+      "wheelRadius": 0.36,
+      "steering": 0.00023672828033875404,
+      "gripError": 4.965068306494546e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 36,
+      "renderCalls": 293,
+      "triangles": 132986,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5845458159860215
+      ],
+      "camera": [
+        5.999999999999997,
+        3.6499999999999995,
+        9.274243085612257
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.3429620317972745
+      ]
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        2.908045926594741,
+        2.8635383757696484,
+        1.3800365892243653
+      ],
+      "pairCount": 235
+    },
+    "geometry": {
+      "meshes": 223,
+      "uniqueGeometries": 223,
+      "vertices": 98714,
+      "triangles": 58600,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial",
+        "MeshBasicMaterial"
+      ]
+    }
+  },
+  {
+    "order": 7,
+    "errors": [],
+    "before": {
+      "distance": 13.600000000000009,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.24416140384000443,
+      "wheelRotation": 39.76608187134505,
+      "wheelRadius": 0.342,
+      "position": [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      "frame": 40,
+      "drawCalls": 211,
+      "triangles": 108772
+    },
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.0206616973384945,
+        3.136826188381556,
+        1.5089605700003608
+      ],
+      "pairCount": 113
+    },
+    "geometry": {
+      "meshes": 106,
+      "uniqueGeometries": 71,
+      "vertices": 20074,
+      "triangles": 14040,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    }
+  }
+]

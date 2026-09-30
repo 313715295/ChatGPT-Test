@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e6f1e9">
+  <title>沿海，慢慢骑。 · 猫咪海岸骑行</title>
+  <style>
+    :root { color-scheme: light; --ink:#214642; --paper:#fffcf2; --mint:#438c7b; }
+    * { box-sizing:border-box; }
+    body { margin:0; overflow:hidden; background:#c4e3e5; font-family:"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); }
+    #scene { position:fixed; inset:0; touch-action:none; }
+    canvas { display:block; width:100%; height:100%; outline:none; }
+    button,input { font:inherit; }
+    button { border:0; cursor:pointer; -webkit-tap-highlight-color:transparent; }
+    button:focus-visible,input:focus-visible { outline:3px solid #ed9167; outline-offset:5px; }
+    button svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+    .intro { position:fixed; top:36px; left:42px; pointer-events:none; }
+    .eyebrow { display:flex; align-items:center; gap:10px; font-size:10px; letter-spacing:3px; font-weight:700; }
+    .badge { width:26px; height:26px; border:1px solid #37645d66; border-radius:50%; display:grid; place-items:center; font-size:14px; letter-spacing:0; }
+    h1 { margin:17px 0 10px; font-size:clamp(28px,3.4vw,48px); font-weight:600; letter-spacing:1px; line-height:1.25; }
+    .subtitle { margin:0; font-size:12px; letter-spacing:2px; opacity:.78; }
+    .readout { position:fixed; right:42px; top:39px; text-align:right; pointer-events:none; }
+    .weather { font-size:12px; letter-spacing:1px; display:flex; align-items:center; justify-content:flex-end; gap:8px; }
+    .weather::before { content:""; width:6px; height:6px; border-radius:50%; background:#599b72; box-shadow:0 0 0 4px #599b7219; }
+    .speed { font-size:40px; font-weight:300; line-height:1; margin:15px 0 3px; font-variant-numeric:tabular-nums; }
+    .speed small { font-size:11px; margin-left:6px; font-weight:500; }
+    .battery { font-size:10px; letter-spacing:1px; opacity:.7; }
+    .caption { position:fixed; bottom:33px; left:42px; font-size:10px; letter-spacing:2px; line-height:1.9; pointer-events:none; }
+    .caption strong { display:block; font-size:11px; font-weight:600; }
+    .hint { position:fixed; bottom:35px; right:42px; font-size:10px; letter-spacing:1px; opacity:.75; pointer-events:none; }
+    .toolbar { position:fixed; bottom:29px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:10px; padding:11px 13px; background:#fffcf2ed; border:1px solid #fff9; box-shadow:0 8px 36px #26494314; border-radius:22px; backdrop-filter:blur(14px); }
+    .play { width:45px; height:45px; border-radius:15px; background:var(--ink); color:var(--paper); display:grid; place-items:center; }
+    .play:hover { background:#35766a; }
+    .slider-wrap { width:150px; padding:0 10px; }
+    .slider-label { display:flex; justify-content:space-between; align-items:center; font-size:10px; margin-bottom:9px; letter-spacing:1px; }
+    #speedLabel { font-variant-numeric:tabular-nums; font-weight:600; }
+    input[type=range] { width:100%; display:block; height:4px; margin:0; accent-color:var(--mint); cursor:pointer; }
+    .divider { height:30px; width:1px; background:#274b421c; margin:0 2px; }
+    .action { display:flex; align-items:center; justify-content:center; gap:7px; height:42px; padding:0 12px; border-radius:13px; background:transparent; color:var(--ink); font-size:11px; white-space:nowrap; }
+    .action:hover { background:#e8eee4; }
+    .action[aria-pressed=true] { background:#e9dec8; }
+    .icon-only { width:42px; padding:0; }
+    .toast { position:fixed; left:50%; bottom:116px; transform:translateX(-50%) translateY(8px); padding:10px 20px; border-radius:30px; background:#fffcf2eb; box-shadow:0 5px 25px #26494314; font-size:12px; letter-spacing:1px; opacity:0; visibility:hidden; transition:opacity .25s,transform .25s; pointer-events:none; }
+    .toast.visible { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
+    #loading { position:fixed; inset:0; background:#e7efe4; display:grid; place-content:center; text-align:center; z-index:10; transition:opacity .5s; }
+    #loading.fade { opacity:0; pointer-events:none; }
+    .load-icon { font-size:40px; margin-bottom:18px; }
+    .load-title { font-size:22px; letter-spacing:3px; }
+    .load-note { font-size:11px; letter-spacing:2px; opacity:.65; margin-top:12px; }
+    .load-line { width:130px; height:2px; margin:23px auto 0; background:#438c7b30; overflow:hidden; }
+    .load-line::after { content:""; display:block; width:45%; height:100%; background:#438c7b; animation:load 1.2s ease-in-out infinite alternate; }
+    @keyframes load { to { transform:translateX(130%); } }
+    #error { display:none; position:fixed; z-index:20; inset:0; background:#e7efe4; place-content:center; padding:24px; text-align:center; }
+    #error h2 { font-size:22px; font-weight:500; }
+    #error p { font-size:14px; max-width:460px; line-height:1.8; }
+    #error button { padding:12px 25px; background:var(--ink); color:var(--paper); border-radius:12px; margin:14px auto; }
+    @media(max-width:900px) { .caption,.hint { display:none; } }
+    @media(max-width:600px) {
+      .intro { left:22px; top:25px; } .eyebrow { font-size:8px; letter-spacing:2px; gap:7px; } .badge { width:22px; height:22px; }
+      h1 { font-size:29px; margin-top:13px; } .subtitle { font-size:10px; letter-spacing:1px; max-width:200px; }
+      .readout { right:22px; top:29px; } .weather { font-size:10px; } .speed { font-size:31px; margin-top:18px; } .battery { font-size:8px; }
+      .toolbar { bottom:max(18px,env(safe-area-inset-bottom)); gap:4px; padding:9px; border-radius:19px; max-width:calc(100% - 24px); }
+      .play { width:40px; height:40px; border-radius:12px; } .slider-wrap { width:112px; padding:0 8px; } .action { padding:0 8px; height:40px; gap:4px; }
+      .action svg { width:18px; height:18px; } .action span { display:none; } .icon-only { width:34px; } .divider { margin:0 3px; } .toast { width:max-content; max-width:90%; bottom:102px; }
+    }
+    @media(prefers-reduced-motion:reduce) { .load-line::after { animation:none; width:100%; } .toast,#loading { transition:none; } }
+  </style>
+</head>
+<body>
+  <main id="scene" aria-label="橘猫骑着薄荷绿电动车，沿海边公路行驶的实时三维动画"></main>
+  <div class="intro">
+    <div class="eyebrow"><span class="badge">≈</span>THE COASTAL RIDE</div>
+    <h1>沿海，慢慢骑。</h1>
+    <p class="subtitle">一只橘猫，一辆电动车，一路海风。</p>
+  </div>
+  <div class="readout">
+    <div class="weather" id="weather">海风正好</div>
+    <div class="speed"><span id="speedReadout">18</span><small>km/h</small></div>
+    <div class="battery">⚡ ELECTRIC · 海岸巡游</div>
+  </div>
+  <div class="caption">COAST / 01<strong>往有海的地方去</strong></div>
+  <div class="hint">拖动环视 · 滚轮缩放 · 空格暂停</div>
+  <nav class="toolbar" aria-label="动画控制">
+    <button class="play" id="play" aria-label="暂停骑行" aria-pressed="false" title="暂停 / 继续（空格）">
+      <svg id="playIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6v12M16 6v12" stroke-width="3"/></svg>
+    </button>
+    <div class="slider-wrap">
+      <label class="slider-label" for="speedControl"><span>骑行速度</span><span id="speedLabel">18 km/h</span></label>
+      <input id="speedControl" type="range" min="8" max="32" step="1" value="18" aria-valuetext="18 千米每小时">
+    </div>
+    <div class="divider"></div>
+    <button class="action" id="view" title="切换镜头（C）" aria-label="切换镜头，当前随行视角">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg><span id="viewLabel">随行视角</span>
+    </button>
+    <button class="action" id="sunset" aria-label="切换黄昏" aria-pressed="false" title="晴日 / 黄昏（L）">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span id="lightLabel">晴日</span>
+    </button>
+    <button class="action icon-only" id="horn" title="按喇叭（H）" aria-label="按喇叭">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h5l6-4v14l-6-4H4zM18 8c3 2 3 6 0 8"/></svg>
+    </button>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div id="loading"><div class="load-icon">☀</div><div class="load-title">去海边兜兜风</div><div class="load-note">正在准备橘猫的海岸假日</div><div class="load-line"></div></div>
+  <div id="error" role="alert"><h2>海岸还在等你</h2><p id="errorMessage">浏览器未能启动三维画面。请使用支持 WebGL 2 的 Chrome 或 Edge，并开启浏览器图形加速后重试。</p><button onclick="location.reload()">重新打开海岸</button></div>
+  <noscript>请启用浏览器 JavaScript 以观看猫咪海岸骑行。</noscript>
+  <!--SCENE_SCRIPT-->
+</body>
+</html>

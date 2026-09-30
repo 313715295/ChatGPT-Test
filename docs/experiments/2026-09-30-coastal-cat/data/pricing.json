@@ -1,0 +1,42 @@
+{
+  "snapshot_date": "2026-09-30",
+  "currency": "USD",
+  "unit": "per 1,000,000 text tokens",
+  "standard": {
+    "gpt-6-astra": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "output": 50,
+      "credits": [
+        250,
+        25,
+        1250
+      ]
+    },
+    "gpt-6.1-sol": {
+      "uncached_input": 2,
+      "cached_input": 0.1,
+      "output": 10,
+      "credits": [
+        50,
+        2.5,
+        250
+      ]
+    }
+  },
+  "fast_api_price_multiplier": 2,
+  "fast_paid_credit_multiplier": 2,
+  "fast_included_quota_multiplier": 2.5,
+  "time_scenario_formula": "(T - M) + M / s; M includes queue/network and is not isolated inference time",
+  "sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://learn.chatgpt.com/docs/pricing",
+    "https://learn.chatgpt.com/docs/agent-configuration/speed",
+    "https://developers.openai.com/api/docs/guides/fast-mode"
+  ],
+  "actual_billing_known": false,
+  "original_service_tier_known": false,
+  "fast_repeat_measured": false,
+  "reasoning_tokens": "included in output_tokens; never add twice"
+}

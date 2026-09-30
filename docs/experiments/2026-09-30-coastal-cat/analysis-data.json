@@ -1,0 +1,5142 @@
+{
+  "date": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "price_basis": "2026-09-30 official Standard text-token rates; not actual billing",
+  "rubric": {
+    "dimensions": [
+      "主体模型",
+      "原场景材质光照",
+      "运动与机械连接",
+      "环境动态",
+      "代码实现与资源",
+      "交互与布局",
+      "故障恢复"
+    ],
+    "camera_treatment": "单独记录，不混入建模与代码质量"
+  },
+  "score_precision": "不给百分制总分；发布本轮观察式排序、分维度依据及相近组，不推断模型总体排名。",
+  "subjects": [
+    {
+      "order": 1,
+      "id": "01a0f00b-09f8-74f1-be04-9d17eca6de6e",
+      "title": "创建猫骑电动车的3D动画",
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "started_local": "2026-09-30T10:00:51+08:00",
+      "completed_local": "2026-09-30T10:16:37+08:00",
+      "duration_ms": 946446,
+      "time_to_first_token_ms": 8609,
+      "model_request_count": 16,
+      "tokens": {
+        "input_tokens": 1179338,
+        "cached_input_tokens": 1104128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26818,
+        "reasoning_output_tokens": 5872,
+        "total_tokens": 1206156
+      },
+      "uncached_input": 75210,
+      "api_standard_usd": 3.197128,
+      "credit_standard": 79.9282,
+      "fast_api_equivalent_usd": 6.394256,
+      "fast_credit_equivalent": 159.8564,
+      "recorded_tool_seconds": 65.67700028419495,
+      "estimated_model_response_seconds": 868.0920000076294,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 657.0819999974569,
+          "saved_seconds": 289.3640000025431,
+          "saved_percent": 30.5737464158064
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 512.3999999961853,
+          "saved_seconds": 434.0460000038147,
+          "saved_percent": 45.86061962370962
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 425.5907999954224,
+          "saved_seconds": 520.8552000045777,
+          "saved_percent": 55.03274354845155
+        }
+      ],
+      "quality": {
+        "order": 1,
+        "profile": "主体细节较强 · 场景较完整",
+        "model": "猫脸、胡须、头盔带、围巾、分节尾巴、车镜、轮胎花纹和后载物齐全，侧面与背面也有交付细节；造型圆润且主题识别清楚。",
+        "lighting": "有浅深海色、波纹闪光、天空渐变和日落混合；材质区分橡胶、金属与车漆，原场景光照与软色调协调。",
+        "motion": "道路纹理、循环景物和两轮共用同一距离；猫与车使用相同上下起伏。直线行驶不需要额外转向。尾巴、围巾、眨眼和海鸟有独立小动画。",
+        "implementation": "球体与方体复用；静态云、路段、车体按材质合并，车轮保留独立层级；水面主要在GPU着色器中变化。动画、镜头和光照分别封装。",
+        "limitations": "静态合并会把部分几何展开为非索引形式，主体与海面规模较大；这属于资源取舍，未观察到本机运行阻断。每帧灯光混合创建Color对象，可缓存优化。",
+        "recovery": "图形中断后暂停并显示‘重新出发’，恢复上下文后仍保留遮罩；提供重新加载入口，属于人工恢复流程。",
+        "camera": "部分原镜头前景树干较抢眼，HUD浅底白字对比偏低。属于镜头/页面呈现建议，不据此否定主体模型或距离逻辑。",
+        "recommendation": "希望猫与车细节较丰富，又希望本轮约16分钟完成，可以优先看这组。",
+        "original_evidence": "原会话打开过桌面、近景与窄屏图，并做过浏览器检查和优化。",
+        "references": [
+          {
+            "line": 85,
+            "topic": "静态几何合并"
+          },
+          {
+            "line": 213,
+            "topic": "故障提示"
+          },
+          {
+            "line": 215,
+            "topic": "距离驱动姿态与景物"
+          },
+          {
+            "line": 236,
+            "topic": "逐帧光照混合"
+          }
+        ]
+      },
+      "wheel_delta_error": 3.552713678800501e-15,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "554371f2df38a00ca1395b5d12ab925dcbd8df0890b9c6c0c2fda661e9a3be41",
+      "frozen_matches_current": true,
+      "observed_fps": 164.96987325992106,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 95188,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 1,
+        "errors": [],
+        "before": {
+          "ready": true,
+          "three": "186",
+          "frames": 40,
+          "paused": false,
+          "distance": 13.33333333333334,
+          "time": 2.000000000000001,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -33.33333333333334,
+          "frontWheelAngle": -33.33333333333334,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816947,
+            12.427375646059478
+          ],
+          "dusk": false,
+          "duskMix": 0,
+          "sections": [
+            -93.33333333333334,
+            -53.33333333333334,
+            -13.333333333333371,
+            26.66666666666663,
+            66.66666666666663
+          ],
+          "drawCalls": 299,
+          "triangles": 398706,
+          "canvas": [
+            1280,
+            720
+          ],
+          "networkFree": true
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.2648223932643297,
+            3.2421966928547583,
+            1.579200029373169
+          ],
+          "pairCount": 95
+        },
+        "geometry": {
+          "meshes": 88,
+          "uniqueGeometries": 59,
+          "vertices": 155115,
+          "triangles": 57381,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial",
+            "MeshBasicMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 1,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "ready": true,
+          "three": "186",
+          "frames": 40,
+          "paused": false,
+          "distance": 13.33333333333334,
+          "time": 2.000000000000001,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -33.33333333333334,
+          "frontWheelAngle": -33.33333333333334,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816947,
+            12.427375646059478
+          ],
+          "dusk": false,
+          "duskMix": 0,
+          "sections": [
+            -93.33333333333334,
+            -53.33333333333334,
+            -13.333333333333371,
+            26.66666666666663,
+            66.66666666666663
+          ],
+          "drawCalls": 299,
+          "triangles": 398706,
+          "canvas": [
+            1280,
+            720
+          ],
+          "networkFree": true
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "ready": true,
+          "three": "186",
+          "frames": 65,
+          "paused": true,
+          "distance": 13.33333333333334,
+          "time": 2.000000000000001,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -33.33333333333334,
+          "frontWheelAngle": -33.33333333333334,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816947,
+            12.427375646059478
+          ],
+          "dusk": false,
+          "duskMix": 0,
+          "sections": [
+            -93.33333333333334,
+            -53.33333333333334,
+            -13.333333333333371,
+            26.66666666666663,
+            66.66666666666663
+          ],
+          "drawCalls": 299,
+          "triangles": 398706,
+          "canvas": [
+            1280,
+            720
+          ],
+          "networkFree": true
+        },
+        "lostOverlays": [
+          {
+            "id": "error",
+            "text": "这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发",
+            "visible": true,
+            "opacity": "1"
+          },
+          {
+            "id": "toast",
+            "text": "",
+            "visible": true,
+            "opacity": "0"
+          }
+        ],
+        "restored": {
+          "ready": true,
+          "three": "186",
+          "frames": 95,
+          "paused": true,
+          "distance": 13.33333333333334,
+          "time": 2.000000000000001,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -33.33333333333334,
+          "frontWheelAngle": -33.33333333333334,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816947,
+            12.427375646059478
+          ],
+          "dusk": false,
+          "duskMix": 0,
+          "sections": [
+            -93.33333333333334,
+            -53.33333333333334,
+            -13.333333333333371,
+            26.66666666666663,
+            66.66666666666663
+          ],
+          "drawCalls": 299,
+          "triangles": 398706,
+          "canvas": [
+            1280,
+            720
+          ],
+          "networkFree": true
+        },
+        "restoredOverlays": [
+          {
+            "id": "error",
+            "text": "这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发",
+            "visible": true,
+            "opacity": "1"
+          },
+          {
+            "id": "toast",
+            "text": "",
+            "visible": true,
+            "opacity": "0"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 1,
+        "count": 6,
+        "positionChangedCount": 6,
+        "wingChangedCount": 6,
+        "inCameraBefore": 1,
+        "before": [
+          {
+            "position": [
+              -11.794161646033462,
+              8.253451926283532,
+              -22.33396368553142
+            ],
+            "rotation": [
+              0,
+              0.07780495369219853,
+              0,
+              0.9969685998971858
+            ],
+            "wings": [
+              [
+                0.19658295703347478,
+                0,
+                0,
+                0.9804871957368821
+              ],
+              [
+                -0.19658295703347478,
+                0,
+                0,
+                0.9804871957368821
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -1.1964011391331777,
+              10.671477615753428,
+              -14.761470636890305
+            ],
+            "rotation": [
+              0,
+              0.17178554574476104,
+              0,
+              0.9851343696537923
+            ],
+            "wings": [
+              [
+                -0.05432536848095188,
+                0,
+                0,
+                0.9985232868288094
+              ],
+              [
+                0.05432536848095188,
+                0,
+                0,
+                0.9985232868288094
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -25.71407268953731,
+              11.893021139351521,
+              -13.091019607287159
+            ],
+            "rotation": [
+              0,
+              -0.12206639173448523,
+              0,
+              0.9925219372935408
+            ],
+            "wings": [
+              [
+                -0.18283147588830645,
+                0,
+                0,
+                0.9831442678592515
+              ],
+              [
+                0.18283147588830645,
+                0,
+                0,
+                0.9831442678592515
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -36.97939015755084,
+              8.148830620088756,
+              -10.32336130441772
+            ],
+            "rotation": [
+              0,
+              -0.1406402525544238,
+              0,
+              0.9900607654893855
+            ],
+            "wings": [
+              [
+                0.10155690461840469,
+                0,
+                0,
+                0.9948297317251471
+              ],
+              [
+                -0.10155690461840469,
+                0,
+                0,
+                0.9948297317251471
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -4.351000203582137,
+              11.440450890218365,
+              -23.40157802189143
+            ],
+            "rotation": [
+              0,
+              0.15806782767413882,
+              0,
+              0.9874282565606368
+            ],
+            "wings": [
+              [
+                0.1569981930639956,
+                0,
+                0,
+                0.9875988899217335
+              ],
+              [
+                -0.1569981930639956,
+                0,
+                0,
+                0.9875988899217335
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              24.240256735483207,
+              7.569872032645589,
+              -13.045912045401634
+            ],
+            "rotation": [
+              0,
+              0.10003656585014226,
+              0,
+              0.994983761421718
+            ],
+            "wings": [
+              [
+                -0.14187673175531512,
+                0,
+                0,
+                0.9898843331351549
+              ],
+              [
+                0.14187673175531512,
+                0,
+                0,
+                0.9898843331351549
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              -10.256629709588895,
+              8.261283916381958,
+              -22.539573101361555
+            ],
+            "rotation": [
+              0,
+              0.10434715090764402,
+              0,
+              0.9945409353553314
+            ],
+            "wings": [
+              [
+                -0.19866741114821268,
+                0,
+                0,
+                0.9800669669709652
+              ],
+              [
+                0.19866741114821268,
+                0,
+                0,
+                0.9800669669709652
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -2.1333776468194685,
+              10.383375359307848,
+              -15.131453191258949
+            ],
+            "rotation": [
+              0,
+              0.1549873408842519,
+              0,
+              0.9879164560658096
+            ],
+            "wings": [
+              [
+                0.02664325509961477,
+                0,
+                0,
+                0.9996450054682896
+              ],
+              [
+                -0.02664325509961477,
+                0,
+                0,
+                0.9996450054682896
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -27.010156097382623,
+              11.959429928327356,
+              -12.790069761225432
+            ],
+            "rotation": [
+              0,
+              -0.14413384784788577,
+              0,
+              0.9895582013729979
+            ],
+            "wings": [
+              [
+                0.19193316449234185,
+                0,
+                0,
+                0.9814079989321238
+              ],
+              [
+                -0.19193316449234185,
+                0,
+                0,
+                0.9814079989321238
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -35.70842722736724,
+              8.419820062869595,
+              -10.030930211497356
+            ],
+            "rotation": [
+              0,
+              -0.118067075102272,
+              0,
+              0.9930056222281899
+            ],
+            "wings": [
+              [
+                -0.07633993949431284,
+                0,
+                0,
+                0.9970818490164208
+              ],
+              [
+                0.07633993949431284,
+                0,
+                0,
+                0.9970818490164208
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -3.382429947752545,
+              11.304211105813483,
+              -23.77788414052038
+            ],
+            "rotation": [
+              0,
+              0.17423944215911305,
+              0,
+              0.9847033140982522
+            ],
+            "wings": [
+              [
+                -0.1725721823185513,
+                0,
+                0,
+                0.9849968740507823
+              ],
+              [
+                0.1725721823185513,
+                0,
+                0,
+                0.9849968740507823
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              22.719703915695533,
+              7.333990082113904,
+              -13.24137319521188
+            ],
+            "rotation": [
+              0,
+              0.07314779384858743,
+              0,
+              0.9973211119068345
+            ],
+            "wings": [
+              [
+                0.12081213968396087,
+                0,
+                0,
+                0.9926753884855729
+              ],
+              [
+                -0.12081213968396087,
+                0,
+                0,
+                0.9926753884855729
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 1,
+        "sha256": "7aad501ad71818cde6c70ba82af5e2ef5fd7420a745c7ef0b5c9ab6252d59d41",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 85,
+            "topic": "静态几何合并"
+          },
+          {
+            "line": 213,
+            "topic": "故障提示"
+          },
+          {
+            "line": 215,
+            "topic": "距离驱动姿态与景物"
+          },
+          {
+            "line": 236,
+            "topic": "逐帧光照混合"
+          }
+        ],
+        "source_file": "code-sources/01.js"
+      },
+      "quality_rank": 3,
+      "artifact": "scenes/01.html"
+    },
+    {
+      "order": 2,
+      "id": "01a0f00a-f47f-7920-a2a8-0e6b3108d3c5",
+      "title": "创建猫咪海边骑行场景",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "started_local": "2026-09-30T10:00:45+08:00",
+      "completed_local": "2026-09-30T10:14:56+08:00",
+      "duration_ms": 850257,
+      "time_to_first_token_ms": 10990,
+      "model_request_count": 25,
+      "tokens": {
+        "input_tokens": 2048081,
+        "cached_input_tokens": 1964416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23056,
+        "reasoning_output_tokens": 4833,
+        "total_tokens": 2071137
+      },
+      "uncached_input": 83665,
+      "api_standard_usd": 3.953866,
+      "credit_standard": 98.84665,
+      "fast_api_equivalent_usd": 7.907732,
+      "fast_credit_equivalent": 197.6933,
+      "recorded_tool_seconds": 14.927000522613525,
+      "estimated_model_response_seconds": 820.771000623703,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 576.6666664587656,
+          "saved_seconds": 273.5903335412344,
+          "saved_percent": 32.17736914147539
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 439.87149968814845,
+          "saved_seconds": 410.3855003118515,
+          "saved_percent": 48.26605371221307
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 357.79439962577817,
+          "saved_seconds": 492.4626003742218,
+          "saved_percent": 57.91926445465568
+        }
+      ],
+      "quality": {
+        "order": 2,
+        "profile": "弯道运动实现较丰富",
+        "model": "角色有脸部、条纹、头盔、耳朵和背后行李箱，车体轮廓与轮辐完整；统一角度下猫与车可辨识，没有依据把它笼统称为几何质量差。",
+        "lighting": "环岛环境有房屋、灯塔、沙滩设施；海色层次、波纹闪光与晴日/日落切换完整，整体是清爽的卡通视觉。",
+        "motion": "闭合曲线按弧长取点；根据曲率设置前轮转向与倾斜，前轮单独累积转弯行程，手爪随车把更新。尾巴由多段更新，围巾和眨眼持续变化。",
+        "implementation": "静态环境按材质合并并释放原几何；主逻辑包含姿态、镜头和界面函数。当前环境合并只保留位置与法线，适用于现有无贴图静态材质，扩展贴图需保留UV。",
+        "limitations": "手臂通过调整圆柱长度连接肩、肘与手爪，属于伸缩式连接，不是固定骨长的逆运动学。前轮行程修正和倾斜也属于动画近似，不能宣称完整车辆物理。主要脚本多处压在一行，可读性一般。",
+        "recovery": "上下文丢失后停止更新并提示重新加载；上下文自动恢复后遮罩与contextLost标志仍保留，需要用户重新加载。",
+        "camera": "环岛全景的主体较小，这是展示整个岛的视角选择；近景可检查猫与车。单独列为取景可读性，不扣主体质量。",
+        "recommendation": "优先比较弯道、前轮与骑姿配合时，这组实现丰富；其本轮费用最高。",
+        "original_evidence": "原会话提供桌面预览与verification记录。",
+        "references": [
+          {
+            "line": 115,
+            "topic": "环境合并与释放"
+          },
+          {
+            "line": 124,
+            "topic": "弧长、曲率、转向和骑姿"
+          },
+          {
+            "line": 161,
+            "topic": "contextLost与恢复策略"
+          },
+          {
+            "line": 164,
+            "topic": "前轮行程累积"
+          }
+        ]
+      },
+      "wheel_delta_error": 3.552713678800501e-15,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "dcf3c1cb4f4d9dddea65f4f3358b751d4e500f6b8b01df5637e685517b1c5bde",
+      "frozen_matches_current": true,
+      "observed_fps": 164.3143909590176,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 102308,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 2,
+        "errors": [],
+        "before": {
+          "ready": true,
+          "three": "160",
+          "time": 2.000000000000001,
+          "distance": 13.3334,
+          "frontDistance": 13.34108216666244,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": false,
+          "wheelRadius": 0.455,
+          "rearWheel": -29.30417582417582,
+          "frontWheel": -29.321059706950418,
+          "steering": -0.03642390603145886,
+          "position": [
+            20.465847507534335,
+            0.35500000000000004,
+            31.392323051568248
+          ],
+          "heading": 0.30658641008885357,
+          "renderCalls": 168,
+          "triangles": 117820,
+          "canvas": [
+            1280,
+            720
+          ]
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            4.319855376056116,
+            4.045961177937713,
+            1.786880755200608
+          ],
+          "pairCount": 151
+        },
+        "geometry": {
+          "meshes": 144,
+          "uniqueGeometries": 144,
+          "vertices": 36137,
+          "triangles": 33768,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial",
+            "MeshBasicMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 2,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "ready": true,
+          "three": "160",
+          "time": 2.000000000000001,
+          "distance": 13.3334,
+          "frontDistance": 13.34108216666244,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": false,
+          "wheelRadius": 0.455,
+          "rearWheel": -29.30417582417582,
+          "frontWheel": -29.321059706950418,
+          "steering": -0.03642390603145886,
+          "position": [
+            20.465847507534335,
+            0.35500000000000004,
+            31.392323051568248
+          ],
+          "heading": 0.30658641008885357,
+          "renderCalls": 168,
+          "triangles": 117820,
+          "canvas": [
+            1280,
+            720
+          ]
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "ready": true,
+          "three": "160",
+          "time": 2.000000000000001,
+          "distance": 13.3334,
+          "frontDistance": 13.34108216666244,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": false,
+          "wheelRadius": 0.455,
+          "rearWheel": -29.30417582417582,
+          "frontWheel": -29.321059706950418,
+          "steering": -0.03642390603145886,
+          "position": [
+            20.465847507534335,
+            0.35500000000000004,
+            31.392323051568248
+          ],
+          "heading": 0.30658641008885357,
+          "renderCalls": 168,
+          "triangles": 117820,
+          "canvas": [
+            1280,
+            720
+          ]
+        },
+        "lostOverlays": [
+          {
+            "id": "toast",
+            "text": "",
+            "visible": true,
+            "opacity": "0"
+          },
+          {
+            "id": "loading",
+            "text": "海风正在赶来…准备好和猫咪一起出发",
+            "visible": false,
+            "opacity": "1"
+          },
+          {
+            "id": "error",
+            "text": "暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "ready": true,
+          "three": "160",
+          "time": 2.000000000000001,
+          "distance": 13.3334,
+          "frontDistance": 13.34108216666244,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": false,
+          "wheelRadius": 0.455,
+          "rearWheel": -29.30417582417582,
+          "frontWheel": -29.321059706950418,
+          "steering": -0.03642390603145886,
+          "position": [
+            20.465847507534335,
+            0.35500000000000004,
+            31.392323051568248
+          ],
+          "heading": 0.30658641008885357,
+          "renderCalls": 0,
+          "triangles": 0,
+          "canvas": [
+            1280,
+            720
+          ]
+        },
+        "restoredOverlays": [
+          {
+            "id": "toast",
+            "text": "",
+            "visible": true,
+            "opacity": "0"
+          },
+          {
+            "id": "loading",
+            "text": "海风正在赶来…准备好和猫咪一起出发",
+            "visible": false,
+            "opacity": "1"
+          },
+          {
+            "id": "error",
+            "text": "暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 2,
+        "count": 6,
+        "positionChangedCount": 6,
+        "wingChangedCount": 6,
+        "inCameraBefore": 0,
+        "before": [
+          {
+            "position": [
+              -49.43332832280492,
+              8.93256291816938,
+              42.911610989907544
+            ],
+            "rotation": [
+              0,
+              -0.41607028013627834,
+              0,
+              -0.9093324595478371
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.11088500360055445,
+                0.993833243545669
+              ],
+              [
+                0,
+                0,
+                -0.11088500360055445,
+                0.993833243545669
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              28.699701114133365,
+              9.766001920141655,
+              -46.93214096587333
+            ],
+            "rotation": [
+              0,
+              0.8416894179801415,
+              0,
+              -0.5399619650125836
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.13132186791389305,
+                0.9913397838317627
+              ],
+              [
+                0,
+                0,
+                -0.13132186791389305,
+                0.9913397838317627
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -30.964015773413134,
+              9.435484595202675,
+              -46.77265484426735
+            ],
+            "rotation": [
+              0,
+              0.5269203395403941,
+              0,
+              -0.8499146755872826
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.031199524099194773,
+                0.9995131763493584
+              ],
+              [
+                0,
+                0,
+                -0.031199524099194773,
+                0.9995131763493584
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -3.589207894015421,
+              8.704584741774465,
+              55.37572678573264
+            ],
+            "rotation": [
+              0,
+              -0.6897266403554486,
+              0,
+              -0.7240698596019486
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.09782575040183937,
+                0.9952035583529216
+              ],
+              [
+                0,
+                0,
+                0.09782575040183937,
+                0.9952035583529216
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -75.11967124683956,
+              8.704986008513407,
+              -1.2918963277681847
+            ],
+            "rotation": [
+              0,
+              0.0114629688894,
+              0,
+              -0.9999342980137448
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.13665592942635008,
+                0.9906185728889906
+              ],
+              [
+                0,
+                0,
+                0.13665592942635008,
+                0.9906185728889906
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              69.967612310942,
+              9.896017166762118,
+              11.701837775524824
+            ],
+            "rotation": [
+              0,
+              0.9939886831516012,
+              0,
+              0.10948286517325834
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.050131078120347075,
+                0.9987426470350066
+              ],
+              [
+                0,
+                0,
+                0.050131078120347075,
+                0.9987426470350066
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              -47.4745212469738,
+              9.158569568079866,
+              44.138217395015374
+            ],
+            "rotation": [
+              0,
+              -0.4313552972632576,
+              0,
+              -0.9021821365572069
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.0640112306590002,
+                0.9979491782398141
+              ],
+              [
+                0,
+                0,
+                0.0640112306590002,
+                0.9979491782398141
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              26.57181186247329,
+              9.622172176643536,
+              -47.63173746025523
+            ],
+            "rotation": [
+              0,
+              0.8324581530090261,
+              0,
+              -0.5540879203599378
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.13891041290780298,
+                0.9903049516112619
+              ],
+              [
+                0,
+                0,
+                0.13891041290780298,
+                0.9903049516112619
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -33.050752386105884,
+              9.054054861163278,
+              -45.962391021526976
+            ],
+            "rotation": [
+              0,
+              0.5125036874600927,
+              0,
+              -0.8586850239405643
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.08643122034598358,
+                0.9962578201196235
+              ],
+              [
+                0,
+                0,
+                0.08643122034598358,
+                0.9962578201196235
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -1.0957292627889208,
+              8.436239755616267,
+              55.435026150537205
+            ],
+            "rotation": [
+              0,
+              -0.7018465364460577,
+              0,
+              -0.7123281822858567
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.04583036244461438,
+                0.9989492368875383
+              ],
+              [
+                0,
+                0,
+                -0.04583036244461438,
+                0.9989492368875383
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -75.13501660621134,
+              8.796440912973948,
+              0.6099450951531021
+            ],
+            "rotation": [
+              0,
+              -0.005411753641304661,
+              0,
+              -0.9999853563540447
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.1356614462305275,
+                0.990755253332851
+              ],
+              [
+                0,
+                0,
+                -0.1356614462305275,
+                0.990755253332851
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              70.45425008877424,
+              10.263188744446275,
+              9.924454863806869
+            ],
+            "rotation": [
+              0,
+              0.9956945952716257,
+              0,
+              0.0926945141142316
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.1010307210706818,
+                0.9948833064233906
+              ],
+              [
+                0,
+                0,
+                -0.1010307210706818,
+                0.9948833064233906
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 2,
+        "sha256": "6449c9cd015d53f9e083bc668b8ac8619cf3766a089c2de9f3128f1e405b60d8",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 115,
+            "topic": "环境合并与释放"
+          },
+          {
+            "line": 124,
+            "topic": "弧长、曲率、转向和骑姿"
+          },
+          {
+            "line": 161,
+            "topic": "contextLost与恢复策略"
+          },
+          {
+            "line": 164,
+            "topic": "前轮行程累积"
+          }
+        ],
+        "source_file": "code-sources/02.js"
+      },
+      "quality_rank": 4,
+      "artifact": "scenes/02.html"
+    },
+    {
+      "order": 3,
+      "id": "01a0f00a-df52-7ac3-8b45-9b96ef58f487",
+      "title": "创建海边骑行猫咪3D场景",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "started_local": "2026-09-30T10:00:40+08:00",
+      "completed_local": "2026-09-30T10:05:37+08:00",
+      "duration_ms": 296827,
+      "time_to_first_token_ms": 8562,
+      "model_request_count": 7,
+      "tokens": {
+        "input_tokens": 295214,
+        "cached_input_tokens": 264960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8537,
+        "reasoning_output_tokens": 249,
+        "total_tokens": 303751
+      },
+      "uncached_input": 30254,
+      "api_standard_usd": 0.99435,
+      "credit_standard": 24.85875,
+      "fast_api_equivalent_usd": 1.9887,
+      "fast_credit_equivalent": 49.7175,
+      "recorded_tool_seconds": 7.531999826431274,
+      "estimated_model_response_seconds": 286.4159998893738,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 201.3550000368754,
+          "saved_seconds": 95.4719999631246,
+          "saved_percent": 32.1641899029147
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 153.6190000553131,
+          "saved_seconds": 143.2079999446869,
+          "saved_percent": 48.24628485437204
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 124.97740006637574,
+          "saved_seconds": 171.84959993362426,
+          "saved_percent": 57.89554182524645
+        }
+      ],
+      "quality": {
+        "order": 3,
+        "profile": "核心完整 · 交付最快",
+        "model": "猫脸、头盔、胡须、尾巴、弯曲四肢、电动车轮辐、车镜和后载物都可清楚看到。统一侧面与背面检查支持‘主体建模完整’，不能因原树叶遮挡降低这一结论。",
+        "lighting": "配色统一，天空、灯塔、帆船与浅色海面建立海边主题；水面高光与浅深层次较简单，这是原场景的材质/光照表现差异。",
+        "motion": "距离驱动两轮和循环道路，猫与车共用rider层级保持连接；尾巴、头部、围巾、海鸟和船持续变化。属于符合需求的直线骑行实现。",
+        "implementation": "保留在HTML内的紧凑脚本；没有静态网格合并，大量基础球体/圆柱单独创建。水面每帧在CPU移动约5757个顶点。",
+        "limitations": "海水顶点高度改变后没有重新计算法线，照明仍按初始平面法线响应，波浪形状与光照变化关联不充分。动画主体集中在长函数中，不利于后续修改定位。",
+        "recovery": "没有自定义上下文丢失提示；本次由Three.js恢复渲染后继续运动，但失去画面期间仍推进模拟时间。",
+        "camera": "原窄屏默认与某些预设会受棕榈树遮挡。它是取景问题；本版将其移出主体与代码评价。",
+        "recommendation": "在约5分钟交付的预算下，主体与核心逻辑已经达标。若继续完善，先改善水面光照与代码组织，再单独调整镜头。",
+        "original_evidence": "原最终回复明确没有完成浏览器画面验收；本次补做后确认可运行，不把补测时间加回原耗时。",
+        "references": [
+          {
+            "line": 19,
+            "topic": "CPU水面几何"
+          },
+          {
+            "line": 25,
+            "topic": "统一rider层级与车轮"
+          },
+          {
+            "line": 53,
+            "topic": "距离、动画及水面法线更新缺项"
+          }
+        ]
+      },
+      "wheel_delta_error": 1.7763568394002505e-15,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "d1d398110d3b34daff9c86610cf21bd05787c1c75433027e1db54683b295d9d7",
+      "frozen_matches_current": true,
+      "observed_fps": 164.0706126687435,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 52020,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 3,
+        "errors": [],
+        "before": {
+          "distance": 7.600000000000007,
+          "time": 2.000000000000001,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -16.34408602150539,
+          "drawCalls": 251,
+          "triangles": 76020
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.8291722131329573,
+            3.4989645788478883,
+            1.2449999999999999
+          ],
+          "pairCount": 100
+        },
+        "geometry": {
+          "meshes": 93,
+          "uniqueGeometries": 93,
+          "vertices": 20814,
+          "triangles": 31772,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 3,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "distance": 7.600000000000007,
+          "time": 2.000000000000001,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -16.34408602150539,
+          "drawCalls": 251,
+          "triangles": 76020
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "distance": 12.349999999999996,
+          "time": 3.2499999999999964,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -26.559139784946225,
+          "drawCalls": 251,
+          "triangles": 76020
+        },
+        "lostOverlays": [
+          {
+            "id": "error",
+            "text": "",
+            "visible": false,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "distance": 18.05,
+          "time": 4.749999999999991,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -38.81720430107527,
+          "drawCalls": 247,
+          "triangles": 74372
+        },
+        "restoredOverlays": [
+          {
+            "id": "error",
+            "text": "",
+            "visible": false,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 3,
+        "count": 6,
+        "positionChangedCount": 6,
+        "wingChangedCount": 6,
+        "inCameraBefore": 3,
+        "before": [
+          {
+            "position": [
+              3.377378623516042,
+              9.564642473395036,
+              -17
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.12335478311013076,
+                0.9923626340626962
+              ],
+              [
+                0,
+                0,
+                0.12335478311013076,
+                0.9923626340626962
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              15.844664461442848,
+              9.999573603041505,
+              -20
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.05149202888605214,
+                0.9986734055541872
+              ],
+              [
+                0,
+                0,
+                0.05149202888605214,
+                0.9986734055541872
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              13.74443886493303,
+              9.515501371821465,
+              -23
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06795023954368445,
+                0.997688711445587
+              ],
+              [
+                0,
+                0,
+                -0.06795023954368445,
+                0.997688711445587
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -0.9923604382688614,
+              8.557479556705147,
+              -26
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.124673518755441,
+                0.9921978198530456
+              ],
+              [
+                0,
+                0,
+                -0.124673518755441,
+                0.9921978198530456
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -14.816788131031,
+              8.006308996366535,
+              -29
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06702133798229876,
+                0.9977515423466217
+              ],
+              [
+                0,
+                0,
+                -0.06702133798229876,
+                0.9977515423466217
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -15.018729147242603,
+              8.36873336212768,
+              -32
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.052496736959727404,
+                0.9986210956156399
+              ],
+              [
+                0,
+                0,
+                0.052496736959727404,
+                0.9986210956156399
+              ]
+            ],
+            "inCamera": true
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              4.616297928253916,
+              9.734547782246578,
+              -17
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.124673518755441,
+                0.9921978198530456
+              ],
+              [
+                0,
+                0,
+                -0.124673518755441,
+                0.9921978198530456
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              16.26169535569676,
+              9.967863858629904,
+              -20
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06702133798229987,
+                0.9977515423466217
+              ],
+              [
+                0,
+                0,
+                -0.06702133798229987,
+                0.9977515423466217
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              12.95616506776244,
+              9.311330366921768,
+              -23
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.052496736959726197,
+                0.99862109561564
+              ],
+              [
+                0,
+                0,
+                0.052496736959726197,
+                0.99862109561564
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -2.261203633056183,
+              8.368561171639305,
+              -26
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.12350972775190291,
+                0.9923433615189103
+              ],
+              [
+                0,
+                0,
+                0.12350972775190291,
+                0.9923433615189103
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -15.39963214171778,
+              8.006333923122313,
+              -29
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.08119649461446964,
+                0.9966981134036135
+              ],
+              [
+                0,
+                0,
+                0.08119649461446964,
+                0.9966981134036135
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -14.379709878326292,
+              8.55767868316077,
+              -32
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.035980146914877775,
+                0.9993525048890325
+              ],
+              [
+                0,
+                0,
+                -0.035980146914877775,
+                0.9993525048890325
+              ]
+            ],
+            "inCamera": true
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 3,
+        "sha256": "b8c2ea9b8137e271eb2fd49100bc29afe12af000e4bc56602b650ec30d2b0bd4",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 19,
+            "topic": "CPU水面几何"
+          },
+          {
+            "line": 25,
+            "topic": "统一rider层级与车轮"
+          },
+          {
+            "line": 53,
+            "topic": "距离、动画及水面法线更新缺项"
+          }
+        ],
+        "source_file": "code-sources/03.html"
+      },
+      "quality_rank": 7,
+      "artifact": "scenes/03.html"
+    },
+    {
+      "order": 4,
+      "id": "01a0f00a-bacd-7010-8fce-42be3e7bdcb2",
+      "title": "创建猫骑电动车的海边场景",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "started_local": "2026-09-30T10:00:30+08:00",
+      "completed_local": "2026-09-30T10:07:46+08:00",
+      "duration_ms": 435593,
+      "time_to_first_token_ms": 9067,
+      "model_request_count": 11,
+      "tokens": {
+        "input_tokens": 564174,
+        "cached_input_tokens": 524672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11611,
+        "reasoning_output_tokens": 1285,
+        "total_tokens": 575785
+      },
+      "uncached_input": 39502,
+      "api_standard_usd": 1.500242,
+      "credit_standard": 37.50605,
+      "fast_api_equivalent_usd": 3.000484,
+      "fast_credit_equivalent": 75.0121,
+      "recorded_tool_seconds": 20.153000354766846,
+      "estimated_model_response_seconds": 410.5510003566742,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 298.7426665477753,
+          "saved_seconds": 136.85033345222473,
+          "saved_percent": 31.417018513204926
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 230.31749982166292,
+          "saved_seconds": 205.2755001783371,
+          "saved_percent": 47.125527769807384
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 189.2623997859955,
+          "saved_seconds": 246.3306002140045,
+          "saved_percent": 56.550633323768864
+        }
+      ],
+      "quality": {
+        "order": 4,
+        "profile": "简洁造型 · 核心逻辑完整",
+        "model": "未带头盔的猫仍清楚满足主题；脸部、粉色耳内、胡须、眼睛、手爪与车镜齐全。整体圆润、车体较简洁，主体识别没有问题。头盔不在原需求中，不因缺少头盔扣分。",
+        "lighting": "车漆与金属材质区分明确，有阳光投影与海上帆船；海面的材质层次较基础，泡沫与闪光更接近装饰性图形。",
+        "motion": "rider真实向前移动，路段循环到车辆周围；两轮由距离旋转，猫车共用body摆动，连接稳定。海鸟、眨眼、围巾和尾巴动画齐全。",
+        "implementation": "复用基础球体和方体；海面CPU形变与法线每3帧更新，减少每帧工作。许多场景物体独立绘制，代码的创建与更新逻辑高度集中。",
+        "limitations": "webglcontextlost监听器挂在window并使用默认冒泡阶段，实际事件不冒泡，预期的‘画面已暂停’提示没有触发；本次上下文恢复后能继续渲染。此项是已验证的故障反馈缺陷，非镜头问题。",
+        "recovery": "本次可由Three.js自动恢复画面，但自定义故障提示失效，且失去画面期间模拟继续推进。",
+        "camera": "某些跟随预设的大路牌经过主体前方，手机控件较小；单独记录取景/交互建议，不影响猫车几何结论。",
+        "recommendation": "本轮约7分钟完成，主体与基础逻辑完整；若作为常用展示，先修图形故障反馈与整理更新逻辑。",
+        "original_evidence": "原会话有桌面、窄屏与浏览器checks记录。",
+        "references": [
+          {
+            "line": 56,
+            "topic": "共享骑乘模型层级"
+          },
+          {
+            "line": 82,
+            "topic": "距离驱动与循环路段"
+          },
+          {
+            "line": 87,
+            "topic": "海水法线每3帧更新"
+          },
+          {
+            "line": 94,
+            "topic": "挂在window的故障监听"
+          }
+        ]
+      },
+      "wheel_delta_error": 0.0,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "84565880d3260096b14df20a72001ad4b40ed62a381520bdf3dbb2e4a2d1d98c",
+      "frozen_matches_current": true,
+      "observed_fps": 160.64090324028476,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 60539,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 4,
+        "errors": [],
+        "before": {
+          "distance": 10.79999999999999,
+          "time": 2.000000000000001,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -24.82758620689653,
+          "frames": 40,
+          "drawCalls": 348
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.163316176390776,
+            3.1157853326627345,
+            1.5412642281635758
+          ],
+          "pairCount": 97
+        },
+        "geometry": {
+          "meshes": 90,
+          "uniqueGeometries": 48,
+          "vertices": 4875,
+          "triangles": 5470,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 4,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "distance": 10.79999999999999,
+          "time": 2.000000000000001,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -24.82758620689653,
+          "frames": 40,
+          "drawCalls": 348
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "distance": 17.54999999999998,
+          "time": 3.2499999999999964,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -40.34482758620685,
+          "frames": 65,
+          "drawCalls": 348
+        },
+        "lostOverlays": [
+          {
+            "id": "status",
+            "text": "正在兜风",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "distance": 25.649999999999967,
+          "time": 4.749999999999991,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -58.96551724137923,
+          "frames": 95,
+          "drawCalls": 377
+        },
+        "restoredOverlays": [
+          {
+            "id": "status",
+            "text": "正在兜风",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 4,
+        "count": 7,
+        "positionChangedCount": 7,
+        "wingChangedCount": 7,
+        "inCameraBefore": 1,
+        "before": [
+          {
+            "position": [
+              2.0854027594607665,
+              7.295634918996538,
+              -16
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.03491983653221882,
+                0,
+                0,
+                0.9993901165293577
+              ],
+              [
+                -0.03491983653221882,
+                0,
+                0,
+                0.9993901165293577
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              13.56045170795257,
+              8.202638954165344,
+              -19
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.08203104605420154,
+                0,
+                0,
+                0.9966297745317734
+              ],
+              [
+                0.08203104605420154,
+                0,
+                0,
+                0.9966297745317734
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              20.658763310100618,
+              8.92333766939195,
+              -22
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.12335478311013076,
+                0,
+                0,
+                0.9923626340626962
+              ],
+              [
+                0.12335478311013076,
+                0,
+                0,
+                0.9923626340626962
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              24.209345720540902,
+              6.714519377833145,
+              -25
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.05149202888605214,
+                0,
+                0,
+                0.9986734055541872
+              ],
+              [
+                0.05149202888605214,
+                0,
+                0,
+                0.9986734055541872
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              28.3029729515741,
+              7.768170653733204,
+              -28
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.06795023954368445,
+                0,
+                0,
+                0.997688711445587
+              ],
+              [
+                -0.06795023954368445,
+                0,
+                0,
+                0.997688711445587
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              36.531146111827276,
+              9.034964761455148,
+              -31
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.124673518755441,
+                0,
+                0,
+                0.9921978198530456
+              ],
+              [
+                -0.124673518755441,
+                0,
+                0,
+                0.9921978198530456
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              48.68408385003809,
+              7.269612428743488,
+              -34
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.06702133798229876,
+                0,
+                0,
+                0.9977515423466217
+              ],
+              [
+                -0.06702133798229876,
+                0,
+                0,
+                0.9977515423466217
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              6.599666963983583,
+              7.281376896104119,
+              -16
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.11507005841687844,
+                0,
+                0,
+                0.9933573786185595
+              ],
+              [
+                0.11507005841687844,
+                0,
+                0,
+                0.9933573786185595
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              17.73669225245093,
+              8.064470942606507,
+              -19
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.021734474126870088,
+                0,
+                0,
+                0.999763778416896
+              ],
+              [
+                0.021734474126870088,
+                0,
+                0,
+                0.999763778416896
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              24.380915220150822,
+              8.788290701799458,
+              -22
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.09170826420927751,
+                0,
+                0,
+                0.9957859178938621
+              ],
+              [
+                -0.09170826420927751,
+                0,
+                0,
+                0.9957859178938621
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              27.778831018093854,
+              6.706755013410536,
+              -25
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.12068113103737296,
+                0,
+                0,
+                0.9926913239328429
+              ],
+              [
+                -0.12068113103737296,
+                0,
+                0,
+                0.9926913239328429
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              32.16157463805253,
+              7.894827413323425,
+              -28
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                0.03888011709417528,
+                0,
+                0,
+                0.9992438823904519
+              ],
+              [
+                -0.03888011709417528,
+                0,
+                0,
+                0.9992438823904519
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              40.85483491400436,
+              9.179595004398523,
+              -31
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.07886937750335883,
+                0,
+                0,
+                0.9968849589056065
+              ],
+              [
+                0.07886937750335883,
+                0,
+                0,
+                0.9968849589056065
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              53.221231545372795,
+              7.299243776674417,
+              -34
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "wings": [
+              [
+                -0.12388603350536626,
+                0,
+                0,
+                0.9922964530332189
+              ],
+              [
+                0.12388603350536626,
+                0,
+                0,
+                0.9922964530332189
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 4,
+        "sha256": "0756bbdda8fe3b7784f4287073dfa7363ce86fcde0bcc6369607013d7e1f8da3",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 56,
+            "topic": "共享骑乘模型层级"
+          },
+          {
+            "line": 82,
+            "topic": "距离驱动与循环路段"
+          },
+          {
+            "line": 87,
+            "topic": "海水法线每3帧更新"
+          },
+          {
+            "line": 94,
+            "topic": "挂在window的故障监听"
+          }
+        ],
+        "source_file": "code-sources/04.js"
+      },
+      "quality_rank": 6,
+      "artifact": "scenes/04.html"
+    },
+    {
+      "order": 5,
+      "id": "01a0f00a-9790-7512-8259-604a881e4e77",
+      "title": "创建猫骑电动车的海边场景",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "started_local": "2026-09-30T10:00:21+08:00",
+      "completed_local": "2026-09-30T10:26:34+08:00",
+      "duration_ms": 1572998,
+      "time_to_first_token_ms": 9219,
+      "model_request_count": 20,
+      "tokens": {
+        "input_tokens": 1633647,
+        "cached_input_tokens": 1537408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38431,
+        "reasoning_output_tokens": 11686,
+        "total_tokens": 1672078
+      },
+      "uncached_input": 96239,
+      "api_standard_usd": 0.7305288000000001,
+      "credit_standard": 18.26322,
+      "fast_api_equivalent_usd": 1.4610576000000002,
+      "fast_credit_equivalent": 36.52644,
+      "recorded_tool_seconds": 44.72300052642822,
+      "estimated_model_response_seconds": 1516.1949999332428,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 1067.5996666889191,
+          "saved_seconds": 505.39833331108093,
+          "saved_percent": 32.129623388655354
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 814.9005000333786,
+          "saved_seconds": 758.0974999666214,
+          "saved_percent": 48.19443508298303
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 663.2810000400543,
+          "saved_seconds": 909.7169999599457,
+          "saved_percent": 57.83332209957963
+        }
+      ],
+      "quality": {
+        "order": 5,
+        "profile": "原场景视觉较协调 · 结构清楚",
+        "model": "猫较小巧，服装、头盔、面部和条纹清楚；车体、挡泥板、车镜、轮辐与投影完整。主体形象协调，但不能仅凭镜头更讨喜称其建模绝对优于1、2、6。",
+        "lighting": "本轮原场景的海面层次、沿岸泡沫、波纹与闪光结合较协调，天空渐变、阳光和接触阴影共同形成较完整的视觉风格。",
+        "motion": "累积车辆真实位置变化的距离驱动车轮，沿轻微弯曲路径移动并设置转向；前后轮共用路程，猫手臂未额外追踪轻微车把转角，是简化处理。",
+        "implementation": "姿态、镜头、音效和渲染分别封装，状态集中；道路原型按材质合并再复用，海面在GPU做波纹变化；有移动端像素比/阴影设置与音效生命周期处理。",
+        "limitations": "前轮转向时手部仍为静态连接，当前转向幅度很小，未在统一模型检查中看到明显脱握，不能声称有完整骑姿求解。主要脚本仍包含场景创建和所有业务逻辑。",
+        "recovery": "有上下文丢失与恢复反馈，本次无需重新加载即可继续；丢失画面期间仍推进模拟，若需严格连续体验可冻结该期间模拟。",
+        "camera": "原场景构图较协调；特定位置仍可能有前景遮挡。这是页面镜头表现，不作为建模绝对排名依据。",
+        "recommendation": "原海景视觉与页面完成度优先，可以先看这组；机械动作细节再与2、6对照。",
+        "original_evidence": "原会话有桌面预览、verification记录，并打开检查过成品。",
+        "references": [
+          {
+            "line": 82,
+            "topic": "道路/环境几何合并"
+          },
+          {
+            "line": 367,
+            "topic": "猫姿态与围巾"
+          },
+          {
+            "line": 421,
+            "topic": "交互与音效"
+          },
+          {
+            "line": 465,
+            "topic": "图形恢复反馈"
+          },
+          {
+            "line": 478,
+            "topic": "实际位移、转向与车轮"
+          }
+        ]
+      },
+      "wheel_delta_error": 0.0,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "897d9c32b5787bdb4ce11888515dea386ff7c73f63662ff4eb276c2243b31107",
+      "frozen_matches_current": true,
+      "observed_fps": 164.64650643401487,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 115454,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 5,
+        "errors": [],
+        "before": {
+          "paused": false,
+          "speed": 24,
+          "path": 13.33285010860518,
+          "distance": 13.333321274577528,
+          "time": 2.000000000000001,
+          "frames": 40,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 30.30300289676711,
+          "frontAngle": 30.30300289676711,
+          "position": [
+            -0.8000424705447275,
+            0.18,
+            13.33285010860518
+          ],
+          "heading": -0.00034969870586902335,
+          "camera": [
+            4.269480407809162,
+            3.882817715289119,
+            19.48212836230377
+          ],
+          "drawCalls": 192,
+          "triangles": 184174,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.293897420167923,
+            1.928695559501648,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.2500000000000004,
+            3.0320789756773956,
+            1.8999999761581428
+          ],
+          "pairCount": 153
+        },
+        "geometry": {
+          "meshes": 142,
+          "uniqueGeometries": 70,
+          "vertices": 14450,
+          "triangles": 12284,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial",
+            "MeshBasicMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 5,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "paused": false,
+          "speed": 24,
+          "path": 13.33285010860518,
+          "distance": 13.333321274577528,
+          "time": 2.000000000000001,
+          "frames": 40,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 30.30300289676711,
+          "frontAngle": 30.30300289676711,
+          "position": [
+            -0.8000424705447275,
+            0.18,
+            13.33285010860518
+          ],
+          "heading": -0.00034969870586902335,
+          "camera": [
+            4.269480407809162,
+            3.882817715289119,
+            19.48212836230377
+          ],
+          "drawCalls": 192,
+          "triangles": 184174,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.293897420167923,
+            1.928695559501648,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "paused": false,
+          "speed": 24,
+          "path": 21.666015974991893,
+          "distance": 21.666663285011925,
+          "time": 3.2499999999999964,
+          "frames": 65,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 49.242416556845285,
+          "frontAngle": 49.242416556845285,
+          "position": [
+            -0.8484431721304735,
+            0.18,
+            21.666015974991893
+          ],
+          "heading": -0.01028181965404743,
+          "camera": [
+            4.221079706223415,
+            3.882817715289119,
+            27.815294228690483
+          ],
+          "drawCalls": 192,
+          "triangles": 184174,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.2818581461906433,
+            1.9275002479553223,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": null
+        },
+        "lostOverlays": [
+          {
+            "id": "toast",
+            "text": "正在恢复 3D 画面…",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "paused": false,
+          "speed": 24,
+          "path": 31.665377160458142,
+          "distance": 31.666662121371672,
+          "time": 4.749999999999991,
+          "frames": 95,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 71.96968663948107,
+          "frontAngle": 71.96968663948107,
+          "position": [
+            -0.96117354886848,
+            0.18,
+            31.665377160458142
+          ],
+          "heading": -0.009492463459172377,
+          "camera": [
+            4.108349329485409,
+            3.882817715289119,
+            37.81465541415673
+          ],
+          "drawCalls": 190,
+          "triangles": 181234,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.327304869890213,
+            1.9271714687347412,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        },
+        "restoredOverlays": [
+          {
+            "id": "toast",
+            "text": "画面已恢复",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 5,
+        "count": 6,
+        "positionChangedCount": 6,
+        "wingChangedCount": 6,
+        "inCameraBefore": 0,
+        "before": [
+          {
+            "position": [
+              -8.120512753346972,
+              6.627871343892492,
+              21.260983324060827
+            ],
+            "rotation": [
+              0,
+              0.2115789323918218,
+              0,
+              0.9773609135667013
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.08826232826311071,
+                0.9960972650346827
+              ],
+              [
+                0,
+                0,
+                0.08826232826311071,
+                0.9960972650346827
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -14.070915458108555,
+              7.39164454212927,
+              37.470476257234466
+            ],
+            "rotation": [
+              0,
+              0.3350099683442649,
+              0,
+              0.9422145833672787
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.10187860012221145,
+                0.9947968389762497
+              ],
+              [
+                0,
+                0,
+                -0.10187860012221145,
+                0.9947968389762497
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -21.531380106399123,
+              6.4654820069823336,
+              36.755543927786135
+            ],
+            "rotation": [
+              0,
+              0.3007685467831734,
+              0,
+              0.9536971643377881
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.10263454468904118,
+                0.9947191313312885
+              ],
+              [
+                0,
+                0,
+                -0.10263454468904118,
+                0.9947191313312885
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -25.701908730694495,
+              7.392307428430041,
+              22.784902995781113
+            ],
+            "rotation": [
+              0,
+              0.1400442151021069,
+              0,
+              0.99014525086799
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.08739824209027662,
+                0.9961734524065221
+              ],
+              [
+                0,
+                0,
+                0.08739824209027662,
+                0.9961734524065221
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -25.031510890768416,
+              8.909617060279944,
+              12.318070889220039
+            ],
+            "rotation": [
+              0,
+              0.009578388898641254,
+              0,
+              0.9999541261808496
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.11494139483986504,
+                0.9933722745035046
+              ],
+              [
+                0,
+                0,
+                0.11494139483986504,
+                0.9933722745035046
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -22.74989899491124,
+              8.223580946045665,
+              18.65434539503708
+            ],
+            "rotation": [
+              0,
+              0.042002177771390925,
+              0,
+              0.9991175191450005
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.07115243096149745,
+                0.9974654538219704
+              ],
+              [
+                0,
+                0,
+                -0.07115243096149745,
+                0.9974654538219704
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              -8.227026480232187,
+              6.740291892763479,
+              27.69514537386598
+            ],
+            "rotation": [
+              0,
+              0.22518590126900137,
+              0,
+              0.9743158162883674
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.13790268338296402,
+                0.9904457834307631
+              ],
+              [
+                0,
+                0,
+                -0.13790268338296402,
+                0.9904457834307631
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -14.468408079314077,
+              7.303724072328961,
+              42.86576903740296
+            ],
+            "rotation": [
+              0,
+              0.3386289167253838,
+              0,
+              0.9409200055038649
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.03119952409919574,
+                0.9995131763493584
+              ],
+              [
+                0,
+                0,
+                -0.03119952409919574,
+                0.9995131763493584
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -21.82730401342349,
+              6.405228172999687,
+              40.7215508964464
+            ],
+            "rotation": [
+              0,
+              0.29116665993934043,
+              0,
+              0.9566723452362196
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.1335288818471535,
+                0.9910449221466446
+              ],
+              [
+                0,
+                0,
+                0.1335288818471535,
+                0.9910449221466446
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -25.60402146215938,
+              7.51597889666611,
+              26.342712371756313
+            ],
+            "rotation": [
+              0,
+              0.12614818712117487,
+              0,
+              0.9920114086471189
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.050131078120348005,
+                0.9987426470350065
+              ],
+              [
+                0,
+                0,
+                0.050131078120348005,
+                0.9987426470350065
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -24.636481947228724,
+              8.896491688738022,
+              16.891890295961794
+            ],
+            "rotation": [
+              0,
+              0.005435493809157123,
+              0,
+              0.9999852275944133
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.12649387983442265,
+                0.9919673877524576
+              ],
+              [
+                0,
+                0,
+                -0.12649387983442265,
+                0.9919673877524576
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -22.447842956620246,
+              8.107697283272717,
+              24.665012112715385
+            ],
+            "rotation": [
+              0,
+              0.05181765450789473,
+              0,
+              0.9986565629290685
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06804320146666627,
+                0.9976823756758293
+              ],
+              [
+                0,
+                0,
+                -0.06804320146666627,
+                0.9976823756758293
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 5,
+        "sha256": "5a0494d8274d97aa5e0151da5f9770c03ff8cd0a8157adcd9d51aecde23dadcd",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 82,
+            "topic": "道路/环境几何合并"
+          },
+          {
+            "line": 367,
+            "topic": "猫姿态与围巾"
+          },
+          {
+            "line": 421,
+            "topic": "交互与音效"
+          },
+          {
+            "line": 465,
+            "topic": "图形恢复反馈"
+          },
+          {
+            "line": 478,
+            "topic": "实际位移、转向与车轮"
+          }
+        ],
+        "source_file": "code-sources/05.js"
+      },
+      "quality_rank": 1,
+      "artifact": "scenes/05.html"
+    },
+    {
+      "order": 6,
+      "id": "01a0f00a-8669-7b51-9815-7d5164975373",
+      "title": "创建海边骑车猫咪场景",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "started_local": "2026-09-30T10:00:17+08:00",
+      "completed_local": "2026-09-30T10:26:44+08:00",
+      "duration_ms": 1586467,
+      "time_to_first_token_ms": 10490,
+      "model_request_count": 29,
+      "tokens": {
+        "input_tokens": 2716750,
+        "cached_input_tokens": 2600576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40834,
+        "reasoning_output_tokens": 14123,
+        "total_tokens": 2757584
+      },
+      "uncached_input": 116174,
+      "api_standard_usd": 0.9007455999999999,
+      "credit_standard": 22.51864,
+      "fast_api_equivalent_usd": 1.8014911999999998,
+      "fast_credit_equivalent": 45.03728,
+      "recorded_tool_seconds": 22.92300057411194,
+      "estimated_model_response_seconds": 1548.1889996528625,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 1070.4040001157125,
+          "saved_seconds": 516.0629998842876,
+          "saved_percent": 32.52907245371556
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 812.3725001735688,
+          "saved_seconds": 774.0944998264313,
+          "saved_percent": 48.79360868057333
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 657.5536002082825,
+          "saved_seconds": 928.9133997917176,
+          "saved_percent": 58.552330416687994
+        }
+      ],
+      "quality": {
+        "order": 6,
+        "profile": "模型细节丰富 · 骑姿跟随较细致",
+        "model": "脸部、头盔带、服装、分节条纹尾巴、后载篮、轮胎、车镜、灯具和仪表细节较丰富。正侧后方均有完整细节，主体塑造是这组的强项。",
+        "lighting": "有天空、海面着色器与渐变日落，材质与主题一致；海面视觉较轻柔，是否优于5取决于对平静海面或强波纹的偏好。",
+        "motion": "前后轮分别累积行程，带轻微转向、侧移和倾斜；手爪根据车把目标的世界坐标转回rider局部坐标更新。动态尾巴、围巾、眨眼与喇叭反馈丰富。",
+        "implementation": "静态路段按材质合并并释放原几何；把骑姿、世界、光照和状态记录分成函数，复用部分临时向量；有完整轨道交互与键盘入口。",
+        "limitations": "手爪位置跟随正确，但圆柱手臂随肩肘到手爪距离伸缩，并非固定骨长IK。gripError是代码的自测量，不是独立人体工学/穿插验收。主体网格较多，需要真实低性能设备验证才能定性能上限。",
+        "recovery": "图形中断后暂停并显示重新打开入口；本次上下文恢复后遮罩仍保留，采用人工重新加载的恢复流程。",
+        "camera": "全景主体较小、前景偶发遮挡，属于预设镜头呈现。统一模型检查后不会把这些现象转写为建模质量差。",
+        "recommendation": "动作细节、猫车连接和互动功能优先，建议与2一起比较；模型细节也与1相当值得看。",
+        "original_evidence": "原会话有browser-verification与桌面预览，并做过多轮检查。",
+        "references": [
+          {
+            "line": 209,
+            "topic": "静态合并与几何释放"
+          },
+          {
+            "line": 504,
+            "topic": "人工图形恢复"
+          },
+          {
+            "line": 518,
+            "topic": "世界/局部坐标转换与握把连接"
+          },
+          {
+            "line": 594,
+            "topic": "转向、前轮行程与渲染循环"
+          }
+        ]
+      },
+      "wheel_delta_error": 2.3092638912203256e-14,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "c058bc8c8308cc76b68376f93b7aae8b15de2a11350ff95761dc41713178be0f",
+      "frozen_matches_current": true,
+      "observed_fps": 165.06303914940628,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 123331,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 6,
+        "errors": [],
+        "before": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 9,
+          "time": 1.800000000000001,
+          "rearWheelAngle": -24.999999999999982,
+          "frontWheelAngle": -25.00000024742746,
+          "wheelRadius": 0.36,
+          "steering": 0.00023672828033875404,
+          "gripError": 4.965068306494546e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 36,
+          "renderCalls": 293,
+          "triangles": 132986,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.5845458159860215
+          ],
+          "camera": [
+            5.999999999999997,
+            3.6499999999999995,
+            9.274243085612257
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.3429620317972745
+          ]
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            2.908045926594741,
+            2.8635383757696484,
+            1.3800365892243653
+          ],
+          "pairCount": 235
+        },
+        "geometry": {
+          "meshes": 223,
+          "uniqueGeometries": 223,
+          "vertices": 98714,
+          "triangles": 58600,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial",
+            "MeshBasicMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 6,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 9,
+          "time": 1.800000000000001,
+          "rearWheelAngle": -24.999999999999982,
+          "frontWheelAngle": -25.00000024742746,
+          "wheelRadius": 0.36,
+          "steering": 0.00023672828033875404,
+          "gripError": 4.965068306494546e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 36,
+          "renderCalls": 293,
+          "triangles": 132986,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.5845458159860215
+          ],
+          "camera": [
+            5.999999999999997,
+            3.6499999999999995,
+            9.274243085612257
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.3429620317972745
+          ]
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "ready": true,
+          "paused": true,
+          "kmh": 18,
+          "distance": 10,
+          "time": 2.000000000000001,
+          "rearWheelAngle": -27.777777777777754,
+          "frontWheelAngle": -27.777778113724736,
+          "wheelRadius": 0.36,
+          "steering": 0.0002616891200578184,
+          "gripError": 2.220446049250313e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 60,
+          "renderCalls": 293,
+          "triangles": 132986,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.5934604021540761
+          ],
+          "camera": [
+            5.999999999999998,
+            3.6500000000000012,
+            9.293274188758252
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.40168772178219436
+          ]
+        },
+        "lostOverlays": [
+          {
+            "id": "toast",
+            "text": "",
+            "visible": false,
+            "opacity": "0"
+          },
+          {
+            "id": "error",
+            "text": "海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "ready": true,
+          "paused": true,
+          "kmh": 18,
+          "distance": 10,
+          "time": 2.000000000000001,
+          "rearWheelAngle": -27.777777777777754,
+          "frontWheelAngle": -27.777778113724736,
+          "wheelRadius": 0.36,
+          "steering": 0.0002616891200578184,
+          "gripError": 2.220446049250313e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 90,
+          "renderCalls": 293,
+          "triangles": 132986,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.5934604021540761
+          ],
+          "camera": [
+            6,
+            3.6500000000000004,
+            9.293459940577218
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.40168772178219436
+          ]
+        },
+        "restoredOverlays": [
+          {
+            "id": "toast",
+            "text": "",
+            "visible": false,
+            "opacity": "0"
+          },
+          {
+            "id": "error",
+            "text": "海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 6,
+        "count": 7,
+        "positionChangedCount": 7,
+        "wingChangedCount": 7,
+        "inCameraBefore": 3,
+        "before": [
+          {
+            "position": [
+              -13.106623833613094,
+              9.717356090899523,
+              -36.627393673076384
+            ],
+            "rotation": [
+              -0.00581176527668956,
+              -0.1195710498337866,
+              0.04819868321638656,
+              0.9916379754538555
+            ],
+            "wings": [
+              [
+                -0.1712721310793211,
+                0,
+                0,
+                0.9852237599223579
+              ],
+              [
+                0.1712721310793211,
+                0,
+                0,
+                0.9852237599223579
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              7.045835406643814,
+              11.598472144103956,
+              -21.308652558183027
+            ],
+            "rotation": [
+              0.014883136535797295,
+              -0.8247514366866786,
+              -0.010199510028887755,
+              0.5652075104997164
+            ],
+            "wings": [
+              [
+                0.06736008382945194,
+                0,
+                0,
+                0.9977287302200379
+              ],
+              [
+                -0.06736008382945194,
+                0,
+                0,
+                0.9977287302200379
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -33.86279013792495,
+              12.128424227586411,
+              -16.58151490433464
+            ],
+            "rotation": [
+              0.042546928282209094,
+              -0.9681747066377976,
+              0.010827931438889537,
+              -0.2463945052579658
+            ],
+            "wings": [
+              [
+                -0.07095958393561914,
+                0,
+                0,
+                0.9974791914860599
+              ],
+              [
+                0.07095958393561914,
+                0,
+                0,
+                0.9974791914860599
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -43.47354703695196,
+              8.626123335169764,
+              -37.633765317360954
+            ],
+            "rotation": [
+              -0.013336786981329469,
+              -0.4541098674913132,
+              -0.026152043321159057,
+              -0.8904619188882614
+            ],
+            "wings": [
+              [
+                -0.2714306191808488,
+                0,
+                0,
+                0.9624580089391438
+              ],
+              [
+                0.2714306191808488,
+                0,
+                0,
+                0.9624580089391438
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              -0.08833526747848452,
+              11.967919672031487,
+              -41.45134783189319
+            ],
+            "rotation": [
+              0.01342671557625046,
+              0.3691968921308744,
+              -0.03377219451342478,
+              -0.9286403055152653
+            ],
+            "wings": [
+              [
+                -0.08381784687724998,
+                0,
+                0,
+                0.9964810929189083
+              ],
+              [
+                0.08381784687724998,
+                0,
+                0,
+                0.9964810929189083
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -1.6574697091355794,
+              13.124454423507062,
+              -23.93072641901628
+            ],
+            "rotation": [
+              -0.036470902455958625,
+              0.9412489715207164,
+              0.012999216885503647,
+              -0.3354866126175608
+            ],
+            "wings": [
+              [
+                0.07067558044409901,
+                0,
+                0,
+                0.9974993545506131
+              ],
+              [
+                -0.07067558044409901,
+                0,
+                0,
+                0.9974993545506131
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -44.63833281137505,
+              8.000009793449296,
+              -29.143393093037076
+            ],
+            "rotation": [
+              -0.023043657351989773,
+              0.8736043956641065,
+              -0.012817491621854095,
+              0.4859218678354771
+            ],
+            "wings": [
+              [
+                -0.159397295391574,
+                0,
+                0,
+                0.9872145168208637
+              ],
+              [
+                0.159397295391574,
+                0,
+                0,
+                0.9872145168208637
+              ]
+            ],
+            "inCamera": true
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              -10.602752176548824,
+              9.891207360061435,
+              -36.29855046586903
+            ],
+            "rotation": [
+              -0.007766585974004626,
+              -0.1640686087529082,
+              0.046642278480526704,
+              0.9853150103506687
+            ],
+            "wings": [
+              [
+                -0.06666470603114649,
+                0,
+                0,
+                0.9977754341382538
+              ],
+              [
+                0.06666470603114649,
+                0,
+                0,
+                0.9977754341382538
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              5.995766493395241,
+              11.334988150155905,
+              -20.237952596345785
+            ],
+            "rotation": [
+              0.018824409801526238,
+              -0.8492719525737787,
+              -0.011692008475348301,
+              0.5274903687319399
+            ],
+            "wings": [
+              [
+                -0.27122156893547283,
+                0,
+                0,
+                0.9625169403933526
+              ],
+              [
+                0.27122156893547283,
+                0,
+                0,
+                0.9625169403933526
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -36.09607059878328,
+              12.022469882334903,
+              -17.1862657017923
+            ],
+            "rotation": [
+              0.03979277327398711,
+              -0.9562057272462542,
+              0.012057074000533059,
+              -0.2897270600809885
+            ],
+            "wings": [
+              [
+                -0.0881627452939288,
+                0,
+                0,
+                0.9961060838797431
+              ],
+              [
+                0.0881627452939288,
+                0,
+                0,
+                0.9961060838797431
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -41.84798634050465,
+              8.916910597182502,
+              -38.548627657851696
+            ],
+            "rotation": [
+              -0.013602072619246603,
+              -0.4135475935906606,
+              -0.029927327491576113,
+              -0.9098888539404395
+            ],
+            "wings": [
+              [
+                0.07157988226368107,
+                0,
+                0,
+                0.9974348702823246
+              ],
+              [
+                -0.07157988226368107,
+                0,
+                0,
+                0.9974348702823246
+              ]
+            ],
+            "inCamera": true
+          },
+          {
+            "position": [
+              1.726056101618994,
+              11.998941341839773,
+              -40.610847083214416
+            ],
+            "rotation": [
+              0.013604945789334268,
+              0.4106439810499986,
+              -0.03018855703086341,
+              -0.9111943136904839
+            ],
+            "wings": [
+              [
+                -0.15532128543287696,
+                0,
+                0,
+                0.9878640079947638
+              ],
+              [
+                0.15532128543287696,
+                0,
+                0,
+                0.9878640079947638
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -3.7505790823939513,
+              12.82567321877702,
+              -23.232451866362588
+            ],
+            "rotation": [
+              -0.03958447063565076,
+              0.9552850550295745,
+              0.012131756988714385,
+              -0.2927735537817663
+            ],
+            "wings": [
+              [
+                -0.25439566715107836,
+                0,
+                0,
+                0.9671002246586223
+              ],
+              [
+                0.25439566715107836,
+                0,
+                0,
+                0.9671002246586223
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              -45.913352943067125,
+              8.045980750097911,
+              -30.163831504948043
+            ],
+            "rotation": [
+              -0.01910414527917304,
+              0.850942448508483,
+              -0.011781592844534809,
+              0.5247791678692911
+            ],
+            "wings": [
+              [
+                -0.0035327411177266945,
+                0,
+                0,
+                0.9999937598506279
+              ],
+              [
+                0.0035327411177266945,
+                0,
+                0,
+                0.9999937598506279
+              ]
+            ],
+            "inCamera": true
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 6,
+        "sha256": "12edb3d6bd2b5b0f62ec0ddf6106b1761ea351c806fd90799d5379aebad63e5b",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 209,
+            "topic": "静态合并与几何释放"
+          },
+          {
+            "line": 504,
+            "topic": "人工图形恢复"
+          },
+          {
+            "line": 518,
+            "topic": "世界/局部坐标转换与握把连接"
+          },
+          {
+            "line": 594,
+            "topic": "转向、前轮行程与渲染循环"
+          }
+        ],
+        "source_file": "code-sources/06.js"
+      },
+      "quality_rank": 2,
+      "artifact": "scenes/06.html"
+    },
+    {
+      "order": 7,
+      "id": "01a0f00a-6c63-7ce3-81c6-18d5a4f6d2c3",
+      "title": "创建猫骑电动车的3D场景",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "started_local": "2026-09-30T10:00:11+08:00",
+      "completed_local": "2026-09-30T10:13:49+08:00",
+      "duration_ms": 817551,
+      "time_to_first_token_ms": 11759,
+      "model_request_count": 20,
+      "tokens": {
+        "input_tokens": 1178250,
+        "cached_input_tokens": 1121792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19354,
+        "reasoning_output_tokens": 3714,
+        "total_tokens": 1197604
+      },
+      "uncached_input": 56458,
+      "api_standard_usd": 0.4186352,
+      "credit_standard": 10.46588,
+      "fast_api_equivalent_usd": 0.8372704,
+      "fast_credit_equivalent": 20.93176,
+      "recorded_tool_seconds": 287.72199964523315,
+      "estimated_model_response_seconds": 512.3039999008179,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 646.7830000330607,
+          "saved_seconds": 170.76799996693927,
+          "saved_percent": 20.88774889480158
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 561.3990000495911,
+          "saved_seconds": 256.15199995040894,
+          "saved_percent": 31.331623342202374
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 510.16860005950934,
+          "saved_seconds": 307.3823999404907,
+          "saved_percent": 37.597948010642845
+        }
+      ],
+      "quality": {
+        "order": 7,
+        "profile": "弧长行驶清楚 · 成本最低",
+        "model": "橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。",
+        "lighting": "海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。",
+        "motion": "2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。",
+        "implementation": "共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。",
+        "limitations": "弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。",
+        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。",
+        "camera": "部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。",
+        "recommendation": "本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。",
+        "original_evidence": "原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。",
+        "references": [
+          {
+            "line": 114,
+            "topic": "弧长查表"
+          },
+          {
+            "line": 136,
+            "topic": "上下文丢失及恢复"
+          },
+          {
+            "line": 138,
+            "topic": "切线朝向、车轮及动画"
+          }
+        ]
+      },
+      "wheel_delta_error": 1.7763568394002505e-15,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "frozen_sha256": "ab4ee8df75e9fcbea77354e0f0f088e792d13e0ce8085aa63192bb18fa4df22a",
+      "frozen_matches_current": true,
+      "observed_fps": 164.96041779001388,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "motion_advanced": true,
+        "pause_froze_distance": true,
+        "pause_froze_time": true,
+        "resume_advanced": true,
+        "offline_file_runs": true,
+        "externals": [],
+        "errors": []
+      },
+      "max_request_input": 76197,
+      "token_sum_verified": true,
+      "service_tier": "not_recorded",
+      "studio": {
+        "order": 7,
+        "errors": [],
+        "before": {
+          "distance": 13.600000000000009,
+          "time": 2.000000000000001,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.24416140384000443,
+          "wheelRotation": 39.76608187134505,
+          "wheelRadius": 0.342,
+          "position": [
+            31.45840959696029,
+            0.122,
+            13.551497388185778
+          ],
+          "frame": 40,
+          "drawCalls": 211,
+          "triangles": 108772
+        },
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.0206616973384945,
+            3.136826188381556,
+            1.5089605700003608
+          ],
+          "pairCount": 113
+        },
+        "geometry": {
+          "meshes": 106,
+          "uniqueGeometries": 71,
+          "vertices": 20074,
+          "triangles": 14040,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "order": 7,
+        "errors": [],
+        "messages": [
+          "THREE.WebGLRenderer: Context Lost.",
+          "THREE.WebGLRenderer: Context Restored."
+        ],
+        "before": {
+          "distance": 13.600000000000009,
+          "time": 2.000000000000001,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.24416140384000443,
+          "wheelRotation": 39.76608187134505,
+          "wheelRadius": 0.342,
+          "position": [
+            31.45840959696029,
+            0.122,
+            13.551497388185778
+          ],
+          "frame": 40,
+          "drawCalls": 211,
+          "triangles": 108772
+        },
+        "extensionAvailable": true,
+        "lost": {
+          "distance": 13.600000000000009,
+          "time": 2.000000000000001,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.24416140384000443,
+          "wheelRotation": 39.76608187134505,
+          "wheelRadius": 0.342,
+          "position": [
+            31.45840959696029,
+            0.122,
+            13.551497388185778
+          ],
+          "frame": 40,
+          "drawCalls": 211,
+          "triangles": 108772
+        },
+        "lostOverlays": [
+          {
+            "id": "status",
+            "text": "正在沿海骑行",
+            "visible": true,
+            "opacity": "1"
+          },
+          {
+            "id": "loading",
+            "text": "画面恢复中…",
+            "visible": true,
+            "opacity": "1"
+          }
+        ],
+        "restored": {
+          "distance": 20.79999999999998,
+          "time": 3.4999999999999956,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.3768794225829395,
+          "wheelRotation": 60.818713450292336,
+          "wheelRadius": 0.342,
+          "position": [
+            30.10527000437285,
+            0.122,
+            20.621030563652848
+          ],
+          "frame": 70,
+          "drawCalls": 199,
+          "triangles": 105236
+        },
+        "restoredOverlays": [
+          {
+            "id": "status",
+            "text": "正在沿海骑行",
+            "visible": true,
+            "opacity": "1"
+          },
+          {
+            "id": "loading",
+            "text": "画面恢复中…",
+            "visible": false,
+            "opacity": "1"
+          }
+        ],
+        "events": [
+          {
+            "type": "webglcontextlost",
+            "bubbles": false,
+            "defaultPrevented": true
+          },
+          {
+            "type": "webglcontextrestored",
+            "bubbles": false,
+            "defaultPrevented": false
+          }
+        ]
+      },
+      "birds_qa": {
+        "order": 7,
+        "count": 9,
+        "positionChangedCount": 9,
+        "wingChangedCount": 9,
+        "inCameraBefore": 0,
+        "before": [
+          {
+            "position": [
+              45.60257145905514,
+              8.272789228047705,
+              9.223993877989615
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.220771683155845,
+                0.9753255169001451
+              ],
+              [
+                0,
+                0,
+                0.220771683155845,
+                0.9753255169001451
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              47.33944006364147,
+              8.492336002417959,
+              11.983985281859285
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.09259383538627912,
+                0.9957039628566609
+              ],
+              [
+                0,
+                0,
+                0.09259383538627912,
+                0.9957039628566609
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              49.00341155394253,
+              8.672959251407622,
+              14.826549445074415
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.1220993153683723,
+                0.9925178875902312
+              ],
+              [
+                0,
+                0,
+                -0.1220993153683723,
+                0.9925178875902312
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              50.59080143599861,
+              9.062322717601058,
+              17.749742507119695
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.2231042141469548,
+                0.9747945986872669
+              ],
+              [
+                0,
+                0,
+                -0.2231042141469548,
+                0.9747945986872669
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              52.09771720327532,
+              9.716175350540324,
+              20.751937352806408
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.12043584014067392,
+                0.9927211131076089
+              ],
+              [
+                0,
+                0,
+                -0.12043584014067392,
+                0.9927211131076089
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              53.519997708975836,
+              10.447095979615638,
+              23.83182633629445
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.09439682688189595,
+                0.9955346498613845
+              ],
+              [
+                0,
+                0,
+                0.09439682688189595,
+                0.9955346498613845
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              54.85314687718943,
+              10.996807473987014,
+              26.988421440888395
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.22104578922191973,
+                0.9752634306008088
+              ],
+              [
+                0,
+                0,
+                0.22104578922191973,
+                0.9752634306008088
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              56.0922608906164,
+              11.273635545572528,
+              30.221050763448233
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.1457932712284132,
+                0.9893150772451202
+              ],
+              [
+                0,
+                0,
+                0.1457932712284132,
+                0.9893150772451202
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              57.231948013988465,
+              11.43679366673319,
+              33.52934990609728
+            ],
+            "rotation": [
+              0,
+              -0.07369579043727455,
+              0,
+              0.9972807681249174
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06473295177906897,
+                0.9979026229818061
+              ],
+              [
+                0,
+                0,
+                -0.06473295177906897,
+                0.9979026229818061
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "after": [
+          {
+            "position": [
+              45.156762894275595,
+              8.1144982976157,
+              13.399335750830176
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.2231042141469548,
+                0.9747945986872669
+              ],
+              [
+                0,
+                0,
+                -0.2231042141469548,
+                0.9747945986872669
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              46.782844166194266,
+              8.278531604377296,
+              16.213741537726023
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.12043584014067592,
+                0.9927211131076087
+              ],
+              [
+                0,
+                0,
+                -0.12043584014067592,
+                0.9927211131076087
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              48.3320209800775,
+              8.600212163307386,
+              19.106951851143787
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.0943968268818938,
+                0.9955346498613846
+              ],
+              [
+                0,
+                0,
+                0.0943968268818938,
+                0.9955346498613846
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              49.800340666343445,
+              9.197516276750221,
+              22.077429121920197
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.2210457892219194,
+                0.9752634306008089
+              ],
+              [
+                0,
+                0,
+                0.2210457892219194,
+                0.9752634306008089
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              51.183558884978254,
+              9.935013222134186,
+              25.123956579528013
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.14579327122841504,
+                0.98931507724512
+              ],
+              [
+                0,
+                0,
+                0.14579327122841504,
+                0.98931507724512
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              52.47707065989564,
+              10.548379633733353,
+              28.245636827419638
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.06473295177906667,
+                0.9979026229818063
+              ],
+              [
+                0,
+                0,
+                -0.06473295177906667,
+                0.9979026229818063
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              53.675834541655384,
+              10.887417186126257,
+              31.441886119063255
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.21463141625058482,
+                0.9766951188361024
+              ],
+              [
+                0,
+                0,
+                -0.21463141625058482,
+                0.9766951188361024
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              54.77428908803398,
+              11.054144241913319,
+              34.712422746209455
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                0.1681692073752042,
+                0.985758143608662
+              ],
+              [
+                0,
+                0,
+                -0.1681692073752042,
+                0.985758143608662
+              ]
+            ],
+            "inCamera": false
+          },
+          {
+            "position": [
+              55.7662609483549,
+              11.309000639623797,
+              38.05724753760617
+            ],
+            "rotation": [
+              0,
+              -0.09427662341479619,
+              0,
+              0.9955460402600699
+            ],
+            "wings": [
+              [
+                0,
+                0,
+                -0.03371598103304385,
+                0.9994314546896047
+              ],
+              [
+                0,
+                0,
+                0.03371598103304385,
+                0.9994314546896047
+              ]
+            ],
+            "inCamera": false
+          }
+        ],
+        "errors": []
+      },
+      "source_evidence": {
+        "order": 7,
+        "sha256": "179e9a947d4bd90de15d29c1170f2f540fbf4de1f43b0335886ee0f442cd4e2e",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 114,
+            "topic": "弧长查表"
+          },
+          {
+            "line": 136,
+            "topic": "上下文丢失及恢复"
+          },
+          {
+            "line": 138,
+            "topic": "切线朝向、车轮及动画"
+          }
+        ],
+        "source_file": "code-sources/07.js"
+      },
+      "quality_rank": 5,
+      "artifact": "scenes/07.html"
+    }
+  ],
+  "code_and_visual_review": {
+    "assessment_basis": "查看实际源代码、同角度的主体模型、原场景真实动画、运行状态和故障恢复。镜头取景单独描述，不用于降低建模或代码评价。",
+    "scoring": "撤下此前混合取景与模型质量的单一百分制评分。采用分维度结论；细小主观差异不能支持稳定模型排名。",
+    "ambient": [
+      {
+        "order": 1,
+        "bird_count": 6,
+        "birds": "有身体与片状双翼，分别拍动；围绕各自位置缓慢盘旋、升降。",
+        "sky": "天空渐变与太阳；11组云缓慢横向漂移；可切换日落。",
+        "water": "GPU波浪、闪光与近岸泡沫变化。",
+        "boats": "3条帆船随浪上下起伏和轻微摇摆。"
+      },
+      {
+        "order": 2,
+        "bird_count": 6,
+        "birds": "有身体与椭圆双翼，分别拍动；环岛上方盘旋，方向随路径变化。",
+        "sky": "15组远处云；云本身静态；晴日/日落改变环境色与灯光。",
+        "water": "GPU海色、闪光与近岸浪纹，额外泡沫带缩放与透明度变化。",
+        "boats": "3条帆船有上下起伏和摇摆。"
+      },
+      {
+        "order": 3,
+        "bird_count": 6,
+        "birds": "以细杆构成展开翅膀；位置、高度与左右翅膀持续变化，造型更符号化。",
+        "sky": "太阳、远岛与10组云；云本身静态，无日落切换。",
+        "water": "CPU顶点波动与多条泡沫带位移；顶点变化未更新水面法线。",
+        "boats": "1条帆船有上下起伏和摇摆。"
+      },
+      {
+        "order": 4,
+        "bird_count": 7,
+        "birds": "细杆双翼拍动，位置随车辆前进并缓慢漂移；更偏背景符号。",
+        "sky": "太阳、远山与11组云；云本身静态，无日落切换。",
+        "water": "CPU几何波动并每3帧更新法线，泡沫带与闪光装饰。",
+        "boats": "4条远处帆船为静态背景，随背景参照系平移。"
+      },
+      {
+        "order": 5,
+        "bird_count": 6,
+        "birds": "有身体、喙与双翼轮廓；拍翼、升降和朝向变化，沿车辆附近飞行。",
+        "sky": "渐变天空、太阳与远岛，无独立云层运动或日落切换。",
+        "water": "GPU近岸泡沫、波纹、闪光与深浅海色，沿行驶方向保持连续。",
+        "boats": "3条帆船合并到远景网格；无独立摇摆动画，远景分段循环。"
+      },
+      {
+        "order": 6,
+        "bird_count": 7,
+        "birds": "有身体与片状双翼，独立拍动；按不同相位盘旋和升降。",
+        "sky": "天空渐变、太阳；8组云缓慢横移；渐变日落与灯光变化。",
+        "water": "GPU海水波纹与闪光，近岸泡沫顶点起伏和位置变化。",
+        "boats": "3条帆船上下起伏和摇摆。"
+      },
+      {
+        "order": 7,
+        "bird_count": 9,
+        "birds": "双三角翼为主，没有独立身体模型；拍翼和升降，群体位置沿道路跟随车辆。",
+        "sky": "太阳、远岛与24组云；云本身静态，无日落切换。",
+        "water": "GPU几何波动、海色与闪光，泡沫带起伏和透明度变化。",
+        "boats": "没有帆船模型；帆船不在原需求中，不作为核心缺失扣分。"
+      }
+    ],
+    "common": [
+      "七组都完成核心需求；直线行驶和弯道行驶均符合原任务，不因功能数量不同扣核心达标分。",
+      "七组都使用时间增量驱动模拟，车轮角度与路程增量一致；没有把电动车误当成需要踩踏的自行车。",
+      "代码均以一个主要脚本组织场景，是可以交付的网页原型；未验证为可长期维护的正式应用。第5、6组函数划分更清楚，但仍非模块化产品架构。",
+      "所有暂停实现都冻结模拟后继续渲染，便于拖动观察；静止画面可以进一步改成按需渲染，以减少持续GPU工作。",
+      "多组每帧构建小型Vector3/Color临时对象。可复用缓存，但本次高性能电脑没有测出由此造成的明显卡顿，不把优化机会写成已发生的性能故障。",
+      "时间增量被限制在约0.05秒，第6组为0.06秒；低于对应帧率时模拟会放慢，不能称为严格保持墙钟速度的物理仿真。",
+      "统一主体检查只保留猫与电动车，统一朝向、角度、取景占比和灯光，保留原几何与材质。原海面、环境光及整体风格仍以原场景评价。",
+      "检查到的主体几何坐标均为有限数。网格/三角形数量用于说明实现规模，不作为质量分或通用性能排名。"
+    ],
+    "items": [
+      {
+        "order": 1,
+        "profile": "主体细节较强 · 场景较完整",
+        "model": "猫脸、胡须、头盔带、围巾、分节尾巴、车镜、轮胎花纹和后载物齐全，侧面与背面也有交付细节；造型圆润且主题识别清楚。",
+        "lighting": "有浅深海色、波纹闪光、天空渐变和日落混合；材质区分橡胶、金属与车漆，原场景光照与软色调协调。",
+        "motion": "道路纹理、循环景物和两轮共用同一距离；猫与车使用相同上下起伏。直线行驶不需要额外转向。尾巴、围巾、眨眼和海鸟有独立小动画。",
+        "implementation": "球体与方体复用；静态云、路段、车体按材质合并，车轮保留独立层级；水面主要在GPU着色器中变化。动画、镜头和光照分别封装。",
+        "limitations": "静态合并会把部分几何展开为非索引形式，主体与海面规模较大；这属于资源取舍，未观察到本机运行阻断。每帧灯光混合创建Color对象，可缓存优化。",
+        "recovery": "图形中断后暂停并显示‘重新出发’，恢复上下文后仍保留遮罩；提供重新加载入口，属于人工恢复流程。",
+        "camera": "部分原镜头前景树干较抢眼，HUD浅底白字对比偏低。属于镜头/页面呈现建议，不据此否定主体模型或距离逻辑。",
+        "recommendation": "希望猫与车细节较丰富，又希望本轮约16分钟完成，可以优先看这组。",
+        "original_evidence": "原会话打开过桌面、近景与窄屏图，并做过浏览器检查和优化。",
+        "references": [
+          {
+            "line": 85,
+            "topic": "静态几何合并"
+          },
+          {
+            "line": 213,
+            "topic": "故障提示"
+          },
+          {
+            "line": 215,
+            "topic": "距离驱动姿态与景物"
+          },
+          {
+            "line": 236,
+            "topic": "逐帧光照混合"
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "profile": "弯道运动实现较丰富",
+        "model": "角色有脸部、条纹、头盔、耳朵和背后行李箱，车体轮廓与轮辐完整；统一角度下猫与车可辨识，没有依据把它笼统称为几何质量差。",
+        "lighting": "环岛环境有房屋、灯塔、沙滩设施；海色层次、波纹闪光与晴日/日落切换完整，整体是清爽的卡通视觉。",
+        "motion": "闭合曲线按弧长取点；根据曲率设置前轮转向与倾斜，前轮单独累积转弯行程，手爪随车把更新。尾巴由多段更新，围巾和眨眼持续变化。",
+        "implementation": "静态环境按材质合并并释放原几何；主逻辑包含姿态、镜头和界面函数。当前环境合并只保留位置与法线，适用于现有无贴图静态材质，扩展贴图需保留UV。",
+        "limitations": "手臂通过调整圆柱长度连接肩、肘与手爪，属于伸缩式连接，不是固定骨长的逆运动学。前轮行程修正和倾斜也属于动画近似，不能宣称完整车辆物理。主要脚本多处压在一行，可读性一般。",
+        "recovery": "上下文丢失后停止更新并提示重新加载；上下文自动恢复后遮罩与contextLost标志仍保留，需要用户重新加载。",
+        "camera": "环岛全景的主体较小，这是展示整个岛的视角选择；近景可检查猫与车。单独列为取景可读性，不扣主体质量。",
+        "recommendation": "优先比较弯道、前轮与骑姿配合时，这组实现丰富；其本轮费用最高。",
+        "original_evidence": "原会话提供桌面预览与verification记录。",
+        "references": [
+          {
+            "line": 115,
+            "topic": "环境合并与释放"
+          },
+          {
+            "line": 124,
+            "topic": "弧长、曲率、转向和骑姿"
+          },
+          {
+            "line": 161,
+            "topic": "contextLost与恢复策略"
+          },
+          {
+            "line": 164,
+            "topic": "前轮行程累积"
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "profile": "核心完整 · 交付最快",
+        "model": "猫脸、头盔、胡须、尾巴、弯曲四肢、电动车轮辐、车镜和后载物都可清楚看到。统一侧面与背面检查支持‘主体建模完整’，不能因原树叶遮挡降低这一结论。",
+        "lighting": "配色统一，天空、灯塔、帆船与浅色海面建立海边主题；水面高光与浅深层次较简单，这是原场景的材质/光照表现差异。",
+        "motion": "距离驱动两轮和循环道路，猫与车共用rider层级保持连接；尾巴、头部、围巾、海鸟和船持续变化。属于符合需求的直线骑行实现。",
+        "implementation": "保留在HTML内的紧凑脚本；没有静态网格合并，大量基础球体/圆柱单独创建。水面每帧在CPU移动约5757个顶点。",
+        "limitations": "海水顶点高度改变后没有重新计算法线，照明仍按初始平面法线响应，波浪形状与光照变化关联不充分。动画主体集中在长函数中，不利于后续修改定位。",
+        "recovery": "没有自定义上下文丢失提示；本次由Three.js恢复渲染后继续运动，但失去画面期间仍推进模拟时间。",
+        "camera": "原窄屏默认与某些预设会受棕榈树遮挡。它是取景问题；本版将其移出主体与代码评价。",
+        "recommendation": "在约5分钟交付的预算下，主体与核心逻辑已经达标。若继续完善，先改善水面光照与代码组织，再单独调整镜头。",
+        "original_evidence": "原最终回复明确没有完成浏览器画面验收；本次补做后确认可运行，不把补测时间加回原耗时。",
+        "references": [
+          {
+            "line": 19,
+            "topic": "CPU水面几何"
+          },
+          {
+            "line": 25,
+            "topic": "统一rider层级与车轮"
+          },
+          {
+            "line": 53,
+            "topic": "距离、动画及水面法线更新缺项"
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "profile": "简洁造型 · 核心逻辑完整",
+        "model": "未带头盔的猫仍清楚满足主题；脸部、粉色耳内、胡须、眼睛、手爪与车镜齐全。整体圆润、车体较简洁，主体识别没有问题。头盔不在原需求中，不因缺少头盔扣分。",
+        "lighting": "车漆与金属材质区分明确，有阳光投影与海上帆船；海面的材质层次较基础，泡沫与闪光更接近装饰性图形。",
+        "motion": "rider真实向前移动，路段循环到车辆周围；两轮由距离旋转，猫车共用body摆动，连接稳定。海鸟、眨眼、围巾和尾巴动画齐全。",
+        "implementation": "复用基础球体和方体；海面CPU形变与法线每3帧更新，减少每帧工作。许多场景物体独立绘制，代码的创建与更新逻辑高度集中。",
+        "limitations": "webglcontextlost监听器挂在window并使用默认冒泡阶段，实际事件不冒泡，预期的‘画面已暂停’提示没有触发；本次上下文恢复后能继续渲染。此项是已验证的故障反馈缺陷，非镜头问题。",
+        "recovery": "本次可由Three.js自动恢复画面，但自定义故障提示失效，且失去画面期间模拟继续推进。",
+        "camera": "某些跟随预设的大路牌经过主体前方，手机控件较小；单独记录取景/交互建议，不影响猫车几何结论。",
+        "recommendation": "本轮约7分钟完成，主体与基础逻辑完整；若作为常用展示，先修图形故障反馈与整理更新逻辑。",
+        "original_evidence": "原会话有桌面、窄屏与浏览器checks记录。",
+        "references": [
+          {
+            "line": 56,
+            "topic": "共享骑乘模型层级"
+          },
+          {
+            "line": 82,
+            "topic": "距离驱动与循环路段"
+          },
+          {
+            "line": 87,
+            "topic": "海水法线每3帧更新"
+          },
+          {
+            "line": 94,
+            "topic": "挂在window的故障监听"
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "profile": "原场景视觉较协调 · 结构清楚",
+        "model": "猫较小巧，服装、头盔、面部和条纹清楚；车体、挡泥板、车镜、轮辐与投影完整。主体形象协调，但不能仅凭镜头更讨喜称其建模绝对优于1、2、6。",
+        "lighting": "本轮原场景的海面层次、沿岸泡沫、波纹与闪光结合较协调，天空渐变、阳光和接触阴影共同形成较完整的视觉风格。",
+        "motion": "累积车辆真实位置变化的距离驱动车轮，沿轻微弯曲路径移动并设置转向；前后轮共用路程，猫手臂未额外追踪轻微车把转角，是简化处理。",
+        "implementation": "姿态、镜头、音效和渲染分别封装，状态集中；道路原型按材质合并再复用，海面在GPU做波纹变化；有移动端像素比/阴影设置与音效生命周期处理。",
+        "limitations": "前轮转向时手部仍为静态连接，当前转向幅度很小，未在统一模型检查中看到明显脱握，不能声称有完整骑姿求解。主要脚本仍包含场景创建和所有业务逻辑。",
+        "recovery": "有上下文丢失与恢复反馈，本次无需重新加载即可继续；丢失画面期间仍推进模拟，若需严格连续体验可冻结该期间模拟。",
+        "camera": "原场景构图较协调；特定位置仍可能有前景遮挡。这是页面镜头表现，不作为建模绝对排名依据。",
+        "recommendation": "原海景视觉与页面完成度优先，可以先看这组；机械动作细节再与2、6对照。",
+        "original_evidence": "原会话有桌面预览、verification记录，并打开检查过成品。",
+        "references": [
+          {
+            "line": 82,
+            "topic": "道路/环境几何合并"
+          },
+          {
+            "line": 367,
+            "topic": "猫姿态与围巾"
+          },
+          {
+            "line": 421,
+            "topic": "交互与音效"
+          },
+          {
+            "line": 465,
+            "topic": "图形恢复反馈"
+          },
+          {
+            "line": 478,
+            "topic": "实际位移、转向与车轮"
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "profile": "模型细节丰富 · 骑姿跟随较细致",
+        "model": "脸部、头盔带、服装、分节条纹尾巴、后载篮、轮胎、车镜、灯具和仪表细节较丰富。正侧后方均有完整细节，主体塑造是这组的强项。",
+        "lighting": "有天空、海面着色器与渐变日落，材质与主题一致；海面视觉较轻柔，是否优于5取决于对平静海面或强波纹的偏好。",
+        "motion": "前后轮分别累积行程，带轻微转向、侧移和倾斜；手爪根据车把目标的世界坐标转回rider局部坐标更新。动态尾巴、围巾、眨眼与喇叭反馈丰富。",
+        "implementation": "静态路段按材质合并并释放原几何；把骑姿、世界、光照和状态记录分成函数，复用部分临时向量；有完整轨道交互与键盘入口。",
+        "limitations": "手爪位置跟随正确，但圆柱手臂随肩肘到手爪距离伸缩，并非固定骨长IK。gripError是代码的自测量，不是独立人体工学/穿插验收。主体网格较多，需要真实低性能设备验证才能定性能上限。",
+        "recovery": "图形中断后暂停并显示重新打开入口；本次上下文恢复后遮罩仍保留，采用人工重新加载的恢复流程。",
+        "camera": "全景主体较小、前景偶发遮挡，属于预设镜头呈现。统一模型检查后不会把这些现象转写为建模质量差。",
+        "recommendation": "动作细节、猫车连接和互动功能优先，建议与2一起比较；模型细节也与1相当值得看。",
+        "original_evidence": "原会话有browser-verification与桌面预览，并做过多轮检查。",
+        "references": [
+          {
+            "line": 209,
+            "topic": "静态合并与几何释放"
+          },
+          {
+            "line": 504,
+            "topic": "人工图形恢复"
+          },
+          {
+            "line": 518,
+            "topic": "世界/局部坐标转换与握把连接"
+          },
+          {
+            "line": 594,
+            "topic": "转向、前轮行程与渲染循环"
+          }
+        ]
+      },
+      {
+        "order": 7,
+        "profile": "弧长行驶清楚 · 成本最低",
+        "model": "橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。",
+        "lighting": "海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。",
+        "motion": "2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。",
+        "implementation": "共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。",
+        "limitations": "弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。",
+        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。",
+        "camera": "部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。",
+        "recommendation": "本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。",
+        "original_evidence": "原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。",
+        "references": [
+          {
+            "line": 114,
+            "topic": "弧长查表"
+          },
+          {
+            "line": 136,
+            "topic": "上下文丢失及恢复"
+          },
+          {
+            "line": 138,
+            "topic": "切线朝向、车轮及动画"
+          }
+        ]
+      }
+    ]
+  },
+  "quality_ranking": {
+    "scope": "本轮七个具体交付的Codex综合评估排序，非盲评，不代表模型总体能力排名。每个配置只有一次样本。",
+    "criteria": [
+      "主体建模与细节",
+      "原场景材质、光照与环境动态",
+      "动画、运动与连接逻辑",
+      "代码结构、资源处理与故障恢复"
+    ],
+    "weighting": "四项同等考虑，不发布伪精确的百分制总分。价格、耗时、拍摄遮挡不计入质量名次。",
+    "order": [
+      5,
+      6,
+      1,
+      2,
+      7,
+      4,
+      3
+    ],
+    "close_groups": [
+      [
+        5,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "items": [
+      {
+        "rank": 1,
+        "order": 5,
+        "headline": "海面与整体视觉最协调",
+        "strength": "海浪闪光、材质与阴影层次",
+        "code": "验证：图形中断可自动恢复",
+        "limitation": "简化：转弯时两轮共用行程",
+        "reason": "海景、模型与页面风格协调，代码结构清楚且有自动恢复；机械动作比2、6简化。"
+      },
+      {
+        "rank": 2,
+        "order": 6,
+        "headline": "模型精细，骑姿跟随细致",
+        "strength": "车把、猫爪与转向联动",
+        "code": "源码：前后轮分开计算行程",
+        "limitation": "简化：手臂长度随握把伸缩",
+        "reason": "模型、猫车连接和环境动画丰富；原海面表现较轻柔，故障恢复采用重新加载。"
+      },
+      {
+        "rank": 3,
+        "order": 1,
+        "headline": "猫车细节与海景都丰富",
+        "strength": "轮胎花纹、围巾、分节尾巴",
+        "code": "源码：静态网格按材质合并",
+        "limitation": "代码取舍：故障后需重新加载",
+        "reason": "主体细节、海景、日落和环境动态完整，静态合并较成熟；属于符合需求的直线骑行。"
+      },
+      {
+        "rank": 4,
+        "order": 2,
+        "headline": "弯道机械细节更丰富",
+        "strength": "前轮独立转向，猫爪随握把",
+        "code": "源码：前后轮分别计算行程",
+        "limitation": "简化：手臂伸缩，非固定骨长",
+        "reason": "曲率、前轮行程与握把跟随丰富；主要脚本较紧凑，故障后需要重新加载。与1很接近。"
+      },
+      {
+        "rank": 5,
+        "order": 7,
+        "headline": "简洁完整，本轮成本最低",
+        "strength": "弧长路线，近似匀速行驶",
+        "code": "验证：图形中断可自动恢复",
+        "limitation": "简化：前轮未单独转向",
+        "reason": "造型较简洁，但弧长路线和自动恢复完整；车辆机械和环境造型比前四组简化。"
+      },
+      {
+        "rank": 6,
+        "order": 4,
+        "headline": "造型圆润，基础动画完整",
+        "strength": "尾巴、围巾、眨眼都有",
+        "code": "源码：海水法线每3帧更新",
+        "limitation": "待改：图形中断提示未触发",
+        "reason": "模型与动画完整，几何有复用并更新水面法线；代码组织和故障反馈有改进空间。"
+      },
+      {
+        "rank": 7,
+        "order": 3,
+        "headline": "核心齐全，交付最快",
+        "strength": "脸部、骑姿、车轮都完整",
+        "code": "源码：轮转与行程一致",
+        "limitation": "待改：水面变形后未更新法线",
+        "reason": "五分钟内完成可用且完整的作品；水面照明和代码组织比其他组基础。原镜头遮挡未计入排名。"
+      }
+    ]
+  },
+  "prompt": "全新创建一个可直接运行的 Three.js 网页 3D 场景：内容是一个猫在海边马路上骑电动车的3D动画",
+  "provenance": {
+    "timing_and_usage": "原会话首个任务的本地完成记录；去重模型响应用量与累计用量、会话数据库交叉核对。公开的是聚合值，未公开聊天日志。",
+    "service_tier": "not recorded; Standard is only the normalized price basis",
+    "assessment": "Codex观察式成品及源码审查，非盲评，每个配置1次样本",
+    "artifact_integrity": "七份scenes HTML与原交付字节相同；源码副本也保留原字节",
+    "measurement_scope": "只计原任务耗时；本次追加评估、视频和发布的时间与成本未加回原任务"
+  }
+}

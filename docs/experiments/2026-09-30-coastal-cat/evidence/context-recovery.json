@@ -1,0 +1,828 @@
+[
+  {
+    "order": 1,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "ready": true,
+      "three": "186",
+      "frames": 40,
+      "paused": false,
+      "distance": 13.33333333333334,
+      "time": 2.000000000000001,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333334,
+      "frontWheelAngle": -33.33333333333334,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      "drawCalls": 299,
+      "triangles": 398706,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "ready": true,
+      "three": "186",
+      "frames": 65,
+      "paused": true,
+      "distance": 13.33333333333334,
+      "time": 2.000000000000001,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333334,
+      "frontWheelAngle": -33.33333333333334,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      "drawCalls": 299,
+      "triangles": 398706,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "lostOverlays": [
+      {
+        "id": "error",
+        "text": "这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发",
+        "visible": true,
+        "opacity": "1"
+      },
+      {
+        "id": "toast",
+        "text": "",
+        "visible": true,
+        "opacity": "0"
+      }
+    ],
+    "restored": {
+      "ready": true,
+      "three": "186",
+      "frames": 95,
+      "paused": true,
+      "distance": 13.33333333333334,
+      "time": 2.000000000000001,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333334,
+      "frontWheelAngle": -33.33333333333334,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816947,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333334,
+        -53.33333333333334,
+        -13.333333333333371,
+        26.66666666666663,
+        66.66666666666663
+      ],
+      "drawCalls": 299,
+      "triangles": 398706,
+      "canvas": [
+        1280,
+        720
+      ],
+      "networkFree": true
+    },
+    "restoredOverlays": [
+      {
+        "id": "error",
+        "text": "这次海岸旅行还没能出发3D 画面暂时中断，请点击“重新出发”恢复场景。重新出发",
+        "visible": true,
+        "opacity": "1"
+      },
+      {
+        "id": "toast",
+        "text": "",
+        "visible": true,
+        "opacity": "0"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "ready": true,
+      "three": "160",
+      "time": 2.000000000000001,
+      "distance": 13.3334,
+      "frontDistance": 13.34108216666244,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417582,
+      "frontWheel": -29.321059706950418,
+      "steering": -0.03642390603145886,
+      "position": [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 168,
+      "triangles": 117820,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "ready": true,
+      "three": "160",
+      "time": 2.000000000000001,
+      "distance": 13.3334,
+      "frontDistance": 13.34108216666244,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417582,
+      "frontWheel": -29.321059706950418,
+      "steering": -0.03642390603145886,
+      "position": [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 168,
+      "triangles": 117820,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "lostOverlays": [
+      {
+        "id": "toast",
+        "text": "",
+        "visible": true,
+        "opacity": "0"
+      },
+      {
+        "id": "loading",
+        "text": "海风正在赶来…准备好和猫咪一起出发",
+        "visible": false,
+        "opacity": "1"
+      },
+      {
+        "id": "error",
+        "text": "暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "ready": true,
+      "three": "160",
+      "time": 2.000000000000001,
+      "distance": 13.3334,
+      "frontDistance": 13.34108216666244,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417582,
+      "frontWheel": -29.321059706950418,
+      "steering": -0.03642390603145886,
+      "position": [
+        20.465847507534335,
+        0.35500000000000004,
+        31.392323051568248
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 0,
+      "triangles": 0,
+      "canvas": [
+        1280,
+        720
+      ]
+    },
+    "restoredOverlays": [
+      {
+        "id": "toast",
+        "text": "",
+        "visible": true,
+        "opacity": "0"
+      },
+      {
+        "id": "loading",
+        "text": "海风正在赶来…准备好和猫咪一起出发",
+        "visible": false,
+        "opacity": "1"
+      },
+      {
+        "id": "error",
+        "text": "暂时无法开启 3D 场景图形渲染已暂时中断，请点击重新加载恢复场景。重新加载",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "distance": 7.600000000000007,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -16.34408602150539,
+      "drawCalls": 251,
+      "triangles": 76020
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "distance": 12.349999999999996,
+      "time": 3.2499999999999964,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -26.559139784946225,
+      "drawCalls": 251,
+      "triangles": 76020
+    },
+    "lostOverlays": [
+      {
+        "id": "error",
+        "text": "",
+        "visible": false,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "distance": 18.05,
+      "time": 4.749999999999991,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -38.81720430107527,
+      "drawCalls": 247,
+      "triangles": 74372
+    },
+    "restoredOverlays": [
+      {
+        "id": "error",
+        "text": "",
+        "visible": false,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "distance": 10.79999999999999,
+      "time": 2.000000000000001,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -24.82758620689653,
+      "frames": 40,
+      "drawCalls": 348
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "distance": 17.54999999999998,
+      "time": 3.2499999999999964,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -40.34482758620685,
+      "frames": 65,
+      "drawCalls": 348
+    },
+    "lostOverlays": [
+      {
+        "id": "status",
+        "text": "正在兜风",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "distance": 25.649999999999967,
+      "time": 4.749999999999991,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -58.96551724137923,
+      "frames": 95,
+      "drawCalls": 377
+    },
+    "restoredOverlays": [
+      {
+        "id": "status",
+        "text": "正在兜风",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "paused": false,
+      "speed": 24,
+      "path": 13.33285010860518,
+      "distance": 13.333321274577528,
+      "time": 2.000000000000001,
+      "frames": 40,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 30.30300289676711,
+      "frontAngle": 30.30300289676711,
+      "position": [
+        -0.8000424705447275,
+        0.18,
+        13.33285010860518
+      ],
+      "heading": -0.00034969870586902335,
+      "camera": [
+        4.269480407809162,
+        3.882817715289119,
+        19.48212836230377
+      ],
+      "drawCalls": 192,
+      "triangles": 184174,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.293897420167923,
+        1.928695559501648,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "paused": false,
+      "speed": 24,
+      "path": 21.666015974991893,
+      "distance": 21.666663285011925,
+      "time": 3.2499999999999964,
+      "frames": 65,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 49.242416556845285,
+      "frontAngle": 49.242416556845285,
+      "position": [
+        -0.8484431721304735,
+        0.18,
+        21.666015974991893
+      ],
+      "heading": -0.01028181965404743,
+      "camera": [
+        4.221079706223415,
+        3.882817715289119,
+        27.815294228690483
+      ],
+      "drawCalls": 192,
+      "triangles": 184174,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.2818581461906433,
+        1.9275002479553223,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": null
+    },
+    "lostOverlays": [
+      {
+        "id": "toast",
+        "text": "正在恢复 3D 画面…",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "paused": false,
+      "speed": 24,
+      "path": 31.665377160458142,
+      "distance": 31.666662121371672,
+      "time": 4.749999999999991,
+      "frames": 95,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 71.96968663948107,
+      "frontAngle": 71.96968663948107,
+      "position": [
+        -0.96117354886848,
+        0.18,
+        31.665377160458142
+      ],
+      "heading": -0.009492463459172377,
+      "camera": [
+        4.108349329485409,
+        3.882817715289119,
+        37.81465541415673
+      ],
+      "drawCalls": 190,
+      "triangles": 181234,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.327304869890213,
+        1.9271714687347412,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "restoredOverlays": [
+      {
+        "id": "toast",
+        "text": "画面已恢复",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 9,
+      "time": 1.800000000000001,
+      "rearWheelAngle": -24.999999999999982,
+      "frontWheelAngle": -25.00000024742746,
+      "wheelRadius": 0.36,
+      "steering": 0.00023672828033875404,
+      "gripError": 4.965068306494546e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 36,
+      "renderCalls": 293,
+      "triangles": 132986,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5845458159860215
+      ],
+      "camera": [
+        5.999999999999997,
+        3.6499999999999995,
+        9.274243085612257
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.3429620317972745
+      ]
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "ready": true,
+      "paused": true,
+      "kmh": 18,
+      "distance": 10,
+      "time": 2.000000000000001,
+      "rearWheelAngle": -27.777777777777754,
+      "frontWheelAngle": -27.777778113724736,
+      "wheelRadius": 0.36,
+      "steering": 0.0002616891200578184,
+      "gripError": 2.220446049250313e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 60,
+      "renderCalls": 293,
+      "triangles": 132986,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5934604021540761
+      ],
+      "camera": [
+        5.999999999999998,
+        3.6500000000000012,
+        9.293274188758252
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.40168772178219436
+      ]
+    },
+    "lostOverlays": [
+      {
+        "id": "toast",
+        "text": "",
+        "visible": false,
+        "opacity": "0"
+      },
+      {
+        "id": "error",
+        "text": "海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "ready": true,
+      "paused": true,
+      "kmh": 18,
+      "distance": 10,
+      "time": 2.000000000000001,
+      "rearWheelAngle": -27.777777777777754,
+      "frontWheelAngle": -27.777778113724736,
+      "wheelRadius": 0.36,
+      "steering": 0.0002616891200578184,
+      "gripError": 2.220446049250313e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 90,
+      "renderCalls": 293,
+      "triangles": 132986,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.5934604021540761
+      ],
+      "camera": [
+        6,
+        3.6500000000000004,
+        9.293459940577218
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.40168772178219436
+      ]
+    },
+    "restoredOverlays": [
+      {
+        "id": "toast",
+        "text": "",
+        "visible": false,
+        "opacity": "0"
+      },
+      {
+        "id": "error",
+        "text": "海岸还在等你浏览器的三维画面暂时中断。重新打开页面即可继续海岸骑行。重新打开海岸",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "errors": [],
+    "messages": [
+      "THREE.WebGLRenderer: Context Lost.",
+      "THREE.WebGLRenderer: Context Restored."
+    ],
+    "before": {
+      "distance": 13.600000000000009,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.24416140384000443,
+      "wheelRotation": 39.76608187134505,
+      "wheelRadius": 0.342,
+      "position": [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      "frame": 40,
+      "drawCalls": 211,
+      "triangles": 108772
+    },
+    "extensionAvailable": true,
+    "lost": {
+      "distance": 13.600000000000009,
+      "time": 2.000000000000001,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.24416140384000443,
+      "wheelRotation": 39.76608187134505,
+      "wheelRadius": 0.342,
+      "position": [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      "frame": 40,
+      "drawCalls": 211,
+      "triangles": 108772
+    },
+    "lostOverlays": [
+      {
+        "id": "status",
+        "text": "正在沿海骑行",
+        "visible": true,
+        "opacity": "1"
+      },
+      {
+        "id": "loading",
+        "text": "画面恢复中…",
+        "visible": true,
+        "opacity": "1"
+      }
+    ],
+    "restored": {
+      "distance": 20.79999999999998,
+      "time": 3.4999999999999956,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.3768794225829395,
+      "wheelRotation": 60.818713450292336,
+      "wheelRadius": 0.342,
+      "position": [
+        30.10527000437285,
+        0.122,
+        20.621030563652848
+      ],
+      "frame": 70,
+      "drawCalls": 199,
+      "triangles": 105236
+    },
+    "restoredOverlays": [
+      {
+        "id": "status",
+        "text": "正在沿海骑行",
+        "visible": true,
+        "opacity": "1"
+      },
+      {
+        "id": "loading",
+        "text": "画面恢复中…",
+        "visible": false,
+        "opacity": "1"
+      }
+    ],
+    "events": [
+      {
+        "type": "webglcontextlost",
+        "bubbles": false,
+        "defaultPrevented": true
+      },
+      {
+        "type": "webglcontextrestored",
+        "bubbles": false,
+        "defaultPrevented": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const result=await build({entryPoints:[path.join(here,'scene.js')],bundle:true,format:'iife',minify:true,write:false,legalComments:'inline',target:['chrome100','edge100','safari16']});
+const template=await readFile(path.join(here,'template.html'),'utf8');
+const html=template.replace('/*__BUNDLE__*/',()=>result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script'));
+await mkdir(path.join(here,'../outputs'),{recursive:true});
+await writeFile(path.join(here,'../outputs/coastal-cat.html'),html);
+console.log(JSON.stringify({file:'outputs/coastal-cat.html',bytes:Buffer.byteLength(html),externalScripts:0}));

@@ -1,0 +1,8 @@
+{
+  "name": "chatgpt-test-browser-checks",
+  "private": true,
+  "description": "Portable versions of the checks used for this experiment",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

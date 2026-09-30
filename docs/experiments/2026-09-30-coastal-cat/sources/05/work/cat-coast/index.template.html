@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#c9e8e8">
+  <title>海风兜兜 · 小猫的海岸骑行</title>
+  <meta name="description" content="一只橘猫骑着薄荷绿电动车，在阳光下沿着海岸公路兜风。可离线运行的 Three.js 3D 动画。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23285759'/%3E%3Cpath d='M15 32L14 15l16 11h4l16-11-1 17c6 18-40 26-34 0' fill='%23f8b15a'/%3E%3Ccircle cx='24' cy='34' r='3' fill='%23285759'/%3E%3Ccircle cx='40' cy='34' r='3' fill='%23285759'/%3E%3Cpath d='M29 41h6l-3 4z' fill='%23fff5db'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#254d50;--muted:#5f7e7d;--paper:#fffef4;--accent:#e89154;--green:#316665}
+    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden}
+    body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:#c8e8ea}
+    button,input{font:inherit}button{color:inherit;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #e68d52;outline-offset:4px}
+    #world{position:fixed;inset:0;touch-action:none;cursor:grab}#world:active{cursor:grabbing}#world canvas{display:block;width:100%;height:100%}
+    .header{position:absolute;top:32px;left:38px;right:38px;display:flex;justify-content:space-between;align-items:center;pointer-events:none;z-index:2}
+    .brand{display:flex;align-items:center;gap:12px}.brand-icon{display:grid;place-items:center;width:44px;height:44px;background:var(--paper);border-radius:15px;box-shadow:0 6px 30px #2754530a}.brand-name{font-size:18px;font-weight:750;letter-spacing:2px}.brand-name small{display:block;font-size:9px;letter-spacing:3px;font-weight:600;margin-top:4px}
+    .weather{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:1px;background:#fffef4a8;border:1px solid #ffffff8c;padding:10px 15px;border-radius:22px;backdrop-filter:blur(10px)}
+    .intro{position:absolute;left:40px;top:132px;pointer-events:none;z-index:2}.eyebrow{display:flex;align-items:center;gap:9px;font-size:10px;font-weight:650;letter-spacing:3px}.eyebrow::before{content:"";display:block;width:24px;height:1px;background:var(--ink)}
+    h1{font-size:clamp(30px,3.4vw,48px);line-height:1.45;font-weight:650;letter-spacing:3px;margin:19px 0 14px}.intro p{font-size:12px;letter-spacing:1px;color:var(--muted);margin:0;line-height:1.9}
+    .trip{position:absolute;right:38px;bottom:119px;display:flex;gap:14px;align-items:center;z-index:2;pointer-events:none;padding:13px 16px;border-radius:16px;border:1px solid #ffffff85;background:#fffef4b8;backdrop-filter:blur(12px)}
+    .trip .label{font-size:10px;color:var(--muted);letter-spacing:2px}.trip .value{font-size:19px;font-weight:650;margin-top:3px;letter-spacing:1px}.trip .value span{font-size:10px;font-weight:400;letter-spacing:0}.trip svg{color:var(--green)}
+    .controls{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:12px 15px;background:#fffef4ed;border:1px solid #fff;box-shadow:0 12px 45px #31595220;border-radius:23px;z-index:3;backdrop-filter:blur(16px);white-space:nowrap}
+    .play{border:0;background:var(--green);color:var(--paper);border-radius:14px;padding:12px 17px;display:flex;align-items:center;justify-content:center;gap:9px;min-width:106px;font-size:12px}.play:hover{background:#214e50}.play svg{width:14px;height:14px}
+    .separator{width:1px;height:30px;background:#dce3d8}.views{display:flex;gap:2px}.views button{border:0;background:transparent;padding:10px 13px;border-radius:12px;font-size:12px;color:var(--muted)}.views button[aria-pressed=true]{background:#e4eee5;color:var(--ink);font-weight:600}.views button:hover{background:#eaf0e8}
+    .speed{display:flex;align-items:center;gap:10px;padding:0 4px}.speed label{font-size:11px;color:var(--muted)}.speed input{width:95px;accent-color:var(--green);cursor:pointer}.speed output{font-size:12px;min-width:52px;font-variant-numeric:tabular-nums}.speed output span{font-size:9px;color:var(--muted)}
+    .icon-button{display:grid;place-items:center;background:transparent;border:0;width:37px;height:38px;border-radius:12px}.icon-button:hover,.icon-button[aria-pressed=true]{background:#e4eee5}.icon-button svg{width:19px;height:19px}
+    .hint{position:absolute;left:40px;bottom:39px;color:#436a6b;font-size:10px;letter-spacing:1px;pointer-events:none;line-height:1.8;z-index:2}.hint span{color:#769392}.keys{background:#ffffff65;border:1px solid #ffffff85;border-radius:4px;padding:1px 4px;margin:0 3px}
+    .toast{position:absolute;bottom:115px;left:50%;transform:translateX(-50%);background:#285454ed;color:#fffef4;padding:10px 18px;border-radius:20px;font-size:12px;z-index:5;opacity:0;transition:opacity .2s;pointer-events:none}.toast.show{opacity:1}
+    .loading{position:absolute;inset:0;z-index:10;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#dbede7;gap:16px;transition:opacity .45s}.loading.hide{opacity:0;pointer-events:none}.loading svg{animation:bob 1.5s ease-in-out infinite}.loading strong{font-size:20px;letter-spacing:4px}.loading p{font-size:12px;color:#678985;margin:0;text-align:center;padding:0 25px;line-height:1.8}@keyframes bob{50%{transform:translateY(-7px)}}
+    @media(max-width:1050px){.hint{bottom:113px}.intro{top:111px}h1{font-size:33px}.controls{bottom:22px}.trip{right:25px;bottom:107px}}
+    @media(max-width:650px){.header{top:21px;left:20px;right:20px}.brand-icon{width:36px;height:36px;border-radius:12px}.brand-name{font-size:15px}.brand-name small{font-size:8px;letter-spacing:2px}.weather{font-size:10px;padding:8px 10px}.intro{left:22px;top:102px}.eyebrow{font-size:8px;letter-spacing:2px}h1{font-size:27px;line-height:1.35;letter-spacing:2px;margin:13px 0 10px}.intro p{font-size:10px;line-height:1.7}.controls{width:calc(100% - 28px);bottom:14px;padding:10px;gap:6px;border-radius:20px;flex-wrap:wrap;justify-content:center}.play{padding:10px 12px;min-width:87px;font-size:11px}.views button{padding:10px 12px;font-size:11px}.controls>.separator:first-of-type{display:none}.speed{width:calc(100% - 45px);justify-content:center;padding-top:2px}.speed input{width:clamp(95px,30vw,165px)}.controls>.separator:last-of-type{display:none}.icon-button{width:32px;height:30px}.trip{bottom:128px;right:18px;padding:9px 12px;gap:9px;border-radius:13px}.trip .label{font-size:8px}.trip .value{font-size:16px}.trip svg{width:42px;height:27px}.hint{left:22px;bottom:136px;font-size:9px;max-width:155px}.hint .desktop{display:none}.toast{bottom:133px;width:max-content;max-width:90%;font-size:11px}}
+    @media(max-height:530px) and (min-width:651px){.header{top:17px}.intro{top:84px}h1{font-size:28px}.intro p{font-size:10px}.controls{bottom:15px}.trip{bottom:90px}.hint{bottom:91px}}
+    @media(prefers-reduced-motion:reduce){.loading svg{animation:none}}
+  </style>
+</head>
+<body>
+  <main id="world" aria-label="橘猫骑电动车的海边 3D 场景。拖动旋转视角，滚轮或双指缩放。"></main>
+  <header class="header">
+    <div class="brand"><div class="brand-icon"><svg width="28" height="28" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 24 8 10l13 8h6l13-8-1 14c5 15-35 21-30 0Z" fill="#eaa05c"/><path d="M17 29q7 7 14 0" stroke="#285454" stroke-width="2" stroke-linecap="round"/><circle cx="17" cy="24" r="2" fill="#285454"/><circle cx="31" cy="24" r="2" fill="#285454"/></svg></div><div class="brand-name">海风兜兜<small>THE LITTLE COAST RIDE</small></div></div>
+    <div class="weather"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="#df9858"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2" stroke="#df9858" stroke-width="1.5" stroke-linecap="round"/></svg>晴天 · 宜兜风</div>
+  </header>
+  <section class="intro"><div class="eyebrow">A SMALL RIDE, A GOOD DAY</div><h1>沿着海风，<br>慢慢走。</h1><p>把日子调慢一点，<br>和小猫一起去看看海。</p></section>
+  <div class="trip"><svg width="61" height="35" viewBox="0 0 61 35" fill="none" aria-hidden="true"><path d="M3 28C12 28 10 8 23 8s11 19 23 19 9-18 13-18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4"/><circle cx="24" cy="9" r="5" fill="#f1aa64" stroke="#fffef4" stroke-width="2"/></svg><div><div class="label">沿海行程</div><div class="value"><b id="distance">0.00</b> <span>km</span></div></div></div>
+  <div class="hint">拖动看风景 · 双指缩放<br><span class="desktop"><span class="keys">空格</span>暂停　<span class="keys">R</span>恢复镜头</span></div>
+  <nav class="controls" aria-label="动画控制">
+    <button class="play" id="play" type="button" aria-pressed="false" aria-label="暂停骑行"><svg id="play-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3 2h3v12H3zm7 0h3v12h-3z"/></svg><span id="play-label">暂停骑行</span></button>
+    <div class="separator"></div>
+    <div class="views" role="group" aria-label="选择镜头"><button type="button" data-view="follow" aria-pressed="true">跟随</button><button type="button" data-view="side" aria-pressed="false">侧面</button><button type="button" data-view="wide" aria-pressed="false">全景</button></div>
+    <div class="separator"></div>
+    <div class="speed"><label for="speed">速度</label><input id="speed" type="range" min="10" max="36" step="1" value="24" aria-label="骑行速度，公里每小时"><output id="speed-value" for="speed">24 <span>km/h</span></output></div>
+    <button class="icon-button" id="sound" type="button" aria-label="开启海浪声音" aria-pressed="false" title="海浪声音"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path id="sound-waves" d="m16 9 5 6m0-6-5 6"/></svg></button>
+  </nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="loading" id="loading"><svg width="67" height="67" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 24 8 10l13 8h6l13-8-1 14c5 15-35 21-30 0Z" fill="#eaa05c"/><circle cx="17" cy="24" r="2" fill="#285454"/><circle cx="31" cy="24" r="2" fill="#285454"/><path d="M17 29q7 7 14 0" stroke="#285454" stroke-width="2" stroke-linecap="round"/></svg><strong>海风正在赶来</strong><p id="loading-detail">小猫戴好头盔，就出发。</p></div>
+  <script>/* SCENE_BUNDLE */</script>
+</body>
+</html>

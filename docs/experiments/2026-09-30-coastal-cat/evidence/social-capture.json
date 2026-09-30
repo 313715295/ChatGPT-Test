@@ -1,0 +1,1773 @@
+[
+  {
+    "version": 2,
+    "order": 1,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "ready": true,
+      "three": "186",
+      "frames": 60,
+      "paused": false,
+      "distance": 13.333333333333309,
+      "time": 1.9999999999999964,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -33.33333333333327,
+      "frontWheelAngle": -33.33333333333327,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816974,
+        12.427375646059478
+      ],
+      "dusk": false,
+      "duskMix": 0,
+      "sections": [
+        -93.33333333333331,
+        -53.333333333333314,
+        -13.333333333333314,
+        26.666666666666686,
+        66.66666666666669
+      ],
+      "drawCalls": 262,
+      "triangles": 352930,
+      "canvas": [
+        1080,
+        1080
+      ],
+      "networkFree": true
+    },
+    "after": {
+      "ready": true,
+      "three": "186",
+      "frames": 300,
+      "paused": false,
+      "distance": 66.66666666666686,
+      "time": 9.999999999999993,
+      "speedFactor": 1,
+      "wheelRadius": 0.4,
+      "wheelAngle": -166.66666666666714,
+      "frontWheelAngle": -166.66666666666714,
+      "camera": "coast",
+      "cameraPosition": [
+        6.314047483564943,
+        3.7195874119816974,
+        12.427375646059478
+      ],
+      "dusk": true,
+      "duskMix": 0.9999944404867583,
+      "sections": [
+        53.333333333333144,
+        93.33333333333314,
+        -66.66666666666686,
+        -26.666666666666856,
+        13.333333333333144
+      ],
+      "drawCalls": 89,
+      "triangles": 88239,
+      "canvas": [
+        1080,
+        1080
+      ],
+      "networkFree": true
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.08904738424777492,
+            1.49185650760704,
+            1.42
+          ],
+          "camera": [
+            3.579797319909619,
+            3.753767731993123,
+            7.727005077922825
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "three": "186",
+          "frames": 61,
+          "paused": false,
+          "distance": 13.55555555555553,
+          "time": 2.0333333333333297,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -33.88888888888882,
+          "frontWheelAngle": -33.88888888888882,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816974,
+            12.427375646059478
+          ],
+          "dusk": false,
+          "duskMix": 0,
+          "sections": [
+            -93.55555555555554,
+            -53.55555555555554,
+            -13.555555555555543,
+            26.444444444444457,
+            66.44444444444446
+          ],
+          "drawCalls": 262,
+          "triangles": 352930,
+          "canvas": [
+            1080,
+            1080
+          ],
+          "networkFree": true
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.1468776523791291,
+            1.537439817479695,
+            1.42
+          ],
+          "camera": [
+            5.323367129243967,
+            3.736220470688775,
+            5.934954360969641
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "three": "186",
+          "frames": 136,
+          "paused": false,
+          "distance": 30.222222222222157,
+          "time": 4.5333333333333465,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -75.55555555555539,
+          "frontWheelAngle": -75.55555555555539,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816974,
+            12.427375646059478
+          ],
+          "dusk": true,
+          "duskMix": 0.07070898527879588,
+          "sections": [
+            89.77777777777783,
+            -70.22222222222217,
+            -30.22222222222217,
+            9.777777777777828,
+            49.77777777777783
+          ],
+          "drawCalls": 259,
+          "triangles": 390368,
+          "canvas": [
+            1080,
+            1080
+          ],
+          "networkFree": true
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            -0.14393168017070201,
+            1.5720912610538125,
+            1.42
+          ],
+          "camera": [
+            -3.941047746080338,
+            10.878216095689188,
+            -12.66265258483252
+          ],
+          "birdsInCamera": 1,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": 1
+        },
+        "state": {
+          "ready": true,
+          "three": "186",
+          "frames": 181,
+          "paused": false,
+          "distance": 40.22222222222212,
+          "time": 6.033333333333341,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -100.5555555555553,
+          "frontWheelAngle": -100.5555555555553,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816974,
+            12.427375646059478
+          ],
+          "dusk": true,
+          "duskMix": 0.9657248039395686,
+          "sections": [
+            79.77777777777789,
+            -80.22222222222211,
+            -40.222222222222115,
+            -0.22222222222211485,
+            39.777777777777885
+          ],
+          "drawCalls": 154,
+          "triangles": 298667,
+          "canvas": [
+            1080,
+            1080
+          ],
+          "networkFree": true
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "three": "186",
+          "frames": 241,
+          "paused": false,
+          "distance": 53.55555555555541,
+          "time": 8.033333333333333,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -133.88888888888852,
+          "frontWheelAngle": -133.88888888888852,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816974,
+            12.427375646059478
+          ],
+          "dusk": true,
+          "duskMix": 0.9995791917677216,
+          "sections": [
+            66.4444444444446,
+            -93.5555555555554,
+            -53.5555555555554,
+            -13.55555555555543,
+            26.44444444444457
+          ],
+          "drawCalls": 89,
+          "triangles": 88239,
+          "canvas": [
+            1080,
+            1080
+          ],
+          "networkFree": true
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "three": "186",
+          "frames": 291,
+          "paused": false,
+          "distance": 64.6666666666668,
+          "time": 9.699999999999994,
+          "speedFactor": 1,
+          "wheelRadius": 0.4,
+          "wheelAngle": -161.666666666667,
+          "frontWheelAngle": -161.666666666667,
+          "camera": "coast",
+          "cameraPosition": [
+            6.314047483564943,
+            3.7195874119816974,
+            12.427375646059478
+          ],
+          "dusk": true,
+          "duskMix": 0.9999892434963972,
+          "sections": [
+            55.3333333333332,
+            95.3333333333332,
+            -64.6666666666668,
+            -24.6666666666668,
+            15.3333333333332
+          ],
+          "drawCalls": 89,
+          "triangles": 88239,
+          "canvas": [
+            1080,
+            1080
+          ],
+          "networkFree": true
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 2,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "ready": true,
+      "three": "160",
+      "time": 1.9999999999999964,
+      "distance": 13.333399999999973,
+      "frontDistance": 13.341089639855623,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": false,
+      "wheelRadius": 0.455,
+      "rearWheel": -29.30417582417576,
+      "frontWheel": -29.321076131550818,
+      "steering": -0.036423906031940206,
+      "position": [
+        20.46584750753431,
+        0.35500000000000004,
+        31.392323051568255
+      ],
+      "heading": 0.30658641008885357,
+      "renderCalls": 161,
+      "triangles": 116348,
+      "canvas": [
+        1080,
+        1080
+      ]
+    },
+    "after": {
+      "ready": true,
+      "three": "160",
+      "time": 9.999999999999993,
+      "distance": 66.66700000000017,
+      "frontDistance": 66.80330843055566,
+      "paused": false,
+      "speed": 1,
+      "camera": 0,
+      "sunset": true,
+      "wheelRadius": 0.455,
+      "rearWheel": -146.5208791208795,
+      "frontWheel": -146.82045808913333,
+      "steering": -0.08693560319260546,
+      "position": [
+        48.289550354192194,
+        0.35500000000000004,
+        -7.517866402431739
+      ],
+      "heading": 1.8810109845781358,
+      "renderCalls": 145,
+      "triangles": 33770,
+      "canvas": [
+        1080,
+        1080
+      ]
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            20.677587761756566,
+            2.2736185965642575,
+            31.32487414525813
+          ],
+          "camera": [
+            21.818657633482385,
+            5.323984533131718,
+            21.551369293806037
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "three": "160",
+          "time": 2.0333333333333297,
+          "distance": 13.555623333333305,
+          "frontDistance": 13.56346046667267,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": false,
+          "wheelRadius": 0.455,
+          "rearWheel": -29.79257875457869,
+          "frontWheel": -29.809803223456417,
+          "steering": -0.036646805445014724,
+          "position": [
+            20.677587761756566,
+            0.35500000000000004,
+            31.32487414525813
+          ],
+          "heading": 0.3101832889351519,
+          "renderCalls": 161,
+          "triangles": 116348,
+          "canvas": [
+            1080,
+            1080
+          ]
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            35.560633783104414,
+            2.204321275393535,
+            23.975111044676844
+          ],
+          "camera": [
+            33.74990527318249,
+            5.146426932101958,
+            14.658783753233477
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "three": "160",
+          "time": 4.5333333333333465,
+          "distance": 30.22237333333341,
+          "frontDistance": 30.24532062141339,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": true,
+          "wheelRadius": 0.455,
+          "rearWheel": -66.4227985347987,
+          "frontWheel": -66.47323213497448,
+          "steering": -0.0508750102530786,
+          "position": [
+            35.560633783104414,
+            0.35500000000000004,
+            23.975111044676844
+          ],
+          "heading": 0.6241722046469048,
+          "renderCalls": 165,
+          "triangles": 117014,
+          "canvas": [
+            1080,
+            1080
+          ]
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            42.88153855853961,
+            2.2000104137054843,
+            17.203019538734935
+          ],
+          "camera": [
+            69.28459032792091,
+            12.33581793716439,
+            -2.935158499928856
+          ],
+          "birdsInCamera": 1,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": 5
+        },
+        "state": {
+          "ready": true,
+          "three": "160",
+          "time": 6.033333333333341,
+          "distance": 40.22242333333335,
+          "frontDistance": 40.26208236751708,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": true,
+          "wheelRadius": 0.455,
+          "rearWheel": -88.40093040293044,
+          "frontWheel": -88.48809311542216,
+          "steering": -0.0666627223188421,
+          "position": [
+            42.88153855853961,
+            0.35500000000000004,
+            17.203019538734935
+          ],
+          "heading": 0.8802976179826644,
+          "renderCalls": 6,
+          "triangles": 19736,
+          "canvas": [
+            1080,
+            1080
+          ]
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "three": "160",
+          "time": 8.033333333333333,
+          "distance": 53.55582333333328,
+          "frontDistance": 53.6369966770468,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": true,
+          "wheelRadius": 0.455,
+          "rearWheel": -117.7051062271061,
+          "frontWheel": -117.88350918032263,
+          "steering": -0.0902118018053555,
+          "position": [
+            48.86428721421905,
+            0.35500000000000004,
+            5.422519862251741
+          ],
+          "heading": 1.346111740068132,
+          "renderCalls": 145,
+          "triangles": 33770,
+          "canvas": [
+            1080,
+            1080
+          ]
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "three": "160",
+          "time": 9.699999999999994,
+          "distance": 64.66699000000018,
+          "frontDistance": 64.79550060914706,
+          "paused": false,
+          "speed": 1,
+          "camera": 0,
+          "sunset": true,
+          "wheelRadius": 0.455,
+          "rearWheel": -142.12525274725314,
+          "frontWheel": -142.40769364647704,
+          "steering": -0.08913493580353433,
+          "position": [
+            48.825069730384406,
+            0.35500000000000004,
+            -5.591419575540795
+          ],
+          "heading": 1.8024082325932487,
+          "renderCalls": 145,
+          "triangles": 33770,
+          "canvas": [
+            1080,
+            1080
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 3,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "distance": 7.5999999999999845,
+      "time": 1.9999999999999964,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -16.34408602150534,
+      "drawCalls": 197,
+      "triangles": 66112
+    },
+    "after": {
+      "distance": 38.0000000000001,
+      "time": 9.999999999999993,
+      "paused": false,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -81.7204301075271,
+      "drawCalls": 190,
+      "triangles": 63256
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.10312259391791745,
+            1.5716577303795,
+            3.45
+          ],
+          "camera": [
+            5.209959977009091,
+            4.184745525119547,
+            9.99404407343717
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 7.726666666666651,
+          "time": 2.0333333333333297,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -16.6164874551971,
+          "drawCalls": 197,
+          "triangles": 66112
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.10353205410385102,
+            1.5665429001333118,
+            3.45
+          ],
+          "camera": [
+            7.129927869577603,
+            4.179072191179745,
+            7.774355106953299
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 17.22666666666665,
+          "time": 4.5333333333333465,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -37.046594982078815,
+          "drawCalls": 191,
+          "triangles": 63304
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            -0.10567973163931199,
+            1.5696584393680795,
+            3.45
+          ],
+          "camera": [
+            14.366721964966242,
+            10.631526955822315,
+            -14.178411279126143
+          ],
+          "birdsInCamera": 5,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": 0
+        },
+        "state": {
+          "distance": 22.92666666666658,
+          "time": 6.033333333333341,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -49.3046594982077,
+          "drawCalls": 184,
+          "triangles": 62648
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 30.52666666666649,
+          "time": 8.033333333333333,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -65.64874551971288,
+          "drawCalls": 183,
+          "triangles": 61928
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 36.86000000000005,
+          "time": 9.699999999999994,
+          "paused": false,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -79.26881720430117,
+          "drawCalls": 191,
+          "triangles": 63292
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 4,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "distance": 10.799999999999995,
+      "time": 1.9999999999999964,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -24.82758620689654,
+      "frames": 60,
+      "drawCalls": 260
+    },
+    "after": {
+      "distance": 54.000000000000355,
+      "time": 9.999999999999993,
+      "running": true,
+      "speed": 1,
+      "view": 0,
+      "wheelAngle": -124.13793103448357,
+      "frames": 300,
+      "drawCalls": 240
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            10.910939525631612,
+            1.4885017768688529,
+            1.6094874030513562
+          ],
+          "camera": [
+            14.305900439967433,
+            3.6008749415752215,
+            7.517642306645418
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 10.979999999999995,
+          "time": 2.0333333333333297,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -25.241379310344815,
+          "frames": 61,
+          "drawCalls": 260
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            24.439197989325866,
+            1.432449843406514,
+            1.6020706398243585
+          ],
+          "camera": [
+            29.735311592484855,
+            3.583367552591807,
+            6.084613326803649
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 24.48000000000002,
+          "time": 4.5333333333333465,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -56.275862068965566,
+          "frames": 136,
+          "drawCalls": 246
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            32.56643306521115,
+            1.4161484895297196,
+            1.6270722521877994
+          ],
+          "camera": [
+            30.3054355677188,
+            7.395166929383207,
+            -12.441468662294866
+          ],
+          "birdsInCamera": 1,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0.35,
+          "birdIndex": 0
+        },
+        "state": {
+          "distance": 32.580000000000005,
+          "time": 6.033333333333341,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -74.89655172413795,
+          "frames": 181,
+          "drawCalls": 261
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 43.37999999999999,
+          "time": 8.033333333333333,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -99.72413793103446,
+          "frames": 241,
+          "drawCalls": 258
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 52.380000000000294,
+          "time": 9.699999999999994,
+          "running": true,
+          "speed": 1,
+          "view": 0,
+          "wheelAngle": -120.41379310344895,
+          "frames": 291,
+          "drawCalls": 238
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 5,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "paused": false,
+      "speed": 24,
+      "path": 13.332854107507362,
+      "distance": 13.333325309675702,
+      "time": 1.9999999999999964,
+      "frames": 60,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 30.30301206744478,
+      "frontAngle": 30.30301206744478,
+      "position": [
+        -0.80004247194315,
+        0.18,
+        13.332854107507362
+      ],
+      "heading": -0.0003497044618417887,
+      "camera": [
+        4.2694804064107394,
+        3.882817715289119,
+        19.482132361205952
+      ],
+      "drawCalls": 179,
+      "triangles": 153590,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.293897420167923,
+        1.928695559501648,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "after": {
+      "paused": false,
+      "speed": 24,
+      "path": 66.6643020784524,
+      "distance": 66.66665868098818,
+      "time": 9.999999999999993,
+      "frames": 300,
+      "view": "follow",
+      "ready": true,
+      "sound": false,
+      "wheelRadius": 0.44,
+      "rearAngle": 151.51513336588224,
+      "frontAngle": 151.51513336588224,
+      "position": [
+        -0.8010600507486147,
+        0.18,
+        66.6643020784524
+      ],
+      "heading": -0.001742629799691807,
+      "camera": [
+        4.2684628276052745,
+        3.882817715289119,
+        72.81358033215099
+      ],
+      "drawCalls": 143,
+      "triangles": 47842,
+      "yaw": 0.79,
+      "radius": 8.3,
+      "scarfTip": [
+        -0.3309742510318756,
+        1.8636895418167114,
+        -1.3700000047683716
+      ],
+      "eyeScale": 1,
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.8001557131782264,
+            1.5353474700198964,
+            13.55507631614145
+          ],
+          "camera": [
+            3.7498223351238322,
+            3.752714389893833,
+            19.07415212240644
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "paused": false,
+          "speed": 24,
+          "path": 13.55507631614145,
+          "distance": 13.55554754716284,
+          "time": 2.0333333333333297,
+          "frames": 61,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 30.808062607188273,
+          "frontAngle": 30.808062607188273,
+          "position": [
+            -0.8001557131782264,
+            0.18,
+            13.55507631614145
+          ],
+          "heading": -0.0006694062058833628,
+          "camera": [
+            4.269367165175662,
+            3.882817715289119,
+            19.70435456984004
+          ],
+          "drawCalls": 179,
+          "triangles": 153590,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.30176806449890137,
+            1.9337639808654785,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.9466145025183051,
+            1.5511307765977351,
+            30.221008870864914
+          ],
+          "camera": [
+            3.6295554784708037,
+            3.7812619613738954,
+            35.77185521766391
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "paused": false,
+          "speed": 24,
+          "path": 30.221008870864914,
+          "distance": 30.222220456310573,
+          "time": 4.5333333333333465,
+          "frames": 136,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 68.68686467343312,
+          "frontAngle": 68.68686467343312,
+          "position": [
+            -0.9466145025183051,
+            0.18,
+            30.221008870864914
+          ],
+          "heading": -0.010616101032087918,
+          "camera": [
+            4.122908375835584,
+            3.882817715289119,
+            36.370287124563504
+          ],
+          "drawCalls": 175,
+          "triangles": 145178,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.27757740020751953,
+            1.9319372177124023,
+            -1.3700000047683716
+          ],
+          "eyeScale": 0.5151515151513938,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            -0.9993496850074826,
+            1.5662791218931305,
+            40.22080034357417
+          ],
+          "camera": [
+            -5.5626911133268395,
+            7.750558458330018,
+            59.55275195735641
+          ],
+          "birdsInCamera": 4,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": 0
+        },
+        "state": {
+          "paused": false,
+          "speed": 24,
+          "path": 40.22080034357417,
+          "distance": 40.22221423066581,
+          "time": 6.033333333333341,
+          "frames": 181,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 91.41412325151322,
+          "frontAngle": 91.41412325151322,
+          "position": [
+            -0.9993496850074824,
+            0.18,
+            40.22080034357417
+          ],
+          "heading": 0.001366314369765376,
+          "camera": [
+            4.070173193346407,
+            3.882817715289119,
+            46.37007859727276
+          ],
+          "drawCalls": 43,
+          "triangles": 95860,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.32053712010383606,
+            1.9217227697372437,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "paused": false,
+          "speed": 24,
+          "path": 53.55358513944792,
+          "distance": 53.55555529087657,
+          "time": 8.033333333333333,
+          "frames": 241,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 121.71717111562856,
+          "frontAngle": 121.71717111562856,
+          "position": [
+            -0.8857244464302405,
+            0.18,
+            53.55358513944792
+          ],
+          "heading": 0.011876537313033658,
+          "camera": [
+            4.183798431923648,
+            3.882817715289119,
+            59.70286339314651
+          ],
+          "drawCalls": 143,
+          "triangles": 47842,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.314353346824646,
+            1.857965350151062,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "paused": false,
+          "speed": 24,
+          "path": 64.66430278114684,
+          "distance": 64.6666586085252,
+          "time": 9.699999999999994,
+          "frames": 291,
+          "view": "follow",
+          "ready": true,
+          "sound": false,
+          "wheelRadius": 0.44,
+          "rearAngle": 146.96967865573907,
+          "frontAngle": 146.96967865573907,
+          "position": [
+            -0.8004439684386584,
+            0.18,
+            64.66430278114684
+          ],
+          "heading": 0.0011295085937740753,
+          "camera": [
+            4.2690789099152315,
+            3.882817715289119,
+            70.81358103484544
+          ],
+          "drawCalls": 143,
+          "triangles": 47842,
+          "yaw": 0.79,
+          "radius": 8.3,
+          "scarfTip": [
+            -0.2695480287075043,
+            1.9372869729995728,
+            -1.3700000047683716
+          ],
+          "eyeScale": 1,
+          "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 6,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 9.999999999999986,
+      "time": 1.9999999999999964,
+      "rearWheelAngle": -27.777777777777757,
+      "frontWheelAngle": -27.777778109709597,
+      "wheelRadius": 0.36,
+      "steering": 0.000261689120057818,
+      "gripError": 2.220446049250313e-16,
+      "view": 0,
+      "sunset": false,
+      "lightBlend": 0,
+      "frames": 60,
+      "renderCalls": 280,
+      "triangles": 116938,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.593460402154076
+      ],
+      "camera": [
+        5.999999999999999,
+        3.6500000000000004,
+        9.28293950930852
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.40168772178219325
+      ]
+    },
+    "after": {
+      "ready": true,
+      "paused": false,
+      "kmh": 18,
+      "distance": 50.00000000000003,
+      "time": 9.999999999999993,
+      "rearWheelAngle": -138.88888888888908,
+      "frontWheelAngle": -138.88890757872434,
+      "wheelRadius": 0.36,
+      "steering": 0.0006110477947759586,
+      "gripError": 4.577566798522237e-16,
+      "view": 0,
+      "sunset": true,
+      "lightBlend": 0.9999967924398894,
+      "frames": 300,
+      "renderCalls": 277,
+      "triangles": 116956,
+      "webgl2": true,
+      "catPosition": [
+        0,
+        0,
+        1.7182313824381634
+      ],
+      "camera": [
+        6.000000000000004,
+        3.6499999999999986,
+        9.42237846802751
+      ],
+      "tailTip": [
+        -1.54,
+        1.3324877628724872,
+        0.14614253129022226
+      ]
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.10087779591576684,
+            1.3639068099448806,
+            1.595665031387837
+          ],
+          "camera": [
+            3.845228637341761,
+            3.331959798780858,
+            6.5688363594918044
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 9.999999999999986,
+          "time": 1.9999999999999964,
+          "rearWheelAngle": -27.777777777777757,
+          "frontWheelAngle": -27.777778109709597,
+          "wheelRadius": 0.36,
+          "steering": 0.000261689120057818,
+          "gripError": 2.220446049250313e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 60,
+          "renderCalls": 280,
+          "triangles": 116938,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.593460402154076
+          ],
+          "camera": [
+            5.999999999999999,
+            3.6500000000000004,
+            9.28293950930852
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.40168772178219325
+          ]
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            -0.100446255537042,
+            1.3384934308377667,
+            1.6813728064357387
+          ],
+          "camera": [
+            3.8397290271185986,
+            3.3054789499971946,
+            6.654852247335793
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 22.000000000000036,
+          "time": 4.400000000000014,
+          "rearWheelAngle": -61.11111111111104,
+          "frontWheelAngle": -61.11111419137157,
+          "wheelRadius": 0.36,
+          "steering": 0.0005179364803065341,
+          "gripError": 4.440892098500626e-16,
+          "view": 0,
+          "sunset": false,
+          "lightBlend": 0,
+          "frames": 132,
+          "renderCalls": 283,
+          "triangles": 128408,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.6849773309357527
+          ],
+          "camera": [
+            5.999999999999998,
+            3.649999999999999,
+            9.377415905735491
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.17210073558789243
+          ]
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            -0.08344612875938207,
+            1.3065185738055891,
+            1.7124165914223746
+          ],
+          "camera": [
+            2.4772109377294322,
+            10.834131531403045,
+            -11.888710073720027
+          ],
+          "birdsInCamera": 3,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": 1
+        },
+        "state": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 29.999999999999922,
+          "time": 6.000000000000008,
+          "rearWheelAngle": -83.33333333333321,
+          "frontWheelAngle": -83.33334013896021,
+          "wheelRadius": 0.36,
+          "steering": 0.0006263301838690444,
+          "gripError": 3.3306690738754696e-16,
+          "view": 0,
+          "sunset": true,
+          "lightBlend": 0.9682543636219312,
+          "frames": 180,
+          "renderCalls": 283,
+          "triangles": 128408,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.723689380632134
+          ],
+          "camera": [
+            5.999999999999998,
+            3.649999999999998,
+            9.4191124468125
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.4005489328267078
+          ]
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 39.99999999999978,
+          "time": 8,
+          "rearWheelAngle": -111.11111111111093,
+          "frontWheelAngle": -111.11112393615502,
+          "wheelRadius": 0.36,
+          "steering": 0.0006717133602184443,
+          "gripError": 4.440892098500626e-16,
+          "view": 0,
+          "sunset": true,
+          "lightBlend": 0.9996808980775187,
+          "frames": 240,
+          "renderCalls": 282,
+          "triangles": 127308,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.7398976647299613
+          ],
+          "camera": [
+            6.0000000000000036,
+            3.6500000000000004,
+            9.439664320666155
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.31547912564270186
+          ]
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "ready": true,
+          "paused": false,
+          "kmh": 18,
+          "distance": 47.99999999999997,
+          "time": 9.599999999999994,
+          "rearWheelAngle": -133.33333333333354,
+          "frontWheelAngle": -133.33335095279747,
+          "wheelRadius": 0.36,
+          "steering": 0.0006314416743940143,
+          "gripError": 2.220446049250313e-16,
+          "view": 0,
+          "sunset": true,
+          "lightBlend": 0.9999919513002394,
+          "frames": 288,
+          "renderCalls": 281,
+          "triangles": 126528,
+          "webgl2": true,
+          "catPosition": [
+            0,
+            0,
+            1.725514913684478
+          ],
+          "camera": [
+            6.0000000000000036,
+            3.6499999999999986,
+            9.428816984211895
+          ],
+          "tailTip": [
+            -1.54,
+            1.3324877628724872,
+            0.2547528084968528
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "order": 7,
+    "fps": 30,
+    "duration": 8,
+    "frame_count": 240,
+    "width": 1080,
+    "height": 1080,
+    "before": {
+      "distance": 13.600000000000009,
+      "time": 1.9999999999999964,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 0.24416140384000443,
+      "wheelRotation": 39.76608187134505,
+      "wheelRadius": 0.342,
+      "position": [
+        31.45840959696029,
+        0.122,
+        13.551497388185778
+      ],
+      "frame": 60,
+      "drawCalls": 161,
+      "triangles": 100476
+    },
+    "after": {
+      "distance": 51.999999999999986,
+      "time": 9.999999999999993,
+      "paused": false,
+      "speed": 4.8,
+      "mode": 0,
+      "angle": 1.0405397404583414,
+      "wheelRotation": 152.04678362573094,
+      "wheelRadius": 0.342,
+      "position": [
+        16.10916454279894,
+        0.122,
+        48.06715428708383
+      ],
+      "frame": 300,
+      "drawCalls": 107,
+      "triangles": 35702
+    },
+    "errors": [],
+    "samples": [
+      {
+        "frame": 0,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            31.63670153776002,
+            1.560385121268063,
+            13.610371978292402
+          ],
+          "camera": [
+            26.662767142867285,
+            3.7078008939124514,
+            18.431715281910982
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 13.760000000000009,
+          "time": 2.0333333333333297,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.24707354955308003,
+          "wheelRotation": 40.23391812865499,
+          "wheelRadius": 0.342,
+          "position": [
+            31.434748016433087,
+            0.122,
+            13.709739478169745
+          ],
+          "frame": 61,
+          "drawCalls": 160,
+          "triangles": 100440
+        }
+      },
+      {
+        "frame": 75,
+        "shot": {
+          "phase": "subject",
+          "center": [
+            29.028287520268222,
+            1.616868065526576,
+            25.315242669474607
+          ],
+          "camera": [
+            23.604593113193687,
+            3.6929203601528426,
+            29.243675308015952
+          ],
+          "birdsInCamera": 0,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": null
+        },
+        "state": {
+          "distance": 25.76000000000002,
+          "time": 4.5333333333333465,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.4708985629561581,
+          "wheelRotation": 75.32163742690064,
+          "wheelRadius": 0.342,
+          "position": [
+            28.816349857965836,
+            0.122,
+            25.4097894837545
+          ],
+          "frame": 136,
+          "drawCalls": 155,
+          "triangles": 99928
+        }
+      },
+      {
+        "frame": 120,
+        "shot": {
+          "phase": "environment",
+          "center": [
+            26.64008469574356,
+            1.5643132249492555,
+            32.09387452534664
+          ],
+          "camera": [
+            36.24157722204671,
+            8.585821840350377,
+            34.53731543039779
+          ],
+          "birdsInCamera": 1,
+          "occlusionRayHits": 0,
+          "chosenAngle": 0,
+          "birdIndex": 0
+        },
+        "state": {
+          "distance": 32.96,
+          "time": 6.033333333333341,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.6127713612346626,
+          "wheelRotation": 96.37426900584795,
+          "wheelRadius": 0.342,
+          "position": [
+            26.3845500476192,
+            0.122,
+            32.18335956345291
+          ],
+          "frame": 181,
+          "drawCalls": 33,
+          "triangles": 72570
+        }
+      },
+      {
+        "frame": 180,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 42.559999999999796,
+          "time": 8.033333333333333,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 0.8162841432155925,
+          "wheelRotation": 124.44444444444385,
+          "wheelRadius": 0.342,
+          "position": [
+            21.978968584569063,
+            0.122,
+            40.700084804981586
+          ],
+          "frame": 241,
+          "drawCalls": 107,
+          "triangles": 35702
+        }
+      },
+      {
+        "frame": 230,
+        "shot": {
+          "phase": "studio"
+        },
+        "state": {
+          "distance": 50.55999999999995,
+          "time": 9.699999999999994,
+          "paused": false,
+          "speed": 4.8,
+          "mode": 0,
+          "angle": 1.0043486309987204,
+          "wheelRotation": 147.83625730994137,
+          "wheelRadius": 0.342,
+          "position": [
+            17.115148492247933,
+            0.122,
+            47.03695281913295
+          ],
+          "frame": 291,
+          "drawCalls": 107,
+          "triangles": 35702
+        }
+      }
+    ]
+  }
+]

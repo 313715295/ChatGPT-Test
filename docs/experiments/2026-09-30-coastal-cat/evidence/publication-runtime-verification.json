@@ -1,0 +1,75 @@
+{
+  "scope": "公开目录的可移植浏览器检查复测；不覆盖原性能证据",
+  "subjects": [
+    {
+      "order": 1,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 2,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 3,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 4,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 5,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 6,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    },
+    {
+      "order": 7,
+      "errors": [],
+      "externals": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true
+    }
+  ]
+}
