@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>九组完整分析数据</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>九组完整分析数据</h1><p class="note">九组会话ID、配置、Token、时间、费用折算和逐项质量分析。01–07与08–09分两批启动。原会话全文未公开，费用不是账单。</p><div class="tablewrap"><table><thead><tr><th>编号 · 模型 / 推理</th><th>原任务用时</th><th>Standard折算USD</th><th>质量名次</th><th>批次</th></tr></thead><tbody><tr><td>01 · GPT-6 Astra / max</td><td>15:46</td><td>$3.197128</td><td>3</td><td>原七组</td></tr><tr><td>02 · GPT-6 Astra / xhigh</td><td>14:10</td><td>$3.953866</td><td>4</td><td>原七组</td></tr><tr><td>03 · GPT-6 Astra / medium</td><td>4:57</td><td>$0.994350</td><td>8</td><td>原七组</td></tr><tr><td>04 · GPT-6 Astra / high</td><td>7:16</td><td>$1.500242</td><td>7</td><td>原七组</td></tr><tr><td>05 · GPT-6.1 Sol / max</td><td>26:13</td><td>$0.730529</td><td>1</td><td>原七组</td></tr><tr><td>06 · GPT-6.1 Sol / xhigh</td><td>26:26</td><td>$0.900746</td><td>2</td><td>原七组</td></tr><tr><td>07 · GPT-6.1 Sol / high</td><td>13:38</td><td>$0.418635</td><td>5</td><td>原七组</td></tr><tr><td>08 · GPT-6.1 Sol / low</td><td>5:32</td><td>$0.141016</td><td>9</td><td>后补两组</td></tr><tr><td>09 · GPT-6.1 Sol / medium</td><td>10:35</td><td>$0.285720</td><td>6</td><td>后补两组</td></tr></tbody></table></div><p><a href="../analysis-data.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>十组完整分析数据</title><style>body{background:#f3f7f4;color:#19372f;font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;margin:0;padding:28px;max-width:1500px}a{color:#167451}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d7e3dc;border-radius:12px;padding:22px}</style></head><body><h1>十组完整分析数据</h1><p><a href="../index.html">返回测评</a> · <a href="../analysis-data.json" download>下载原数据</a></p><pre>{
   &quot;date&quot;: &quot;2026-09-30&quot;,
   &quot;timezone&quot;: &quot;Asia/Shanghai&quot;,
   &quot;price_basis&quot;: &quot;2026-09-30 official Standard text-token rates; not actual billing&quot;,
@@ -5117,6 +5117,277 @@
       },
       &quot;configuration_label&quot;: &quot;09 · GPT-6.1 Sol / medium&quot;,
       &quot;quality_rank&quot;: 6
+    },
+    {
+      &quot;order&quot;: 10,
+      &quot;id&quot;: &quot;01a0f227-5f89-7a23-b8da-2b2c22f71e81&quot;,
+      &quot;title&quot;: &quot;创建猫咪骑电动车场景&quot;,
+      &quot;model&quot;: &quot;gpt-5.6-sol&quot;,
+      &quot;effort&quot;: &quot;max&quot;,
+      &quot;batch&quot;: &quot;supplemental-third&quot;,
+      &quot;started_local&quot;: &quot;2026-09-30T19:51:02+08:00&quot;,
+      &quot;completed_local&quot;: &quot;2026-09-30T20:36:52+08:00&quot;,
+      &quot;duration_ms&quot;: 2749622,
+      &quot;time_to_first_token_ms&quot;: 15090,
+      &quot;model_request_count&quot;: 70,
+      &quot;tokens&quot;: {
+        &quot;input_tokens&quot;: 7567387,
+        &quot;cached_input_tokens&quot;: 7421952,
+        &quot;cache_write_input_tokens&quot;: 0,
+        &quot;output_tokens&quot;: 48002,
+        &quot;reasoning_output_tokens&quot;: 17696,
+        &quot;total_tokens&quot;: 7615389
+      },
+      &quot;uncached_input&quot;: 145435,
+      &quot;api_standard_usd&quot;: 4.5105608,
+      &quot;credit_standard&quot;: 112.76402,
+      &quot;recorded_tool_seconds&quot;: 1231.7409992218018,
+      &quot;estimated_model_response_seconds&quot;: 1514.2480001449585,
+      &quot;frozen_sha256&quot;: &quot;1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826&quot;,
+      &quot;frozen_matches_current&quot;: true,
+      &quot;max_request_input&quot;: 139249,
+      &quot;long_context_requests&quot;: 0,
+      &quot;token_sum_verified&quot;: true,
+      &quot;database_token_total_verified&quot;: true,
+      &quot;service_tier&quot;: null,
+      &quot;prompt_matches_previous&quot;: true,
+      &quot;original_artifact_name&quot;: &quot;cat-coast-scooter-3d/index.html&quot;,
+      &quot;scene_path&quot;: &quot;scenes/10/index.html&quot;,
+      &quot;artifact_files&quot;: [
+        {
+          &quot;file&quot;: &quot;index.html&quot;,
+          &quot;bytes&quot;: 3021,
+          &quot;sha256&quot;: &quot;1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826&quot;,
+          &quot;frozen_matches_current&quot;: true
+        },
+        {
+          &quot;file&quot;: &quot;scene.js&quot;,
+          &quot;bytes&quot;: 521647,
+          &quot;sha256&quot;: &quot;7b1b33800058f1000fbe74e4a0dbcf0a81f2b8229ec6ef86fcb9a713197ad9ea&quot;,
+          &quot;frozen_matches_current&quot;: true
+        },
+        {
+          &quot;file&quot;: &quot;styles.css&quot;,
+          &quot;bytes&quot;: 10120,
+          &quot;sha256&quot;: &quot;697d722599427abfb906493e6f4e9bf6b7505c0faa9be87e82490d79889bef4b&quot;,
+          &quot;frozen_matches_current&quot;: true
+        },
+        {
+          &quot;file&quot;: &quot;使用说明.txt&quot;,
+          &quot;bytes&quot;: 442,
+          &quot;sha256&quot;: &quot;0afb2561478c75a24a4f0a0267e59f0f41fea19fa87003caaadf1210f888aacc&quot;,
+          &quot;frozen_matches_current&quot;: true
+        }
+      ],
+      &quot;original_visual_verification&quot;: true,
+      &quot;original_failed_tool_records&quot;: [
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;McpToolCall&quot;,
+          &quot;exit_code&quot;: null,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;McpToolCall&quot;,
+          &quot;exit_code&quot;: null,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;McpToolCall&quot;,
+          &quot;exit_code&quot;: null,
+          &quot;status&quot;: &quot;failed&quot;
+        },
+        {
+          &quot;kind&quot;: &quot;CommandExecution&quot;,
+          &quot;exit_code&quot;: 1,
+          &quot;status&quot;: &quot;failed&quot;
+        }
+      ],
+      &quot;tool_types&quot;: {
+        &quot;CommandExecution&quot;: 40,
+        &quot;FileChange&quot;: 7,
+        &quot;McpToolCall&quot;: 18
+      },
+      &quot;quality&quot;: {
+        &quot;order&quot;: 10,
+        &quot;profile&quot;: &quot;交互界面完整 · 模型与运动有明显缺陷&quot;,
+        &quot;model&quot;: &quot;薄荷绿电动车有车镜、灯、轮辐和挡泥板；橘猫有胡须、头盔带、围巾与分节尾巴。但躯干和四肢偏细长，半球头盔覆盖双眼的大部分区域。统一主体图和正面近景可见，射线检查也确认头盔表面位于两眼前方，属于模型部件位置问题。&quot;,
+        &quot;lighting&quot;: &quot;有渐变天空、太阳、海岛环路、棕榈和灯塔，海面由GPU着色器驱动；原海面呈明显长条交叉纹，地面大色块较平，海岸层次和主体比例不如前列作品。圆角控制栏、车速卡和窄屏布局较完整。&quot;,
+        &quot;motion&quot;: &quot;车沿CatmullRom曲线按中心线弧长前进，前轮有转向。实际车轴向前移动时，轮胎底部因旋转也向前移动，静止路面上的无滑动滚动方向应与车轴平移相反，因此方向错误。轮胎外半径0.755，轮转使用0.64；相对程序记录里程的滚动量偏差17.97%。手爪固定，未随独立转向的车把更新。&quot;,
+        &quot;implementation&quot;: &quot;src/scene.js按天空、海面、道路、车辆、猫、控制和更新函数分段；Three.js 0.180.0与esbuild 0.25.10生成三个静态文件，无React、SSR或后端。多对象复用材质，但主体77网格对应76份几何，几何复用有限；每帧路径、镜头函数分配临时向量。&quot;,
+        &quot;limitations&quot;: &quot;暂停和减少动画偏好只停止行驶、轮转；头部、尾巴、围巾、海面、鸟和云仍更新。云每帧累加位移，同样1秒在120fps的位移为60fps的2倍；鸟高度也逐帧累加。三只鸟有拍翼和小幅升降，没有水平飞行。方向、半径与模型位置的问题已独立确认。&quot;,
+        &quot;recovery&quot;: &quot;Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。&quot;,
+        &quot;camera&quot;: &quot;默认镜头从后方跟随，不能充分展示猫脸；侧拍和拖动可换角度。该预设取景单独记录；头盔覆盖双眼则在正面检查中仍存在，计为部件位置缺陷。&quot;,
+        &quot;recommendation&quot;: &quot;这次45:49.622、Standard文本Token折算$4.5106；托管流程和源码同步重试增加复杂度，但不计入成品质量名次。先修滚动方向、半径、眼睛/头盔位置和逐帧累加，再考虑交付扩展。&quot;,
+        &quot;original_evidence&quot;: &quot;原任务检查过桌面、窄屏、暂停和调速，但仍漏掉轮转方向与头盔位置。私密部署完成后，托管页浏览器访问未成功；本次独立验证公开的冻结本地原作品可离线运行，不能把原托管页访问失败归为作品无法运行。&quot;,
+        &quot;references&quot;: [
+          {
+            &quot;line&quot;: 14,
+            &quot;topic&quot;: &quot;减少动画仅停止行驶&quot;
+          },
+          {
+            &quot;line&quot;: 422,
+            &quot;topic&quot;: &quot;轮胎实际外半径0.755&quot;
+          },
+          {
+            &quot;line&quot;: 602,
+            &quot;topic&quot;: &quot;头盔与眼睛位置&quot;
+          },
+          {
+            &quot;line&quot;: 612,
+            &quot;topic&quot;: &quot;固定手爪与手臂&quot;
+          },
+          {
+            &quot;line&quot;: 726,
+            &quot;topic&quot;: &quot;弧长路线与前轮转向&quot;
+          },
+          {
+            &quot;line&quot;: 745,
+            &quot;topic&quot;: &quot;负向轮转与0.64除数&quot;
+          },
+          {
+            &quot;line&quot;: 812,
+            &quot;topic&quot;: &quot;飞鸟和云的逐帧累加&quot;
+          },
+          {
+            &quot;line&quot;: 828,
+            &quot;topic&quot;: &quot;暂停后仍更新海面、头部和环境&quot;
+          }
+        ]
+      },
+      &quot;quality_rank&quot;: 10,
+      &quot;configuration_label&quot;: &quot;10 · GPT-5.6 Sol / max&quot;,
+      &quot;wheel_relative_error&quot;: 0.1796874999999999,
+      &quot;wheel_delta_error&quot;: 1.1979166666666616,
+      &quot;keyboard_pass&quot;: true,
+      &quot;reduced_motion_pass&quot;: false,
+      &quot;observed_fps&quot;: 163.88989496470765,
+      &quot;gl_renderer&quot;: &quot;ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)&quot;,
+      &quot;qa_checks&quot;: {
+        &quot;offline&quot;: true,
+        &quot;motion_state_advances&quot;: true,
+        &quot;pause&quot;: true,
+        &quot;pause_all_animation&quot;: false,
+        &quot;resume&quot;: true,
+        &quot;keyboard&quot;: true,
+        &quot;mobile_controls&quot;: true,
+        &quot;drag&quot;: true,
+        &quot;zoom&quot;: true,
+        &quot;wheel_distance&quot;: false,
+        &quot;rolling_direction&quot;: false,
+        &quot;reduced_motion_all_animation&quot;: false
+      },
+      &quot;studio&quot;: {
+        &quot;studio&quot;: {
+          &quot;angle&quot;: 0.85,
+          &quot;bounds&quot;: [
+            5.485226129825442,
+            5.344016939522957,
+            2.2589744913616006
+          ],
+          &quot;pairCount&quot;: 90
+        },
+        &quot;geometry&quot;: {
+          &quot;meshes&quot;: 77,
+          &quot;uniqueGeometries&quot;: 76,
+          &quot;vertices&quot;: 5646,
+          &quot;triangles&quot;: 7376,
+          &quot;invalid&quot;: 0,
+          &quot;materialTypes&quot;: [
+            &quot;MeshStandardMaterial&quot;
+          ]
+        }
+      },
+      &quot;context_recovery&quot;: {
+        &quot;events&quot;: [
+          &quot;lost&quot;,
+          &quot;restored&quot;
+        ],
+        &quot;stops_simulation&quot;: false,
+        &quot;strategy&quot;: &quot;Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。&quot;
+      },
+      &quot;birds_qa&quot;: {
+        &quot;count&quot;: 3,
+        &quot;position_changed&quot;: true,
+        &quot;wings_changed&quot;: true,
+        &quot;horizontal_flight&quot;: false
+      },
+      &quot;source_evidence&quot;: {
+        &quot;order&quot;: 10,
+        &quot;configuration&quot;: &quot;10 · GPT-5.6 Sol / max&quot;,
+        &quot;sha256&quot;: &quot;07030a324718bdf99acc426e36abf1b417b4b98d5f9b1b89061483e06c77fd00&quot;,
+        &quot;copy_matches_original&quot;: true,
+        &quot;review_links&quot;: [
+          {
+            &quot;line&quot;: 14,
+            &quot;topic&quot;: &quot;减少动画仅停止行驶&quot;
+          },
+          {
+            &quot;line&quot;: 422,
+            &quot;topic&quot;: &quot;轮胎实际外半径0.755&quot;
+          },
+          {
+            &quot;line&quot;: 602,
+            &quot;topic&quot;: &quot;头盔与眼睛位置&quot;
+          },
+          {
+            &quot;line&quot;: 612,
+            &quot;topic&quot;: &quot;固定手爪与手臂&quot;
+          },
+          {
+            &quot;line&quot;: 726,
+            &quot;topic&quot;: &quot;弧长路线与前轮转向&quot;
+          },
+          {
+            &quot;line&quot;: 745,
+            &quot;topic&quot;: &quot;负向轮转与0.64除数&quot;
+          },
+          {
+            &quot;line&quot;: 812,
+            &quot;topic&quot;: &quot;飞鸟和云的逐帧累加&quot;
+          },
+          {
+            &quot;line&quot;: 828,
+            &quot;topic&quot;: &quot;暂停后仍更新海面、头部和环境&quot;
+          }
+        ],
+        &quot;source_file&quot;: &quot;code-sources/10.js&quot;
+      },
+      &quot;workflow_review&quot;: &quot;evidence/10-workflow-review.json&quot;
     }
   ],
   &quot;code_and_visual_review&quot;: {
@@ -5194,13 +5465,21 @@
         &quot;sky&quot;: &quot;渐变天空、太阳、灯塔与14组静态云；没有日落切换。&quot;,
         &quot;water&quot;: &quot;GPU波纹/闪光、32组岸边泡沫位移和透明度变化。&quot;,
         &quot;boats&quot;: &quot;3条帆船为静态远景，没有随浪上下起伏或摇摆。&quot;
+      },
+      {
+        &quot;order&quot;: 10,
+        &quot;bird_count&quot;: 3,
+        &quot;birds&quot;: &quot;有简化身体和双翼，三只鸟拍翼、朝向变化和小幅升降；无水平飞行，高度逐帧累加、依赖帧率。&quot;,
+        &quot;sky&quot;: &quot;渐变天空、太阳和云群；云每帧横移，120fps速度为60fps的2倍；无日落切换。&quot;,
+        &quot;water&quot;: &quot;GPU顶点波浪与条带闪光，原画面有较明显交叉长条纹；近岸泡沫为静态环形线。&quot;,
+        &quot;boats&quot;: &quot;没有帆船模型；环岛、灯塔与棕榈齐全，帆船不在原需求中。&quot;
       }
     ],
     &quot;common&quot;: [
-      &quot;七组都完成核心需求；直线行驶和弯道行驶均符合原任务，不因功能数量不同扣核心达标分。&quot;,
-      &quot;七组都使用时间增量驱动模拟，车轮角度与路程增量一致；没有把电动车误当成需要踩踏的自行车。&quot;,
+      &quot;十组均可打开并显示猫、车与海岸；08/10有已确认的运动逻辑错误。直线和弯道均符合原任务，不因功能数量不同扣核心达标分。&quot;,
+      &quot;十组的行驶采用时间增量。原七组与09的轮转检查通过；08/10的滚动半径和接触运动方向有错误。10的云位移与鸟高度逐帧累加，依赖帧率。&quot;,
       &quot;代码均以一个主要脚本组织场景，是可以交付的网页原型；未验证为可长期维护的正式应用。第5、6组函数划分更清楚，但仍非模块化产品架构。&quot;,
-      &quot;所有暂停实现都冻结模拟后继续渲染，便于拖动观察；静止画面可以进一步改成按需渲染，以减少持续GPU工作。&quot;,
+      &quot;暂停后仍持续渲染，便于拖动观察；10只停止行驶，海面、头部、尾巴、鸟和云仍动画。静止时可进一步按需渲染减少GPU工作。&quot;,
       &quot;多组每帧构建小型Vector3/Color临时对象。可复用缓存，但本次高性能电脑没有测出由此造成的明显卡顿，不把优化机会写成已发生的性能故障。&quot;,
       &quot;时间增量被限制在约0.05秒，第6组为0.06秒；低于对应帧率时模拟会放慢，不能称为严格保持墙钟速度的物理仿真。&quot;,
       &quot;统一主体检查只保留猫与电动车，统一朝向、角度、取景占比和灯光，保留原几何与材质。原海面、环境光及整体风格仍以原场景评价。&quot;,
@@ -5481,11 +5760,58 @@
             &quot;topic&quot;: &quot;图形中断与刷新恢复&quot;
           }
         ]
+      },
+      {
+        &quot;order&quot;: 10,
+        &quot;profile&quot;: &quot;交互界面完整 · 模型与运动有明显缺陷&quot;,
+        &quot;model&quot;: &quot;薄荷绿电动车有车镜、灯、轮辐和挡泥板；橘猫有胡须、头盔带、围巾与分节尾巴。但躯干和四肢偏细长，半球头盔覆盖双眼的大部分区域。统一主体图和正面近景可见，射线检查也确认头盔表面位于两眼前方，属于模型部件位置问题。&quot;,
+        &quot;lighting&quot;: &quot;有渐变天空、太阳、海岛环路、棕榈和灯塔，海面由GPU着色器驱动；原海面呈明显长条交叉纹，地面大色块较平，海岸层次和主体比例不如前列作品。圆角控制栏、车速卡和窄屏布局较完整。&quot;,
+        &quot;motion&quot;: &quot;车沿CatmullRom曲线按中心线弧长前进，前轮有转向。实际车轴向前移动时，轮胎底部因旋转也向前移动，静止路面上的无滑动滚动方向应与车轴平移相反，因此方向错误。轮胎外半径0.755，轮转使用0.64；相对程序记录里程的滚动量偏差17.97%。手爪固定，未随独立转向的车把更新。&quot;,
+        &quot;implementation&quot;: &quot;src/scene.js按天空、海面、道路、车辆、猫、控制和更新函数分段；Three.js 0.180.0与esbuild 0.25.10生成三个静态文件，无React、SSR或后端。多对象复用材质，但主体77网格对应76份几何，几何复用有限；每帧路径、镜头函数分配临时向量。&quot;,
+        &quot;limitations&quot;: &quot;暂停和减少动画偏好只停止行驶、轮转；头部、尾巴、围巾、海面、鸟和云仍更新。云每帧累加位移，同样1秒在120fps的位移为60fps的2倍；鸟高度也逐帧累加。三只鸟有拍翼和小幅升降，没有水平飞行。方向、半径与模型位置的问题已独立确认。&quot;,
+        &quot;recovery&quot;: &quot;Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。&quot;,
+        &quot;camera&quot;: &quot;默认镜头从后方跟随，不能充分展示猫脸；侧拍和拖动可换角度。该预设取景单独记录；头盔覆盖双眼则在正面检查中仍存在，计为部件位置缺陷。&quot;,
+        &quot;recommendation&quot;: &quot;这次45:49.622、Standard文本Token折算$4.5106；托管流程和源码同步重试增加复杂度，但不计入成品质量名次。先修滚动方向、半径、眼睛/头盔位置和逐帧累加，再考虑交付扩展。&quot;,
+        &quot;original_evidence&quot;: &quot;原任务检查过桌面、窄屏、暂停和调速，但仍漏掉轮转方向与头盔位置。私密部署完成后，托管页浏览器访问未成功；本次独立验证公开的冻结本地原作品可离线运行，不能把原托管页访问失败归为作品无法运行。&quot;,
+        &quot;references&quot;: [
+          {
+            &quot;line&quot;: 14,
+            &quot;topic&quot;: &quot;减少动画仅停止行驶&quot;
+          },
+          {
+            &quot;line&quot;: 422,
+            &quot;topic&quot;: &quot;轮胎实际外半径0.755&quot;
+          },
+          {
+            &quot;line&quot;: 602,
+            &quot;topic&quot;: &quot;头盔与眼睛位置&quot;
+          },
+          {
+            &quot;line&quot;: 612,
+            &quot;topic&quot;: &quot;固定手爪与手臂&quot;
+          },
+          {
+            &quot;line&quot;: 726,
+            &quot;topic&quot;: &quot;弧长路线与前轮转向&quot;
+          },
+          {
+            &quot;line&quot;: 745,
+            &quot;topic&quot;: &quot;负向轮转与0.64除数&quot;
+          },
+          {
+            &quot;line&quot;: 812,
+            &quot;topic&quot;: &quot;飞鸟和云的逐帧累加&quot;
+          },
+          {
+            &quot;line&quot;: 828,
+            &quot;topic&quot;: &quot;暂停后仍更新海面、头部和环境&quot;
+          }
+        ]
       }
     ]
   },
   &quot;quality_ranking&quot;: {
-    &quot;scope&quot;: &quot;九个具体交付的Codex观察式评估，非盲评。原七组与后补两组分两批启动；每个配置只有一次样本，不代表模型总体能力排名。&quot;,
+    &quot;scope&quot;: &quot;十个具体交付的Codex观察式评估，非盲评。原七组、后补两组及新增10分三批启动；每个配置只有一次样本，不代表模型总体能力排名。&quot;,
     &quot;criteria&quot;: [
       &quot;主体建模与细节&quot;,
       &quot;原场景材质、光照与环境动态&quot;,
@@ -5502,7 +5828,8 @@
       9,
       4,
       3,
-      8
+      8,
+      10
     ],
     &quot;close_groups&quot;: [
       [
@@ -5603,6 +5930,15 @@
         &quot;limitation&quot;: &quot;另有1.16%滚动误差与减少动画缺项&quot;,
         &quot;reason&quot;: &quot;猫车内容和交互可用，但相对运动方向不一致，轮转使用的半径不等于实际外半径；法线、拍翼和减少动画处理也更简化。&quot;,
         &quot;rank&quot;: 9
+      },
+      {
+        &quot;rank&quot;: 10,
+        &quot;order&quot;: 10,
+        &quot;headline&quot;: &quot;界面完整，但模型与运动缺陷明显&quot;,
+        &quot;strength&quot;: &quot;曲线环岛、三镜头、键盘与离线交付&quot;,
+        &quot;code&quot;: &quot;实测：轮胎底部旋转位移与车轴平移同向&quot;,
+        &quot;limitation&quot;: &quot;头盔遮眼、17.97%滚动量偏差、云移动依赖帧率&quot;,
+        &quot;reason&quot;: &quot;界面与曲线路线完整，源码分段清楚；但头盔覆盖双眼、轮转反向且半径偏差较大，暂停仅停车，海面与主体比例也较基础。因此排在08后，建站流程与耗时不参与质量名次。&quot;
       }
     ],
     &quot;initial_seven_ranking&quot;: [
@@ -5613,6 +5949,17 @@
       7,
       4,
       3
+    ],
+    &quot;initial_nine_ranking&quot;: [
+      5,
+      6,
+      1,
+      2,
+      7,
+      9,
+      4,
+      3,
+      8
     ]
   },
   &quot;prompt&quot;: &quot;全新创建一个可直接运行的 Three.js 网页 3D 场景：内容是一个猫在海边马路上骑电动车的3D动画&quot;,
@@ -5620,12 +5967,14 @@
     &quot;timing_and_usage&quot;: &quot;原会话首个任务的本地完成记录；去重模型响应用量与累计用量、会话数据库交叉核对。公开的是聚合值，未公开聊天日志。&quot;,
     &quot;service_tier&quot;: &quot;not recorded; Standard is only the normalized price basis&quot;,
     &quot;assessment&quot;: &quot;Codex观察式成品及源码审查，非盲评，每个配置1次样本&quot;,
-    &quot;artifact_integrity&quot;: &quot;九份scenes HTML与原交付字节相同；源码副本保留原字节&quot;,
+    &quot;artifact_integrity&quot;: &quot;01–09原单HTML与10原静态目录的全部文件、原ZIP及源码均按原字节保留；哈希逐文件验证。&quot;,
     &quot;measurement_scope&quot;: &quot;只计原任务耗时；本次追加评估与发布的时间和成本未加回原任务&quot;,
-    &quot;batches&quot;: &quot;01–07为10:00左右启动的原七组；08–09为14:25左右启动的后补两组。评估不将九组视为同一时间并发实验。&quot;,
+    &quot;batches&quot;: &quot;01–07约10:00启动；08–09约14:25启动；10为19:51:02单独启动的后补第三批。工具策略、依赖版本和环境未严格固定。&quot;,
     &quot;supplemental_ids&quot;: [
       &quot;01a0f0fd-0715-7f73-a913-3d67f6dfb8a8&quot;,
-      &quot;01a0f0fd-1fc6-7a42-adef-a1dd826cedd8&quot;
+      &quot;01a0f0fd-1fc6-7a42-adef-a1dd826cedd8&quot;,
+      &quot;01a0f227-5f89-7a23-b8da-2b2c22f71e81&quot;
     ]
   }
-}</pre></details></main></body></html>
+}
+</pre></body></html>

@@ -1,0 +1,43 @@
+{
+  "order": 10,
+  "model": "gpt-5.6-sol",
+  "effort": "max",
+  "helmetGeometry": {
+    "radius": 0.63,
+    "widthSegments": 18,
+    "heightSegments": 9,
+    "phiStart": 0,
+    "phiLength": 6.283185307179586,
+    "thetaStart": 0,
+    "thetaLength": 1.5707963267948966
+  },
+  "helmetLocalPosition": [
+    0,
+    0.08,
+    0
+  ],
+  "eyes": [
+    {
+      "eyeLocalPosition": [
+        -0.205,
+        0.16,
+        0.49
+      ],
+      "distanceToEyeCentre": 3.516493281665699,
+      "helmetIntersectionDistance": 3.427585562472994,
+      "helmetInFrontOfEye": true
+    },
+    {
+      "eyeLocalPosition": [
+        0.205,
+        0.16,
+        0.49
+      ],
+      "distanceToEyeCentre": 3.5164932816656984,
+      "helmetIntersectionDistance": 3.4275855646651667,
+      "helmetInFrontOfEye": true
+    }
+  ],
+  "conclusion": "Both eye centres are behind the helmet front surface from a front-facing camera.",
+  "method": "Original scene objects and material retained; inspection camera faces the head along its local forward axis. Original artifact is unchanged."
+}

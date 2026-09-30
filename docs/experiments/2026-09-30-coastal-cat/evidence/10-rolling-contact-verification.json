@@ -1,0 +1,35 @@
+{
+  "order": 10,
+  "configuration": "10 · GPT-5.6 Sol / max",
+  "physicalWheelOuterRadius": 0.755,
+  "rotationCalculationRadius": 0.64,
+  "distanceDelta": 0.006666666666667709,
+  "angleDelta": -0.010416666666671404,
+  "forwardFromActualWheels": [
+    0.9999079243058073,
+    0,
+    0.013569926692950368
+  ],
+  "wheelAxisWorld": [
+    0.01356964641105185,
+    -0.006427195764542634,
+    -0.9998872715715923
+  ],
+  "wheelCentreWorldDisplacement": [
+    0.006540777652443097,
+    0.00015197784552123395,
+    0.00017599443926741287
+  ],
+  "bottomTreadRotationDisplacement": [
+    0.00786369677121766,
+    0,
+    0.0001067196150036334
+  ],
+  "centreForwardDot": 0.006542563637439414,
+  "treadForwardDot": 0.007864420893230828,
+  "contactResidualForward": 0.014406984530670243,
+  "rollingDirectionCorrect": false,
+  "sourceBasis": "Original tire geometry and actual world transforms; forward is rear axle to front axle. For a moving vehicle on a static road, rotation at the bottom must oppose axle translation.",
+  "wheel_distance_relative_error": 0.1796874999999999,
+  "error_basis": "Physical tire outer radius × absolute wheel-angle delta compared with the program distance delta; not a full curved-path contact solver."
+}

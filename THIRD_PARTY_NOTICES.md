@@ -1,6 +1,6 @@
 # 第三方软件与授权说明
 
-九份原HTML和部分源码内嵌Three.js（0.160.0、0.160.1、0.180.0、0.186.0），采用MIT许可证。原HTML中的许可证/法律注释保留，完整许可证也随对应源码目录保存。Three.js官方网站与源码：<https://threejs.org/>、<https://github.com/mrdoob/three.js>。
+01–09原HTML、10原JS和部分源码内嵌Three.js（0.160.0、0.160.1、0.180.0、0.186.0），采用MIT许可证。01–09原HTML中的许可证/法律注释保留，完整许可证也随对应源码目录保存。10原JS打包移除了法律注释，原成品字节不改动，完整MIT授权随sources/10保存。Three.js官方网站与源码：<https://threejs.org/>、<https://github.com/mrdoob/three.js>。
 
 构建工具esbuild、可选浏览器检查工具Playwright由原依赖清单或检查工具清单声明；其依赖不随仓库以node_modules形式分发。保留各工具原授权条款。
 

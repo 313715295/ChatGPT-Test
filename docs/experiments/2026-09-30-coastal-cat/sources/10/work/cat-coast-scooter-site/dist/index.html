@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#75d8e7">
+  <meta name="description" content="一只橘猫骑着薄荷绿电动车，沿海岛公路追逐晨光的互动 Three.js 3D 动画。">
+  <title>海风猫骑记 · 3D 海岸骑行</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2313485b'/%3E%3Cpath d='M0 43c12-8 22 5 34-2s21-3 30-8v31H0z' fill='%235dd4de'/%3E%3Cpath d='M23 26l4-9 6 7 7-6 3 10c0 9-5 15-11 15s-11-7-9-17z' fill='%23f5a248'/%3E%3Ccircle cx='27' cy='30' r='2' fill='%2313485b'/%3E%3Ccircle cx='38' cy='30' r='2' fill='%2313485b'/%3E%3Cpath d='M30 35h5' stroke='%2313485b' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="experience" aria-label="猫骑电动车海岸 3D 动画">
+    <div id="scene" aria-hidden="true"></div>
+
+    <header class="masthead">
+      <div class="brand-mark" aria-hidden="true"><span></span><i></i></div>
+      <div>
+        <p class="eyebrow">COAST RIDE · 08:42</p>
+        <h1>海风猫骑记</h1>
+      </div>
+    </header>
+
+    <aside class="ride-card" aria-live="polite">
+      <div class="ride-card__top">
+        <span class="live-dot"></span>
+        <span>沿海骑行中</span>
+      </div>
+      <div class="speed-readout"><strong id="speedValue">24</strong><span>km/h</span></div>
+      <div class="breeze"><span>海风</span><b>东南 · 3 级</b></div>
+    </aside>
+
+    <div class="hint" id="hint">
+      <span class="mouse-icon" aria-hidden="true"></span>
+      拖动看四周 · 滚轮拉近
+    </div>
+
+    <section class="controls" aria-label="动画控制">
+      <button class="control-button primary" id="pauseButton" type="button" aria-pressed="false">
+        <span class="pause-icon" aria-hidden="true"></span>
+        <span id="pauseLabel">暂停</span>
+      </button>
+      <label class="speed-control" for="speedRange">
+        <span>车速</span>
+        <input id="speedRange" type="range" min="10" max="36" step="1" value="24" aria-label="骑行速度，每小时公里数">
+      </label>
+      <button class="control-button" id="viewButton" type="button">
+        <span class="camera-icon" aria-hidden="true"></span>
+        <span id="viewLabel">追随镜头</span>
+      </button>
+    </section>
+
+    <div class="corner-note">P 暂停 · V 切镜头</div>
+
+    <div class="loading" id="loading" role="status">
+      <div class="loading-cat" aria-hidden="true"><span></span></div>
+      <p>正在吹来海风…</p>
+    </div>
+
+    <div class="error-panel" id="errorPanel" hidden>
+      <strong>这阵海风没能启动</strong>
+      <p>请使用支持 WebGL 的现代浏览器打开页面。</p>
+    </div>
+  </main>
+  <script src="./scene.js"></script>
+</body>
+</html>
+

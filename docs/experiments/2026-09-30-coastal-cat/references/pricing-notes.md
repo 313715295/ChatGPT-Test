@@ -6,8 +6,9 @@
 | --- | ---: | ---: | ---: | --- |
 | GPT-6 Astra | $10 | $1 | $50 | 250 / 25 / 1250 |
 | GPT-6.1 Sol | $2 | $0.10 | $10 | 50 / 2.5 / 250 |
+| GPT-5.6 Sol | $4 | $0.40 | $20 | 100 / 10 / 500 |
 
-成本公式：`((input_tokens − cached_input_tokens) × 未缓存输入价 + cached_input_tokens × 缓存价 + output_tokens × 输出价) / 1,000,000`。推理Token包含在输出中，不重复加算。本轮每次输入低于272K；缓存写入记录均为0。费用为公开文本Token价格折算，不是实际账单。
+成本公式：`((input_tokens − cached_input_tokens) × 未缓存输入价 + cached_input_tokens × 缓存价 + output_tokens × 输出价) / 1,000,000`。推理Token包含在输出中，不重复加算。GPT-5.6 Sol单请求输入超过272K时API按输入2倍、输出1.5倍计，本次10最大单请求输入139,249，未触发。GPT-5.6 Sol优惠价格至少持续到2026-11-21。本轮每次输入低于272K；缓存写入记录均为0。费用为公开文本Token价格折算，不是实际账单。
 
 Fast相对Standard：API价格和已购credits按2倍折算，Codex套餐内额度按2.5倍消耗。消耗倍率不能作为提速倍率。本轮没有Fast重复实测，原service_tier也未记录。
 
@@ -20,5 +21,6 @@ Fast相对Standard：API价格和已购credits按2倍折算，Codex套餐内额�
 3. [Codex / Work定价与credits](https://learn.chatgpt.com/docs/pricing)
 4. [Codex Fast速度配置及额度倍率](https://learn.chatgpt.com/docs/agent-configuration/speed)
 5. [API Fast延迟说明](https://developers.openai.com/api/docs/guides/fast-mode)
+6. [GPT-5.6 Sol模型与价格](https://developers.openai.com/api/docs/models/gpt-5.6-sol)
 
 外链在本次检查中可访问，但访问仍受读者网络与站点变化影响。计算参数同时保留在本仓库的 `data/pricing.json`，本轮价格快照不会随官方网页后续更新而自动改变。

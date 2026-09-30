@@ -5117,6 +5117,277 @@
       },
       "configuration_label": "09 · GPT-6.1 Sol / medium",
       "quality_rank": 6
+    },
+    {
+      "order": 10,
+      "id": "01a0f227-5f89-7a23-b8da-2b2c22f71e81",
+      "title": "创建猫咪骑电动车场景",
+      "model": "gpt-5.6-sol",
+      "effort": "max",
+      "batch": "supplemental-third",
+      "started_local": "2026-09-30T19:51:02+08:00",
+      "completed_local": "2026-09-30T20:36:52+08:00",
+      "duration_ms": 2749622,
+      "time_to_first_token_ms": 15090,
+      "model_request_count": 70,
+      "tokens": {
+        "input_tokens": 7567387,
+        "cached_input_tokens": 7421952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 48002,
+        "reasoning_output_tokens": 17696,
+        "total_tokens": 7615389
+      },
+      "uncached_input": 145435,
+      "api_standard_usd": 4.5105608,
+      "credit_standard": 112.76402,
+      "recorded_tool_seconds": 1231.7409992218018,
+      "estimated_model_response_seconds": 1514.2480001449585,
+      "frozen_sha256": "1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826",
+      "frozen_matches_current": true,
+      "max_request_input": 139249,
+      "long_context_requests": 0,
+      "token_sum_verified": true,
+      "database_token_total_verified": true,
+      "service_tier": null,
+      "prompt_matches_previous": true,
+      "original_artifact_name": "cat-coast-scooter-3d/index.html",
+      "scene_path": "scenes/10/index.html",
+      "artifact_files": [
+        {
+          "file": "index.html",
+          "bytes": 3021,
+          "sha256": "1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826",
+          "frozen_matches_current": true
+        },
+        {
+          "file": "scene.js",
+          "bytes": 521647,
+          "sha256": "7b1b33800058f1000fbe74e4a0dbcf0a81f2b8229ec6ef86fcb9a713197ad9ea",
+          "frozen_matches_current": true
+        },
+        {
+          "file": "styles.css",
+          "bytes": 10120,
+          "sha256": "697d722599427abfb906493e6f4e9bf6b7505c0faa9be87e82490d79889bef4b",
+          "frozen_matches_current": true
+        },
+        {
+          "file": "使用说明.txt",
+          "bytes": 442,
+          "sha256": "0afb2561478c75a24a4f0a0267e59f0f41fea19fa87003caaadf1210f888aacc",
+          "frozen_matches_current": true
+        }
+      ],
+      "original_visual_verification": true,
+      "original_failed_tool_records": [
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "McpToolCall",
+          "exit_code": null,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        },
+        {
+          "kind": "McpToolCall",
+          "exit_code": null,
+          "status": "failed"
+        },
+        {
+          "kind": "McpToolCall",
+          "exit_code": null,
+          "status": "failed"
+        },
+        {
+          "kind": "CommandExecution",
+          "exit_code": 1,
+          "status": "failed"
+        }
+      ],
+      "tool_types": {
+        "CommandExecution": 40,
+        "FileChange": 7,
+        "McpToolCall": 18
+      },
+      "quality": {
+        "order": 10,
+        "profile": "交互界面完整 · 模型与运动有明显缺陷",
+        "model": "薄荷绿电动车有车镜、灯、轮辐和挡泥板；橘猫有胡须、头盔带、围巾与分节尾巴。但躯干和四肢偏细长，半球头盔覆盖双眼的大部分区域。统一主体图和正面近景可见，射线检查也确认头盔表面位于两眼前方，属于模型部件位置问题。",
+        "lighting": "有渐变天空、太阳、海岛环路、棕榈和灯塔，海面由GPU着色器驱动；原海面呈明显长条交叉纹，地面大色块较平，海岸层次和主体比例不如前列作品。圆角控制栏、车速卡和窄屏布局较完整。",
+        "motion": "车沿CatmullRom曲线按中心线弧长前进，前轮有转向。实际车轴向前移动时，轮胎底部因旋转也向前移动，静止路面上的无滑动滚动方向应与车轴平移相反，因此方向错误。轮胎外半径0.755，轮转使用0.64；相对程序记录里程的滚动量偏差17.97%。手爪固定，未随独立转向的车把更新。",
+        "implementation": "src/scene.js按天空、海面、道路、车辆、猫、控制和更新函数分段；Three.js 0.180.0与esbuild 0.25.10生成三个静态文件，无React、SSR或后端。多对象复用材质，但主体77网格对应76份几何，几何复用有限；每帧路径、镜头函数分配临时向量。",
+        "limitations": "暂停和减少动画偏好只停止行驶、轮转；头部、尾巴、围巾、海面、鸟和云仍更新。云每帧累加位移，同样1秒在120fps的位移为60fps的2倍；鸟高度也逐帧累加。三只鸟有拍翼和小幅升降，没有水平飞行。方向、半径与模型位置的问题已独立确认。",
+        "recovery": "Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。",
+        "camera": "默认镜头从后方跟随，不能充分展示猫脸；侧拍和拖动可换角度。该预设取景单独记录；头盔覆盖双眼则在正面检查中仍存在，计为部件位置缺陷。",
+        "recommendation": "这次45:49.622、Standard文本Token折算$4.5106；托管流程和源码同步重试增加复杂度，但不计入成品质量名次。先修滚动方向、半径、眼睛/头盔位置和逐帧累加，再考虑交付扩展。",
+        "original_evidence": "原任务检查过桌面、窄屏、暂停和调速，但仍漏掉轮转方向与头盔位置。私密部署完成后，托管页浏览器访问未成功；本次独立验证公开的冻结本地原作品可离线运行，不能把原托管页访问失败归为作品无法运行。",
+        "references": [
+          {
+            "line": 14,
+            "topic": "减少动画仅停止行驶"
+          },
+          {
+            "line": 422,
+            "topic": "轮胎实际外半径0.755"
+          },
+          {
+            "line": 602,
+            "topic": "头盔与眼睛位置"
+          },
+          {
+            "line": 612,
+            "topic": "固定手爪与手臂"
+          },
+          {
+            "line": 726,
+            "topic": "弧长路线与前轮转向"
+          },
+          {
+            "line": 745,
+            "topic": "负向轮转与0.64除数"
+          },
+          {
+            "line": 812,
+            "topic": "飞鸟和云的逐帧累加"
+          },
+          {
+            "line": 828,
+            "topic": "暂停后仍更新海面、头部和环境"
+          }
+        ]
+      },
+      "quality_rank": 10,
+      "configuration_label": "10 · GPT-5.6 Sol / max",
+      "wheel_relative_error": 0.1796874999999999,
+      "wheel_delta_error": 1.1979166666666616,
+      "keyboard_pass": true,
+      "reduced_motion_pass": false,
+      "observed_fps": 163.88989496470765,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "offline": true,
+        "motion_state_advances": true,
+        "pause": true,
+        "pause_all_animation": false,
+        "resume": true,
+        "keyboard": true,
+        "mobile_controls": true,
+        "drag": true,
+        "zoom": true,
+        "wheel_distance": false,
+        "rolling_direction": false,
+        "reduced_motion_all_animation": false
+      },
+      "studio": {
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            5.485226129825442,
+            5.344016939522957,
+            2.2589744913616006
+          ],
+          "pairCount": 90
+        },
+        "geometry": {
+          "meshes": 77,
+          "uniqueGeometries": 76,
+          "vertices": 5646,
+          "triangles": 7376,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "events": [
+          "lost",
+          "restored"
+        ],
+        "stops_simulation": false,
+        "strategy": "Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。"
+      },
+      "birds_qa": {
+        "count": 3,
+        "position_changed": true,
+        "wings_changed": true,
+        "horizontal_flight": false
+      },
+      "source_evidence": {
+        "order": 10,
+        "configuration": "10 · GPT-5.6 Sol / max",
+        "sha256": "07030a324718bdf99acc426e36abf1b417b4b98d5f9b1b89061483e06c77fd00",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 14,
+            "topic": "减少动画仅停止行驶"
+          },
+          {
+            "line": 422,
+            "topic": "轮胎实际外半径0.755"
+          },
+          {
+            "line": 602,
+            "topic": "头盔与眼睛位置"
+          },
+          {
+            "line": 612,
+            "topic": "固定手爪与手臂"
+          },
+          {
+            "line": 726,
+            "topic": "弧长路线与前轮转向"
+          },
+          {
+            "line": 745,
+            "topic": "负向轮转与0.64除数"
+          },
+          {
+            "line": 812,
+            "topic": "飞鸟和云的逐帧累加"
+          },
+          {
+            "line": 828,
+            "topic": "暂停后仍更新海面、头部和环境"
+          }
+        ],
+        "source_file": "code-sources/10.js"
+      },
+      "workflow_review": "evidence/10-workflow-review.json"
     }
   ],
   "code_and_visual_review": {
@@ -5194,13 +5465,21 @@
         "sky": "渐变天空、太阳、灯塔与14组静态云；没有日落切换。",
         "water": "GPU波纹/闪光、32组岸边泡沫位移和透明度变化。",
         "boats": "3条帆船为静态远景，没有随浪上下起伏或摇摆。"
+      },
+      {
+        "order": 10,
+        "bird_count": 3,
+        "birds": "有简化身体和双翼，三只鸟拍翼、朝向变化和小幅升降；无水平飞行，高度逐帧累加、依赖帧率。",
+        "sky": "渐变天空、太阳和云群；云每帧横移，120fps速度为60fps的2倍；无日落切换。",
+        "water": "GPU顶点波浪与条带闪光，原画面有较明显交叉长条纹；近岸泡沫为静态环形线。",
+        "boats": "没有帆船模型；环岛、灯塔与棕榈齐全，帆船不在原需求中。"
       }
     ],
     "common": [
-      "七组都完成核心需求；直线行驶和弯道行驶均符合原任务，不因功能数量不同扣核心达标分。",
-      "七组都使用时间增量驱动模拟，车轮角度与路程增量一致；没有把电动车误当成需要踩踏的自行车。",
+      "十组均可打开并显示猫、车与海岸；08/10有已确认的运动逻辑错误。直线和弯道均符合原任务，不因功能数量不同扣核心达标分。",
+      "十组的行驶采用时间增量。原七组与09的轮转检查通过；08/10的滚动半径和接触运动方向有错误。10的云位移与鸟高度逐帧累加，依赖帧率。",
       "代码均以一个主要脚本组织场景，是可以交付的网页原型；未验证为可长期维护的正式应用。第5、6组函数划分更清楚，但仍非模块化产品架构。",
-      "所有暂停实现都冻结模拟后继续渲染，便于拖动观察；静止画面可以进一步改成按需渲染，以减少持续GPU工作。",
+      "暂停后仍持续渲染，便于拖动观察；10只停止行驶，海面、头部、尾巴、鸟和云仍动画。静止时可进一步按需渲染减少GPU工作。",
       "多组每帧构建小型Vector3/Color临时对象。可复用缓存，但本次高性能电脑没有测出由此造成的明显卡顿，不把优化机会写成已发生的性能故障。",
       "时间增量被限制在约0.05秒，第6组为0.06秒；低于对应帧率时模拟会放慢，不能称为严格保持墙钟速度的物理仿真。",
       "统一主体检查只保留猫与电动车，统一朝向、角度、取景占比和灯光，保留原几何与材质。原海面、环境光及整体风格仍以原场景评价。",
@@ -5481,11 +5760,58 @@
             "topic": "图形中断与刷新恢复"
           }
         ]
+      },
+      {
+        "order": 10,
+        "profile": "交互界面完整 · 模型与运动有明显缺陷",
+        "model": "薄荷绿电动车有车镜、灯、轮辐和挡泥板；橘猫有胡须、头盔带、围巾与分节尾巴。但躯干和四肢偏细长，半球头盔覆盖双眼的大部分区域。统一主体图和正面近景可见，射线检查也确认头盔表面位于两眼前方，属于模型部件位置问题。",
+        "lighting": "有渐变天空、太阳、海岛环路、棕榈和灯塔，海面由GPU着色器驱动；原海面呈明显长条交叉纹，地面大色块较平，海岸层次和主体比例不如前列作品。圆角控制栏、车速卡和窄屏布局较完整。",
+        "motion": "车沿CatmullRom曲线按中心线弧长前进，前轮有转向。实际车轴向前移动时，轮胎底部因旋转也向前移动，静止路面上的无滑动滚动方向应与车轴平移相反，因此方向错误。轮胎外半径0.755，轮转使用0.64；相对程序记录里程的滚动量偏差17.97%。手爪固定，未随独立转向的车把更新。",
+        "implementation": "src/scene.js按天空、海面、道路、车辆、猫、控制和更新函数分段；Three.js 0.180.0与esbuild 0.25.10生成三个静态文件，无React、SSR或后端。多对象复用材质，但主体77网格对应76份几何，几何复用有限；每帧路径、镜头函数分配临时向量。",
+        "limitations": "暂停和减少动画偏好只停止行驶、轮转；头部、尾巴、围巾、海面、鸟和云仍更新。云每帧累加位移，同样1秒在120fps的位移为60fps的2倍；鸟高度也逐帧累加。三只鸟有拍翼和小幅升降，没有水平飞行。方向、半径与模型位置的问题已独立确认。",
+        "recovery": "Three.js底层丢失/恢复事件可触发，恢复后画面继续；丢失期间距离仍推进，没有自定义暂停或恢复反馈。errorPanel只覆盖初始化失败。",
+        "camera": "默认镜头从后方跟随，不能充分展示猫脸；侧拍和拖动可换角度。该预设取景单独记录；头盔覆盖双眼则在正面检查中仍存在，计为部件位置缺陷。",
+        "recommendation": "这次45:49.622、Standard文本Token折算$4.5106；托管流程和源码同步重试增加复杂度，但不计入成品质量名次。先修滚动方向、半径、眼睛/头盔位置和逐帧累加，再考虑交付扩展。",
+        "original_evidence": "原任务检查过桌面、窄屏、暂停和调速，但仍漏掉轮转方向与头盔位置。私密部署完成后，托管页浏览器访问未成功；本次独立验证公开的冻结本地原作品可离线运行，不能把原托管页访问失败归为作品无法运行。",
+        "references": [
+          {
+            "line": 14,
+            "topic": "减少动画仅停止行驶"
+          },
+          {
+            "line": 422,
+            "topic": "轮胎实际外半径0.755"
+          },
+          {
+            "line": 602,
+            "topic": "头盔与眼睛位置"
+          },
+          {
+            "line": 612,
+            "topic": "固定手爪与手臂"
+          },
+          {
+            "line": 726,
+            "topic": "弧长路线与前轮转向"
+          },
+          {
+            "line": 745,
+            "topic": "负向轮转与0.64除数"
+          },
+          {
+            "line": 812,
+            "topic": "飞鸟和云的逐帧累加"
+          },
+          {
+            "line": 828,
+            "topic": "暂停后仍更新海面、头部和环境"
+          }
+        ]
       }
     ]
   },
   "quality_ranking": {
-    "scope": "九个具体交付的Codex观察式评估，非盲评。原七组与后补两组分两批启动；每个配置只有一次样本，不代表模型总体能力排名。",
+    "scope": "十个具体交付的Codex观察式评估，非盲评。原七组、后补两组及新增10分三批启动；每个配置只有一次样本，不代表模型总体能力排名。",
     "criteria": [
       "主体建模与细节",
       "原场景材质、光照与环境动态",
@@ -5502,7 +5828,8 @@
       9,
       4,
       3,
-      8
+      8,
+      10
     ],
     "close_groups": [
       [
@@ -5603,6 +5930,15 @@
         "limitation": "另有1.16%滚动误差与减少动画缺项",
         "reason": "猫车内容和交互可用，但相对运动方向不一致，轮转使用的半径不等于实际外半径；法线、拍翼和减少动画处理也更简化。",
         "rank": 9
+      },
+      {
+        "rank": 10,
+        "order": 10,
+        "headline": "界面完整，但模型与运动缺陷明显",
+        "strength": "曲线环岛、三镜头、键盘与离线交付",
+        "code": "实测：轮胎底部旋转位移与车轴平移同向",
+        "limitation": "头盔遮眼、17.97%滚动量偏差、云移动依赖帧率",
+        "reason": "界面与曲线路线完整，源码分段清楚；但头盔覆盖双眼、轮转反向且半径偏差较大，暂停仅停车，海面与主体比例也较基础。因此排在08后，建站流程与耗时不参与质量名次。"
       }
     ],
     "initial_seven_ranking": [
@@ -5613,6 +5949,17 @@
       7,
       4,
       3
+    ],
+    "initial_nine_ranking": [
+      5,
+      6,
+      1,
+      2,
+      7,
+      9,
+      4,
+      3,
+      8
     ]
   },
   "prompt": "全新创建一个可直接运行的 Three.js 网页 3D 场景：内容是一个猫在海边马路上骑电动车的3D动画",
@@ -5620,12 +5967,13 @@
     "timing_and_usage": "原会话首个任务的本地完成记录；去重模型响应用量与累计用量、会话数据库交叉核对。公开的是聚合值，未公开聊天日志。",
     "service_tier": "not recorded; Standard is only the normalized price basis",
     "assessment": "Codex观察式成品及源码审查，非盲评，每个配置1次样本",
-    "artifact_integrity": "九份scenes HTML与原交付字节相同；源码副本保留原字节",
+    "artifact_integrity": "01–09原单HTML与10原静态目录的全部文件、原ZIP及源码均按原字节保留；哈希逐文件验证。",
     "measurement_scope": "只计原任务耗时；本次追加评估与发布的时间和成本未加回原任务",
-    "batches": "01–07为10:00左右启动的原七组；08–09为14:25左右启动的后补两组。评估不将九组视为同一时间并发实验。",
+    "batches": "01–07约10:00启动；08–09约14:25启动；10为19:51:02单独启动的后补第三批。工具策略、依赖版本和环境未严格固定。",
     "supplemental_ids": [
       "01a0f0fd-0715-7f73-a913-3d67f6dfb8a8",
-      "01a0f0fd-1fc6-7a42-adef-a1dd826cedd8"
+      "01a0f0fd-1fc6-7a42-adef-a1dd826cedd8",
+      "01a0f227-5f89-7a23-b8da-2b2c22f71e81"
     ]
   }
 }

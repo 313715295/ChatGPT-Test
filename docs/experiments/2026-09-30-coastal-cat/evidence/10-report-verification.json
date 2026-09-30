@@ -1,0 +1,65 @@
+{
+  "page_errors": [],
+  "failed_requests": [],
+  "title": "十个会话，同一场景试验",
+  "ranking_follows_overview": true,
+  "navigation_order": [
+    "#overview",
+    "#ranking",
+    "#workflow",
+    "#cost",
+    "#fast",
+    "#quality",
+    "#ambient",
+    "#code",
+    "#motion",
+    "#preview",
+    "#method"
+  ],
+  "visible_rank_count": 10,
+  "quality_order": [
+    5,
+    6,
+    1,
+    2,
+    7,
+    9,
+    4,
+    3,
+    8,
+    10
+  ],
+  "visible_rank_sequence": [
+    "第1名",
+    "第2名",
+    "第3名",
+    "第4名",
+    "第5名",
+    "第6名",
+    "第7名",
+    "第8名",
+    "第9名",
+    "第10名"
+  ],
+  "comparison_row_counts": {
+    "#overview .barrow:not(.barhead)": 10,
+    "#ambient tbody tr": 10,
+    "#code tbody tr": 10,
+    "#motion tbody tr": 20
+  },
+  "fast_rows": 5,
+  "fast5": "17:48",
+  "preview10_path": "scenes/10/index.html",
+  "preview10_runs": true,
+  "code_source_line_count": 932,
+  "mobile_width": 390,
+  "status": "PASS",
+  "reduced_motion_verification": {
+    "playing": false,
+    "distance_stopped": true,
+    "sea_time_advances": true,
+    "head_changes": true,
+    "clouds_change": true,
+    "birds_change": true
+  }
+}

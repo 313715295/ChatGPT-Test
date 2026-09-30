@@ -15,3 +15,8 @@ JSON保留观测值与检查结果，移除了私人机器路径。截图为实�
 - `rolling-contact-verification.json`：08/09实际车轮、地面与接触点运动方向和滚动量。
 
 本机短窗口频率不等于低端手机帧率。原会话聚合Token和耗时另见数据表，原聊天日志未公开。
+
+- `10-verification.json`：10 · GPT-5.6 Sol / max的离线、交互、模型、帧率依赖、暂停和图形恢复检查。
+- `10-face-verification.json`及`10-face-front.png`：原部件位置与正面双眼遮挡检查。
+- `10-rolling-contact-verification.json`：车轴实际平移与胎底转动的世界坐标方向，以及0.755/0.64半径偏差。
+- `10-workflow-review.json`：脱敏的Sites阶段工具时间、两次同步失败、流程选择与结论边界。

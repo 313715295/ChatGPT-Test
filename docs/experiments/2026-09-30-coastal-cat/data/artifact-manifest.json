@@ -92,5 +92,45 @@
     "sha256": "0aed5085f9a1480e6c6955423ae9aa5a209b73f76daee1ecd54132d3443c1699",
     "source_file": "code-sources/09.html",
     "source_sha256": "aa0c773db2fd4cb7a8774ab6ae999e696de4a6f1744c36fe11fe0fe07dc1b15e"
+  },
+  {
+    "order": 10,
+    "session_id": "01a0f227-5f89-7a23-b8da-2b2c22f71e81",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "max",
+    "file": "scenes/10/index.html",
+    "original_filename": "cat-coast-scooter-3d/index.html",
+    "bytes": 3021,
+    "sha256": "1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826",
+    "source_file": "code-sources/10.js",
+    "source_sha256": "07030a324718bdf99acc426e36abf1b417b4b98d5f9b1b89061483e06c77fd00",
+    "format": "Original multi-file static delivery; preserve files together.",
+    "files": [
+      {
+        "file": "scenes/10/index.html",
+        "bytes": 3021,
+        "sha256": "1f15d4973dd5ec0b0f0fd7b11177a8dffe76613beb001d626074456a8e55a826"
+      },
+      {
+        "file": "scenes/10/scene.js",
+        "bytes": 521647,
+        "sha256": "7b1b33800058f1000fbe74e4a0dbcf0a81f2b8229ec6ef86fcb9a713197ad9ea"
+      },
+      {
+        "file": "scenes/10/styles.css",
+        "bytes": 10120,
+        "sha256": "697d722599427abfb906493e6f4e9bf6b7505c0faa9be87e82490d79889bef4b"
+      },
+      {
+        "file": "scenes/10/使用说明.txt",
+        "bytes": 442,
+        "sha256": "0afb2561478c75a24a4f0a0267e59f0f41fea19fa87003caaadf1210f888aacc"
+      }
+    ],
+    "original_zip": {
+      "file": "scenes/10-original.zip",
+      "bytes": 141171,
+      "sha256": "4b90362e963610c0864ce050f272e2e53bd7fb3df48f26f887cbfa877dcc00a0"
+    }
   }
 ]

@@ -1,3 +1,4 @@
 docs/experiments/**/scenes/*.html -text
+docs/experiments/**/scenes/[0-9][0-9]/** -text
 docs/experiments/**/code-sources/* -text
 docs/experiments/**/sources/** -text

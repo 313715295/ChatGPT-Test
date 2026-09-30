@@ -15,7 +15,10 @@
 | 07 · GPT-6.1 Sol / high | `07/work` | `npm ci` | `node build.cjs` | `outputs/海风小骑.html` |
 | 08 · GPT-6.1 Sol / low | `08/work` | esbuild，Three.js原文件已保留 | 见[08说明](08/README.md) | `outputs/海风慢慢.html` |
 | 09 · GPT-6.1 Sol / medium | `09/work` | 无需安装，库已保留 | 见[09说明](09/README.md) | `outputs/coast-cat.html` |
+| 10 · GPT-5.6 Sol / max | `10/work/cat-coast-scooter-site` | `npm ci` | `npm run build` | `dist/index.html`、`dist/scene.js`、`dist/styles.css` |
 
 03原场景使用内嵌库占位符，新增`build.cjs`仅用于可移植打包，不是原模型生成交付的一部分。其余原构建入口保持原字节。05原构建入口按工作目录计算输出路径，以上目录是必须条件。06原交付未保存锁文件，依赖在原package.json中固定版本。
 
 依赖版本不同、构建器压缩变化可能导致重建字节不同；原成品哈希只用于核对冻结原文件。Three.js许可证保留在各编号目录或工作目录中。
+
+10为原静态目录交付，详见[10构建说明](10/README.md)；无需注册或部署Sites即可构建、离线运行。

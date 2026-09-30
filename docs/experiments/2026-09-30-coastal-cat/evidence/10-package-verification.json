@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "subjects": 10,
+  "prior_nine_metrics_unchanged": true,
+  "all_original_hashes_match": true,
+  "original_zip_files_match": true,
+  "csv_rows": 10,
+  "local_links_and_anchors_checked": 1214,
+  "broken_local_links": [],
+  "private_paths_or_credentials_found": [],
+  "total_standard_usd": 16.6327924
+}

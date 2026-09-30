@@ -1,5 +1,5 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>当前九组质量排序</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>当前九组质量排序</h1><p class="note">四个质量维度同等考虑，价格、速度和拍摄遮挡不参与排名。单样本观察式评估不代表模型总体能力排序。</p><p>05 · GPT-6.1 Sol / max → 06 · GPT-6.1 Sol / xhigh → 01 · GPT-6 Astra / max → 02 · GPT-6 Astra / xhigh → 07 · GPT-6.1 Sol / high → 09 · GPT-6.1 Sol / medium → 04 · GPT-6 Astra / high → 03 · GPT-6 Astra / medium → 08 · GPT-6.1 Sol / low</p><p><a href="../data/ranking.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
-  &quot;scope&quot;: &quot;九个具体交付的Codex观察式评估，非盲评。原七组与后补两组分两批启动；每个配置只有一次样本，不代表模型总体能力排名。&quot;,
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>十组质量排序依据</title><style>body{background:#f3f7f4;color:#19372f;font:16px/1.7 system-ui,"Microsoft YaHei",sans-serif;margin:0;padding:28px;max-width:1500px}a{color:#167451}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d7e3dc;border-radius:12px;padding:22px}</style></head><body><h1>十组质量排序依据</h1><p><a href="../index.html">返回测评</a> · <a href="../data/ranking.json" download>下载原数据</a></p><pre>{
+  &quot;scope&quot;: &quot;十个具体交付的Codex观察式评估，非盲评。原七组、后补两组及新增10分三批启动；每个配置只有一次样本，不代表模型总体能力排名。&quot;,
   &quot;criteria&quot;: [
     &quot;主体建模与细节&quot;,
     &quot;原场景材质、光照与环境动态&quot;,
@@ -16,7 +16,8 @@
     9,
     4,
     3,
-    8
+    8,
+    10
   ],
   &quot;close_groups&quot;: [
     [
@@ -117,6 +118,15 @@
       &quot;limitation&quot;: &quot;另有1.16%滚动误差与减少动画缺项&quot;,
       &quot;reason&quot;: &quot;猫车内容和交互可用，但相对运动方向不一致，轮转使用的半径不等于实际外半径；法线、拍翼和减少动画处理也更简化。&quot;,
       &quot;rank&quot;: 9
+    },
+    {
+      &quot;rank&quot;: 10,
+      &quot;order&quot;: 10,
+      &quot;headline&quot;: &quot;界面完整，但模型与运动缺陷明显&quot;,
+      &quot;strength&quot;: &quot;曲线环岛、三镜头、键盘与离线交付&quot;,
+      &quot;code&quot;: &quot;实测：轮胎底部旋转位移与车轴平移同向&quot;,
+      &quot;limitation&quot;: &quot;头盔遮眼、17.97%滚动量偏差、云移动依赖帧率&quot;,
+      &quot;reason&quot;: &quot;界面与曲线路线完整，源码分段清楚；但头盔覆盖双眼、轮转反向且半径偏差较大，暂停仅停车，海面与主体比例也较基础。因此排在08后，建站流程与耗时不参与质量名次。&quot;
     }
   ],
   &quot;initial_seven_ranking&quot;: [
@@ -127,5 +137,17 @@
     7,
     4,
     3
+  ],
+  &quot;initial_nine_ranking&quot;: [
+    5,
+    6,
+    1,
+    2,
+    7,
+    9,
+    4,
+    3,
+    8
   ]
-}</pre></details></main></body></html>
+}
+</pre></body></html>

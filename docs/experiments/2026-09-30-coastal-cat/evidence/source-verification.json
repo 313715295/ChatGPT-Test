@@ -212,5 +212,46 @@
       }
     ],
     "source_file": "code-sources/09.html"
+  },
+  {
+    "order": 10,
+    "configuration": "10 · GPT-5.6 Sol / max",
+    "sha256": "07030a324718bdf99acc426e36abf1b417b4b98d5f9b1b89061483e06c77fd00",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 14,
+        "topic": "减少动画仅停止行驶"
+      },
+      {
+        "line": 422,
+        "topic": "轮胎实际外半径0.755"
+      },
+      {
+        "line": 602,
+        "topic": "头盔与眼睛位置"
+      },
+      {
+        "line": 612,
+        "topic": "固定手爪与手臂"
+      },
+      {
+        "line": 726,
+        "topic": "弧长路线与前轮转向"
+      },
+      {
+        "line": 745,
+        "topic": "负向轮转与0.64除数"
+      },
+      {
+        "line": 812,
+        "topic": "飞鸟和云的逐帧累加"
+      },
+      {
+        "line": 828,
+        "topic": "暂停后仍更新海面、头部和环境"
+      }
+    ],
+    "source_file": "code-sources/10.js"
   }
 ]
