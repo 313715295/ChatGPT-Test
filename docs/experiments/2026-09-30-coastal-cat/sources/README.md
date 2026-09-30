@@ -6,13 +6,13 @@
 
 | 编号 | 相对此目录的工作目录 | 安装 | 构建 | 生成位置，相对此编号目录 |
 | --- | --- | --- | --- | --- |
-| 01 | `01/work` | `npm ci` | `node build.mjs` | `outputs/coastal-cat.html` |
-| 02 | `02/work` | 无需安装 | `node build.cjs` | `outputs/coastal-cat.html` |
-| 03 | `03/work` | 无需安装 | `node build.cjs` | `outputs/coast-cat.html` |
-| 04 | `04/work` | `npm ci` | `node build.cjs` | `outputs/coast-cat.html` |
-| 05 | `05/work/cat-coast` | `pnpm install --frozen-lockfile` | `node build.mjs` | `outputs/cat-coast-ride.html` |
-| 06 | `06/work` | `npm install` | `node build.mjs` | `outputs/cat-coastal-ride.html` |
-| 07 | `07/work` | `npm ci` | `node build.cjs` | `outputs/海风小骑.html` |
+| 01 · GPT-6 Astra / max | `01/work` | `npm ci` | `node build.mjs` | `outputs/coastal-cat.html` |
+| 02 · GPT-6 Astra / xhigh | `02/work` | 无需安装 | `node build.cjs` | `outputs/coastal-cat.html` |
+| 03 · GPT-6 Astra / medium | `03/work` | 无需安装 | `node build.cjs` | `outputs/coast-cat.html` |
+| 04 · GPT-6 Astra / high | `04/work` | `npm ci` | `node build.cjs` | `outputs/coast-cat.html` |
+| 05 · GPT-6.1 Sol / max | `05/work/cat-coast` | `pnpm install --frozen-lockfile` | `node build.mjs` | `outputs/cat-coast-ride.html` |
+| 06 · GPT-6.1 Sol / xhigh | `06/work` | `npm install` | `node build.mjs` | `outputs/cat-coastal-ride.html` |
+| 07 · GPT-6.1 Sol / high | `07/work` | `npm ci` | `node build.cjs` | `outputs/海风小骑.html` |
 
 03原场景使用内嵌库占位符，新增`build.cjs`仅用于可移植打包，不是原模型生成交付的一部分。其余原构建入口保持原字节。05原构建入口按工作目录计算输出路径，以上目录是必须条件。06原交付未保存锁文件，依赖在原package.json中固定版本。
 
