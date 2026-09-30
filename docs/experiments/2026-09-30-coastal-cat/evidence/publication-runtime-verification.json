@@ -1,5 +1,5 @@
 {
-  "scope": "公开目录的可移植浏览器检查复测；不覆盖原性能证据",
+  "scope": "九份公开原网页的运行记录；01–07保留原发布检查，08–09追加离线原文件检查和公开目录预览。状态推进不等于运动逻辑正确，不覆盖通用性能结论。",
   "subjects": [
     {
       "order": 1,
@@ -70,6 +70,32 @@
       "pause_froze_time": true,
       "resume_advanced": true,
       "offline_file_runs": true
+    },
+    {
+      "order": 8,
+      "errors": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true,
+      "externals": [],
+      "batch": "supplemental-two",
+      "rolling_direction_pass": false,
+      "rolling_distance_relative_error": 0.011627906976740912
+    },
+    {
+      "order": 9,
+      "errors": [],
+      "motion_advanced": true,
+      "pause_froze_distance": true,
+      "pause_froze_time": true,
+      "resume_advanced": true,
+      "offline_file_runs": true,
+      "externals": [],
+      "batch": "supplemental-two",
+      "rolling_direction_pass": true,
+      "rolling_distance_relative_error": 0
     }
   ]
 }

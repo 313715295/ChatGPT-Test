@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>图形上下文恢复检查</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>图形上下文恢复检查</h1><p class="note">真实触发WebGL丢失和恢复后的画面提示、模拟状态及自动/人工恢复行为。</p><p><a href="../evidence/context-recovery.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>[
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>九组图形上下文恢复检查</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>九组图形上下文恢复检查</h1><p class="note">真实触发WebGL丢失和恢复后的画面提示、模拟状态及自动/人工恢复行为。09底层恢复后仍保持暂停与刷新提示。</p><p><a href="../evidence/context-recovery.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>[
   {
     &quot;order&quot;: 1,
     &quot;errors&quot;: [],
@@ -824,5 +824,663 @@
         &quot;defaultPrevented&quot;: false
       }
     ]
+  },
+  {
+    &quot;order&quot;: 8,
+    &quot;errors&quot;: [],
+    &quot;events&quot;: [
+      &quot;lost&quot;,
+      &quot;restored&quot;
+    ],
+    &quot;lost&quot;: {
+      &quot;paused&quot;: false,
+      &quot;time&quot;: 3.500000000000002,
+      &quot;distance&quot;: 20.999999999999865,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: &quot;follow&quot;,
+      &quot;camera&quot;: [
+        9.449993443354506,
+        7.259994962831083,
+        8.49999410248818
+      ],
+      &quot;wheelAngles&quot;: [
+        48.8372093023253,
+        48.8372093023253
+      ],
+      &quot;physicalWheelRadii&quot;: [
+        0.435,
+        0.435
+      ],
+      &quot;groundPosition&quot;: [
+        0,
+        0.06,
+        -1.000000000000142
+      ],
+      &quot;forward&quot;: [
+        0,
+        0,
+        1
+      ],
+      &quot;birds&quot;: [
+        {
+          &quot;position&quot;: [
+            -20,
+            7.824060848005665,
+            -7.999999999999993
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -23,
+            8.824909565062315,
+            1
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -26,
+            9.986735620529762,
+            10
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -29,
+            8.160756885310326,
+            19
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -32,
+            9.186979011104937,
+            28
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -35,
+            10.041293496387558,
+            37
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -38,
+            7.857642931526175,
+            -44
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      &quot;drawCalls&quot;: 146,
+      &quot;triangles&quot;: 37352
+    },
+    &quot;restored&quot;: {
+      &quot;paused&quot;: false,
+      &quot;time&quot;: 4.166666666666666,
+      &quot;distance&quot;: 24.999999999999797,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: &quot;follow&quot;,
+      &quot;camera&quot;: [
+        9.449999554193765,
+        7.259999657507593,
+        8.499999599010264
+      ],
+      &quot;wheelAngles&quot;: [
+        58.13953488372056,
+        58.13953488372056
+      ],
+      &quot;physicalWheelRadii&quot;: [
+        0.435,
+        0.435
+      ],
+      &quot;groundPosition&quot;: [
+        0,
+        0.06,
+        2.999999999999801
+      ],
+      &quot;forward&quot;: [
+        0,
+        0,
+        1
+      ],
+      &quot;birds&quot;: [
+        {
+          &quot;position&quot;: [
+            -20,
+            7.9867356205297595,
+            -6.666666666666671
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -23,
+            9.160756885310324,
+            2.3333333333333286
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -26,
+            10.186979011104937,
+            11.333333333333329
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -29,
+            8.04129349638756,
+            20.33333333333333
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -32,
+            8.857642931526176,
+            29.33333333333333
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -35,
+            9.804874798906368,
+            38.33333333333333
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -38,
+            7.931503876306078,
+            -42.66666666666667
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      &quot;drawCalls&quot;: 139,
+      &quot;triangles&quot;: 32984
+    },
+    &quot;notice&quot;: {
+      &quot;visible&quot;: false,
+      &quot;text&quot;: &quot;无法启动 3D 场景。请使用支持 WebGL 的现代浏览器打开。&quot;
+    },
+    &quot;stops_simulation&quot;: false,
+    &quot;strategy&quot;: &quot;Three.js自动恢复，无自定义反馈；丢失期间继续模拟&quot;
+  },
+  {
+    &quot;order&quot;: 9,
+    &quot;errors&quot;: [],
+    &quot;events&quot;: [
+      &quot;lost&quot;,
+      &quot;restored&quot;
+    ],
+    &quot;lost&quot;: {
+      &quot;paused&quot;: true,
+      &quot;time&quot;: 3.000000000000004,
+      &quot;distance&quot;: 14.999999999999961,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;camera&quot;: [
+        5.35,
+        4.35,
+        -9
+      ],
+      &quot;wheelAngles&quot;: [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      &quot;physicalWheelRadii&quot;: [
+        0.435,
+        0.435
+      ],
+      &quot;groundPosition&quot;: [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      &quot;forward&quot;: [
+        0,
+        0,
+        -1
+      ],
+      &quot;birds&quot;: [
+        {
+          &quot;position&quot;: [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      &quot;drawCalls&quot;: 255,
+      &quot;triangles&quot;: 67879
+    },
+    &quot;restored&quot;: {
+      &quot;paused&quot;: true,
+      &quot;time&quot;: 3.000000000000004,
+      &quot;distance&quot;: 14.999999999999961,
+      &quot;speed&quot;: 1,
+      &quot;view&quot;: 0,
+      &quot;camera&quot;: [
+        5.35,
+        4.35,
+        -9
+      ],
+      &quot;wheelAngles&quot;: [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      &quot;physicalWheelRadii&quot;: [
+        0.435,
+        0.435
+      ],
+      &quot;groundPosition&quot;: [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      &quot;forward&quot;: [
+        0,
+        0,
+        -1
+      ],
+      &quot;birds&quot;: [
+        {
+          &quot;position&quot;: [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          &quot;position&quot;: [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          &quot;wings&quot;: [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      &quot;drawCalls&quot;: 255,
+      &quot;triangles&quot;: 67879
+    },
+    &quot;notice&quot;: {
+      &quot;visible&quot;: true,
+      &quot;text&quot;: &quot;3D 显示暂时中断，请刷新页面恢复。&quot;
+    },
+    &quot;stops_simulation&quot;: true,
+    &quot;strategy&quot;: &quot;暂停并显示刷新提示；底层恢复后保持暂停和提示&quot;
   }
 ]</pre></details></main></body></html>

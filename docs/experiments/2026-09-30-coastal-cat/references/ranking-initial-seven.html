@@ -1,0 +1,98 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原七组质量排序快照</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>原七组质量排序快照</h1><p class="note">保留最初01–07的排序与依据。新增08/09之后，原七组相对顺序没有改变。</p><p><a href="../data/ranking-initial-seven.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
+  &quot;scope&quot;: &quot;本轮七个具体交付的Codex综合评估排序，非盲评，不代表模型总体能力排名。每个配置只有一次样本。&quot;,
+  &quot;criteria&quot;: [
+    &quot;主体建模与细节&quot;,
+    &quot;原场景材质、光照与环境动态&quot;,
+    &quot;动画、运动与连接逻辑&quot;,
+    &quot;代码结构、资源处理与故障恢复&quot;
+  ],
+  &quot;weighting&quot;: &quot;四项同等考虑，不发布伪精确的百分制总分。价格、耗时、拍摄遮挡不计入质量名次。&quot;,
+  &quot;order&quot;: [
+    5,
+    6,
+    1,
+    2,
+    7,
+    4,
+    3
+  ],
+  &quot;close_groups&quot;: [
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  &quot;items&quot;: [
+    {
+      &quot;rank&quot;: 1,
+      &quot;order&quot;: 5,
+      &quot;headline&quot;: &quot;海面与整体视觉最协调&quot;,
+      &quot;strength&quot;: &quot;海浪闪光、材质与阴影层次&quot;,
+      &quot;code&quot;: &quot;验证：图形中断可自动恢复&quot;,
+      &quot;limitation&quot;: &quot;简化：转弯时两轮共用行程&quot;,
+      &quot;reason&quot;: &quot;海景、模型与页面风格协调，代码结构清楚且有自动恢复；机械动作比2、6简化。&quot;
+    },
+    {
+      &quot;rank&quot;: 2,
+      &quot;order&quot;: 6,
+      &quot;headline&quot;: &quot;模型精细，骑姿跟随细致&quot;,
+      &quot;strength&quot;: &quot;车把、猫爪与转向联动&quot;,
+      &quot;code&quot;: &quot;源码：前后轮分开计算行程&quot;,
+      &quot;limitation&quot;: &quot;简化：手臂长度随握把伸缩&quot;,
+      &quot;reason&quot;: &quot;模型、猫车连接和环境动画丰富；原海面表现较轻柔，故障恢复采用重新加载。&quot;
+    },
+    {
+      &quot;rank&quot;: 3,
+      &quot;order&quot;: 1,
+      &quot;headline&quot;: &quot;猫车细节与海景都丰富&quot;,
+      &quot;strength&quot;: &quot;轮胎花纹、围巾、分节尾巴&quot;,
+      &quot;code&quot;: &quot;源码：静态网格按材质合并&quot;,
+      &quot;limitation&quot;: &quot;代码取舍：故障后需重新加载&quot;,
+      &quot;reason&quot;: &quot;主体细节、海景、日落和环境动态完整，静态合并较成熟；属于符合需求的直线骑行。&quot;
+    },
+    {
+      &quot;rank&quot;: 4,
+      &quot;order&quot;: 2,
+      &quot;headline&quot;: &quot;弯道机械细节更丰富&quot;,
+      &quot;strength&quot;: &quot;前轮独立转向，猫爪随握把&quot;,
+      &quot;code&quot;: &quot;源码：前后轮分别计算行程&quot;,
+      &quot;limitation&quot;: &quot;简化：手臂伸缩，非固定骨长&quot;,
+      &quot;reason&quot;: &quot;曲率、前轮行程与握把跟随丰富；主要脚本较紧凑，故障后需要重新加载。与1很接近。&quot;
+    },
+    {
+      &quot;rank&quot;: 5,
+      &quot;order&quot;: 7,
+      &quot;headline&quot;: &quot;简洁完整，本轮成本最低&quot;,
+      &quot;strength&quot;: &quot;弧长路线，近似匀速行驶&quot;,
+      &quot;code&quot;: &quot;验证：图形中断可自动恢复&quot;,
+      &quot;limitation&quot;: &quot;简化：前轮未单独转向&quot;,
+      &quot;reason&quot;: &quot;造型较简洁，但弧长路线和自动恢复完整；车辆机械和环境造型比前四组简化。&quot;
+    },
+    {
+      &quot;rank&quot;: 6,
+      &quot;order&quot;: 4,
+      &quot;headline&quot;: &quot;造型圆润，基础动画完整&quot;,
+      &quot;strength&quot;: &quot;尾巴、围巾、眨眼都有&quot;,
+      &quot;code&quot;: &quot;源码：海水法线每3帧更新&quot;,
+      &quot;limitation&quot;: &quot;待改：图形中断提示未触发&quot;,
+      &quot;reason&quot;: &quot;模型与动画完整，几何有复用并更新水面法线；代码组织和故障反馈有改进空间。&quot;
+    },
+    {
+      &quot;rank&quot;: 7,
+      &quot;order&quot;: 3,
+      &quot;headline&quot;: &quot;核心齐全，交付最快&quot;,
+      &quot;strength&quot;: &quot;脸部、骑姿、车轮都完整&quot;,
+      &quot;code&quot;: &quot;源码：轮转与行程一致&quot;,
+      &quot;limitation&quot;: &quot;待改：水面变形后未更新法线&quot;,
+      &quot;reason&quot;: &quot;五分钟内完成可用且完整的作品；水面照明和代码组织比其他组基础。原镜头遮挡未计入排名。&quot;
+    }
+  ]
+}</pre></details></main></body></html>

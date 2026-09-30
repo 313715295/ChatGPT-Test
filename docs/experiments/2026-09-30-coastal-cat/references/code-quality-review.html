@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>代码与视觉逐项分析</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>代码与视觉逐项分析</h1><p class="note">逐组建模、原场景视觉、运动、代码、环境与恢复分析；判断由Codex作出。</p><p><a href="../evidence/code-quality-review.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>九组代码与视觉逐项分析</title><style>body{margin:0;background:#f3f6f4;color:#203e32;font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1050px;margin:auto;padding:32px 22px}h1{font-size:30px}a{color:#207958}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #d3e0d7}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d5e1da;border-radius:12px;padding:20px;font:12px/1.65 Consolas,monospace}details{margin:25px 0}summary{cursor:pointer}.note{padding:15px;background:#e6f1e9;border-radius:10px}small{color:#628071}</style></head><body><main><p><a href="../index.html#method">返回测评总结</a></p><h1>九组代码与视觉逐项分析</h1><p class="note">逐组建模、原场景视觉、运动、代码、环境与恢复分析；判断由Codex作出，非盲评。</p><p><a href="../evidence/code-quality-review.json" download>下载原始JSON数据</a></p><details><summary>展开完整记录</summary><pre>{
   &quot;assessment_basis&quot;: &quot;查看实际源代码、同角度的主体模型、原场景真实动画、运行状态和故障恢复。镜头取景单独描述，不用于降低建模或代码评价。&quot;,
   &quot;scoring&quot;: &quot;撤下此前混合取景与模型质量的单一百分制评分。采用分维度结论；细小主观差异不能支持稳定模型排名。&quot;,
   &quot;ambient&quot;: [
@@ -57,6 +57,22 @@
       &quot;sky&quot;: &quot;太阳、远岛与24组云；云本身静态，无日落切换。&quot;,
       &quot;water&quot;: &quot;GPU几何波动、海色与闪光，泡沫带起伏和透明度变化。&quot;,
       &quot;boats&quot;: &quot;没有帆船模型；帆船不在原需求中，不作为核心缺失扣分。&quot;
+    },
+    {
+      &quot;order&quot;: 8,
+      &quot;bird_count&quot;: 7,
+      &quot;birds&quot;: &quot;7个细杆V形鸟；有位置漂移与上下起伏，翼形不拍动。&quot;,
+      &quot;sky&quot;: &quot;纯色天空与雾效；没有独立太阳球或云群。&quot;,
+      &quot;water&quot;: &quot;CPU顶点波动，未重算水面法线；海面闪光条随景物循环。&quot;,
+      &quot;boats&quot;: &quot;没有帆船模型；沙滩有遮阳伞和躺椅。&quot;
+    },
+    {
+      &quot;order&quot;: 9,
+      &quot;bird_count&quot;: 6,
+      &quot;birds&quot;: &quot;6个细杆双翼鸟；独立拍翼和小幅升降，水平位置保持不变。&quot;,
+      &quot;sky&quot;: &quot;渐变天空、太阳、灯塔与14组静态云；没有日落切换。&quot;,
+      &quot;water&quot;: &quot;GPU波纹/闪光、32组岸边泡沫位移和透明度变化。&quot;,
+      &quot;boats&quot;: &quot;3条帆船为静态远景，没有随浪上下起伏或摇摆。&quot;
     }
   ],
   &quot;common&quot;: [
@@ -258,15 +274,15 @@
     },
     {
       &quot;order&quot;: 7,
-      &quot;profile&quot;: &quot;弧长行驶清楚 · 成本最低&quot;,
+      &quot;profile&quot;: &quot;弧长行驶清楚 · 自动恢复完整&quot;,
       &quot;model&quot;: &quot;橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。&quot;,
       &quot;lighting&quot;: &quot;海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。&quot;,
       &quot;motion&quot;: &quot;2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。&quot;,
       &quot;implementation&quot;: &quot;共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。&quot;,
       &quot;limitations&quot;: &quot;弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。&quot;,
-      &quot;recovery&quot;: &quot;丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。&quot;,
+      &quot;recovery&quot;: &quot;丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是原原七组中更完整的自动恢复路径。&quot;,
       &quot;camera&quot;: &quot;部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。&quot;,
-      &quot;recommendation&quot;: &quot;本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。&quot;,
+      &quot;recommendation&quot;: &quot;原七组中费用最低；新增08和09折算更便宜。希望保留弧长路线和自动恢复时，这组仍是预算与可靠性的取舍。&quot;,
       &quot;original_evidence&quot;: &quot;原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。&quot;,
       &quot;references&quot;: [
         {
@@ -280,6 +296,68 @@
         {
           &quot;line&quot;: 138,
           &quot;topic&quot;: &quot;切线朝向、车轮及动画&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 8,
+      &quot;profile&quot;: &quot;成本最低 · 运动方向待修正&quot;,
+      &quot;model&quot;: &quot;猫脸、耳朵、胡须、头盔、围巾、分节尾巴和后箱可辨认；手爪与握把贴合。车座、挡板和箱体以方块为主，模型细节比前列作品简化。&quot;,
+      &quot;lighting&quot;: &quot;海岸、遮阳伞、棕榈和海面构成完整场景；浅色材质和较高曝光形成轻柔风格，CPU水面变形后没有重新计算法线，动态照明较基础。&quot;,
+      &quot;motion&quot;: &quot;车头、猫脸和前轮指向+Z，但道路景物也向+Z移动；实测轮胎底部位移向−Z，与景物移动相反，接触运动不一致。轮转使用0.43，轮胎几何外半径为0.435，滚动行程偏差约1.16%。&quot;,
+      &quot;implementation&quot;: &quot;单文件内置Three.js 0.180.0，基本交互可用；主脚本紧凑，几何和材质多数逐对象创建，缺少减少动画偏好处理及自定义图形恢复反馈。&quot;,
+      &quot;limitations&quot;: &quot;运动方向不一致是源码及实际对象增量确认的问题，不是拍摄角度造成的错觉。水面法线、拍翼、资源复用和无障碍偏好也有改进空间；未修改原交付来掩盖这些差异。&quot;,
+      &quot;recovery&quot;: &quot;Three.js底层恢复后继续运行；丢失期间仍推进模拟，没有自定义中断或恢复提示。&quot;,
+      &quot;camera&quot;: &quot;原默认镜头在部分时刻被前景棕榈叶遮挡；单独记录取景问题。主体形状以统一朝向的正侧后截图比较。&quot;,
+      &quot;recommendation&quot;: &quot;$0.141的费用折算最低，5:32交付也较快；需要先修正相对运动和滚动参数，不能仅凭便宜或可打开就认为动画逻辑正确。&quot;,
+      &quot;original_evidence&quot;: &quot;原任务做了语法检查，但浏览器预览入口受策略限制，没有完成实际画面验证；本次补做离线、交互、几何和运动检查，补测时间不加回原任务。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 23,
+          &quot;topic&quot;: &quot;轮胎外半径与车轴&quot;
+        },
+        {
+          &quot;line&quot;: 34,
+          &quot;topic&quot;: &quot;鸟形与固定翼&quot;
+        },
+        {
+          &quot;line&quot;: 36,
+          &quot;topic&quot;: &quot;交互及减少动画缺项&quot;
+        },
+        {
+          &quot;line&quot;: 40,
+          &quot;topic&quot;: &quot;景物、轮转与CPU海水&quot;
+        }
+      ]
+    },
+    {
+      &quot;order&quot;: 9,
+      &quot;profile&quot;: &quot;猫车细节较完整 · 验证较充分&quot;,
+      &quot;model&quot;: &quot;橘猫有面部条纹、胡须、头盔、围巾和弯曲尾巴；珊瑚色车有前灯、车镜、轮辐、后灯、编织篮、纸袋与面包，较08细致。&quot;,
+      &quot;lighting&quot;: &quot;海面使用GPU波纹与闪光，岸边泡沫变化；天空渐变、太阳、云群和灯塔形成海岸环境。柔和色调较统一，海天和远景的明暗层次仍比05简化。&quot;,
+      &quot;motion&quot;: &quot;猫车面向−Z，景物向+Z循环；实际轮胎外半径0.435与轮转除数一致，轮胎底部位移和景物位移同向同量。直线行驶，手爪/脚爪为固定曲线造型，没有单独转向。&quot;,
+      &quot;implementation&quot;: &quot;共享球体、方体并缓存材质；GPU海面、围巾小几何更新和法线重算分开处理。单HTML离线可用，有初始化失败提示、减少动画偏好和可观察状态，代码仍集中于一个较紧凑的IIFE。&quot;,
+      &quot;limitations&quot;: &quot;没有曲线路径或前轮转向，天空云和帆船为静态远景；鸟有拍翼和小幅升降而无水平飞行。自定义上下文恢复采用刷新提示，未自动清除遮罩并继续模拟。&quot;,
+      &quot;recovery&quot;: &quot;上下文丢失时暂停并提示刷新；底层恢复后仍保持暂停及提示，依赖用户刷新。&quot;,
+      &quot;camera&quot;: &quot;本次默认桌面和窄屏可辨认主体，海景与控制栏完整；部分远景偏淡。取景大小和前景遮挡不计作建模缺陷。&quot;,
+      &quot;recommendation&quot;: &quot;本样本$0.286、10:35完成；比08更细致且运动关系一致，适合较低费用的完整场景原型。07的弧长路线与自动恢复更完善，二者接近且侧重不同。&quot;,
+      &quot;original_evidence&quot;: &quot;原任务打开了桌面和手机布局截图，并检查离线、运动、暂停、调速、视角与复位；本次采用独立检查重新核对。&quot;,
+      &quot;references&quot;: [
+        {
+          &quot;line&quot;: 42,
+          &quot;topic&quot;: &quot;轮胎外半径与车轴&quot;
+        },
+        {
+          &quot;line&quot;: 61,
+          &quot;topic&quot;: &quot;减少动画偏好及交互&quot;
+        },
+        {
+          &quot;line&quot;: 66,
+          &quot;topic&quot;: &quot;方向、轮转、海面与围巾&quot;
+        },
+        {
+          &quot;line&quot;: 73,
+          &quot;topic&quot;: &quot;图形中断与刷新恢复&quot;
         }
       ]
     }

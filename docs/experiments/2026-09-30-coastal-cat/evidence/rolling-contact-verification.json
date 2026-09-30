@@ -1,0 +1,84 @@
+[
+  {
+    "frontWheelWorld": [
+      1.65,
+      0.4248177403000278,
+      1.05
+    ],
+    "rearWheelWorld": [
+      1.65,
+      0.4248177403000278,
+      -0.95
+    ],
+    "forwardFromActualWheels": [
+      0,
+      0,
+      1
+    ],
+    "wheelAxisWorld": [
+      1,
+      0,
+      0
+    ],
+    "actualTireOuterRadius": 0.435,
+    "distanceDelta": 5.999999999999943,
+    "wheelAngleDelta": 13.953488372092846,
+    "backgroundDisplacement": [
+      0,
+      0,
+      5.999999999999943
+    ],
+    "bottomTreadDisplacement": [
+      0,
+      0,
+      -6.069767441860388
+    ],
+    "groundTreadDot": -36.418604651161985,
+    "rollingDirectionsAgree": false,
+    "groundOpposesGeometricForward": false,
+    "rollingDistanceRelativeError": 0.011627906976740912,
+    "order": 8,
+    "sourceBasis": "front wheel identified by the original fork, headlight and face positions; vectors measured from actual scene objects"
+  },
+  {
+    "frontWheelWorld": [
+      -1.65,
+      0.4334717466693272,
+      -1.03
+    ],
+    "rearWheelWorld": [
+      -1.65,
+      0.4334717466693272,
+      0.94
+    ],
+    "forwardFromActualWheels": [
+      0,
+      0,
+      -0.9999999999999999
+    ],
+    "wheelAxisWorld": [
+      1,
+      0,
+      0
+    ],
+    "actualTireOuterRadius": 0.435,
+    "distanceDelta": 4.999999999999934,
+    "wheelAngleDelta": -11.494252873563067,
+    "backgroundDisplacement": [
+      0,
+      0,
+      4.999999999999943
+    ],
+    "bottomTreadDisplacement": [
+      0,
+      0,
+      4.999999999999934
+    ],
+    "groundTreadDot": 24.99999999999939,
+    "rollingDirectionsAgree": true,
+    "groundOpposesGeometricForward": true,
+    "rollingDistanceRelativeError": 0,
+    "order": 9,
+    "sourceBasis": "front wheel identified by the original fork, headlight and face positions; vectors measured from actual scene objects"
+  }
+]

@@ -13,6 +13,8 @@
 | 05 · GPT-6.1 Sol / max | `05/work/cat-coast` | `pnpm install --frozen-lockfile` | `node build.mjs` | `outputs/cat-coast-ride.html` |
 | 06 · GPT-6.1 Sol / xhigh | `06/work` | `npm install` | `node build.mjs` | `outputs/cat-coastal-ride.html` |
 | 07 · GPT-6.1 Sol / high | `07/work` | `npm ci` | `node build.cjs` | `outputs/海风小骑.html` |
+| 08 · GPT-6.1 Sol / low | `08/work` | esbuild，Three.js原文件已保留 | 见[08说明](08/README.md) | `outputs/海风慢慢.html` |
+| 09 · GPT-6.1 Sol / medium | `09/work` | 无需安装，库已保留 | 见[09说明](09/README.md) | `outputs/coast-cat.html` |
 
 03原场景使用内嵌库占位符，新增`build.cjs`仅用于可移植打包，不是原模型生成交付的一部分。其余原构建入口保持原字节。05原构建入口按工作目录计算输出路径，以上目录是必须条件。06原交付未保存锁文件，依赖在原package.json中固定版本。
 

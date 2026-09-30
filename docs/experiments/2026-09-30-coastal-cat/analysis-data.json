@@ -694,7 +694,9 @@
         "source_file": "code-sources/01.js"
       },
       "quality_rank": 3,
-      "artifact": "scenes/01.html"
+      "artifact": "scenes/01.html",
+      "batch": "initial-seven",
+      "configuration_label": "01 · GPT-6 Astra / max"
     },
     {
       "order": 2,
@@ -1358,7 +1360,9 @@
         "source_file": "code-sources/02.js"
       },
       "quality_rank": 4,
-      "artifact": "scenes/02.html"
+      "artifact": "scenes/02.html",
+      "batch": "initial-seven",
+      "configuration_label": "02 · GPT-6 Astra / xhigh"
     },
     {
       "order": 3,
@@ -1920,8 +1924,10 @@
         ],
         "source_file": "code-sources/03.html"
       },
-      "quality_rank": 7,
-      "artifact": "scenes/03.html"
+      "quality_rank": 8,
+      "artifact": "scenes/03.html",
+      "batch": "initial-seven",
+      "configuration_label": "03 · GPT-6 Astra / medium"
     },
     {
       "order": 4,
@@ -2547,8 +2553,10 @@
         ],
         "source_file": "code-sources/04.js"
       },
-      "quality_rank": 6,
-      "artifact": "scenes/04.html"
+      "quality_rank": 7,
+      "artifact": "scenes/04.html",
+      "batch": "initial-seven",
+      "configuration_label": "04 · GPT-6 Astra / high"
     },
     {
       "order": 5,
@@ -3232,7 +3240,9 @@
         "source_file": "code-sources/05.js"
       },
       "quality_rank": 1,
-      "artifact": "scenes/05.html"
+      "artifact": "scenes/05.html",
+      "batch": "initial-seven",
+      "configuration_label": "05 · GPT-6.1 Sol / max"
     },
     {
       "order": 6,
@@ -3968,7 +3978,9 @@
         "source_file": "code-sources/06.js"
       },
       "quality_rank": 2,
-      "artifact": "scenes/06.html"
+      "artifact": "scenes/06.html",
+      "batch": "initial-seven",
+      "configuration_label": "06 · GPT-6.1 Sol / xhigh"
     },
     {
       "order": 7,
@@ -4018,15 +4030,15 @@
       ],
       "quality": {
         "order": 7,
-        "profile": "弧长行驶清楚 · 成本最低",
+        "profile": "弧长行驶清楚 · 自动恢复完整",
         "model": "橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。",
         "lighting": "海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。",
         "motion": "2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。",
         "implementation": "共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。",
         "limitations": "弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。",
-        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。",
+        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是原原七组中更完整的自动恢复路径。",
         "camera": "部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。",
-        "recommendation": "本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。",
+        "recommendation": "原七组中费用最低；新增08和09折算更便宜。希望保留弧长路线和自动恢复时，这组仍是预算与可靠性的取舍。",
         "original_evidence": "原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。",
         "references": [
           {
@@ -4743,7 +4755,368 @@
         "source_file": "code-sources/07.js"
       },
       "quality_rank": 5,
-      "artifact": "scenes/07.html"
+      "artifact": "scenes/07.html",
+      "batch": "initial-seven",
+      "configuration_label": "07 · GPT-6.1 Sol / high"
+    },
+    {
+      "order": 8,
+      "id": "01a0f0fd-0715-7f73-a913-3d67f6dfb8a8",
+      "title": "创建猫骑电动车海边场景",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "batch": "supplemental-two",
+      "started_local": "2026-09-30T14:25:10+08:00",
+      "completed_local": "2026-09-30T14:30:42+08:00",
+      "duration_ms": 331847,
+      "time_to_first_token_ms": 10377,
+      "model_request_count": 9,
+      "tokens": {
+        "input_tokens": 361220,
+        "cached_input_tokens": 335744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5649,
+        "reasoning_output_tokens": 161,
+        "total_tokens": 366869
+      },
+      "uncached_input": 25476,
+      "api_standard_usd": 0.1410164,
+      "credit_standard": 3.5254099999999995,
+      "fast_api_equivalent_usd": 0.2820328,
+      "fast_credit_equivalent": 7.050819999999999,
+      "recorded_tool_seconds": 22.23200011253357,
+      "estimated_model_response_seconds": 306.83399987220764,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 229.56900004259742,
+          "saved_seconds": 102.27799995740256,
+          "saved_percent": 30.820830068496193
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 178.43000006389616,
+          "saved_seconds": 153.41699993610382,
+          "saved_percent": 46.23124510274428
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 147.7466000766754,
+          "saved_seconds": 184.10039992332457,
+          "saved_percent": 55.477494123293134
+        }
+      ],
+      "frozen_sha256": "3ef3068cf7aeae9f679ca562bf877c1879ae916d164e6f7a7b529130bc1bba1a",
+      "frozen_matches_current": true,
+      "max_request_input": 46912,
+      "token_sum_verified": true,
+      "database_token_total_verified": true,
+      "service_tier": null,
+      "original_artifact_name": "海风慢慢.html",
+      "original_visual_verification": false,
+      "original_failed_tool_records": [
+        {
+          "kind": "McpToolCall",
+          "exit_code": null,
+          "status": "failed"
+        },
+        {
+          "kind": "McpToolCall",
+          "exit_code": null,
+          "status": "failed"
+        }
+      ],
+      "tool_types": {
+        "CommandExecution": 7,
+        "FileChange": 1,
+        "McpToolCall": 3
+      },
+      "quality": {
+        "order": 8,
+        "profile": "成本最低 · 运动方向待修正",
+        "model": "猫脸、耳朵、胡须、头盔、围巾、分节尾巴和后箱可辨认；手爪与握把贴合。车座、挡板和箱体以方块为主，模型细节比前列作品简化。",
+        "lighting": "海岸、遮阳伞、棕榈和海面构成完整场景；浅色材质和较高曝光形成轻柔风格，CPU水面变形后没有重新计算法线，动态照明较基础。",
+        "motion": "车头、猫脸和前轮指向+Z，但道路景物也向+Z移动；实测轮胎底部位移向−Z，与景物移动相反，接触运动不一致。轮转使用0.43，轮胎几何外半径为0.435，滚动行程偏差约1.16%。",
+        "implementation": "单文件内置Three.js 0.180.0，基本交互可用；主脚本紧凑，几何和材质多数逐对象创建，缺少减少动画偏好处理及自定义图形恢复反馈。",
+        "limitations": "运动方向不一致是源码及实际对象增量确认的问题，不是拍摄角度造成的错觉。水面法线、拍翼、资源复用和无障碍偏好也有改进空间；未修改原交付来掩盖这些差异。",
+        "recovery": "Three.js底层恢复后继续运行；丢失期间仍推进模拟，没有自定义中断或恢复提示。",
+        "camera": "原默认镜头在部分时刻被前景棕榈叶遮挡；单独记录取景问题。主体形状以统一朝向的正侧后截图比较。",
+        "recommendation": "$0.141的费用折算最低，5:32交付也较快；需要先修正相对运动和滚动参数，不能仅凭便宜或可打开就认为动画逻辑正确。",
+        "original_evidence": "原任务做了语法检查，但浏览器预览入口受策略限制，没有完成实际画面验证；本次补做离线、交互、几何和运动检查，补测时间不加回原任务。",
+        "references": [
+          {
+            "line": 23,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 34,
+            "topic": "鸟形与固定翼"
+          },
+          {
+            "line": 36,
+            "topic": "交互及减少动画缺项"
+          },
+          {
+            "line": 40,
+            "topic": "景物、轮转与CPU海水"
+          }
+        ]
+      },
+      "wheel_delta_error": 0.06976744186044481,
+      "wheel_relative_error": 0.011627906976740912,
+      "background_direction_pass": false,
+      "keyboard_pass": true,
+      "reduced_motion_pass": false,
+      "observed_fps": 165.12467327636872,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "offline": true,
+        "motion_state_advances": true,
+        "pause": true,
+        "resume": true,
+        "keyboard": true,
+        "mobile_controls": true,
+        "drag": true,
+        "zoom": true,
+        "wheel_distance": false,
+        "rolling_direction": false
+      },
+      "studio": {
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            3.207232887404572,
+            3.1586164472785647,
+            1.455
+          ],
+          "pairCount": 75
+        },
+        "geometry": {
+          "meshes": 69,
+          "uniqueGeometries": 69,
+          "vertices": 12810,
+          "triangles": 18536,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "events": [
+          "lost",
+          "restored"
+        ],
+        "stops_simulation": false,
+        "strategy": "Three.js自动恢复，无自定义反馈；丢失期间继续模拟"
+      },
+      "birds_qa": {
+        "count": 7,
+        "position_changed": true,
+        "wings_changed": false
+      },
+      "source_evidence": {
+        "order": 8,
+        "configuration": "08 · GPT-6.1 Sol / low",
+        "sha256": "186dc16c403738fd6551325add737298e30b99394cc30e020a61e4e310e57cca",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 23,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 34,
+            "topic": "鸟形与固定翼"
+          },
+          {
+            "line": 36,
+            "topic": "交互及减少动画缺项"
+          },
+          {
+            "line": 40,
+            "topic": "景物、轮转与CPU海水"
+          }
+        ],
+        "source_file": "code-sources/08.js"
+      },
+      "configuration_label": "08 · GPT-6.1 Sol / low",
+      "quality_rank": 9
+    },
+    {
+      "order": 9,
+      "id": "01a0f0fd-1fc6-7a42-adef-a1dd826cedd8",
+      "title": "创建猫骑电动车的海边场景",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "batch": "supplemental-two",
+      "started_local": "2026-09-30T14:25:16+08:00",
+      "completed_local": "2026-09-30T14:35:51+08:00",
+      "duration_ms": 635233,
+      "time_to_first_token_ms": 11928,
+      "model_request_count": 10,
+      "tokens": {
+        "input_tokens": 513563,
+        "cached_input_tokens": 448256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11028,
+        "reasoning_output_tokens": 1294,
+        "total_tokens": 524591
+      },
+      "uncached_input": 65307,
+      "api_standard_usd": 0.28571959999999996,
+      "credit_standard": 7.142989999999999,
+      "fast_api_equivalent_usd": 0.5714391999999999,
+      "fast_credit_equivalent": 14.285979999999999,
+      "recorded_tool_seconds": 34.70900058746338,
+      "estimated_model_response_seconds": 586.2609996795654,
+      "fast_scenarios": [
+        {
+          "model_response_speedup": 1.5,
+          "task_seconds": 439.81266677347816,
+          "saved_seconds": 195.4203332265218,
+          "saved_percent": 30.76356757701848
+        },
+        {
+          "model_response_speedup": 2,
+          "task_seconds": 342.10250016021723,
+          "saved_seconds": 293.1304998397827,
+          "saved_percent": 46.14535136552772
+        },
+        {
+          "model_response_speedup": 2.5,
+          "task_seconds": 283.4764001922607,
+          "saved_seconds": 351.75659980773924,
+          "saved_percent": 55.374421638633265
+        }
+      ],
+      "frozen_sha256": "0aed5085f9a1480e6c6955423ae9aa5a209b73f76daee1ecd54132d3443c1699",
+      "frozen_matches_current": true,
+      "max_request_input": 63152,
+      "token_sum_verified": true,
+      "database_token_total_verified": true,
+      "service_tier": null,
+      "original_artifact_name": "coast-cat.html",
+      "original_visual_verification": true,
+      "original_failed_tool_records": [],
+      "tool_types": {
+        "CommandExecution": 8,
+        "McpToolCall": 2,
+        "Extension": 1,
+        "FileChange": 3,
+        "ImageView": 5
+      },
+      "quality": {
+        "order": 9,
+        "profile": "猫车细节较完整 · 验证较充分",
+        "model": "橘猫有面部条纹、胡须、头盔、围巾和弯曲尾巴；珊瑚色车有前灯、车镜、轮辐、后灯、编织篮、纸袋与面包，较08细致。",
+        "lighting": "海面使用GPU波纹与闪光，岸边泡沫变化；天空渐变、太阳、云群和灯塔形成海岸环境。柔和色调较统一，海天和远景的明暗层次仍比05简化。",
+        "motion": "猫车面向−Z，景物向+Z循环；实际轮胎外半径0.435与轮转除数一致，轮胎底部位移和景物位移同向同量。直线行驶，手爪/脚爪为固定曲线造型，没有单独转向。",
+        "implementation": "共享球体、方体并缓存材质；GPU海面、围巾小几何更新和法线重算分开处理。单HTML离线可用，有初始化失败提示、减少动画偏好和可观察状态，代码仍集中于一个较紧凑的IIFE。",
+        "limitations": "没有曲线路径或前轮转向，天空云和帆船为静态远景；鸟有拍翼和小幅升降而无水平飞行。自定义上下文恢复采用刷新提示，未自动清除遮罩并继续模拟。",
+        "recovery": "上下文丢失时暂停并提示刷新；底层恢复后仍保持暂停及提示，依赖用户刷新。",
+        "camera": "本次默认桌面和窄屏可辨认主体，海景与控制栏完整；部分远景偏淡。取景大小和前景遮挡不计作建模缺陷。",
+        "recommendation": "本样本$0.286、10:35完成；比08更细致且运动关系一致，适合较低费用的完整场景原型。07的弧长路线与自动恢复更完善，二者接近且侧重不同。",
+        "original_evidence": "原任务打开了桌面和手机布局截图，并检查离线、运动、暂停、调速、视角与复位；本次采用独立检查重新核对。",
+        "references": [
+          {
+            "line": 42,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 61,
+            "topic": "减少动画偏好及交互"
+          },
+          {
+            "line": 66,
+            "topic": "方向、轮转、海面与围巾"
+          },
+          {
+            "line": 73,
+            "topic": "图形中断与刷新恢复"
+          }
+        ]
+      },
+      "wheel_delta_error": 0,
+      "wheel_relative_error": 0,
+      "background_direction_pass": true,
+      "keyboard_pass": true,
+      "reduced_motion_pass": true,
+      "observed_fps": 165.0288178471482,
+      "gl_renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "qa_checks": {
+        "offline": true,
+        "motion_state_advances": true,
+        "pause": true,
+        "resume": true,
+        "keyboard": true,
+        "mobile_controls": true,
+        "drag": false,
+        "zoom": false,
+        "wheel_distance": true,
+        "rolling_direction": true
+      },
+      "studio": {
+        "studio": {
+          "angle": 0.85,
+          "bounds": [
+            2.9277754920718806,
+            3.1642230231140602,
+            1.3734871823375228
+          ],
+          "pairCount": 116
+        },
+        "geometry": {
+          "meshes": 111,
+          "uniqueGeometries": 64,
+          "vertices": 7676,
+          "triangles": 9640,
+          "invalid": 0,
+          "materialTypes": [
+            "MeshStandardMaterial"
+          ]
+        }
+      },
+      "context_recovery": {
+        "events": [
+          "lost",
+          "restored"
+        ],
+        "stops_simulation": true,
+        "strategy": "暂停并显示刷新提示；底层恢复后保持暂停和提示"
+      },
+      "birds_qa": {
+        "count": 6,
+        "position_changed": true,
+        "wings_changed": true
+      },
+      "source_evidence": {
+        "order": 9,
+        "configuration": "09 · GPT-6.1 Sol / medium",
+        "sha256": "aa0c773db2fd4cb7a8774ab6ae999e696de4a6f1744c36fe11fe0fe07dc1b15e",
+        "copy_matches_original": true,
+        "review_links": [
+          {
+            "line": 42,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 61,
+            "topic": "减少动画偏好及交互"
+          },
+          {
+            "line": 66,
+            "topic": "方向、轮转、海面与围巾"
+          },
+          {
+            "line": 73,
+            "topic": "图形中断与刷新恢复"
+          }
+        ],
+        "source_file": "code-sources/09.html"
+      },
+      "configuration_label": "09 · GPT-6.1 Sol / medium",
+      "quality_rank": 6
     }
   ],
   "code_and_visual_review": {
@@ -4805,6 +5178,22 @@
         "sky": "太阳、远岛与24组云；云本身静态，无日落切换。",
         "water": "GPU几何波动、海色与闪光，泡沫带起伏和透明度变化。",
         "boats": "没有帆船模型；帆船不在原需求中，不作为核心缺失扣分。"
+      },
+      {
+        "order": 8,
+        "bird_count": 7,
+        "birds": "7个细杆V形鸟；有位置漂移与上下起伏，翼形不拍动。",
+        "sky": "纯色天空与雾效；没有独立太阳球或云群。",
+        "water": "CPU顶点波动，未重算水面法线；海面闪光条随景物循环。",
+        "boats": "没有帆船模型；沙滩有遮阳伞和躺椅。"
+      },
+      {
+        "order": 9,
+        "bird_count": 6,
+        "birds": "6个细杆双翼鸟；独立拍翼和小幅升降，水平位置保持不变。",
+        "sky": "渐变天空、太阳、灯塔与14组静态云；没有日落切换。",
+        "water": "GPU波纹/闪光、32组岸边泡沫位移和透明度变化。",
+        "boats": "3条帆船为静态远景，没有随浪上下起伏或摇摆。"
       }
     ],
     "common": [
@@ -5006,15 +5395,15 @@
       },
       {
         "order": 7,
-        "profile": "弧长行驶清楚 · 成本最低",
+        "profile": "弧长行驶清楚 · 自动恢复完整",
         "model": "橘色头盔、细长四肢和浅色猫形成与其余作品不同的风格；正侧后方的猫脸、尾巴、车座和车镜都可辨认，整体更简洁。",
         "lighting": "海面有GPU波纹和闪光，配色清爽；近岸层次与环境细节比5更简单，属于风格与制作投入差异。",
         "motion": "2400个路径采样建立弧长表，二分查找距离对应角度，保证曲线路径的近似匀速；车辆按切线朝向，车轮按路程旋转。前轮没有单独转向与弯道行程修正。",
         "implementation": "共享球体/方体，GPU海水、较小的围巾几何更新；路径换算封装清楚，动画与交互仍集中在主要脚本。带上下文恢复与可观察状态。",
         "limitations": "弯道中整车朝向变化而前轮不单独转向，是车辆运动的简化；不影响原需求达标，但机械细节不如2、6。主脚本压缩式排布，可维护性仍是原型水平。",
-        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是七组中更完整的自动恢复路径。",
+        "recovery": "丢失上下文时停止模拟并显示恢复提示；本次恢复后提示消失、运动继续，是原原七组中更完整的自动恢复路径。",
         "camera": "部分全景/竖屏主体较小，另有主动隐藏靠近镜头的棕榈树。这是镜头可读性的实现选择，不与模型细节混为一谈。",
-        "recommendation": "本轮美元折算最低且有弧长行驶与自动恢复，预算优先可以选这组。",
+        "recommendation": "原七组中费用最低；新增08和09折算更便宜。希望保留弧长路线和自动恢复时，这组仍是预算与可靠性的取舍。",
         "original_evidence": "原执行有一次275.897秒的失败浏览器检查，后来重试完成；该失败不能直接归因于成品代码。",
         "references": [
           {
@@ -5030,11 +5419,73 @@
             "topic": "切线朝向、车轮及动画"
           }
         ]
+      },
+      {
+        "order": 8,
+        "profile": "成本最低 · 运动方向待修正",
+        "model": "猫脸、耳朵、胡须、头盔、围巾、分节尾巴和后箱可辨认；手爪与握把贴合。车座、挡板和箱体以方块为主，模型细节比前列作品简化。",
+        "lighting": "海岸、遮阳伞、棕榈和海面构成完整场景；浅色材质和较高曝光形成轻柔风格，CPU水面变形后没有重新计算法线，动态照明较基础。",
+        "motion": "车头、猫脸和前轮指向+Z，但道路景物也向+Z移动；实测轮胎底部位移向−Z，与景物移动相反，接触运动不一致。轮转使用0.43，轮胎几何外半径为0.435，滚动行程偏差约1.16%。",
+        "implementation": "单文件内置Three.js 0.180.0，基本交互可用；主脚本紧凑，几何和材质多数逐对象创建，缺少减少动画偏好处理及自定义图形恢复反馈。",
+        "limitations": "运动方向不一致是源码及实际对象增量确认的问题，不是拍摄角度造成的错觉。水面法线、拍翼、资源复用和无障碍偏好也有改进空间；未修改原交付来掩盖这些差异。",
+        "recovery": "Three.js底层恢复后继续运行；丢失期间仍推进模拟，没有自定义中断或恢复提示。",
+        "camera": "原默认镜头在部分时刻被前景棕榈叶遮挡；单独记录取景问题。主体形状以统一朝向的正侧后截图比较。",
+        "recommendation": "$0.141的费用折算最低，5:32交付也较快；需要先修正相对运动和滚动参数，不能仅凭便宜或可打开就认为动画逻辑正确。",
+        "original_evidence": "原任务做了语法检查，但浏览器预览入口受策略限制，没有完成实际画面验证；本次补做离线、交互、几何和运动检查，补测时间不加回原任务。",
+        "references": [
+          {
+            "line": 23,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 34,
+            "topic": "鸟形与固定翼"
+          },
+          {
+            "line": 36,
+            "topic": "交互及减少动画缺项"
+          },
+          {
+            "line": 40,
+            "topic": "景物、轮转与CPU海水"
+          }
+        ]
+      },
+      {
+        "order": 9,
+        "profile": "猫车细节较完整 · 验证较充分",
+        "model": "橘猫有面部条纹、胡须、头盔、围巾和弯曲尾巴；珊瑚色车有前灯、车镜、轮辐、后灯、编织篮、纸袋与面包，较08细致。",
+        "lighting": "海面使用GPU波纹与闪光，岸边泡沫变化；天空渐变、太阳、云群和灯塔形成海岸环境。柔和色调较统一，海天和远景的明暗层次仍比05简化。",
+        "motion": "猫车面向−Z，景物向+Z循环；实际轮胎外半径0.435与轮转除数一致，轮胎底部位移和景物位移同向同量。直线行驶，手爪/脚爪为固定曲线造型，没有单独转向。",
+        "implementation": "共享球体、方体并缓存材质；GPU海面、围巾小几何更新和法线重算分开处理。单HTML离线可用，有初始化失败提示、减少动画偏好和可观察状态，代码仍集中于一个较紧凑的IIFE。",
+        "limitations": "没有曲线路径或前轮转向，天空云和帆船为静态远景；鸟有拍翼和小幅升降而无水平飞行。自定义上下文恢复采用刷新提示，未自动清除遮罩并继续模拟。",
+        "recovery": "上下文丢失时暂停并提示刷新；底层恢复后仍保持暂停及提示，依赖用户刷新。",
+        "camera": "本次默认桌面和窄屏可辨认主体，海景与控制栏完整；部分远景偏淡。取景大小和前景遮挡不计作建模缺陷。",
+        "recommendation": "本样本$0.286、10:35完成；比08更细致且运动关系一致，适合较低费用的完整场景原型。07的弧长路线与自动恢复更完善，二者接近且侧重不同。",
+        "original_evidence": "原任务打开了桌面和手机布局截图，并检查离线、运动、暂停、调速、视角与复位；本次采用独立检查重新核对。",
+        "references": [
+          {
+            "line": 42,
+            "topic": "轮胎外半径与车轴"
+          },
+          {
+            "line": 61,
+            "topic": "减少动画偏好及交互"
+          },
+          {
+            "line": 66,
+            "topic": "方向、轮转、海面与围巾"
+          },
+          {
+            "line": 73,
+            "topic": "图形中断与刷新恢复"
+          }
+        ]
       }
     ]
   },
   "quality_ranking": {
-    "scope": "本轮七个具体交付的Codex综合评估排序，非盲评，不代表模型总体能力排名。每个配置只有一次样本。",
+    "scope": "九个具体交付的Codex观察式评估，非盲评。原七组与后补两组分两批启动；每个配置只有一次样本，不代表模型总体能力排名。",
     "criteria": [
       "主体建模与细节",
       "原场景材质、光照与环境动态",
@@ -5048,8 +5499,10 @@
       1,
       2,
       7,
+      9,
       4,
-      3
+      3,
+      8
     ],
     "close_groups": [
       [
@@ -5059,6 +5512,10 @@
       [
         1,
         2
+      ],
+      [
+        7,
+        9
       ],
       [
         4,
@@ -5105,14 +5562,23 @@
       {
         "rank": 5,
         "order": 7,
-        "headline": "简洁完整，本轮成本最低",
+        "headline": "弧长行驶清楚，自动恢复完整",
         "strength": "弧长路线，近似匀速行驶",
         "code": "验证：图形中断可自动恢复",
         "limitation": "简化：前轮未单独转向",
         "reason": "造型较简洁，但弧长路线和自动恢复完整；车辆机械和环境造型比前四组简化。"
       },
       {
-        "rank": 6,
+        "order": 9,
+        "headline": "低费用下的较完整模型与海景",
+        "strength": "篮筐、头盔、条纹、海面与灯塔",
+        "code": "实测：景物与轮胎接触运动一致",
+        "limitation": "直线路线，图形中断后依赖刷新",
+        "reason": "猫车和载物细节比基础组丰富，GPU海面、减少动画偏好和原自检较完整；直线机械、环境位移和自动恢复不如07，二者接近且侧重不同。",
+        "rank": 6
+      },
+      {
+        "rank": 7,
         "order": 4,
         "headline": "造型圆润，基础动画完整",
         "strength": "尾巴、围巾、眨眼都有",
@@ -5121,14 +5587,32 @@
         "reason": "模型与动画完整，几何有复用并更新水面法线；代码组织和故障反馈有改进空间。"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "order": 3,
         "headline": "核心齐全，交付最快",
         "strength": "脸部、骑姿、车轮都完整",
         "code": "源码：轮转与行程一致",
         "limitation": "待改：水面变形后未更新法线",
         "reason": "五分钟内完成可用且完整的作品；水面照明和代码组织比其他组基础。原镜头遮挡未计入排名。"
+      },
+      {
+        "order": 8,
+        "headline": "折算最便宜，运动关系需修正",
+        "strength": "猫车、海岸及基本控制完整",
+        "code": "实测：轮胎接触位移与景物方向相反",
+        "limitation": "另有1.16%滚动误差与减少动画缺项",
+        "reason": "猫车内容和交互可用，但相对运动方向不一致，轮转使用的半径不等于实际外半径；法线、拍翼和减少动画处理也更简化。",
+        "rank": 9
       }
+    ],
+    "initial_seven_ranking": [
+      5,
+      6,
+      1,
+      2,
+      7,
+      4,
+      3
     ]
   },
   "prompt": "全新创建一个可直接运行的 Three.js 网页 3D 场景：内容是一个猫在海边马路上骑电动车的3D动画",
@@ -5136,7 +5620,12 @@
     "timing_and_usage": "原会话首个任务的本地完成记录；去重模型响应用量与累计用量、会话数据库交叉核对。公开的是聚合值，未公开聊天日志。",
     "service_tier": "not recorded; Standard is only the normalized price basis",
     "assessment": "Codex观察式成品及源码审查，非盲评，每个配置1次样本",
-    "artifact_integrity": "七份scenes HTML与原交付字节相同；源码副本也保留原字节",
-    "measurement_scope": "只计原任务耗时；本次追加评估与发布的时间和成本未加回原任务"
+    "artifact_integrity": "九份scenes HTML与原交付字节相同；源码副本保留原字节",
+    "measurement_scope": "只计原任务耗时；本次追加评估与发布的时间和成本未加回原任务",
+    "batches": "01–07为10:00左右启动的原七组；08–09为14:25左右启动的后补两组。评估不将九组视为同一时间并发实验。",
+    "supplemental_ids": [
+      "01a0f0fd-0715-7f73-a913-3d67f6dfb8a8",
+      "01a0f0fd-1fc6-7a42-adef-a1dd826cedd8"
+    ]
   }
 }

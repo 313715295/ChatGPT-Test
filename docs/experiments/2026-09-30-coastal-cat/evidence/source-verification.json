@@ -162,5 +162,55 @@
       }
     ],
     "source_file": "code-sources/07.js"
+  },
+  {
+    "order": 8,
+    "configuration": "08 · GPT-6.1 Sol / low",
+    "sha256": "186dc16c403738fd6551325add737298e30b99394cc30e020a61e4e310e57cca",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 23,
+        "topic": "轮胎外半径与车轴"
+      },
+      {
+        "line": 34,
+        "topic": "鸟形与固定翼"
+      },
+      {
+        "line": 36,
+        "topic": "交互及减少动画缺项"
+      },
+      {
+        "line": 40,
+        "topic": "景物、轮转与CPU海水"
+      }
+    ],
+    "source_file": "code-sources/08.js"
+  },
+  {
+    "order": 9,
+    "configuration": "09 · GPT-6.1 Sol / medium",
+    "sha256": "aa0c773db2fd4cb7a8774ab6ae999e696de4a6f1744c36fe11fe0fe07dc1b15e",
+    "copy_matches_original": true,
+    "review_links": [
+      {
+        "line": 42,
+        "topic": "轮胎外半径与车轴"
+      },
+      {
+        "line": 61,
+        "topic": "减少动画偏好及交互"
+      },
+      {
+        "line": 66,
+        "topic": "方向、轮转、海面与围巾"
+      },
+      {
+        "line": 73,
+        "topic": "图形中断与刷新恢复"
+      }
+    ],
+    "source_file": "code-sources/09.html"
   }
 ]

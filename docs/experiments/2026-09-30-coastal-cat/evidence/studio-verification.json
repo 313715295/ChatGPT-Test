@@ -332,5 +332,51 @@
         "MeshStandardMaterial"
       ]
     }
+  },
+  {
+    "order": 8,
+    "errors": [],
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.207232887404572,
+        3.1586164472785647,
+        1.455
+      ],
+      "pairCount": 75
+    },
+    "geometry": {
+      "meshes": 69,
+      "uniqueGeometries": 69,
+      "vertices": 12810,
+      "triangles": 18536,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    }
+  },
+  {
+    "order": 9,
+    "errors": [],
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        2.9277754920718806,
+        3.1642230231140602,
+        1.3734871823375228
+      ],
+      "pairCount": 116
+    },
+    "geometry": {
+      "meshes": 111,
+      "uniqueGeometries": 64,
+      "vertices": 7676,
+      "triangles": 9640,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    }
   }
 ]

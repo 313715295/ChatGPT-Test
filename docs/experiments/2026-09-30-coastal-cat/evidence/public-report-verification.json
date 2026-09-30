@@ -1,23 +1,99 @@
 {
+  "scope": "九组公开报告的入口、排序、Fast交互、可读引用与新增原作品预览；与作品质量逐项检查分开记录",
   "page_errors": [],
   "failed_requests": [],
   "home_title": "ChatGPT Test｜作品、时间、费用与质量",
-  "report_title": "七个会话试验对比｜耗时、费用与动态质量",
-  "subject_rows": 7,
-  "fastest": "3",
-  "cheapest": "7",
-  "fast_scenario_2": [
-    "13:35",
-    "13:32",
-    "9:21"
+  "report_title": "九个会话，同一场景试验｜ChatGPT Test",
+  "subject_rows": 9,
+  "quality_cards": 9,
+  "quality_order": [
+    "05 · GPT-6.1 Sol / max",
+    "06 · GPT-6.1 Sol / xhigh",
+    "01 · GPT-6 Astra / max",
+    "02 · GPT-6 Astra / xhigh",
+    "07 · GPT-6.1 Sol / high",
+    "09 · GPT-6.1 Sol / medium",
+    "04 · GPT-6 Astra / high",
+    "03 · GPT-6 Astra / medium",
+    "08 · GPT-6.1 Sol / low"
   ],
+  "fastest": "3",
+  "cheapest": "8",
+  "fast_scenarios": {
+    "2": [
+      "13:35",
+      "13:32",
+      "9:21",
+      "2:58",
+      "5:42"
+    ],
+    "1.5": [
+      "17:48",
+      "17:50",
+      "10:47",
+      "3:50",
+      "7:20"
+    ],
+    "2.5": [
+      "11:03",
+      "10:58",
+      "8:30",
+      "2:28",
+      "4:43"
+    ]
+  },
   "public_video_count": 0,
-  "original_preview_buttons": 7,
-  "original_scene_loaded": true,
+  "original_preview_buttons": 9,
+  "supplemental_preview": [
+    {
+      "order": 8,
+      "canvas_visible": true,
+      "state_available": true,
+      "label": "正在显示作品 08 · GPT-6.1 Sol / low，可直接使用原网页交互。"
+    },
+    {
+      "order": 9,
+      "canvas_visible": true,
+      "state_available": true,
+      "label": "正在显示作品 09 · GPT-6.1 Sol / medium，可直接使用原网页交互。"
+    }
+  ],
+  "configured_card_ranks": [
+    "01 · GPT-6 Astra / max",
+    "02 · GPT-6 Astra / xhigh",
+    "03 · GPT-6 Astra / medium",
+    "04 · GPT-6 Astra / high",
+    "05 · GPT-6.1 Sol / max",
+    "06 · GPT-6.1 Sol / xhigh",
+    "07 · GPT-6.1 Sol / high",
+    "08 · GPT-6.1 Sol / low本轮第9名",
+    "09 · GPT-6.1 Sol / medium本轮第6名"
+  ],
   "mobile_width": 390,
-  "code_anchor": 1,
-  "returned_to_report": true,
+  "code_links": [
+    {
+      "order": 8,
+      "anchor": true,
+      "source_download": true
+    },
+    {
+      "order": 9,
+      "anchor": true,
+      "source_download": true
+    }
+  ],
   "pricing_source_anchors": 5,
-  "readable_reference": true,
+  "readable_references": {
+    "analysis-data": 9,
+    "artifact-manifest": 9,
+    "browser-verification": 9,
+    "birds-verification": 9,
+    "source-verification": 9,
+    "code-quality-review": 9,
+    "additional-verification": 2,
+    "rolling-contact-verification": 2,
+    "ranking": 9,
+    "ranking-initial-seven": 7
+  },
   "status": "PASS"
 }

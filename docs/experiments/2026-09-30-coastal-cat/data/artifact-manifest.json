@@ -68,5 +68,29 @@
     "sha256": "ab4ee8df75e9fcbea77354e0f0f088e792d13e0ce8085aa63192bb18fa4df22a",
     "source_file": "code-sources/07.js",
     "source_sha256": "179e9a947d4bd90de15d29c1170f2f540fbf4de1f43b0335886ee0f442cd4e2e"
+  },
+  {
+    "order": 8,
+    "session_id": "01a0f0fd-0715-7f73-a913-3d67f6dfb8a8",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "file": "scenes/08.html",
+    "original_filename": "海风慢慢.html",
+    "bytes": 501060,
+    "sha256": "3ef3068cf7aeae9f679ca562bf877c1879ae916d164e6f7a7b529130bc1bba1a",
+    "source_file": "code-sources/08.js",
+    "source_sha256": "186dc16c403738fd6551325add737298e30b99394cc30e020a61e4e310e57cca"
+  },
+  {
+    "order": 9,
+    "session_id": "01a0f0fd-1fc6-7a42-adef-a1dd826cedd8",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium",
+    "file": "scenes/09.html",
+    "original_filename": "coast-cat.html",
+    "bytes": 688813,
+    "sha256": "0aed5085f9a1480e6c6955423ae9aa5a209b73f76daee1ecd54132d3443c1699",
+    "source_file": "code-sources/09.html",
+    "source_sha256": "aa0c773db2fd4cb7a8774ab6ae999e696de4a6f1744c36fe11fe0fe07dc1b15e"
   }
 ]

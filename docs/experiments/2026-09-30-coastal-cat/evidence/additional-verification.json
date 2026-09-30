@@ -1,0 +1,2078 @@
+[
+  {
+    "order": 8,
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "errors": [],
+    "external_requests": [],
+    "offline_file_runs": true,
+    "before": {
+      "paused": false,
+      "time": 0.8320000000000002,
+      "distance": 4.9919999999999956,
+      "wheelAngle": 11.609302325581416,
+      "view": "follow",
+      "webgl": true
+    },
+    "after": {
+      "paused": false,
+      "time": 3.2444000000059368,
+      "distance": 19.466400000035758,
+      "wheelAngle": 45.270697674501804,
+      "view": "follow",
+      "webgl": true
+    },
+    "observed_fps": 165.12467327636872,
+    "motion_advanced": true,
+    "gl": {
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "pause_before": {
+      "paused": true,
+      "time": 3.3594999999999744,
+      "distance": 20.157000000000007,
+      "wheelAngle": 46.87674418604653,
+      "view": "follow",
+      "webgl": true
+    },
+    "pause_after": {
+      "paused": true,
+      "time": 3.3594999999999744,
+      "distance": 20.157000000000007,
+      "wheelAngle": 46.87674418604653,
+      "view": "follow",
+      "webgl": true
+    },
+    "pause_froze_distance": true,
+    "pause_froze_time": true,
+    "resume_after": {
+      "paused": false,
+      "time": 3.7170999999940086,
+      "distance": 22.302599999964297,
+      "wheelAngle": 51.86651162782383,
+      "view": "follow",
+      "webgl": true
+    },
+    "resume_advanced": true,
+    "speed_value": "1.5",
+    "speed_state": {
+      "paused": false,
+      "time": 4.180599999994009,
+      "distance": 25.083599999964303,
+      "wheelAngle": 58.333953488289026,
+      "view": "follow",
+      "webgl": true
+    },
+    "view1": {
+      "paused": false,
+      "time": 4.920300000011892,
+      "distance": 29.52180000007167,
+      "wheelAngle": 68.65534883737585,
+      "view": "front",
+      "webgl": true
+    },
+    "view2": {
+      "paused": false,
+      "time": 5.720199999988056,
+      "distance": 34.321199999928766,
+      "wheelAngle": 79.81674418588065,
+      "view": "wide",
+      "webgl": true
+    },
+    "keyboard_pause": {
+      "paused": true,
+      "time": 5.811099999994017,
+      "distance": 34.86659999996455,
+      "wheelAngle": 81.0851162789871,
+      "view": "wide",
+      "webgl": true
+    },
+    "keyboard_resume": {
+      "paused": false,
+      "time": 6.017299999982095,
+      "distance": 36.10379999989307,
+      "wheelAngle": 83.96232558114637,
+      "view": "wide",
+      "webgl": true
+    },
+    "keyboard_pass": true,
+    "drag_state": {
+      "paused": false,
+      "time": 6.399099999994018,
+      "distance": 38.39459999996468,
+      "wheelAngle": 89.28976744177794,
+      "view": "wide",
+      "webgl": true
+    },
+    "zoom_state": {
+      "paused": false,
+      "time": 6.786999999999981,
+      "distance": 40.722000000000534,
+      "wheelAngle": 94.70232558139611,
+      "view": "wide",
+      "webgl": true
+    },
+    "mobile_state": {
+      "paused": false,
+      "time": 0.9609000000059604,
+      "distance": 5.765400000035756,
+      "wheelAngle": 13.40790697682738,
+      "view": "follow",
+      "webgl": true
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scrollWidth": 390,
+      "controls": [
+        {
+          "id": "pause",
+          "label": "暂停",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "",
+          "label": "跟随",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "",
+          "label": "迎面",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "",
+          "label": "全景",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "speed",
+          "label": "",
+          "inBounds": true,
+          "visible": true
+        }
+      ]
+    },
+    "mobile_controls_pass": true,
+    "reduced_state": {
+      "paused": false,
+      "time": 0.7571999999880792,
+      "distance": 4.543199999928471,
+      "wheelAngle": 10.565581395182512,
+      "view": "follow",
+      "webgl": true
+    },
+    "reduced_motion_pass": false,
+    "actual_before": {
+      "paused": false,
+      "time": 2.0000000000000075,
+      "distance": 11.999999999999986,
+      "speed": 1,
+      "view": "follow",
+      "camera": [
+        9.447222610917112,
+        7.257866259815687,
+        8.497501819343432
+      ],
+      "wheelAngles": [
+        27.906976744186036,
+        27.906976744186036
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0.06,
+        -10.000000000000014
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "birds": [
+        {
+          "position": [
+            -20,
+            7.9441169003602194,
+            -10.999999999999986
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -23,
+            9.131397319743762,
+            -1.9999999999999858
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -26,
+            10.197871649324675,
+            7.000000000000014
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -29,
+            8.082423697048347,
+            16.000000000000014
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -32,
+            8.891195777822123,
+            25.000000000000014
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -35,
+            9.80000195868986,
+            34.000000000000014
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -38,
+            7.8926854163999165,
+            43.000000000000014
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 143,
+      "triangles": 35204
+    },
+    "actual_after": {
+      "paused": false,
+      "time": 3.000000000000004,
+      "distance": 17.99999999999993,
+      "speed": 1,
+      "view": "follow",
+      "camera": [
+        9.449950758261618,
+        7.259962169839084,
+        8.499955708489283
+      ],
+      "wheelAngles": [
+        41.86046511627888,
+        41.86046511627888
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0.06,
+        -4.000000000000071
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "birds": [
+        {
+          "position": [
+            -20,
+            8.082423697048348,
+            -8.999999999999993
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -23,
+            8.891195777822125,
+            7.105427357601002e-15
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -26,
+            9.80000195868986,
+            9.000000000000007
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -29,
+            7.892685416399915,
+            18.000000000000007
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -32,
+            9.08403340736533,
+            27
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -35,
+            10.198121471138974,
+            36
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -38,
+            8.130057568031422,
+            -45
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 146,
+      "triangles": 37352
+    },
+    "wheel_distance_error": 0.06976744186044481,
+    "wheel_distance_relative_error": 0.011627906976740912,
+    "background_displacement": [
+      0,
+      0,
+      5.999999999999943
+    ],
+    "forward": [
+      0,
+      0,
+      1
+    ],
+    "background_forward_dot": 5.999999999999943,
+    "background_opposes_facing": false,
+    "bird_count": 7,
+    "birds_position_changed": true,
+    "birds_wings_changed": false,
+    "draw_calls": 146,
+    "triangles": 37352,
+    "geometry": {
+      "meshes": 69,
+      "uniqueGeometries": 69,
+      "vertices": 12810,
+      "triangles": 18536,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    },
+    "context_lost_before": {
+      "paused": false,
+      "time": 3.000000000000004,
+      "distance": 17.99999999999993,
+      "speed": 1,
+      "view": "follow",
+      "camera": [
+        9.449950758261618,
+        7.259962169839084,
+        8.499955708489283
+      ],
+      "wheelAngles": [
+        41.86046511627888,
+        41.86046511627888
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0.06,
+        -4.000000000000071
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "birds": [
+        {
+          "position": [
+            -20,
+            8.082423697048348,
+            -8.999999999999993
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -23,
+            8.891195777822125,
+            7.105427357601002e-15
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -26,
+            9.80000195868986,
+            9.000000000000007
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -29,
+            7.892685416399915,
+            18.000000000000007
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -32,
+            9.08403340736533,
+            27
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -35,
+            10.198121471138974,
+            36
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -38,
+            8.130057568031422,
+            -45
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 146,
+      "triangles": 37352
+    },
+    "context_lost_after": {
+      "paused": false,
+      "time": 3.500000000000002,
+      "distance": 20.999999999999865,
+      "speed": 1,
+      "view": "follow",
+      "camera": [
+        9.449993443354506,
+        7.259994962831083,
+        8.49999410248818
+      ],
+      "wheelAngles": [
+        48.8372093023253,
+        48.8372093023253
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0.06,
+        -1.000000000000142
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "birds": [
+        {
+          "position": [
+            -20,
+            7.824060848005665,
+            -7.999999999999993
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -23,
+            8.824909565062315,
+            1
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -26,
+            9.986735620529762,
+            10
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -29,
+            8.160756885310326,
+            19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -32,
+            9.186979011104937,
+            28
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -35,
+            10.041293496387558,
+            37
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -38,
+            7.857642931526175,
+            -44
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 146,
+      "triangles": 37352
+    },
+    "context_loss_stops_simulation": false,
+    "context_restored": {
+      "paused": false,
+      "time": 4.166666666666666,
+      "distance": 24.999999999999797,
+      "speed": 1,
+      "view": "follow",
+      "camera": [
+        9.449999554193765,
+        7.259999657507593,
+        8.499999599010264
+      ],
+      "wheelAngles": [
+        58.13953488372056,
+        58.13953488372056
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0.06,
+        2.999999999999801
+      ],
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "birds": [
+        {
+          "position": [
+            -20,
+            7.9867356205297595,
+            -6.666666666666671
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -23,
+            9.160756885310324,
+            2.3333333333333286
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -26,
+            10.186979011104937,
+            11.333333333333329
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -29,
+            8.04129349638756,
+            20.33333333333333
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -32,
+            8.857642931526176,
+            29.33333333333333
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -35,
+            9.804874798906368,
+            38.33333333333333
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        },
+        {
+          "position": [
+            -38,
+            7.931503876306078,
+            -42.66666666666667
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              1.1902899496825317
+            ],
+            [
+              0,
+              0,
+              -1.1902899496825317
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 139,
+      "triangles": 32984
+    },
+    "context_events": [
+      "lost",
+      "restored"
+    ],
+    "context_notice": {
+      "visible": false,
+      "text": "无法启动 3D 场景。请使用支持 WebGL 的现代浏览器打开。"
+    },
+    "context_recovery_strategy": "Three.js自动恢复，无自定义反馈；丢失期间继续模拟",
+    "drag_camera_changed": true,
+    "zoom_camera_changed": true,
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        3.207232887404572,
+        3.1586164472785647,
+        1.455
+      ],
+      "pairCount": 75
+    }
+  },
+  {
+    "order": 9,
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "errors": [],
+    "external_requests": [],
+    "offline_file_runs": true,
+    "before": {
+      "ready": true,
+      "frames": 124,
+      "distance": 3.1384999999701964,
+      "time": 0.6276999999940396,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -7.214942528667118,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 248
+    },
+    "after": {
+      "ready": true,
+      "frames": 522,
+      "distance": 15.1999999999702,
+      "time": 3.0399999999940377,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -34.94252873556368,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 256
+    },
+    "observed_fps": 165.0288178471482,
+    "motion_advanced": true,
+    "gl": {
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "pause_before": {
+      "ready": true,
+      "frames": 572,
+      "distance": 15.866999999970197,
+      "time": 3.1733999999940368,
+      "paused": true,
+      "speed": 1,
+      "wheelAngle": -36.47586206889701,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 254
+    },
+    "pause_after": {
+      "ready": true,
+      "frames": 656,
+      "distance": 15.866999999970197,
+      "time": 3.1733999999940368,
+      "paused": true,
+      "speed": 1,
+      "wheelAngle": -36.47586206889701,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 254
+    },
+    "pause_froze_distance": true,
+    "pause_froze_time": true,
+    "resume_after": {
+      "ready": true,
+      "frames": 719,
+      "distance": 17.714999999970228,
+      "time": 3.5429999999940334,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -40.724137930966045,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 255
+    },
+    "resume_advanced": true,
+    "speed_value": "1.5",
+    "speed_state": {
+      "ready": true,
+      "frames": 770,
+      "distance": 20.03399999997023,
+      "time": 3.852199999994031,
+      "paused": false,
+      "speed": 1.5,
+      "wheelAngle": -46.05517241372467,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 258
+    },
+    "view1": {
+      "ready": true,
+      "frames": 894,
+      "distance": 23.822499999970322,
+      "time": 4.60989999999402,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -54.76436781602373,
+      "wheelRadius": 0.435,
+      "mode": 1,
+      "drawCalls": 394
+    },
+    "view2": {
+      "ready": true,
+      "frames": 1037,
+      "distance": 28.155999999970422,
+      "time": 5.476599999994004,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -64.7264367815412,
+      "wheelRadius": 0.435,
+      "mode": 2,
+      "drawCalls": 274
+    },
+    "keyboard_pause": {
+      "ready": true,
+      "frames": 1073,
+      "distance": 28.61099999997043,
+      "time": 5.567599999994003,
+      "paused": true,
+      "speed": 1,
+      "wheelAngle": -65.77241379303547,
+      "wheelRadius": 0.435,
+      "mode": 2,
+      "drawCalls": 284
+    },
+    "keyboard_resume": {
+      "ready": true,
+      "frames": 1109,
+      "distance": 29.702499999970453,
+      "time": 5.785899999993999,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -68.28160919533437,
+      "wheelRadius": 0.435,
+      "mode": 2,
+      "drawCalls": 304
+    },
+    "keyboard_pass": true,
+    "drag_state": {
+      "ready": true,
+      "frames": 1175,
+      "distance": 31.701999999970514,
+      "time": 6.185799999993992,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -72.87816091947245,
+      "wheelRadius": 0.435,
+      "mode": 2,
+      "drawCalls": 217
+    },
+    "zoom_state": {
+      "ready": true,
+      "frames": 1238,
+      "distance": 33.61149999997056,
+      "time": 6.567699999993983,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -77.26781609188635,
+      "wheelRadius": 0.435,
+      "mode": 2,
+      "drawCalls": 322
+    },
+    "reset_state": {
+      "ready": true,
+      "frames": 1271,
+      "distance": 0.515,
+      "time": 0.10300000000000002,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -1.1839080459770115,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 248
+    },
+    "reset_pass": true,
+    "mobile_state": {
+      "ready": true,
+      "frames": 140,
+      "distance": 4.421499999940388,
+      "time": 0.884299999988079,
+      "paused": false,
+      "speed": 1,
+      "wheelAngle": -10.164367815954915,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 152
+    },
+    "mobile_bounds": {
+      "width": 390,
+      "scrollWidth": 390,
+      "controls": [
+        {
+          "id": "pause",
+          "label": "Ⅱ 暂停",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "view",
+          "label": "切换视角",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "reset",
+          "label": "复位",
+          "inBounds": true,
+          "visible": true
+        },
+        {
+          "id": "speed",
+          "label": "",
+          "inBounds": true,
+          "visible": true
+        }
+      ]
+    },
+    "mobile_controls_pass": true,
+    "reduced_state": {
+      "ready": true,
+      "frames": 119,
+      "distance": 0,
+      "time": 0,
+      "paused": true,
+      "speed": 1,
+      "wheelAngle": 0,
+      "wheelRadius": 0.435,
+      "mode": 0,
+      "drawCalls": 247
+    },
+    "reduced_motion_pass": true,
+    "actual_before": {
+      "paused": false,
+      "time": 2.0000000000000075,
+      "distance": 10.000000000000027,
+      "speed": 1,
+      "view": 0,
+      "camera": [
+        5.35,
+        4.35,
+        -9
+      ],
+      "wheelAngles": [
+        -22.9885057471265,
+        -22.9885057471265
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0,
+        -65
+      ],
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "birds": [
+        {
+          "position": [
+            -15,
+            7.181859485365136,
+            -14
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.08382464945967111
+            ],
+            [
+              0,
+              0,
+              0.08382464945967111
+            ]
+          ]
+        },
+        {
+          "position": [
+            -18,
+            8.028224001611973,
+            -19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.19709597961564193
+            ],
+            [
+              0,
+              0,
+              -0.19709597961564193
+            ]
+          ]
+        },
+        {
+          "position": [
+            -21,
+            8.848639500938413,
+            -24
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.2968074739870135
+            ],
+            [
+              0,
+              0,
+              -0.2968074739870135
+            ]
+          ]
+        },
+        {
+          "position": [
+            -24,
+            6.808215145067373,
+            -29
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12363554557252066
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252066
+            ]
+          ]
+        },
+        {
+          "position": [
+            -27,
+            7.944116900360216,
+            -34
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16320633326681674
+            ],
+            [
+              0,
+              0,
+              0.16320633326681674
+            ]
+          ]
+        },
+        {
+          "position": [
+            -30,
+            9.131397319743758,
+            -39
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 256,
+      "triangles": 68355
+    },
+    "actual_after": {
+      "paused": false,
+      "time": 3.000000000000004,
+      "distance": 14.999999999999961,
+      "speed": 1,
+      "view": 0,
+      "camera": [
+        5.35,
+        4.35,
+        -9
+      ],
+      "wheelAngles": [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "birds": [
+        {
+          "position": [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          "position": [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          "position": [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          "position": [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          "position": [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          "position": [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 255,
+      "triangles": 67879
+    },
+    "wheel_distance_error": 0,
+    "wheel_distance_relative_error": 0,
+    "background_displacement": [
+      0,
+      0,
+      4.999999999999943
+    ],
+    "forward": [
+      0,
+      0,
+      -1
+    ],
+    "background_forward_dot": -4.999999999999943,
+    "background_opposes_facing": true,
+    "bird_count": 6,
+    "birds_position_changed": true,
+    "birds_wings_changed": true,
+    "draw_calls": 255,
+    "triangles": 67879,
+    "geometry": {
+      "meshes": 111,
+      "uniqueGeometries": 64,
+      "vertices": 7676,
+      "triangles": 9640,
+      "invalid": 0,
+      "materialTypes": [
+        "MeshStandardMaterial"
+      ]
+    },
+    "context_lost_before": {
+      "paused": true,
+      "time": 3.000000000000004,
+      "distance": 14.999999999999961,
+      "speed": 1,
+      "view": 0,
+      "camera": [
+        5.35,
+        4.35,
+        -9
+      ],
+      "wheelAngles": [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "birds": [
+        {
+          "position": [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          "position": [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          "position": [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          "position": [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          "position": [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          "position": [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 255,
+      "triangles": 67879
+    },
+    "context_lost_after": {
+      "paused": true,
+      "time": 3.000000000000004,
+      "distance": 14.999999999999961,
+      "speed": 1,
+      "view": 0,
+      "camera": [
+        5.35,
+        4.35,
+        -9
+      ],
+      "wheelAngles": [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "birds": [
+        {
+          "position": [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          "position": [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          "position": [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          "position": [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          "position": [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          "position": [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 255,
+      "triangles": 67879
+    },
+    "context_loss_stops_simulation": true,
+    "context_restored": {
+      "paused": true,
+      "time": 3.000000000000004,
+      "distance": 14.999999999999961,
+      "speed": 1,
+      "view": 0,
+      "camera": [
+        5.35,
+        4.35,
+        -9
+      ],
+      "wheelAngles": [
+        -34.482758620689566,
+        -34.482758620689566
+      ],
+      "physicalWheelRadii": [
+        0.435,
+        0.435
+      ],
+      "groundPosition": [
+        0,
+        0,
+        -60.00000000000006
+      ],
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "birds": [
+        {
+          "position": [
+            -15,
+            7.028224001611973,
+            -14
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12363554557252356
+            ],
+            [
+              0,
+              0,
+              -0.12363554557252356
+            ]
+          ]
+        },
+        {
+          "position": [
+            -18,
+            7.848639500938414,
+            -19
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16320633326681405
+            ],
+            [
+              0,
+              0,
+              0.16320633326681405
+            ]
+          ]
+        },
+        {
+          "position": [
+            -21,
+            8.808215145067372,
+            -24
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.299997061965211
+            ],
+            [
+              0,
+              0,
+              0.299997061965211
+            ]
+          ]
+        },
+        {
+          "position": [
+            -24,
+            6.944116900360216,
+            -29
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              -0.16097187540012733
+            ],
+            [
+              0,
+              0,
+              0.16097187540012733
+            ]
+          ]
+        },
+        {
+          "position": [
+            -27,
+            8.131397319743758,
+            -34
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.12605011104799566
+            ],
+            [
+              0,
+              0,
+              -0.12605011104799566
+            ]
+          ]
+        },
+        {
+          "position": [
+            -30,
+            9.197871649324677,
+            -39
+          ],
+          "wings": [
+            [
+              0,
+              0,
+              0.29718220670846157
+            ],
+            [
+              0,
+              0,
+              -0.29718220670846157
+            ]
+          ]
+        }
+      ],
+      "drawCalls": 255,
+      "triangles": 67879
+    },
+    "context_events": [
+      "lost",
+      "restored"
+    ],
+    "context_notice": {
+      "visible": true,
+      "text": "3D 显示暂时中断，请刷新页面恢复。"
+    },
+    "context_recovery_strategy": "暂停并显示刷新提示；底层恢复后保持暂停和提示",
+    "drag_camera_changed": false,
+    "zoom_camera_changed": false,
+    "studio": {
+      "angle": 0.85,
+      "bounds": [
+        2.9277754920718806,
+        3.1642230231140602,
+        1.3734871823375228
+      ],
+      "pairCount": 116
+    }
+  }
+]
