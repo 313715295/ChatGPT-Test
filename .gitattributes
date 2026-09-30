@@ -1,0 +1,3 @@
+docs/experiments/**/scenes/*.html -text
+docs/experiments/**/code-sources/* -text
+docs/experiments/**/sources/** -text
