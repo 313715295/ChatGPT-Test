@@ -1,0 +1,1408 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浏览器与运动验证</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f1f5f3;color:#173d37;font:17px/1.75 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1240px;margin:auto;padding:42px 24px 70px}h1{font-size:44px;line-height:1.3;margin:14px 0}h2{font-size:29px;margin:0 0 18px}h3{font-size:22px}p{margin:12px 0}.muted,small{color:#536e68}.card{padding:28px;margin:24px 0;background:white;border:1px solid #d9e4df;border-radius:22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.metric{padding:20px;background:#eef5f1;border-radius:15px}.metric strong{display:block;font-size:30px;line-height:1.5}.tag{display:inline-block;padding:5px 12px;background:#e3f3eb;border-radius:30px;font-size:14px}.orange{background:#fcf0df}.button,button{display:inline-block;border:1px solid #d2e2da;border-radius:10px;background:#eaf4ee;color:#1b5944;padding:10px 16px;font:inherit;text-decoration:none;cursor:pointer;margin:5px 6px 5px 0}.button.primary,button.active{background:#215d49;color:white}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:15px 12px;border-bottom:1px solid #dbe6e0;text-align:left;vertical-align:top}th{background:#f0f5f2}td strong{white-space:nowrap}.note{background:#edf5f0;border-left:5px solid #379a72;border-radius:8px;padding:18px 22px}a{color:#187551}img{max-width:100%;border-radius:13px;display:block}.samples img{width:100%;aspect-ratio:3/2;object-fit:cover}.samples h3{margin:12px 0 5px}figure{margin:0}figcaption{font-size:14px;color:#536e68;margin-top:7px}.viewer{width:100%;height:650px;border:1px solid #d4e2db;border-radius:15px;background:#eef5f1}details{margin:12px 0}summary{cursor:pointer}pre{background:#f5f7f6;padding:18px;border-radius:12px;overflow:auto;font-size:14px;line-height:1.7}nav{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}ul{padding-left:23px}.code-line{display:flex;gap:17px;min-height:26px;scroll-margin-top:25px}.ln{min-width:45px;text-align:right;user-select:none;color:#68877b;text-decoration:none}.code-line:target{background:#fff0c4}code{font-family:Consolas,monospace}header{padding:20px 24px;background:#e8f1eb;border-bottom:1px solid #d6e4dc}.mobile-pics{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}.mobile-pics img{width:260px}.check-ok{color:#247a55}.check-warn{color:#94632c}@media(max-width:740px){main{padding:24px 16px 50px}h1{font-size:32px}h2{font-size:25px}.card{padding:20px}.grid,.stats{grid-template-columns:1fr}.viewer{height:660px}.metric strong{font-size:26px}.scroll table{min-width:770px}}</style></head><body><main><a href="../index.html">← 返回本轮测评</a><section class="card"><h1>浏览器与运动验证</h1><p>原HTML不改动；观测接口仅放在私有副本中。</p><a class="button" href="../data/verification.json">下载聚合JSON</a><pre>{
+  &quot;browser&quot;: &quot;154.0.8037.92&quot;,
+  &quot;method&quot;: &quot;Original HTML checked unchanged. Private source copies only expose existing objects. Fixed animation time is a correctness check, not a device FPS benchmark.&quot;,
+  &quot;original&quot;: {
+    &quot;A&quot;: {
+      &quot;errors&quot;: [],
+      &quot;consoleErrors&quot;: [],
+      &quot;externalRequests&quot;: [],
+      &quot;offline&quot;: true,
+      &quot;canvas&quot;: 1,
+      &quot;views&quot;: [
+        {
+          &quot;id&quot;: &quot;coast&quot;,
+          &quot;label&quot;: &quot;海岸视角&quot;
+        },
+        {
+          &quot;id&quot;: &quot;close&quot;,
+          &quot;label&quot;: &quot;猫咪特写&quot;
+        },
+        {
+          &quot;id&quot;: &quot;follow&quot;,
+          &quot;label&quot;: &quot;跟随骑行&quot;
+        }
+      ],
+      &quot;mobile&quot;: {
+        &quot;width&quot;: 390,
+        &quot;buttons&quot;: [
+          {
+            &quot;id&quot;: &quot;play&quot;,
+            &quot;label&quot;: &quot;&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 38,
+              &quot;y&quot;: 703.5,
+              &quot;w&quot;: 46,
+              &quot;h&quot;: 46
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;海岸视角&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 32,
+              &quot;y&quot;: 772,
+              &quot;w&quot;: 106,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;猫咪特写&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 142,
+              &quot;y&quot;: 772,
+              &quot;w&quot;: 106,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;跟随骑行&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 252,
+              &quot;y&quot;: 772,
+              &quot;w&quot;: 106,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;sunset&quot;,
+            &quot;label&quot;: &quot;日落时分&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 316,
+              &quot;y&quot;: 708.5,
+              &quot;w&quot;: 36,
+              &quot;h&quot;: 36
+            }
+          },
+          {
+            &quot;id&quot;: &quot;fullscreen&quot;,
+            &quot;label&quot;: &quot;全屏欣赏&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 0,
+              &quot;y&quot;: 0,
+              &quot;w&quot;: 0,
+              &quot;h&quot;: 0
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;重新加载&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 0,
+              &quot;y&quot;: 0,
+              &quot;w&quot;: 0,
+              &quot;h&quot;: 0
+            }
+          }
+        ]
+      },
+      &quot;title&quot;: &quot;沿海兜风 — 猫咪的海岸骑行&quot;
+    },
+    &quot;B&quot;: {
+      &quot;errors&quot;: [],
+      &quot;consoleErrors&quot;: [],
+      &quot;externalRequests&quot;: [],
+      &quot;offline&quot;: true,
+      &quot;canvas&quot;: 1,
+      &quot;views&quot;: [
+        {
+          &quot;id&quot;: &quot;coast&quot;,
+          &quot;label&quot;: &quot;海风视角&quot;
+        },
+        {
+          &quot;id&quot;: &quot;follow&quot;,
+          &quot;label&quot;: &quot;跟随小猫&quot;
+        },
+        {
+          &quot;id&quot;: &quot;wide&quot;,
+          &quot;label&quot;: &quot;沿海全景&quot;
+        }
+      ],
+      &quot;mobile&quot;: {
+        &quot;width&quot;: 390,
+        &quot;buttons&quot;: [
+          {
+            &quot;id&quot;: &quot;play&quot;,
+            &quot;label&quot;: &quot;&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 57.5,
+              &quot;y&quot;: 710,
+              &quot;w&quot;: 48,
+              &quot;h&quot;: 48
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;海风视角&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 32.5,
+              &quot;y&quot;: 771,
+              &quot;w&quot;: 105,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;跟随小猫&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 142.5,
+              &quot;y&quot;: 771,
+              &quot;w&quot;: 105,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;沿海全景&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 252.5,
+              &quot;y&quot;: 771,
+              &quot;w&quot;: 105,
+              &quot;h&quot;: 38
+            }
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;label&quot;: &quot;重新打开&quot;,
+            &quot;rect&quot;: {
+              &quot;x&quot;: 0,
+              &quot;y&quot;: 0,
+              &quot;w&quot;: 0,
+              &quot;h&quot;: 0
+            }
+          }
+        ]
+      },
+      &quot;title&quot;: &quot;去海边兜兜风 · 小猫骑行&quot;
+    }
+  },
+  &quot;audit&quot;: {
+    &quot;A&quot;: {
+      &quot;errors&quot;: [],
+      &quot;start&quot;: {
+        &quot;state&quot;: {
+          &quot;paused&quot;: false,
+          &quot;speed&quot;: 1,
+          &quot;time&quot;: 1.0000000000000002,
+          &quot;distance&quot;: 0.005559999999999998,
+          &quot;frames&quot;: 20,
+          &quot;view&quot;: &quot;coast&quot;,
+          &quot;sunsetMix&quot;: 0
+        },
+        &quot;wheels&quot;: [
+          {
+            &quot;angle&quot;: [
+              0,
+              0,
+              -12.49438202247191
+            ],
+            &quot;radius&quot;: 0.45299999999999996,
+            &quot;center&quot;: [
+              -0.963222751106662,
+              0.4459920105573473,
+              1.3299456690858165
+            ],
+            &quot;bottom&quot;: -0.04350684063121074
+          },
+          {
+            &quot;angle&quot;: [
+              0,
+              0,
+              -12.49438202247191
+            ],
+            &quot;radius&quot;: 0.45299999999999996,
+            &quot;center&quot;: [
+              0.9767309913812726,
+              0.45938582701728636,
+              1.330233223764727
+            ],
+            &quot;bottom&quot;: -0.030113024171271652
+          }
+        ],
+        &quot;birds&quot;: [
+          {
+            &quot;position&quot;: [
+              -7.251326804096299,
+              7.609086480329084,
+              -17.24013829487376
+            ],
+            &quot;left&quot;: [
+              -0.06760227202181428,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.06760227202181428,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -11.223620030571025,
+              5.010009758555678,
+              -24.326623789966106
+            ],
+            &quot;left&quot;: [
+              -0.3875672679512917,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.3875672679512917,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -2.6506420884592754,
+              8.070861731260615,
+              -22.899963906267658
+            ],
+            &quot;left&quot;: [
+              -0.40697120802442477,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.40697120802442477,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -0.9428284405554294,
+              7.064279125922104,
+              -19.79710422595963
+            ],
+            &quot;left&quot;: [
+              -0.449890207577559,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.449890207577559,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              4.672136661286395,
+              5.23325633779628,
+              -16.28531633107923
+            ],
+            &quot;left&quot;: [
+              0.44975831922395565,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              -0.44975831922395565,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              11.879634507372398,
+              7.530704235489601,
+              -21.80004447605461
+            ],
+            &quot;left&quot;: [
+              0.338142766406928,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              -0.338142766406928,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              16.999759045248855,
+              6.722215795322834,
+              -24.69732273486443
+            ],
+            &quot;left&quot;: [
+              0.07942455804337056,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              -0.07942455804337056,
+              0,
+              0
+            ]
+          }
+        ],
+        &quot;clouds&quot;: [
+          [
+            -84.94000399992,
+            15.368756894022226,
+            -109.05136484047398
+          ],
+          [
+            -66.94000399992,
+            12.946298038819805,
+            -86.12377854902297
+          ],
+          [
+            -48.94000399992,
+            15.064337828662246,
+            -68.50965409586206
+          ],
+          [
+            -30.940003999920002,
+            20.52604071958922,
+            -93.02474117837846
+          ],
+          [
+            -12.94000399992,
+            12.617010462097824,
+            -113.8677865001373
+          ],
+          [
+            5.059996000079999,
+            21.314067111583427,
+            -99.33575410302728
+          ],
+          [
+            23.059996000079998,
+            14.966833115089685,
+            -75.76734722452238
+          ],
+          [
+            41.05999600008,
+            21.528995577944443,
+            -79.10150274634361
+          ],
+          [
+            59.05999600008,
+            13.214394437149167,
+            -101.72524139797315
+          ],
+          [
+            77.05999600008,
+            18.799357783282176,
+            -69.27972556743771
+          ],
+          [
+            95.05999600008,
+            20.708511389326304,
+            -68.52494853222743
+          ]
+        ],
+        &quot;boat&quot;: [
+          [
+            -18.94000899959501,
+            -0.0076617024315601134,
+            -35
+          ],
+          [
+            25.05999100040499,
+            -0.006681548451597248,
+            -49
+          ]
+        ],
+        &quot;seaTime&quot;: 1.0000000000000002,
+        &quot;scarf&quot;: [
+          0.3571428656578064,
+          -0.08563131093978882,
+          0.009103468619287014,
+          0.4285714328289032,
+          -0.08401999622583389,
+          0.0049879178404808044,
+          0.5,
+          -0.07999999821186066,
+          0
+        ],
+        &quot;head&quot;: [
+          0,
+          0.03543197279807301,
+          0.013639461402385223
+        ],
+        &quot;rider&quot;: [
+          0.0214659138721865,
+          0,
+          0.006905674933190988
+        ],
+        &quot;loops&quot;: [
+          [
+            54.44,
+            0.012,
+            0
+          ],
+          [
+            59.44,
+            0.012,
+            0
+          ],
+          [
+            -55.56,
+            0.012,
+            0
+          ]
+        ],
+        &quot;camera&quot;: [
+          6.799999999999999,
+          3.8000000000000007,
+          10
+        ],
+        &quot;size&quot;: [
+          3.4354547638868436,
+          3.0732379136764685,
+          1.4439787848134054
+        ],
+        &quot;meshCount&quot;: 779,
+        &quot;materialCount&quot;: 42,
+        &quot;renderCalls&quot;: 283,
+        &quot;triangles&quot;: 108285,
+        &quot;threeRevision&quot;: &quot;180&quot;
+      },
+      &quot;running&quot;: {
+        &quot;state&quot;: {
+          &quot;paused&quot;: false,
+          &quot;speed&quot;: 1,
+          &quot;time&quot;: 2.000000000000001,
+          &quot;distance&quot;: 0.01112,
+          &quot;frames&quot;: 40,
+          &quot;view&quot;: &quot;coast&quot;,
+          &quot;sunsetMix&quot;: 0
+        },
+        &quot;wheels&quot;: [
+          {
+            &quot;angle&quot;: [
+              0,
+              0,
+              -24.98876404494383
+            ],
+            &quot;radius&quot;: 0.45299999999999996,
+            &quot;center&quot;: [
+              -0.9566995654706046,
+              0.46686877246404335,
+              1.3244818705705355
+            ],
+            &quot;bottom&quot;: -0.04474838938420156
+          },
+          {
+            &quot;angle&quot;: [
+              0,
+              0,
+              -24.98876404494383
+            ],
+            &quot;radius&quot;: 0.45299999999999996,
+            &quot;center&quot;: [
+              0.9832532760006316,
+              0.453342623989342,
+              1.324354689140984
+            ],
+            &quot;bottom&quot;: -0.05827453785890291
+          }
+        ],
+        &quot;birds&quot;: [
+          {
+            &quot;position&quot;: [
+              -7.098093064893973,
+              7.530116445371413,
+              -17.24013829487376
+            ],
+            &quot;left&quot;: [
+              -0.4457950686818075,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.4457950686818075,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -10.742888510533794,
+              5.18676413048473,
+              -24.326623789966106
+            ],
+            &quot;left&quot;: [
+              0.10934248248104182,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              -0.10934248248104182,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -2.0839935914140555,
+              8.158585291446826,
+              -22.899963906267658
+            ],
+            &quot;left&quot;: [
+              -0.2995818615432679,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.2995818615432679,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -0.34822501975993375,
+              7.211585522139074,
+              -19.79710422595963
+            ],
+            &quot;left&quot;: [
+              -0.1180852515541339,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.1180852515541339,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              4.074174911937822,
+              5.091583795579695,
+              -16.28531633107923
+            ],
+            &quot;left&quot;: [
+              0.14172004287323373,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              -0.14172004287323373,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              11.474148675597148,
+              7.354428693959273,
+              -21.80004447605461
+            ],
+            &quot;left&quot;: [
+              -0.1888022226787906,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.1888022226787906,
+              0,
+              0
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              16.957927697988005,
+              6.596284329971558,
+              -24.69732273486443
+            ],
+            &quot;left&quot;: [
+              -0.40221173206909006,
+              0,
+              0
+            ],
+            &quot;right&quot;: [
+              0.40221173206909006,
+              0,
+              0
+            ]
+          }
+        ],
+        &quot;clouds&quot;: [
+          [
+            -84.8800319974401,
+            15.368756894022226,
+            -109.05136484047398
+          ],
+          [
+            -66.8800319974401,
+            12.946298038819805,
+            -86.12377854902297
+          ],
+          [
+            -48.8800319974401,
+            15.064337828662246,
+            -68.50965409586206
+          ],
+          [
+            -30.8800319974401,
+            20.52604071958922,
+            -93.02474117837846
+          ],
+          [
+            -12.880031997440097,
+            12.617010462097824,
+            -113.8677865001373
+          ],
+          [
+            5.119968002559903,
+            21.314067111583427,
+            -99.33575410302728
+          ],
+          [
+            23.1199680025599,
+            14.966833115089685,
+            -75.76734722452238
+          ],
+          [
+            41.1199680025599,
+            21.528995577944443,
+            -79.10150274634361
+          ],
+          [
+            59.1199680025599,
+            13.214394437149167,
+            -101.72524139797315
+          ],
+          [
+            77.1199680025599,
+            18.799357783282176,
+            -69.27972556743771
+          ],
+          [
+            95.1199680025599,
+            20.708511389326304,
+            -68.52494853222743
+          ]
+        ],
+        &quot;boat&quot;: [
+          [
+            -18.88007198704111,
+            0.019486156632944326,
+            -35
+          ],
+          [
+            25.11992801295889,
+            0.019625134171448677,
+            -49
+          ]
+        ],
+        &quot;seaTime&quot;: 2.000000000000001,
+        &quot;scarf&quot;: [
+          0.3571428656578064,
+          -0.08557389676570892,
+          -0.001386158401146531,
+          0.4285714328289032,
+          -0.08088485896587372,
+          0.0010817735455930233,
+          0.5,
+          -0.07999999821186066,
+          0
+        ],
+        &quot;head&quot;: [
+          0,
+          0.05419973514936532,
+          -0.011352037429618942
+        ],
+        &quot;rider&quot;: [
+          0.009402357365144227,
+          0,
+          -0.006972606179308712
+        ],
+        &quot;loops&quot;: [
+          [
+            48.879999999999995,
+            0.012,
+            0
+          ],
+          [
+            53.879999999999995,
+            0.012,
+            0
+          ],
+          [
+            58.879999999999995,
+            0.012,
+            0
+          ]
+        ],
+        &quot;camera&quot;: [
+          6.799999999999999,
+          3.8000000000000007,
+          10
+        ],
+        &quot;size&quot;: [
+          3.4097391529937626,
+          3.0929228320442848,
+          1.4418246143035498
+        ],
+        &quot;meshCount&quot;: 779,
+        &quot;materialCount&quot;: 42,
+        &quot;renderCalls&quot;: 292,
+        &quot;triangles&quot;: 111081,
+        &quot;threeRevision&quot;: &quot;180&quot;
+      },
+      &quot;travelMeters&quot;: 5.560000000000001,
+      &quot;wheel&quot;: [
+        {
+          &quot;radius&quot;: 0.45299999999999996,
+          &quot;angleDelta&quot;: -12.494382022471921,
+          &quot;idealDelta&quot;: -12.273730684326715,
+          &quot;directionCorrect&quot;: true,
+          &quot;relativeDistanceError&quot;: 0.017977528089888173
+        },
+        {
+          &quot;radius&quot;: 0.45299999999999996,
+          &quot;angleDelta&quot;: -12.494382022471921,
+          &quot;idealDelta&quot;: -12.273730684326715,
+          &quot;directionCorrect&quot;: true,
+          &quot;relativeDistanceError&quot;: 0.017977528089888173
+        }
+      ],
+      &quot;freeze&quot;: {
+        &quot;distance&quot;: true,
+        &quot;time&quot;: true,
+        &quot;sea&quot;: true,
+        &quot;birds&quot;: true,
+        &quot;clouds&quot;: true,
+        &quot;scarf&quot;: true,
+        &quot;wheels&quot;: true
+      },
+      &quot;resumes&quot;: true,
+      &quot;speedChange&quot;: {
+        &quot;firstDelta&quot;: 0.005560000000000008,
+        &quot;secondDelta&quot;: 0.011120000000000019,
+        &quot;requested&quot;: 2
+      },
+      &quot;cameraChanges&quot;: true,
+      &quot;dragChanges&quot;: true,
+      &quot;zoomChanges&quot;: true,
+      &quot;mobileWidth&quot;: 390,
+      &quot;dynamicBirds&quot;: true,
+      &quot;dynamicSea&quot;: true,
+      &quot;dynamicScarf&quot;: true,
+      &quot;reducedMotion&quot;: {
+        &quot;paused&quot;: false,
+        &quot;distanceKm&quot;: 0.01112
+      },
+      &quot;contextLoss&quot;: {
+        &quot;overlay&quot;: &quot;loading failed&quot;,
+        &quot;loadingDisplay&quot;: &quot;none&quot;,
+        &quot;errorDisplay&quot;: null,
+        &quot;errorText&quot;: &quot;图形显示已中断，请重新加载页面。&quot;
+      }
+    },
+    &quot;B&quot;: {
+      &quot;errors&quot;: [],
+      &quot;start&quot;: {
+        &quot;state&quot;: {
+          &quot;paused&quot;: false,
+          &quot;speed&quot;: 24,
+          &quot;time&quot;: 1.0000000000000002,
+          &quot;distance&quot;: 0.006666666666666665,
+          &quot;view&quot;: &quot;coast&quot;
+        },
+        &quot;wheels&quot;: [
+          {
+            &quot;angle&quot;: [
+              -16.87763713080169,
+              0,
+              0
+            ],
+            &quot;radius&quot;: 0.395,
+            &quot;center&quot;: [
+              -0.006214733914364002,
+              0.4408380279979987,
+              -1.02
+            ],
+            &quot;bottom&quot;: -0.07871696714081283
+          },
+          {
+            &quot;angle&quot;: [
+              -16.87763713080169,
+              0,
+              0
+            ],
+            &quot;radius&quot;: 0.395,
+            &quot;center&quot;: [
+              -0.006214733914364002,
+              0.4408380279979987,
+              0.99
+            ],
+            &quot;bottom&quot;: -0.07871696714081283
+          }
+        ],
+        &quot;birds&quot;: [
+          {
+            &quot;position&quot;: [
+              -35.681306099222326,
+              7.570553023899489,
+              26.791394701638623
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.02099416947243094
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.02099416947243094
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -40.48381924860535,
+              8.85004105591219,
+              29.900654910645123
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.12010134707519454
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.12010134707519454
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -27.227562499444524,
+              14.881014592834763,
+              -17.59270136239259
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.21527263686845716
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.21527263686845716
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -19.40189312156466,
+              12.87262366513966,
+              25.927120692634134
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.04141540953605367
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.04141540953605367
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -31.64356084693555,
+              10.775745164394142,
+              6.35384651739508
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.07766406014007275
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.07766406014007275
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -23.476259579394252,
+              14.831631950877263,
+              0.1342474555450005
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.23964500756253335
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.23964500756253335
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -32.78203437736447,
+              12.883950834985777,
+              11.714876442556154
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.22296068012267448
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.22296068012267448
+            ]
+          }
+        ],
+        &quot;clouds&quot;: [
+          [
+            -74.27590437166012,
+            24.481423845963015,
+            30.117716555947183
+          ],
+          [
+            -1.3839921787232043,
+            26.636572278697578,
+            95.21412445194474
+          ],
+          [
+            16.720300942398893,
+            20.464724027053197,
+            -71.07690827147746
+          ],
+          [
+            44.19588541537139,
+            23.786927360842867,
+            -67.91051657733556
+          ],
+          [
+            0.6081626337097674,
+            26.958459824284965,
+            1.460513035618244
+          ],
+          [
+            20.190152651807438,
+            20.134371957866822,
+            42.93880909897277
+          ],
+          [
+            -67.70069734444907,
+            22.90709207663973,
+            32.52064511356936
+          ],
+          [
+            -60.74186072288254,
+            34.482148712949964,
+            8.916596982904338
+          ],
+          [
+            -59.612417821411434,
+            19.864174133971495,
+            -17.900805360191313
+          ],
+          [
+            -55.65301837460419,
+            29.708144863795624,
+            94.28561766041966
+          ]
+        ],
+        &quot;boat&quot;: [
+          [
+            -28,
+            -0.007333847229801321,
+            25
+          ]
+        ],
+        &quot;seaTime&quot;: 1.0000000000000002,
+        &quot;scarf&quot;: [
+          0.1587982028722763,
+          1.8949999809265137,
+          1.5299999713897705,
+          0.23213154077529907,
+          1.8949999809265137,
+          1.5299999713897705,
+          0.30546486377716064,
+          1.8949999809265137,
+          1.5299999713897705
+        ],
+        &quot;head&quot;: [
+          0,
+          0.06051864057360397,
+          0.024791620261311716
+        ],
+        &quot;rider&quot;: [
+          0,
+          0,
+          0.014453372781257896
+        ],
+        &quot;loops&quot;: [
+          [
+            0,
+            0,
+            -81.33333333333343
+          ],
+          [
+            0,
+            0,
+            -59.33333333333333
+          ],
+          [
+            0,
+            0,
+            -37.333333333333286
+          ]
+        ],
+        &quot;camera&quot;: [
+          7.500000000000001,
+          3.8,
+          -7.5
+        ],
+        &quot;size&quot;: [
+          1.7012557844784815,
+          3.0911284179978287,
+          3.067874713290352
+        ],
+        &quot;meshCount&quot;: 594,
+        &quot;materialCount&quot;: 172,
+        &quot;renderCalls&quot;: 183,
+        &quot;triangles&quot;: 103696,
+        &quot;threeRevision&quot;: &quot;180&quot;
+      },
+      &quot;running&quot;: {
+        &quot;state&quot;: {
+          &quot;paused&quot;: false,
+          &quot;speed&quot;: 24,
+          &quot;time&quot;: 2.000000000000001,
+          &quot;distance&quot;: 0.013333333333333327,
+          &quot;view&quot;: &quot;coast&quot;
+        },
+        &quot;wheels&quot;: [
+          {
+            &quot;angle&quot;: [
+              -33.75527426160336,
+              0,
+              0
+            ],
+            &quot;radius&quot;: 0.395,
+            &quot;center&quot;: [
+              -0.0033249507138446784,
+              0.42682020832772444,
+              -1.02
+            ],
+            &quot;bottom&quot;: -0.1326260900691631
+          },
+          {
+            &quot;angle&quot;: [
+              -33.75527426160336,
+              0,
+              0
+            ],
+            &quot;radius&quot;: 0.395,
+            &quot;center&quot;: [
+              -0.0033249507138446784,
+              0.42682020832772444,
+              0.99
+            ],
+            &quot;bottom&quot;: -0.1326260900691631
+          }
+        ],
+        &quot;birds&quot;: [
+          {
+            &quot;position&quot;: [
+              -35.681306099222326,
+              7.570553023899489,
+              27.34139470163862
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.021448139318651385
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.021448139318651385
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -40.48381924860535,
+              8.85004105591219,
+              30.45065491064512
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.08010409038224517
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.08010409038224517
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -27.227562499444524,
+              14.881014592834763,
+              -17.04270136239259
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.24260450683576462
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.24260450683576462
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -19.40189312156466,
+              12.87262366513966,
+              26.47712069263413
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.0009296935018690254
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.0009296935018690254
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -31.64356084693555,
+              10.775745164394142,
+              6.903846517395078
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.11777958108350017
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.11777958108350017
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -23.476259579394252,
+              14.831631950877263,
+              0.6842474555450005
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              0.21177849936490442
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              -0.21177849936490442
+            ]
+          },
+          {
+            &quot;position&quot;: [
+              -32.78203437736447,
+              12.883950834985777,
+              12.264876442556151
+            ],
+            &quot;left&quot;: [
+              0,
+              0,
+              -0.19240378646321682
+            ],
+            &quot;right&quot;: [
+              0,
+              0,
+              0.19240378646321682
+            ]
+          }
+        ],
+        &quot;clouds&quot;: [
+          [
+            -74.27590437166012,
+            24.481423845963015,
+            30.177716555947185
+          ],
+          [
+            -1.3839921787232043,
+            26.636572278697578,
+            95.27412445194474
+          ],
+          [
+            16.720300942398893,
+            20.464724027053197,
+            -71.01690827147746
+          ],
+          [
+            44.19588541537139,
+            23.786927360842867,
+            -67.85051657733555
+          ],
+          [
+            0.6081626337097674,
+            26.958459824284965,
+            1.520513035618242
+          ],
+          [
+            20.190152651807438,
+            20.134371957866822,
+            42.99880909897277
+          ],
+          [
+            -67.70069734444907,
+            22.90709207663973,
+            32.58064511356936
+          ],
+          [
+            -60.74186072288254,
+            34.482148712949964,
+            8.97659698290434
+          ],
+          [
+            -59.612417821411434,
+            19.864174133971495,
+            -17.84080536019131
+          ],
+          [
+            -55.65301837460419,
+            29.708144863795624,
+            94.34561766041966
+          ]
+        ],
+        &quot;boat&quot;: [
+          [
+            -28,
+            0.007907810470255586,
+            25
+          ]
+        ],
+        &quot;seaTime&quot;: 2.000000000000001,
+        &quot;scarf&quot;: [
+          0.16127954423427582,
+          2.019660234451294,
+          1.5299999713897705,
+          0.23461288213729858,
+          2.019660234451294,
+          1.5299999713897705,
+          0.30794620513916016,
+          2.019660234451294,
+          1.5299999713897705
+        ],
+        &quot;head&quot;: [
+          0,
+          0.09635581854171932,
+          -0.0063885275506708125
+        ],
+        &quot;rider&quot;: [
+          0,
+          0,
+          0.007732520577321945
+        ],
+        &quot;loops&quot;: [
+          [
+            0,
+            0,
+            -74.66666666666686
+          ],
+          [
+            0,
+            0,
+            -52.666666666666615
+          ],
+          [
+            0,
+            0,
+            -30.66666666666659
+          ]
+        ],
+        &quot;camera&quot;: [
+          7.500000000000001,
+          3.8,
+          -7.5
+        ],
+        &quot;size&quot;: [
+          1.7759090220283138,
+          3.1211972201396883,
+          3.127070206084692
+        ],
+        &quot;meshCount&quot;: 594,
+        &quot;materialCount&quot;: 172,
+        &quot;renderCalls&quot;: 190,
+        &quot;triangles&quot;: 103772,
+        &quot;threeRevision&quot;: &quot;180&quot;
+      },
+      &quot;travelMeters&quot;: 6.666666666666662,
+      &quot;wheel&quot;: [
+        {
+          &quot;radius&quot;: 0.395,
+          &quot;angleDelta&quot;: -16.87763713080167,
+          &quot;idealDelta&quot;: -16.877637130801673,
+          &quot;directionCorrect&quot;: true,
+          &quot;relativeDistanceError&quot;: 2.220446049250313e-16
+        },
+        {
+          &quot;radius&quot;: 0.395,
+          &quot;angleDelta&quot;: -16.87763713080167,
+          &quot;idealDelta&quot;: -16.877637130801673,
+          &quot;directionCorrect&quot;: true,
+          &quot;relativeDistanceError&quot;: 2.220446049250313e-16
+        }
+      ],
+      &quot;freeze&quot;: {
+        &quot;distance&quot;: true,
+        &quot;time&quot;: true,
+        &quot;sea&quot;: true,
+        &quot;birds&quot;: true,
+        &quot;clouds&quot;: true,
+        &quot;scarf&quot;: true,
+        &quot;wheels&quot;: true
+      },
+      &quot;resumes&quot;: true,
+      &quot;speedChange&quot;: {
+        &quot;firstDelta&quot;: 0.006666666666666684,
+        &quot;secondDelta&quot;: 0.011111111111111113,
+        &quot;requested&quot;: 40
+      },
+      &quot;cameraChanges&quot;: true,
+      &quot;dragChanges&quot;: true,
+      &quot;zoomChanges&quot;: true,
+      &quot;mobileWidth&quot;: 390,
+      &quot;dynamicBirds&quot;: true,
+      &quot;dynamicSea&quot;: true,
+      &quot;dynamicScarf&quot;: true,
+      &quot;reducedMotion&quot;: {
+        &quot;paused&quot;: true,
+        &quot;distanceKm&quot;: 0
+      },
+      &quot;contextLoss&quot;: {
+        &quot;overlay&quot;: &quot;done&quot;,
+        &quot;loadingDisplay&quot;: &quot;grid&quot;,
+        &quot;errorDisplay&quot;: &quot;block&quot;,
+        &quot;errorText&quot;: &quot;请使用支持 WebGL 的现代浏览器，并开启硬件加速。&quot;
+      }
+    }
+  },
+  &quot;limitations&quot;: [
+    &quot;检查用Chrome桌面无头模式，390px为模拟视口，不是真手机测试。&quot;,
+    &quot;固定动画时间检查是逻辑复核，不是设备FPS测试。&quot;,
+    &quot;正常运行无页面错误、无外部请求，不能覆盖所有设备和长期运行场景。&quot;,
+    &quot;详细对象读数来自只增加观测接口的私有源码副本；公开原HTML和源码ZIP保持原字节。&quot;
+  ]
+}</pre></section></main></body></html>

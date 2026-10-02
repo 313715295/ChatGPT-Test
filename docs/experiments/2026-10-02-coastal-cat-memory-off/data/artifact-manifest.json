@@ -1,0 +1,62 @@
+[
+  {
+    "sample": "A",
+    "model": "GPT-6.1 Sol",
+    "effort": "xhigh",
+    "file": "evidence/A-original.jpg",
+    "original_filename": "场景预览.jpg",
+    "bytes": 62417,
+    "sha256": "786239ac12349cc9354a6bd78c95bd1a45c21ac20f1cd509b73db2fc21364d54",
+    "unchanged_original": true
+  },
+  {
+    "sample": "A",
+    "model": "GPT-6.1 Sol",
+    "effort": "xhigh",
+    "file": "scenes/A.html",
+    "original_filename": "沿海兜风.html",
+    "bytes": 574123,
+    "sha256": "00b48181353c5b7a7a722cfb934ac56e18aad5c283c08d91bb1ca72c8a84bbfd",
+    "unchanged_original": true
+  },
+  {
+    "sample": "A",
+    "model": "GPT-6.1 Sol",
+    "effort": "xhigh",
+    "file": "sources/A.zip",
+    "original_filename": "猫咪海岸骑行-源码.zip",
+    "bytes": 173332,
+    "sha256": "d30bc8d863772c16466e0276c2e97405ff10547901bdc973f61e54f1a7260909",
+    "unchanged_original": true
+  },
+  {
+    "sample": "B",
+    "model": "GPT-6 Astra",
+    "effort": "xhigh",
+    "file": "scenes/B.html",
+    "original_filename": "海边骑行.html",
+    "bytes": 552354,
+    "sha256": "2011d7cc2825c42d2bcf6ef4080c477ce426c7f7808b1271b32bddd217c623b9",
+    "unchanged_original": true
+  },
+  {
+    "sample": "B",
+    "model": "GPT-6 Astra",
+    "effort": "xhigh",
+    "file": "sources/B.zip",
+    "original_filename": "海边骑行源码.zip",
+    "bytes": 159322,
+    "sha256": "4ec5e7881fda9e9d40cecd5f973ed588c5bdfdeb1257f243065e70c45c9ad0fe",
+    "unchanged_original": true
+  },
+  {
+    "sample": "B",
+    "model": "GPT-6 Astra",
+    "effort": "xhigh",
+    "file": "evidence/B-original.png",
+    "original_filename": "海边骑行预览.png",
+    "bytes": 54738,
+    "sha256": "0e9840fc1d8326e96f36ec17890cb6a29505b5c657e0a2346259a6602daa7403",
+    "unchanged_original": true
+  }
+]

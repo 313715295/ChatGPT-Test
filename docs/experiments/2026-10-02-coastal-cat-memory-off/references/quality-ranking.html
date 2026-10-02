@@ -1,0 +1,95 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本轮质量排序与依据</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f1f5f3;color:#173d37;font:17px/1.75 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1240px;margin:auto;padding:42px 24px 70px}h1{font-size:44px;line-height:1.3;margin:14px 0}h2{font-size:29px;margin:0 0 18px}h3{font-size:22px}p{margin:12px 0}.muted,small{color:#536e68}.card{padding:28px;margin:24px 0;background:white;border:1px solid #d9e4df;border-radius:22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.metric{padding:20px;background:#eef5f1;border-radius:15px}.metric strong{display:block;font-size:30px;line-height:1.5}.tag{display:inline-block;padding:5px 12px;background:#e3f3eb;border-radius:30px;font-size:14px}.orange{background:#fcf0df}.button,button{display:inline-block;border:1px solid #d2e2da;border-radius:10px;background:#eaf4ee;color:#1b5944;padding:10px 16px;font:inherit;text-decoration:none;cursor:pointer;margin:5px 6px 5px 0}.button.primary,button.active{background:#215d49;color:white}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:15px 12px;border-bottom:1px solid #dbe6e0;text-align:left;vertical-align:top}th{background:#f0f5f2}td strong{white-space:nowrap}.note{background:#edf5f0;border-left:5px solid #379a72;border-radius:8px;padding:18px 22px}a{color:#187551}img{max-width:100%;border-radius:13px;display:block}.samples img{width:100%;aspect-ratio:3/2;object-fit:cover}.samples h3{margin:12px 0 5px}figure{margin:0}figcaption{font-size:14px;color:#536e68;margin-top:7px}.viewer{width:100%;height:650px;border:1px solid #d4e2db;border-radius:15px;background:#eef5f1}details{margin:12px 0}summary{cursor:pointer}pre{background:#f5f7f6;padding:18px;border-radius:12px;overflow:auto;font-size:14px;line-height:1.7}nav{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}ul{padding-left:23px}.code-line{display:flex;gap:17px;min-height:26px;scroll-margin-top:25px}.ln{min-width:45px;text-align:right;user-select:none;color:#68877b;text-decoration:none}.code-line:target{background:#fff0c4}code{font-family:Consolas,monospace}header{padding:20px 24px;background:#e8f1eb;border-bottom:1px solid #d6e4dc}.mobile-pics{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}.mobile-pics img{width:260px}.check-ok{color:#247a55}.check-warn{color:#94632c}@media(max-width:740px){main{padding:24px 16px 50px}h1{font-size:32px}h2{font-size:25px}.card{padding:20px}.grid,.stats{grid-template-columns:1fr}.viewer{height:660px}.metric strong{font-size:26px}.scroll table{min-width:770px}}</style></head><body><main><a href="../index.html">← 返回本轮测评</a><section class="card"><h1>本轮质量排序与依据</h1><p>四项沿用旧报告，独立评价两件作品。</p><a class="button" href="../data/quality-ranking.json">下载聚合JSON</a><pre>{
+  &quot;criteria&quot;: [
+    &quot;主体建模与细节&quot;,
+    &quot;原场景材质、光照与环境动态&quot;,
+    &quot;动画、运动与连接逻辑&quot;,
+    &quot;代码结构、资源处理与故障恢复&quot;
+  ],
+  &quot;weighting&quot;: &quot;四项同等考虑，不发布伪精确的百分制总分。价格、耗时、拍摄遮挡不计入质量名次。&quot;,
+  &quot;order&quot;: [
+    &quot;B&quot;,
+    &quot;A&quot;
+  ],
+  &quot;close_group&quot;: [
+    &quot;B&quot;,
+    &quot;A&quot;
+  ],
+  &quot;scope&quot;: &quot;仅比较本轮两件具体成品。非盲评，每种配置一次；综合排序为判断，差距有限。时间和费用不参与质量排序，瞬时镜头遮挡单列。&quot;,
+  &quot;conclusion&quot;: &quot;本轮综合质量：B · GPT-6 Astra / xhigh 略优于 A · GPT-6.1 Sol / xhigh。Sol 的海面层次、日落和页面功能更丰富；Astra 的车轮关系、减少动画设置与图形中断提示更稳妥。&quot;,
+  &quot;dimensions&quot;: [
+    {
+      &quot;criterion&quot;: &quot;主体建模与细节&quot;,
+      &quot;judgment&quot;: &quot;两者接近&quot;,
+      &quot;A&quot;: &quot;猫脸、头盔条纹和扣带、车灯、后视镜、尾巴与脚踏细节完整。&quot;,
+      &quot;B&quot;: &quot;面部比例清楚，奶白头盔、车体、后视镜和背包细节完整。&quot;
+    },
+    {
+      &quot;criterion&quot;: &quot;原场景材质、光照与环境动态&quot;,
+      &quot;judgment&quot;: &quot;Sol 更丰富&quot;,
+      &quot;A&quot;: &quot;海面有深浅渐层、波纹、反光和泡沫；七只鸟、云和两艘帆船有动态，另有日落切换。&quot;,
+      &quot;B&quot;: &quot;海浪、七只鸟、云和帆船有实际运动；灯塔和柔和浅色海面构成完整环境，缺少日落切换。&quot;
+    },
+    {
+      &quot;criterion&quot;: &quot;动画、运动与连接逻辑&quot;,
+      &quot;judgment&quot;: &quot;Astra 更准确&quot;,
+      &quot;A&quot;: &quot;方向正确，暂停冻结全场景；轮胎外半径0.453，滚动公式用0.445，累计轮距偏差约1.80%。&quot;,
+      &quot;B&quot;: &quot;方向和半径关系正确；海面、鸟、云、围巾与车轮均随暂停冻结，恢复、调速有效。&quot;
+    },
+    {
+      &quot;criterion&quot;: &quot;代码结构、资源处理与故障恢复&quot;,
+      &quot;judgment&quot;: &quot;各有取舍，Astra 的异常反馈更可靠&quot;,
+      &quot;A&quot;: &quot;共用基础几何和材质，材质42个；具有初次加载错误提示。但减少动画时仍播放，运行后图形中断的错误层被隐藏。&quot;,
+      &quot;B&quot;: &quot;基础几何与材质按助手函数组织；默认绘制调用较少，但172个材质仍可合并。减少动画时停播，图形中断会显示刷新提示。&quot;
+    }
+  ],
+  &quot;findings&quot;: [
+    {
+      &quot;sample&quot;: &quot;A&quot;,
+      &quot;severity&quot;: &quot;minor&quot;,
+      &quot;title&quot;: &quot;轮半径轻微不一致&quot;,
+      &quot;evidence&quot;: &quot;实际外半径0.345+0.108=0.453；滚动除数0.445，相对程序记录的路程偏差1.79775%。&quot;,
+      &quot;lines&quot;: [
+        165,
+        296
+      ]
+    },
+    {
+      &quot;sample&quot;: &quot;A&quot;,
+      &quot;severity&quot;: &quot;minor&quot;,
+      &quot;title&quot;: &quot;系统减少动画设置未阻止自动播放&quot;,
+      &quot;evidence&quot;: &quot;减少动画环境下仍为paused=false；固定步进两秒后行驶0.01112km。&quot;,
+      &quot;lines&quot;: [
+        5,
+        6,
+        279,
+        292
+      ]
+    },
+    {
+      &quot;sample&quot;: &quot;A&quot;,
+      &quot;severity&quot;: &quot;moderate&quot;,
+      &quot;title&quot;: &quot;图形中断后错误提示不可见&quot;,
+      &quot;evidence&quot;: &quot;加载完成把loading.style.display设为none；图形中断只修改class，实测display仍为none。&quot;,
+      &quot;lines&quot;: [
+        286,
+        316
+      ]
+    },
+    {
+      &quot;sample&quot;: &quot;B&quot;,
+      &quot;severity&quot;: &quot;improvement&quot;,
+      &quot;title&quot;: &quot;材质资源可进一步共享&quot;,
+      &quot;evidence&quot;: &quot;材质172个，三角面助手会克隆材质；相同外观可考虑共用。此项是资源改进建议，不是运行失败。&quot;,
+      &quot;lines&quot;: [
+        32,
+        41
+      ]
+    }
+  ],
+  &quot;shared_limitations&quot;: [
+    &quot;均是直线路面与景物后移的骑行，没有真实弯道转向系统；这是实现复杂度描述，不作为违反原提示词。&quot;,
+    &quot;原默认竖屏在某些时刻会被前景棕榈遮住主体。该观察单列，不能用一个截帧代表全部视觉质量，也不用于本轮排名。&quot;,
+    &quot;两组都没有自动图形恢复的验证证据；图形中断后的处理需要刷新。&quot;,
+    &quot;同一xhigh名称不代表模型计算量相同；每种配置只有一次样本。&quot;
+  ]
+}</pre></section></main></body></html>

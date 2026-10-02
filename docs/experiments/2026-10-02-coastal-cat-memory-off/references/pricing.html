@@ -1,0 +1,50 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>定价口径与官方链接</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f1f5f3;color:#173d37;font:17px/1.75 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1240px;margin:auto;padding:42px 24px 70px}h1{font-size:44px;line-height:1.3;margin:14px 0}h2{font-size:29px;margin:0 0 18px}h3{font-size:22px}p{margin:12px 0}.muted,small{color:#536e68}.card{padding:28px;margin:24px 0;background:white;border:1px solid #d9e4df;border-radius:22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.metric{padding:20px;background:#eef5f1;border-radius:15px}.metric strong{display:block;font-size:30px;line-height:1.5}.tag{display:inline-block;padding:5px 12px;background:#e3f3eb;border-radius:30px;font-size:14px}.orange{background:#fcf0df}.button,button{display:inline-block;border:1px solid #d2e2da;border-radius:10px;background:#eaf4ee;color:#1b5944;padding:10px 16px;font:inherit;text-decoration:none;cursor:pointer;margin:5px 6px 5px 0}.button.primary,button.active{background:#215d49;color:white}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:15px 12px;border-bottom:1px solid #dbe6e0;text-align:left;vertical-align:top}th{background:#f0f5f2}td strong{white-space:nowrap}.note{background:#edf5f0;border-left:5px solid #379a72;border-radius:8px;padding:18px 22px}a{color:#187551}img{max-width:100%;border-radius:13px;display:block}.samples img{width:100%;aspect-ratio:3/2;object-fit:cover}.samples h3{margin:12px 0 5px}figure{margin:0}figcaption{font-size:14px;color:#536e68;margin-top:7px}.viewer{width:100%;height:650px;border:1px solid #d4e2db;border-radius:15px;background:#eef5f1}details{margin:12px 0}summary{cursor:pointer}pre{background:#f5f7f6;padding:18px;border-radius:12px;overflow:auto;font-size:14px;line-height:1.7}nav{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}ul{padding-left:23px}.code-line{display:flex;gap:17px;min-height:26px;scroll-margin-top:25px}.ln{min-width:45px;text-align:right;user-select:none;color:#68877b;text-decoration:none}.code-line:target{background:#fff0c4}code{font-family:Consolas,monospace}header{padding:20px 24px;background:#e8f1eb;border-bottom:1px solid #d6e4dc}.mobile-pics{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}.mobile-pics img{width:260px}.check-ok{color:#247a55}.check-warn{color:#94632c}@media(max-width:740px){main{padding:24px 16px 50px}h1{font-size:32px}h2{font-size:25px}.card{padding:20px}.grid,.stats{grid-template-columns:1fr}.viewer{height:660px}.metric strong{font-size:26px}.scroll table{min-width:770px}}</style></head><body><main><a href="../index.html">← 返回本轮测评</a><section class="card"><h1>定价口径与官方链接</h1><p>按2026-10-02官方标准费率折算。</p><a class="button" href="../data/pricing.json">下载聚合JSON</a><pre>{
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;basis&quot;: &quot;Standard, short context, text-token equivalent; not an account invoice or actual included-limit deduction&quot;,
+  &quot;usd_per_million&quot;: {
+    &quot;gpt-6.1-sol&quot;: {
+      &quot;uncached_input&quot;: 2,
+      &quot;cached_input&quot;: 0.1,
+      &quot;output&quot;: 10
+    },
+    &quot;gpt-6-astra&quot;: {
+      &quot;uncached_input&quot;: 10,
+      &quot;cached_input&quot;: 1,
+      &quot;output&quot;: 50
+    }
+  },
+  &quot;credits_per_million&quot;: {
+    &quot;gpt-6.1-sol&quot;: {
+      &quot;uncached_input&quot;: 50,
+      &quot;cached_input&quot;: 2.5,
+      &quot;output&quot;: 250
+    },
+    &quot;gpt-6-astra&quot;: {
+      &quot;uncached_input&quot;: 250,
+      &quot;cached_input&quot;: 25,
+      &quot;output&quot;: 1250
+    }
+  },
+  &quot;formula&quot;: &quot;((input - cached_input) * uncached_rate + cached_input * cached_rate + output * output_rate) / 1e6&quot;,
+  &quot;notes&quot;: [
+    &quot;推理Token包含在输出中，不能额外相加计费。&quot;,
+    &quot;两组缓存写入均为0，单次输入都低于272K。&quot;,
+    &quot;原记录未保存service_tier；仅作统一Standard折算，不声称本次实际采用了Standard或Fast。&quot;,
+    &quot;Codex credits使用独立官方Token费率计算，不能等同实际订阅额度扣减。&quot;,
+    &quot;不计未记录的工具独立收费；本次追加测评用量不纳入原任务。&quot;
+  ],
+  &quot;sources&quot;: [
+    {
+      &quot;title&quot;: &quot;GPT-6.1 Sol model pricing&quot;,
+      &quot;url&quot;: &quot;https://developers.openai.com/api/docs/models/gpt-6.1-sol&quot;
+    },
+    {
+      &quot;title&quot;: &quot;GPT-6 Astra model pricing&quot;,
+      &quot;url&quot;: &quot;https://developers.openai.com/api/docs/models/gpt-6-astra&quot;
+    },
+    {
+      &quot;title&quot;: &quot;Codex Standard credit rates&quot;,
+      &quot;url&quot;: &quot;https://learn.chatgpt.com/docs/pricing&quot;
+    }
+  ]
+}</pre></section></main></body></html>

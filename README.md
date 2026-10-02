@@ -1,5 +1,11 @@
 # ChatGPT / Codex 作品测评
 
+## 独立实验索引
+
+- **2026-10-02 · 关闭记忆两组**：[在线报告](https://313715295.github.io/ChatGPT-Test/experiments/2026-10-02-coastal-cat-memory-off/) · [方法、结论与原作品目录](docs/experiments/2026-10-02-coastal-cat-memory-off/README.md)。GPT-6.1 Sol / xhigh 与 GPT-6 Astra / xhigh，独立比较时间、费用和质量。
+- **2026-09-30 · 十组原试验**：[在线报告](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/) · [原试验目录](docs/experiments/2026-09-30-coastal-cat/README.md)。下方保留该轮的原说明；两轮不混排。
+
+
 同一提示词下，记录具体交付的时间、Token、费用折算与成品质量。每次实验独立保存，方便查看原作品、源码和验证依据。
 
 ## 2026-09-30：猫在海边骑电动车，十组交付

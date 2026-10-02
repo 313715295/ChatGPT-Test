@@ -1,0 +1,37 @@
+{
+  "scope": "只核查本轮原任务；A/B为公开编号，不公开本地会话ID或会话全文。",
+  "samples": [
+    {
+      "sample": "A",
+      "model": "GPT-6.1 Sol",
+      "effort": "xhigh",
+      "database_mode": "disabled",
+      "summary_injected": false,
+      "observed_history_memory_access": false,
+      "observed_memory_skill_read": false,
+      "ordinary_skills": [
+        "Sites building",
+        "Sites hosting",
+        "Computer use"
+      ]
+    },
+    {
+      "sample": "B",
+      "model": "GPT-6 Astra",
+      "effort": "xhigh",
+      "database_mode": "disabled",
+      "summary_injected": false,
+      "observed_history_memory_access": false,
+      "observed_memory_skill_read": false,
+      "ordinary_skills": [
+        "Sites building",
+        "Sites hosting",
+        "Computer use"
+      ]
+    }
+  ],
+  "conclusion": "两组数据库memory_mode均为disabled，起始上下文没有记忆摘要，工具日志未见读取历史记忆、旧作品或离线制作记忆技能。保留了普通工具与Sites技能；这不等于清空全部技能或隔离整台机器。",
+  "workflow": "两组都主动采用Sites建站、源码同步和发布流程；原提示词没有要求云托管。这些工作与失败重试包含在原任务实际耗时中。",
+  "timing_note": "两组运行窗口部分重叠，共用本地机器与工具服务；工具和发布策略未冻结，因此耗时差不能只归因于模型。",
+  "history_note": "旧实验有历史记忆输入，本轮独立列出，不并入旧实验的排序，也不能用跨轮差异单独估计记忆的因果作用。"
+}
