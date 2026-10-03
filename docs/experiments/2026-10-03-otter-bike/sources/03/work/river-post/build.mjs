@@ -1,0 +1,11 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import path from 'node:path';
+const here=path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/,'$1'));
+const result=await build({entryPoints:[path.join(here,'scene.js')],bundle:true,minify:true,format:'iife',target:'es2020',legalComments:'inline',write:false});
+const shell=await readFile(path.join(here,'shell.html'),'utf8');
+const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const out=path.resolve(here,'../../outputs/河岸邮差.html');
+await mkdir(path.dirname(out),{recursive:true});
+await writeFile(out,shell.replace('/*__APP__*/',()=>script));
+console.log(JSON.stringify({file:out,bytes:Buffer.byteLength(shell)+Buffer.byteLength(script)}));

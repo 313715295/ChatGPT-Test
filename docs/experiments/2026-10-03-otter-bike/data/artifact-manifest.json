@@ -1,0 +1,427 @@
+[
+  {
+    "trial": "01",
+    "label": "01 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第1次",
+    "path": "scenes/01.html",
+    "sha256": "6ce8a5052c8afc961614e8ff462b8e1ab02b357e2a5570a8d7b49afaa760ad96",
+    "bytes": 596339,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "01",
+    "path": "sources/01/work/otter-build/app.js",
+    "sha256": "c522a33bc0f7ec97e7e7790a43f2790ff01f2baf342ca4c8c91e690971ba0164",
+    "bytes": 36480,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "01",
+    "path": "sources/01/work/otter-build/shell.html",
+    "sha256": "cf8c4d9de04f7b0afeb0a14c22392631c3f5da85f0ba271a87f817d64f330d7c",
+    "bytes": 12222,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "01",
+    "path": "sources/01/work/otter-build/build.cjs",
+    "sha256": "8f44ed663317a6676d3b78be7de9b55b5637ec3c89c58dddc12933bc6c9fe895",
+    "bytes": 855,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "01",
+    "path": "sources/01/work/otter-build/package.json",
+    "sha256": "7224e6f4ddd260424cc948cf5d97f149f53f0d9b7a76258b33039de47a8e502b",
+    "bytes": 79,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "01",
+    "path": "sources/01/work/otter-build/package-lock.json",
+    "sha256": "32c098f840b3ba8250324726a8aaa657ffbc8f3eda70c6536a94954f5e65748e",
+    "bytes": 14263,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "label": "02 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第1次",
+    "path": "scenes/02.html",
+    "sha256": "b325201e015684b64a82783232d242de3cc555897a8c4d6cf78028c4fa8ca76e",
+    "bytes": 2059918,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "path": "sources/02/work/scene.js",
+    "sha256": "549a3eace20ed5257166946bbd1fa59c8dea414fe0fc849c072c0f089997a4ec",
+    "bytes": 42399,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "path": "sources/02/work/template.html",
+    "sha256": "88ed3b7cd1048a34ecf171ea2d0fdc9e578898cf3a9870473eeba82c34eb299c",
+    "bytes": 9564,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "path": "sources/02/work/build.cjs",
+    "sha256": "3aed3812b473d5e05d506dff448fa969008e0c81844417fac866a1f36fe7bd22",
+    "bytes": 732,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "path": "sources/02/work/three.cjs",
+    "sha256": "2980c5831824f46d79a39a93feb70dd851538ce5b5480a6463883b319022c51f",
+    "bytes": 2006834,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "02",
+    "path": "sources/02/work/three-license.txt",
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "bytes": 1081,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "label": "03 · GPT-6 Astra / 极高（xhigh） · Standard · 第1次",
+    "path": "scenes/03.html",
+    "sha256": "86c6da24d74e4d6599b162fff665c74e7706e2e56dbea7fa250748a7036503af",
+    "bytes": 573834,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "path": "sources/03/work/river-post/scene.js",
+    "sha256": "83f789839a57e0959b454f682aaadd0bb3e10a67c4400d6a9da5c9470f19a2f8",
+    "bytes": 36569,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "path": "sources/03/work/river-post/shell.html",
+    "sha256": "e87f733c2f1f9a1e04d76f76545c32694a5a99707c9307cf4db52705b3389f1c",
+    "bytes": 11467,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "path": "sources/03/work/river-post/build.mjs",
+    "sha256": "343aaa7605e9bed89181c5950825ada5beb90e5ee9e620124efb71a28039b0f8",
+    "bytes": 779,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "path": "sources/03/work/river-post/package.json",
+    "sha256": "386e57d0214a01a06649d1d05f09307b3950587d2525579441c52534c6caec2f",
+    "bytes": 136,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "03",
+    "path": "sources/03/work/river-post/package-lock.json",
+    "sha256": "daa6c0bc80df9eeceabed5eed1dfe02583ad69f0bbca69312d352a59fc104cc9",
+    "bytes": 15717,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "04",
+    "label": "04 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第2次",
+    "path": "scenes/04.html",
+    "sha256": "5ccd1428b1256985d8d4d73525db250a2b3d5876c9b66618bac44d0a86835f75",
+    "bytes": 718437,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "04",
+    "path": "sources/04/work/scene.html",
+    "sha256": "00087054d8642e1bcea67d86b213a0bfa76a8e130232ebe0dfb57ad6a0e9860a",
+    "bytes": 47450,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "04",
+    "path": "sources/04/work/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "04",
+    "path": "sources/04/work/three-LICENSE.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "bytes": 1081,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "label": "05 · GPT-6 Astra / 极高（xhigh） · Standard · 第2次",
+    "path": "scenes/05.html",
+    "sha256": "6063d08eab55cfc36708264ec38b88a9c25971da121c13187f500f1109c55615",
+    "bytes": 723138,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "path": "sources/05/work/scene.js",
+    "sha256": "75fa5f3ecaf6db14a73d2ed54cbd20ff16383d4c357b023fbdd9c66bd87641dd",
+    "bytes": 41424,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "path": "sources/05/work/shell.html",
+    "sha256": "83a6db16e05ff2579b41e5ca5e1e508264976d86cf125b78fa024ef04f221609",
+    "bytes": 10729,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "path": "sources/05/work/build.cjs",
+    "sha256": "9f61270c9ac46fecf47e830b74a4f45a80538c1f2008f3ea170aac4158ddb0c6",
+    "bytes": 838,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "path": "sources/05/work/vendor/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "05",
+    "path": "sources/05/work/vendor/THREE-LICENSE.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "bytes": 1081,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "06",
+    "label": "06 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第2次",
+    "path": "scenes/06.html",
+    "sha256": "929ad3366107ec1fd10ef762d0e01eebcd9514745bc4b0c7b3b9b6265a0f8eb8",
+    "bytes": 721130,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "06",
+    "path": "sources/06/work/scene.html",
+    "sha256": "587d5e6793a56649b029d28dc96e65e1e6b18bd89ca77aa38dd1d9a38fc5d08c",
+    "bytes": 50124,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "06",
+    "path": "sources/06/work/build.cjs",
+    "sha256": "4efc5d721133301db88c756b6d38debe20bccb9726c5992072141142a8eb38ce",
+    "bytes": 756,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "06",
+    "path": "sources/06/work/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "06",
+    "path": "sources/06/work/THREE-LICENSE.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "bytes": 1081,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "label": "07 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第3次",
+    "path": "scenes/07.html",
+    "sha256": "a6fbd7a8abffa45ace4afd4b4bfedf3ba07c1da57d8c398973a17f002d9904a0",
+    "bytes": 724102,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/scene.js",
+    "sha256": "62211c4642583c0621b994385117f4b6d3170ba33c92be737e302f572b1b9c2d",
+    "bytes": 43100,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/template.html",
+    "sha256": "6e4a8eaf478c7a56bf1521434876aa517856e1dc40ad4964c257e800e270ac66",
+    "bytes": 11123,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/build.cjs",
+    "sha256": "0afa2c26c3562e88196761a8aae5378a9f97f5be144a68dfc9218271e3faefe8",
+    "bytes": 615,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/package.json",
+    "sha256": "a3dc2e326147f1f0d86f51569f5496aebca80467d87099904771ceaf0fc6d5c3",
+    "bytes": 56,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "07",
+    "path": "sources/07/work/package-lock.json",
+    "sha256": "06b7310f3b8aeb16c0d42a337c23543b337edea3ac802bd871f110373d29796a",
+    "bytes": 1588,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "label": "08 · GPT-6 Astra / 极高（xhigh） · Standard · 第3次",
+    "path": "scenes/08.html",
+    "sha256": "e182767544fd9b46b6bf5b09017ee9593229138d605d9602feabf72b41a344e0",
+    "bytes": 717313,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "path": "sources/08/work/riverside/scene.html",
+    "sha256": "e6194bf75aeca7d6f741c5da3852a1640508be2a7b0d634f89313d58450280f6",
+    "bytes": 47438,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "path": "sources/08/work/riverside/build.cjs",
+    "sha256": "f45ff6169ba85dfee7e5b5a3123009e174373423019b8bfffd56229e05b85af6",
+    "bytes": 470,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "path": "sources/08/work/riverside/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "path": "sources/08/work/riverside/package.json",
+    "sha256": "11248b85a70560bcf82242398fa33189e84e6dda5a7055a5e144f332a4fdc16a",
+    "bytes": 56,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "08",
+    "path": "sources/08/work/riverside/package-lock.json",
+    "sha256": "fc2aefd5e0e500ce02703f23fd086edbdf2651abd7ce8f1a02b2c33e9b644357",
+    "bytes": 1593,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "label": "09 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第3次",
+    "path": "scenes/09.html",
+    "sha256": "b1562246e156c151ed8edd25e1416ef6025d7bf14d3621124e2783a4e0d0ba8c",
+    "bytes": 719645,
+    "kind": "original_delivered_html",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "path": "sources/09/work/scene.js",
+    "sha256": "2e643d9251f8170636982c9cc1109c9acaec89e32faeb7ada5d212cdb1d4a94e",
+    "bytes": 38894,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "path": "sources/09/work/shell.html",
+    "sha256": "cd1f7c046f06b492f936c9a1b3209ea98c326b0f60394466e7020fe9b88fb0db",
+    "bytes": 9755,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "path": "sources/09/work/build.cjs",
+    "sha256": "1ae6ded5c42e89c80d543112bb17aab4e25106fe25e9a90395433bad89ef0226",
+    "bytes": 861,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "path": "sources/09/work/three.min.js",
+    "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "bytes": 669884,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  },
+  {
+    "trial": "09",
+    "path": "sources/09/work/THREE-LICENSE.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "bytes": 1081,
+    "kind": "original_source",
+    "byte_identical_to_original": true
+  }
+]

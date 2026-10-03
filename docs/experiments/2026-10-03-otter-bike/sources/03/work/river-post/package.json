@@ -1,0 +1,1 @@
+{"name":"river-post-build","private":true,"type":"module","dependencies":{"three":"0.180.0","esbuild":"0.25.10","playwright":"1.55.1"}}

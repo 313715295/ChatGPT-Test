@@ -1,0 +1,10 @@
+const fs=require('fs');
+const path=require('path');
+const esbuild=require('esbuild');
+const result=esbuild.buildSync({entryPoints:[path.join(__dirname,'app.js')],bundle:true,minify:true,format:'iife',target:['chrome100','firefox100','safari15'],write:false,legalComments:'inline'});
+const js=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const license=fs.readFileSync(path.join(__dirname,'node_modules/three/LICENSE'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'shell.html'),'utf8').replace('/*__BUNDLE__*/',()=> '\n/* Three.js — MIT License\n'+license+'\n*/\n'+js);
+const output=path.resolve(__dirname,'../../outputs/沿河慢递.html');
+fs.writeFileSync(output,html,'utf8');
+console.log(JSON.stringify({file:output,bytes:Buffer.byteLength(html),networkReferences:(html.match(/(?:src|href)=["']https?:/g)||[]).length}));

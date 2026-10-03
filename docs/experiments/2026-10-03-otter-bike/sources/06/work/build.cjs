@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..');
+const template=fs.readFileSync(path.join(__dirname,'scene.html'),'utf8');
+const three=fs.readFileSync(path.join(__dirname,'three.min.js'),'utf8');
+const license=fs.readFileSync(path.join(__dirname,'THREE-LICENSE.txt'),'utf8');
+const result=template.replace('<!-- THREE_INLINE -->',()=>`<!-- Embedded Three.js r160.1 license:\n${license}\n--><script>\n${three}\n</script>`);
+fs.writeFileSync(path.join(root,'outputs','riverside-otter.html'),result);
+const scripts=[...template.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+fs.writeFileSync(path.join(__dirname,'animation-check.js'),scripts[0][1]);
+console.log('Created standalone HTML:',Buffer.byteLength(result),'bytes');

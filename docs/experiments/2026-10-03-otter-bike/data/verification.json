@@ -1,0 +1,238 @@
+[
+  {
+    "trial": "01",
+    "label": "01 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第1次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "180",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 549,
+      "triangles_including_shadow_passes": 897850,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/01-default-03s.png",
+      "evidence/01-wide.png",
+      "evidence/01-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "02",
+    "label": "02 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第1次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "180",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 291,
+      "triangles_including_shadow_passes": 1042088,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/02-default-03s.png",
+      "evidence/02-wide.png",
+      "evidence/02-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "03",
+    "label": "03 · GPT-6 Astra / 极高（xhigh） · Standard · 第1次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "180",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 471,
+      "triangles_including_shadow_passes": 2337708,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/03-default-03s.png",
+      "evidence/03-wide.png",
+      "evidence/03-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "04",
+    "label": "04 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第2次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 598,
+      "triangles_including_shadow_passes": 1328596,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/04-default-03s.png",
+      "evidence/04-wide.png",
+      "evidence/04-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "05",
+    "label": "05 · GPT-6 Astra / 极高（xhigh） · Standard · 第2次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 399,
+      "triangles_including_shadow_passes": 462754,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/05-default-03s.png",
+      "evidence/05-wide.png",
+      "evidence/05-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": "原制作检查未完成真正WebGL预览，后续独立原件检查通过。"
+  },
+  {
+    "trial": "06",
+    "label": "06 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第2次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 506,
+      "triangles_including_shadow_passes": 794072,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/06-default-03s.png",
+      "evidence/06-wide.png",
+      "evidence/06-close.png"
+    ],
+    "long_journey": {},
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "07",
+    "label": "07 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第3次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 375,
+      "triangles_including_shadow_passes": 390936,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/07-default-03s.png",
+      "evidence/07-wide.png",
+      "evidence/07-close.png"
+    ],
+    "long_journey": {
+      "durationSeconds": 120,
+      "travelled": 441.06125000007887,
+      "nonfinite": 0,
+      "largestGroupMove": 119.93875000000003,
+      "wraps": 548,
+      "nearbyEnvironmentWraps": 0,
+      "smallCreatureWraps": 32
+    },
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "08",
+    "label": "08 · GPT-6 Astra / 极高（xhigh） · Standard · 第3次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 494,
+      "triangles_including_shadow_passes": 415818,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/08-default-03s.png",
+      "evidence/08-wide.png",
+      "evidence/08-close.png"
+    ],
+    "long_journey": {
+      "durationSeconds": 120,
+      "travelled": 309.64092112218594,
+      "nonfinite": 0,
+      "largestRiderStep": 0,
+      "angleWraps": 0
+    },
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  },
+  {
+    "trial": "09",
+    "label": "09 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第3次",
+    "original_bytes_unchanged": true,
+    "offline_render_verified": true,
+    "external_runtime_requests_observed": 0,
+    "page_errors": [],
+    "three_revision": "160.1",
+    "draw_sample": {
+      "fixed_step_hz": 60,
+      "sample_time_seconds": 3,
+      "draw_calls_including_shadow_passes": 988,
+      "triangles_including_shadow_passes": 408985,
+      "native_fps_measured": false
+    },
+    "screenshot_files": [
+      "evidence/09-default-03s.png",
+      "evidence/09-wide.png",
+      "evidence/09-close.png"
+    ],
+    "long_journey": {
+      "durationSeconds": 120,
+      "travelled": 414.05749999994316,
+      "nonfinite": 0,
+      "largestRiderStep": 0.05756966952603221,
+      "angleWraps": 5
+    },
+    "method": "原交付在受限本地预览中加载，禁止外部请求；按固定60Hz观测动画，验证过程不计入原任务用时。部分早期检查在私有副本暴露观测接口；原作品未修复或改写。",
+    "original_author_preview_note": null
+  }
+]

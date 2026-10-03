@@ -1,0 +1,51 @@
+{
+  "snapshot_date": "2026-10-03",
+  "usd_per_million": {
+    "gpt-6.1-sol": {
+      "uncached_input": 2,
+      "cached_input": 0.1,
+      "output": 10
+    },
+    "gpt-6-astra": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "output": 50
+    }
+  },
+  "credits_per_million": {
+    "gpt-6.1-sol": {
+      "uncached_input": 50,
+      "cached_input": 2.5,
+      "output": 250
+    },
+    "gpt-6-astra": {
+      "uncached_input": 250,
+      "cached_input": 25,
+      "output": 1250
+    }
+  },
+  "fast_weights": {
+    "purchased_credits_or_enterprise_payg": 2,
+    "included_subscription_usage": 2.5
+  },
+  "formula": "((input_tokens - cached_input_tokens) * uncached_input_rate + cached_input_tokens * cached_input_rate + output_tokens * output_rate) / 1000000",
+  "scope": "按记录到的文本Token折算；不是实际账户账单或订阅额度扣减。每次先算成本再汇总。推理输出属于输出，不额外相加。九次单个请求均低于272K，缓存写入记录为0；未把未记录的独立工具费/地区附加费写成零。",
+  "sources": [
+    {
+      "title": "GPT-6.1 Sol定价",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+    },
+    {
+      "title": "GPT-6 Astra定价",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+    },
+    {
+      "title": "Codex credits费率",
+      "url": "https://learn.chatgpt.com/docs/pricing"
+    },
+    {
+      "title": "Codex Fast倍率",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/speed"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+const fs=require('fs');
+const path=require('path');
+const root=path.resolve(__dirname,'..');
+const shell=fs.readFileSync(path.join(__dirname,'shell.html'),'utf8');
+const library=fs.readFileSync(path.join(__dirname,'vendor/three.min.js'),'utf8');
+const license=fs.readFileSync(path.join(__dirname,'vendor/THREE-LICENSE.txt'),'utf8');
+const app=fs.readFileSync(path.join(__dirname,'scene.js'),'utf8');
+const html=shell.replace('<!-- THREE_LIBRARY -->',()=>'<!-- Three.js r160 · MIT License\n'+license+'\n-->\n<script>\n'+library.replace(/<\/script/gi,'<\\/script')+'\n</script>').replace('/* APP_SCRIPT */',()=>app);
+const out=path.join(root,'outputs','沿岸慢递.html');
+fs.writeFileSync(out,html,'utf8');
+console.log(JSON.stringify({file:out,bytes:fs.statSync(out).size,externalScripts:(html.match(/<script[^>]+src=/g)||[]).length}));

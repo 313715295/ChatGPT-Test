@@ -1,0 +1,7 @@
+{
+  "trial": "09",
+  "label": "09 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第3次",
+  "logic_file": "work/scene.js",
+  "code_reader": "../../code-review/09.html",
+  "note": "场景源码、模板、依赖/构建入口采用原文件字节；node_modules与本机验证脚本不分发。04另附明确标注的便携重建入口。"
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "configuration": "astra-standard",
+    "label": "GPT-6 Astra / 极高（xhigh） / Standard",
+    "model": "GPT-6 Astra",
+    "effort": "xhigh",
+    "mode": "Standard",
+    "sample_count": 3,
+    "trials": [
+      "03",
+      "05",
+      "08"
+    ],
+    "selected_artwork": "03",
+    "wall_time_seconds": {
+      "n": 3,
+      "sum": 4417.609,
+      "mean": 1472.5363333333335,
+      "median": 1642.449,
+      "minimum": 1113.209,
+      "maximum": 1661.951,
+      "values": [
+        1642.449,
+        1661.951,
+        1113.209
+      ]
+    },
+    "adjusted_reference_time_seconds": {
+      "n": 3,
+      "sum": 4416.492690357209,
+      "mean": 1472.1642301190695,
+      "median": 1642.449,
+      "minimum": 1113.209,
+      "maximum": 1660.8346903572083,
+      "values": [
+        1642.449,
+        1660.8346903572083,
+        1113.209
+      ]
+    },
+    "tokens": {
+      "input_tokens": {
+        "n": 3,
+        "sum": 4212350,
+        "mean": 1404116.6666666667,
+        "median": 1433730,
+        "minimum": 1228210,
+        "maximum": 1550410,
+        "values": [
+          1228210,
+          1550410,
+          1433730
+        ]
+      },
+      "cached_input_tokens": {
+        "n": 3,
+        "sum": 3971072,
+        "mean": 1323690.6666666667,
+        "median": 1335936,
+        "minimum": 1159936,
+        "maximum": 1475200,
+        "values": [
+          1159936,
+          1475200,
+          1335936
+        ]
+      },
+      "output_tokens": {
+        "n": 3,
+        "sum": 104964,
+        "mean": 34988,
+        "median": 35865,
+        "minimum": 30461,
+        "maximum": 38638,
+        "values": [
+          35865,
+          38638,
+          30461
+        ]
+      },
+      "reasoning_output_tokens": {
+        "n": 3,
+        "sum": 29662,
+        "mean": 9887.333333333334,
+        "median": 11449,
+        "minimum": 6647,
+        "maximum": 11566,
+        "values": [
+          11449,
+          11566,
+          6647
+        ]
+      },
+      "total_tokens": {
+        "n": 3,
+        "sum": 4317314,
+        "mean": 1439104.6666666667,
+        "median": 1464191,
+        "minimum": 1264075,
+        "maximum": 1589048,
+        "values": [
+          1264075,
+          1589048,
+          1464191
+        ]
+      }
+    },
+    "standard_equivalent_usd": {
+      "n": 3,
+      "sum": 11.632052,
+      "mean": 3.8773506666666666,
+      "median": 3.836926,
+      "minimum": 3.635926,
+      "maximum": 4.1592,
+      "values": [
+        3.635926,
+        4.1592,
+        3.836926
+      ]
+    },
+    "purchased_usd_equivalent": {
+      "n": 3,
+      "sum": 11.632052,
+      "mean": 3.8773506666666666,
+      "median": 3.836926,
+      "minimum": 3.635926,
+      "maximum": 4.1592,
+      "values": [
+        3.635926,
+        4.1592,
+        3.836926
+      ]
+    },
+    "subscription_usd_weight_equivalent": {
+      "n": 3,
+      "sum": 11.632052,
+      "mean": 3.8773506666666666,
+      "median": 3.836926,
+      "minimum": 3.635926,
+      "maximum": 4.1592,
+      "values": [
+        3.635926,
+        4.1592,
+        3.836926
+      ]
+    },
+    "display": {
+      "wall_time_median": "27:22",
+      "wall_time_range": "18:33–27:42",
+      "adjusted_reference_median": "27:22",
+      "adjusted_reference_range": "18:33–27:41"
+    }
+  },
+  {
+    "configuration": "sol-standard",
+    "label": "GPT-6.1 Sol / 极高（xhigh） / Standard",
+    "model": "GPT-6.1 Sol",
+    "effort": "xhigh",
+    "mode": "Standard",
+    "sample_count": 3,
+    "trials": [
+      "02",
+      "06",
+      "09"
+    ],
+    "selected_artwork": "06",
+    "wall_time_seconds": {
+      "n": 3,
+      "sum": 5032.5470000000005,
+      "mean": 1677.5156666666667,
+      "median": 1528.462,
+      "minimum": 1490.862,
+      "maximum": 2013.223,
+      "values": [
+        1528.462,
+        2013.223,
+        1490.862
+      ]
+    },
+    "adjusted_reference_time_seconds": {
+      "n": 3,
+      "sum": 4400.9581764431005,
+      "mean": 1466.9860588143667,
+      "median": 1490.862,
+      "minimum": 1381.6341764431,
+      "maximum": 1528.462,
+      "values": [
+        1528.462,
+        1381.6341764431,
+        1490.862
+      ]
+    },
+    "tokens": {
+      "input_tokens": {
+        "n": 3,
+        "sum": 4176063,
+        "mean": 1392021,
+        "median": 1394820,
+        "minimum": 1385007,
+        "maximum": 1396236,
+        "values": [
+          1385007,
+          1394820,
+          1396236
+        ]
+      },
+      "cached_input_tokens": {
+        "n": 3,
+        "sum": 3936512,
+        "mean": 1312170.6666666667,
+        "median": 1313920,
+        "minimum": 1306112,
+        "maximum": 1316480,
+        "values": [
+          1306112,
+          1313920,
+          1316480
+        ]
+      },
+      "output_tokens": {
+        "n": 3,
+        "sum": 115060,
+        "mean": 38353.333333333336,
+        "median": 38915,
+        "minimum": 33793,
+        "maximum": 42352,
+        "values": [
+          42352,
+          33793,
+          38915
+        ]
+      },
+      "reasoning_output_tokens": {
+        "n": 3,
+        "sum": 30479,
+        "mean": 10159.666666666666,
+        "median": 10140,
+        "minimum": 9200,
+        "maximum": 11139,
+        "values": [
+          11139,
+          9200,
+          10140
+        ]
+      },
+      "total_tokens": {
+        "n": 3,
+        "sum": 4291123,
+        "mean": 1430374.3333333333,
+        "median": 1428613,
+        "minimum": 1427359,
+        "maximum": 1435151,
+        "values": [
+          1427359,
+          1428613,
+          1435151
+        ]
+      }
+    },
+    "standard_equivalent_usd": {
+      "n": 3,
+      "sum": 2.0233532,
+      "mean": 0.6744510666666667,
+      "median": 0.68031,
+      "minimum": 0.631122,
+      "maximum": 0.7119211999999999,
+      "values": [
+        0.7119211999999999,
+        0.631122,
+        0.68031
+      ]
+    },
+    "purchased_usd_equivalent": {
+      "n": 3,
+      "sum": 2.0233532,
+      "mean": 0.6744510666666667,
+      "median": 0.68031,
+      "minimum": 0.631122,
+      "maximum": 0.7119211999999999,
+      "values": [
+        0.7119211999999999,
+        0.631122,
+        0.68031
+      ]
+    },
+    "subscription_usd_weight_equivalent": {
+      "n": 3,
+      "sum": 2.0233532,
+      "mean": 0.6744510666666667,
+      "median": 0.68031,
+      "minimum": 0.631122,
+      "maximum": 0.7119211999999999,
+      "values": [
+        0.7119211999999999,
+        0.631122,
+        0.68031
+      ]
+    },
+    "display": {
+      "wall_time_median": "25:28",
+      "wall_time_range": "24:51–33:33",
+      "adjusted_reference_median": "24:51",
+      "adjusted_reference_range": "23:02–25:28"
+    }
+  },
+  {
+    "configuration": "sol-fast",
+    "label": "GPT-6.1 Sol / 极高（xhigh） / Fast",
+    "model": "GPT-6.1 Sol",
+    "effort": "xhigh",
+    "mode": "Fast",
+    "sample_count": 3,
+    "trials": [
+      "01",
+      "04",
+      "07"
+    ],
+    "selected_artwork": "07",
+    "wall_time_seconds": {
+      "n": 3,
+      "sum": 2605.642,
+      "mean": 868.5473333333333,
+      "median": 848.642,
+      "minimum": 794.763,
+      "maximum": 962.237,
+      "values": [
+        794.763,
+        848.642,
+        962.237
+      ]
+    },
+    "adjusted_reference_time_seconds": {
+      "n": 3,
+      "sum": 2605.642,
+      "mean": 868.5473333333333,
+      "median": 848.642,
+      "minimum": 794.763,
+      "maximum": 962.237,
+      "values": [
+        794.763,
+        848.642,
+        962.237
+      ]
+    },
+    "tokens": {
+      "input_tokens": {
+        "n": 3,
+        "sum": 6440332,
+        "mean": 2146777.3333333335,
+        "median": 1721842,
+        "minimum": 1677179,
+        "maximum": 3041311,
+        "values": [
+          3041311,
+          1677179,
+          1721842
+        ]
+      },
+      "cached_input_tokens": {
+        "n": 3,
+        "sum": 6184832,
+        "mean": 2061610.6666666667,
+        "median": 1646848,
+        "minimum": 1598720,
+        "maximum": 2939264,
+        "values": [
+          2939264,
+          1598720,
+          1646848
+        ]
+      },
+      "output_tokens": {
+        "n": 3,
+        "sum": 118113,
+        "mean": 39371,
+        "median": 38760,
+        "minimum": 38424,
+        "maximum": 40929,
+        "values": [
+          38424,
+          38760,
+          40929
+        ]
+      },
+      "reasoning_output_tokens": {
+        "n": 3,
+        "sum": 36591,
+        "mean": 12197,
+        "median": 12922,
+        "minimum": 10737,
+        "maximum": 12932,
+        "values": [
+          12922,
+          10737,
+          12932
+        ]
+      },
+      "total_tokens": {
+        "n": 3,
+        "sum": 6558445,
+        "mean": 2186148.3333333335,
+        "median": 1762771,
+        "minimum": 1715939,
+        "maximum": 3079735,
+        "values": [
+          3079735,
+          1715939,
+          1762771
+        ]
+      }
+    },
+    "standard_equivalent_usd": {
+      "n": 3,
+      "sum": 2.3106132,
+      "mean": 0.7702044,
+      "median": 0.7239628,
+      "minimum": 0.70439,
+      "maximum": 0.8822604000000001,
+      "values": [
+        0.8822604000000001,
+        0.70439,
+        0.7239628
+      ]
+    },
+    "purchased_usd_equivalent": {
+      "n": 3,
+      "sum": 4.6212264,
+      "mean": 1.5404088,
+      "median": 1.4479256,
+      "minimum": 1.40878,
+      "maximum": 1.7645208000000001,
+      "values": [
+        1.7645208000000001,
+        1.40878,
+        1.4479256
+      ]
+    },
+    "subscription_usd_weight_equivalent": {
+      "n": 3,
+      "sum": 5.776533,
+      "mean": 1.925511,
+      "median": 1.809907,
+      "minimum": 1.760975,
+      "maximum": 2.205651,
+      "values": [
+        2.205651,
+        1.760975,
+        1.809907
+      ]
+    },
+    "display": {
+      "wall_time_median": "14:09",
+      "wall_time_range": "13:15–16:02",
+      "adjusted_reference_median": "14:09",
+      "adjusted_reference_range": "13:15–16:02"
+    }
+  }
+]

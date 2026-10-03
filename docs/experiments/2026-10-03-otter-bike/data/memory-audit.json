@@ -1,0 +1,96 @@
+[
+  {
+    "trial": "01",
+    "label": "01 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第1次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "02",
+    "label": "02 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第1次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "03",
+    "label": "03 · GPT-6 Astra / 极高（xhigh） · Standard · 第1次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "04",
+    "label": "04 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第2次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [
+      "visualize"
+    ],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "05",
+    "label": "05 · GPT-6 Astra / 极高（xhigh） · Standard · 第2次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [
+      "computer-use"
+    ],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "06",
+    "label": "06 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第2次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "07",
+    "label": "07 · GPT-6.1 Sol / 极高（xhigh） · Fast · 第3次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "08",
+    "label": "08 · GPT-6 Astra / 极高（xhigh） · Standard · 第3次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  },
+  {
+    "trial": "09",
+    "label": "09 · GPT-6.1 Sol / 极高（xhigh） · Standard · 第3次",
+    "starting_memory_mode": "disabled",
+    "visible_history_or_memory_reads_observed": false,
+    "prompt_same_after_whitespace_normalization": true,
+    "user_instruction_count": 1,
+    "generic_skill_reads": [],
+    "evidence_scope": "依据本地可见会话上下文与工具记录核查；不公开私人日志，无法由此证明服务端训练或所有不可见上下文完全隔离。"
+  }
+]

@@ -2,6 +2,7 @@
 
 ## 独立实验索引
 
+- **2026-10-03 · 水獭沿河骑车，三配置各3次**：[在线报告](https://313715295.github.io/ChatGPT-Test/experiments/2026-10-03-otter-bike/) · [原作品、方法与综合数据](docs/experiments/2026-10-03-otter-bike/README.md)。Astra极高标准、Sol极高标准与Sol极高Fast；9次原交付全部保留，时间/费用综合统计，画面按质量择优。
 - **2026-10-02 · 关闭记忆两组**：[在线报告](https://313715295.github.io/ChatGPT-Test/experiments/2026-10-02-coastal-cat-memory-off/) · [方法、结论与原作品目录](docs/experiments/2026-10-02-coastal-cat-memory-off/README.md)。GPT-6.1 Sol / xhigh 与 GPT-6 Astra / xhigh，独立比较时间、费用和质量。
 - **2026-09-30 · 十组原试验**：[在线报告](https://313715295.github.io/ChatGPT-Test/experiments/2026-09-30-coastal-cat/) · [原试验目录](docs/experiments/2026-09-30-coastal-cat/README.md)。下方保留该轮的原说明；两轮不混排。
 

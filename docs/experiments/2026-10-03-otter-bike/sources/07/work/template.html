@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#e9e8d4">
+<title>河岸邮差 · River Post</title>
+<style>
+:root{color-scheme:light;--ink:#324c48;--muted:#657772;--paper:#fffaf0;--accent:#b7593d}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e7e5cf;font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink)}
+#scene{position:absolute;inset:0;touch-action:none;cursor:grab}#scene:active{cursor:grabbing}#scene canvas{display:block;width:100%;height:100%;outline:none}
+button,input{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.heading{position:absolute;top:43px;left:48px;pointer-events:none}.eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:650;letter-spacing:3px}.eyebrow svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.2}
+h1{font-family:"Songti SC","SimSun","Noto Serif CJK SC",serif;font-weight:400;letter-spacing:6px;font-size:46px;line-height:1.2;margin:16px 0 12px} .subtitle{font-size:12px;line-height:1.9;letter-spacing:1.3px;color:var(--muted)}
+.top-actions{position:absolute;right:38px;top:38px;display:flex;gap:8px}.pill{border:1px solid #fff8;background:#fff9ef91;backdrop-filter:blur(14px);color:var(--ink);border-radius:28px;padding:11px 15px;display:flex;align-items:center;gap:7px;font-size:11px;box-shadow:0 4px 16px #56604b07;transition:background .2s,transform .2s}.pill:hover{background:#fffaf0e6;transform:translateY(-1px)}.pill svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.postmark{position:absolute;right:45px;top:113px;width:91px;height:91px;border:1px solid #5a72625c;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;transform:rotate(9deg);color:#526c60;pointer-events:none}.postmark:after{content:"";position:absolute;inset:5px;border:1px dashed #63796566;border-radius:50%}.postmark span{font-size:8px;letter-spacing:2px}.postmark strong{font-family:Georgia,serif;font-weight:400;font-size:22px;letter-spacing:1px}.postmark small{font-size:8px;letter-spacing:1px}
+.journey{position:absolute;left:46px;bottom:34px;pointer-events:none}.journey .label{font-size:10px;letter-spacing:2px;color:#53675d}.journey .distance{font-family:Georgia,serif;font-size:30px;margin-top:7px;font-variant-numeric:tabular-nums}.distance small{font:10px "Segoe UI",sans-serif;letter-spacing:1px;margin-left:7px}.journey .line{width:108px;height:2px;margin-top:10px;background:#4d6f4b3b}.journey .line i{display:block;width:35%;height:100%;background:#6f8a65}
+.controls{position:absolute;bottom:31px;left:50%;transform:translateX(-50%);width:474px;padding:15px 19px;border-radius:19px;background:#fffaf0dd;border:1px solid #fff9;box-shadow:0 8px 40px #24483714;backdrop-filter:blur(18px);display:flex;gap:17px;align-items:center}.play{width:40px;height:40px;border:0;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;flex-shrink:0;transition:background .2s}.play:hover{background:#497067}.play svg{width:17px;height:17px;fill:currentColor}.speed{flex:1;min-width:0}.speed .caption{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1px;margin-bottom:8px}.speed output{font-family:Georgia,serif;font-size:12px;letter-spacing:0}.speed input{display:block;width:100%;height:3px;accent-color:#b7593d;cursor:pointer;margin:0}.separator{height:31px;width:1px;background:#526c4823}.view{background:none;border:0;color:var(--ink);padding:3px 0;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:47px;font-size:9px;letter-spacing:1px}.view svg{height:19px;width:22px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}.view:hover{color:var(--accent)}
+.hint{position:absolute;right:39px;bottom:39px;font-size:10px;color:#486357b3;line-height:1.9;letter-spacing:.5px;text-align:right;pointer-events:none}.hint b{font-weight:400;color:#324f43}.toast{position:absolute;left:50%;bottom:120px;transform:translate(-50%,8px);opacity:0;pointer-events:none;background:#324c48e8;color:#fff9ef;padding:10px 20px;border-radius:40px;font-size:12px;letter-spacing:1px;transition:opacity .3s,transform .3s}.toast.show{opacity:1;transform:translate(-50%,0)}
+.loading{position:absolute;inset:0;background:#f1eedf;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:5;transition:opacity .7s}.loading.hide{opacity:0;pointer-events:none}.loading .mark{width:52px;height:52px;border:1px solid #36534922;border-top-color:#365349;border-radius:50%;animation:spin 1.8s linear infinite;margin-bottom:21px}.loading strong{font-family:"SimSun",serif;font-size:24px;font-weight:400;letter-spacing:5px}.loading p{font-size:11px;color:#738173;letter-spacing:2px;margin-top:16px}@keyframes spin{to{transform:rotate(360deg)}}
+.help-panel{display:none;position:absolute;right:38px;top:89px;width:260px;background:#fffaf0ed;border:1px solid #fff;border-radius:16px;padding:21px 23px;box-shadow:0 10px 40px #37544a18;backdrop-filter:blur(16px);z-index:3}.help-panel.open{display:block}.help-panel h2{font-family:"SimSun",serif;font-size:20px;letter-spacing:2px;font-weight:400;margin:0 0 15px}.help-panel p{font-size:11px;line-height:2.2;margin:0;color:#607368}.help-panel kbd{font:10px inherit;border:1px solid #596e4b33;border-radius:4px;padding:2px 5px;color:#334f45}.help-panel hr{border:0;border-top:1px solid #62775222;margin:14px 0}.help-panel .foot{font-size:10px;color:#8a9280;line-height:1.9}
+@media(max-width:850px){.heading{left:27px;top:30px}h1{font-size:36px;letter-spacing:4px}.top-actions{right:24px;top:28px}.postmark{right:29px;top:95px;width:72px;height:72px}.postmark strong{font-size:18px}.postmark small{font-size:6px}.postmark span{font-size:6px}.journey{left:26px;bottom:31px}.journey .distance{font-size:25px}.controls{width:390px;bottom:25px;gap:13px;padding:13px 15px}.hint{display:none}.help-panel{right:24px;top:80px}}
+@media(max-width:560px){.heading{left:23px;top:28px}.eyebrow{font-size:8px;letter-spacing:2px;gap:7px}.eyebrow svg{width:19px;height:19px}h1{font-size:32px;margin-top:12px;margin-bottom:8px}.subtitle{font-size:10px;letter-spacing:.7px}.top-actions{right:18px;top:26px}.pill{padding:10px}.pill span{display:none}.postmark{display:none}.journey{bottom:119px;left:23px}.journey .label{font-size:8px}.journey .distance{font-size:23px}.journey .line{width:75px}.controls{bottom:20px;width:calc(100% - 36px);padding:13px;gap:13px}.view{min-width:38px}.toast{bottom:112px;width:max-content;max-width:90%;font-size:11px}.help-panel{right:18px;top:74px}.loading strong{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.loading .mark{animation:none}}
+</style>
+</head>
+<body>
+<div id="scene" aria-label="水獭骑自行车沿河岸投递包裹的三维动画"></div>
+<header class="heading">
+ <div class="eyebrow"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/><path d="M2 3h6M16 21h6"/></svg>RIVER POST <span style="opacity:.45">/</span> VOL. 01</div>
+ <h1>河岸邮差</h1><div class="subtitle">把日子骑慢一点。<br>让一份小小的心意，顺着河流抵达。</div>
+</header>
+<div class="top-actions">
+ <button class="pill" id="bell" title="按响车铃（B）" aria-label="按响车铃"><svg viewBox="0 0 24 24"><path d="M6 16h12M7 16v-5a5 5 0 0110 0v5M5 16l-1 2h16l-1-2M10 21h4M12 4V2"/></svg><span>打个招呼</span></button>
+ <button class="pill" id="help" title="操作说明" aria-label="操作说明" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M10 9a2 2 0 013.5 1.3c-.5 1.2-1.5 1.2-1.5 2.7M12 16h.01"/></svg></button>
+</div>
+<div class="postmark"><span>RIVERSIDE</span><strong>慢递</strong><small>WITH A LITTLE LOVE</small></div>
+<aside class="help-panel" id="helpPanel"><h2>陪它骑一会儿</h2><p>拖动画面 · 环绕观察<br>滚轮 / 双指 · 拉近或拉远<br><kbd>空格</kbd> · 暂停 / 继续<br><kbd>V</kbd> · 切换视角<br><kbd>R</kbd> · 恢复默认视角<br><kbd>B</kbd> · 按响车铃<br><kbd>H</kbd> · 隐藏 / 显示界面</p><hr><p class="foot">包裹稳稳地绑在后架上。<br>小水獭会眨眼，围巾会随风起伏。<br>愿每一次出发，都有人等待。</p></aside>
+<div class="journey"><div class="label">今天的慢递旅程</div><div class="distance"><span id="distance">000</span><small>m</small></div><div class="line"><i id="journeyBar"></i></div></div>
+<div class="controls">
+ <button class="play" id="play" title="暂停（空格）" aria-label="暂停动画"><svg id="playIcon" viewBox="0 0 20 20"><path d="M5 3h3v14H5zM12 3h3v14h-3z"/></svg></button>
+ <div class="speed"><div class="caption"><label for="speed">骑行速度</label><output id="speedValue">悠然 · 1.0×</output></div><input id="speed" type="range" min="0.25" max="2" step="0.05" value="1" aria-label="骑行速度"></div>
+ <div class="separator"></div>
+ <button class="view" id="view" title="切换视角（V）" aria-label="切换视角"><svg viewBox="0 0 24 24"><path d="M3 6h5l2-2h4l2 2h5v14H3z"/><circle cx="12" cy="13" r="4"/></svg><span id="viewLabel">旅伴视角</span></button>
+ <button class="view" id="reset" title="恢复视角（R）" aria-label="恢复默认视角"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 111 8M4 4v6h6"/></svg><span>归位</span></button>
+</div>
+<div class="hint"><b>拖动环绕 · 滚轮缩放</b><br>空格暂停，听一声车铃</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="loading" id="loading"><div class="mark"></div><strong>微风正在赶来</strong><p>一只水獭，一段河岸，一份心意。</p></div>
+<!--
+Three.js — MIT License
+Copyright © 2010-2023 Three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<!-- THREE_LIBRARY -->
+<!-- SCENE_SCRIPT -->
+</body>
+</html>
